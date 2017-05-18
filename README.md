@@ -6,3 +6,4 @@
 
 1. findMaxValue(int[] arr); 寻找一个数组中的全局最大值
 2. findLocalPeakOneVersion(int[] arr, int start, int end);  寻找数组中的局部最大值点，适合于一维数组
+3. findLocalPeakTwoVersion(int[] arr, int start, int end);  寻找数组中的局部最大值点，适合于二维数组
