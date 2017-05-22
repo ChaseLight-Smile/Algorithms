@@ -18,13 +18,12 @@ public class BinarySearch {
 		}else if(target < arr[mid]){
 			binarySearch(arr, 0, mid-1, target);
 		}
-		return;
 	}
 	
 	public static void main(String[] args) {
 		int[] arr = {-1,2,100,-100,30,-23,90};
 		//binarySearch(arr, 0, arr.length-1, -10);   //测试组1
 		//binarySearch(arr, 0, arr.length-1, 1000);  //测试组2
-		binarySearch(arr, 0, arr.length-1, 100);     //测试组3
+		binarySearch(arr, 0, arr.length-1, 10000);     //测试组3
 	}
 }
