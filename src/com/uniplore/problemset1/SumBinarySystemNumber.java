@@ -72,6 +72,9 @@ public class SumBinarySystemNumber {
 	}
 	
 	public static void main(String[] args) {
+		//测试组1
+		//int[] arr1 = {1,0};
+		//int[] arr2 = {1,1};
 		int[] arr1 = {1,0,1,1};
 		int[] arr2 = {1,1,1,1};
 		sumBinarySystemNumber(arr1, arr2);
