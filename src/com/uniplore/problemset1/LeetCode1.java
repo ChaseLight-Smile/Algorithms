@@ -33,12 +33,12 @@ public class LeetCode1 {
 			    
 			}
 		}
-		return new int[]{-1,-1};
+		return result;
 	}
 	
 	public static void main(String[] args) {
-		int[] arr = {2,7,11,15};
-		int[] twoSum = twoSum(arr, 18);
+		int[] arr = {2,7,11,15,21,46,43,1};
+		int[] twoSum = twoSum(arr, 3);
 		for (int i : twoSum) {
 			System.out.print(i + " ");
 		}
