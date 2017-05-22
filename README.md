@@ -13,3 +13,4 @@
     * sumBinarySystemNumber(int[] addNumber1,int[] addNumber2);   实现两个n位二进制数加法操作
     * selectionSort(int[] arr);  完成选择排序过程
     * bubbleSort(int[] arr); 完成冒泡排序
+    * int[] twoSum(int[] nums, int target);   寻找一个数组中是否有两个数的和与指定的target数相同
