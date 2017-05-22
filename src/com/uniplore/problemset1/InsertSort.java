@@ -51,7 +51,8 @@ public class InsertSort {
 	public static void main(String[] args) {
 		//int[] arr = {5,4,3,2,1};  //测试组1
 		//int[] arr = {5,2,4,6,1,3};   //测试组2
-		int[] arr = {-1,2,100,-100,30,-23,90};
+		//int[] arr = {-1,2,100,-100,30,-23,90};
+		int[] arr = {31,41,59,26,41,58};
 		insertSort(arr);
 		
 		//遍历输出排序后的结果
