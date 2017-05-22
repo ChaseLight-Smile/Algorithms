@@ -16,8 +16,7 @@ public class InsertSort {
 				if (arr[i] < arr[j]) {   //如果第i个元素比其左侧的元素小，则发生移动
 					int temp = 0;
 					temp = arr[i];
-					
-					//发生移动的部分，整体发生移动，而不是调换某两个元素的位置
+					//发生移动的部分，整体发生移动，而不是调换某两个元素的位置，这个过程并没有把arr[i]放入其中，有可以将其放入
 					for (int k = i-1;;k--) {
 						if (k == j -1) {
 							break;
@@ -30,7 +29,7 @@ public class InsertSort {
 				else{
 					continue;
 				}
-			}
+			}   //j for循环结束
 		}
 		for (int i : arr) {
 			System.out.print(i + " ");   //输出排序后的结果
