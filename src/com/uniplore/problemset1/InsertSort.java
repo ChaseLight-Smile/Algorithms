@@ -45,10 +45,7 @@ public class InsertSort {
 			}  //j for循环结束
 		}  // i for循环结束
 		
-		//遍历输出排序后的结果
-		for (int i : arr) {
-			System.out.print(i + " ");   //输出排序后的结果
-		}
+		
 	}
 	
 	public static void main(String[] args) {
@@ -56,5 +53,10 @@ public class InsertSort {
 		//int[] arr = {5,2,4,6,1,3};   //测试组2
 		int[] arr = {-1,2,100,-100,30,-23,90};
 		insertSort(arr);
+		
+		//遍历输出排序后的结果
+		for (int i : arr) {
+			System.out.print(i + " ");   //输出排序后的结果
+		}
 	}
 }
