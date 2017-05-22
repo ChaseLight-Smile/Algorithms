@@ -27,7 +27,8 @@ public class SelectionSort {
 	}
 	
 	public static void main(String[] args) {
-		int[] arr = {31,41,59,26,41,58};
+		//int[] arr = {31,41,59,26,41,58};   //测试组1
+		int[] arr = {7,6,5,4,3,2,1};   //测试组2
 		selectionSort(arr);
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + " ");
