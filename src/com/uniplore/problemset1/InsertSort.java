@@ -1,6 +1,5 @@
 package com.uniplore.problemset1;
 
-
 /**
  * 功能: 插入排序思想很简单，假设要将一个数组按非递减顺序排序，那么首先假设从左到右以此都是排序好的，从第二个元素开始与其左侧位置进行比较，并将
  * 该元素放置在合适的位置上，该算法最坏情况下的时间复杂度为O(n^2)，n为输入规模
@@ -11,7 +10,7 @@ public class InsertSort {
 
 	public static void insertSort(int[] arr) {
 		int length = arr.length;
-		for (int i = 1;i < length ; i++) {
+		/*for (int i = 1;i < length ; i++) {
 			for (int j = 0 ; j < i ; j++) {  //从第二个元素开始，与之前的元素进行比较
 				if (arr[i] < arr[j]) {   //如果第i个元素比其左侧的元素小，则发生移动
 					int temp = 0;
@@ -30,6 +29,20 @@ public class InsertSort {
 					continue;
 				}
 			}   //j for循环结束
+		}    //i for循环结束 */
+		
+		/* 在插入排序中使用冒泡排序过程，也即当前元素之前部分已经排序好，那么当前元素在其左侧部分怎么找到
+		 * 合适的位置？本段代码使用冒泡排序
+		 * */
+		for (int i = 1; i < length ; i++){
+			for (int j = i -1 ; j >= 0 ; j--) {
+				if (arr[j+1] < arr[j]) {
+					int temp = 0;
+					temp = arr[j+1];
+					arr[j+1] = arr[j];
+					arr[j] = temp;
+				}
+			}
 		}
 		for (int i : arr) {
 			System.out.print(i + " ");   //输出排序后的结果
