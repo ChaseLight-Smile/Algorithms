@@ -42,8 +42,10 @@ public class InsertSort {
 					arr[j+1] = arr[j];
 					arr[j] = temp;
 				}
-			}
-		}
+			}  //j for循环结束
+		}  // i for循环结束
+		
+		//遍历输出排序后的结果
 		for (int i : arr) {
 			System.out.print(i + " ");   //输出排序后的结果
 		}
