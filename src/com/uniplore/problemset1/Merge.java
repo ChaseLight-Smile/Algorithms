@@ -8,9 +8,9 @@ package com.uniplore.problemset1;
  *
  */
 public class Merge {
-	public static void merge(int[] num1,int[] num2) {
-		int num1Length = num1.length; //表示num1数组的长度
-		int num2Length = num2.length; //表示num2数组的长度
+	public static void merge(int[] nums1,int[] nums2) {
+		int num1Length = nums1.length; //表示num1数组的长度
+		int num2Length = nums2.length; //表示num2数组的长度
 		int mergeLength = num1Length + num2Length;
 		int[] mergeArray = new int[mergeLength];  //创建大数组
 		int i = 0 ; //遍历数组num1的指针
@@ -21,7 +21,7 @@ public class Merge {
 				if (j >= num2Length) {  //说明num2数组已经遍历完
 					break;
 				}else {
-					mergeArray[k] = num2[j];
+					mergeArray[k] = nums2[j];
 					j++;
 					continue;
 				}
@@ -32,18 +32,18 @@ public class Merge {
 					//说明num1已经遍历完
 					break;
 				}else{
-					mergeArray[k] = num1[i];
+					mergeArray[k] = nums1[i];
 					i++;
 					continue;
 				}
 			}
 			
 			if (i < num1Length && j < num2Length){
-				if(num1[i] < num2[j]) {
-					mergeArray[k] = num1[i];
+				if(nums1[i] < nums2[j]) {
+					mergeArray[k] = nums1[i];
 					i++;
 				}else{
-					mergeArray[k] = num2[j];
+					mergeArray[k] = nums2[j];
 					j++;
 				}
 			}
