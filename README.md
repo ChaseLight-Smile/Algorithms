@@ -15,3 +15,5 @@
     * bubbleSort(int[] arr); 完成冒泡排序
     * int[] twoSum(int[] nums, int target);   LeetCode第一题，寻找一个数组中是否有两个数的和与指定的target数相同
     * ListNode addTwoNumbers(ListNode l1, ListNode l2);  LeetCode第二题，加两个数
+    * void merge(int[] num1,int[] num2); 合并两个已经排序好的数组
+    * double findMedianSortedArrays(int[] nums1, int[] nums2);  LeetCode第四题，寻找两个已经排序好的数组的中位数
