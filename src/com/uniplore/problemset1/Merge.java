@@ -8,7 +8,7 @@ package com.uniplore.problemset1;
  *
  */
 public class Merge {
-	public static void merge(int[] nums1,int[] nums2) {
+	public static int[] merge(int[] nums1,int[] nums2) {
 		int num1Length = nums1.length; //表示num1数组的长度
 		int num2Length = nums2.length; //表示num2数组的长度
 		int mergeLength = num1Length + num2Length;
@@ -53,6 +53,9 @@ public class Merge {
 		for(int arr : mergeArray){
 			System.out.print(arr + " ");
 		}
+		System.out.println();
+		System.out.println("合并数组过程");
+		return mergeArray;
 	}
 	
 	public static void main(String[] args) {
