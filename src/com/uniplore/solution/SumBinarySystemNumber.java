@@ -1,4 +1,4 @@
-package com.uniplore.problemset1;
+package com.uniplore.solution;
 
 /**
  * 功能: 考虑把两个n位二进制整数加起来，这两个整数分别存储在两个n元数组A和B当中。这两个整数的和应该按照二进制形式存储在一个(n+1)

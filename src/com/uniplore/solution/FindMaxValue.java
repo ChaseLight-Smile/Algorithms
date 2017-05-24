@@ -1,4 +1,4 @@
-package com.uniplore.problemset1;
+package com.uniplore.solution;
 
 /**
  * 功能: 寻找一个数组中的全局最大值，时间代价就是扫描一个数组的时间O(n)

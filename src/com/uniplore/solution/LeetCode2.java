@@ -1,4 +1,4 @@
-package com.uniplore.problemset1;
+package com.uniplore.solution;
 
 public class LeetCode2 {
 	

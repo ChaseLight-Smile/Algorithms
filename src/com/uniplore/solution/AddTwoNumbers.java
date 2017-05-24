@@ -1,4 +1,4 @@
-package com.uniplore.problemset1;
+package com.uniplore.solution;
 
 /**
  * LeetCode第一题，该算法的时间复杂度是O(n)，已经算目前能想到的相当不错的算法了，当然还有其它的O(nlogn)的算法

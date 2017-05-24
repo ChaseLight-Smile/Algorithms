@@ -1,4 +1,4 @@
-package com.uniplore.problemset1;
+package com.uniplore.solution;
 /**
  * LeetCode第四题: 寻找两个已经排序好的数组的中位数
  * @author 朱君鹏

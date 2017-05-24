@@ -1,4 +1,4 @@
-package com.uniplore.problemset1;
+package com.uniplore.solution;
 
 /**
  * 功能: Given an array of integers, return indices of the two numbers such that they add up to a specific target.

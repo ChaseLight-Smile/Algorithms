@@ -1,4 +1,4 @@
-package com.uniplore.problemset1;
+package com.uniplore.solution;
 
 /**
  * 功能: 插入排序思想很简单，假设要将一个数组按非递减顺序排序，那么首先假设从左到右以此都是排序好的，从第二个元素开始与其左侧位置进行比较，并将
