@@ -1,5 +1,10 @@
 package com.uniplore.solution;
 
+/**
+ * 功能: 将任意32位的整型数反转，如果溢出，则返回0，LeetCode第七题
+ * @author 朱君鹏
+ *
+ */
 public class IntegerReverse {
 
 	public int reverse(int x) {
