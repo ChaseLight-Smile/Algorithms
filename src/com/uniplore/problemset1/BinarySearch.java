@@ -2,22 +2,23 @@ package com.uniplore.problemset1;
 
 public class BinarySearch {
 
-	public static void binarySearch(int[] arr,int start,int end , int target){
+	public static boolean binarySearch(int[] arr,int start,int end , int target){
 		InsertSort.insertSort(arr);  // 将数组排序
 		if (start == end && target != arr[start]) {
 			System.out.println("找不到对应的元素");
-			return;
+			return false;
 		}
 		
 		int mid = (start + end) / 2;  //找到数组的中间位置
 		if (target == arr[mid]) {
 			System.out.println("找到对应的元素");
-			return;
+			return true;
 		}else if(target > arr[mid]) {
 			binarySearch(arr, mid+1, end, target);
 		}else if(target < arr[mid]){
 			binarySearch(arr, 0, mid-1, target);
 		}
+		return false;
 	}
 	
 	public static void main(String[] args) {

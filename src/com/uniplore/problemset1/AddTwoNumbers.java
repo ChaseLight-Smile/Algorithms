@@ -35,8 +35,37 @@ public class AddTwoNumbers {
 		int[] nums = {3,2,4};
 		/*int[] twoSum = twoSum(nums, 9);*/
 		int[] twoSum = twoSum(nums, 6);
+		int[] twoSum1 = twoSum1(nums, 6);
 		for (int i : twoSum) {
 			System.out.println(i + " ");
 		}
+		for (int i : twoSum1) {
+			System.out.println(i + " ");
+		}
+	}
+	
+	public static int[] twoSum1(int[] nums, int target) {
+		//该算法的时间复杂度是O(nlogn)
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		int length = nums.length;
+		for (int i = 0 ; i < length ; i++){
+			map.put(nums[i], i);   //存放值与位置的对应
+		}
+		
+		//将整个数组排序
+		int[] mergeSort = MergeSort.mergeSort(nums, 0, length-1);
+		for (int j = 0 ; j < length ; j++) {
+			int key = target - mergeSort[j];
+			System.out.println("key:" + " " + key);
+			boolean flag = BinarySearch.binarySearch(mergeSort, 0, length - 1 , key);
+			if(flag) {
+				int value = map.get(key);
+				System.out.println("value:" + " " + value);
+				return new int[]{j,value};
+			}else{
+				continue;
+			}
+		}
+		return new int[]{-1,-1};
 	}
 }
