@@ -18,3 +18,4 @@
     * void merge(int[] num1,int[] num2); 合并两个已经排序好的数组
     * double findMedianSortedArrays(int[] nums1, int[] nums2);  LeetCode第四题，寻找两个已经排序好的数组的中位数
     * int[] mergeSort(int[] arr , int start ,int end);  完成归并排序
+    * int[] twoSum(int[] nums, int target); LeetCode第一题
