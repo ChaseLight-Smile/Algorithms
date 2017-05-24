@@ -19,5 +19,5 @@
 * double findMedianSortedArrays(int[] nums1, int[] nums2);  LeetCode第四题，寻找两个已经排序好的数组的中位数
 * int[] mergeSort(int[] arr , int start ,int end);  完成归并排序
 * int[] twoSum(int[] nums, int target); LeetCode第一题
-* int reverse(int x);  反转整数
+* int reverse(int x);  反转整数，LeetCode第七题
 * ListNode mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题
