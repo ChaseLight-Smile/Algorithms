@@ -26,6 +26,7 @@
 * mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题
 * threeSum(int[] nums); LeetCode第15题，三个数的和
 * addrRecursion(int[] nums, int length); 求任意多个数字和的递归算法
+* Hanoi(int n ,String A, String B, String C ); 汉诺塔问题的递归解法，只能使用递归解法
 
 #### **说明**
 ***
