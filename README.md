@@ -5,6 +5,8 @@
 #### **List of Implementation Algorithms**
 ***
 
+* linearSearchRecursion(int[] arr,int search,int target); 线性查找的递归算法
+* linearSearch(int[] arr,int target); 线性查找的非递归算法
 * findMaxValue(int[] arr); 寻找一个数组中的全局最大值
 * findLocalPeakOneVersion(int[] arr, int start, int end);  寻找数组中的局部最大值点，适合于一维数组
 * findLocalPeakTwoVersion(int[] arr, int start, int end);  寻找数组中的局部最大值点，适合于二维数组
@@ -24,3 +26,8 @@
 * mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题
 * threeSum(int[] nums); LeetCode第15题，三个数的和
 * addrRecursion(int[] nums, int length); 求任意多个数字和的递归算法
+
+#### **说明**
+***
+
+　　很多算法都实现了递归版本和非递归版本，推荐使用费递归版本，因为递归很耗费空间，每一次递归都要开辟一个新的栈空间。
