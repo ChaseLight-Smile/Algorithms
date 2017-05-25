@@ -21,3 +21,4 @@
 * int[] twoSum(int[] nums, int target); LeetCode第一题
 * int reverse(int x);  反转整数，LeetCode第七题
 * ListNode mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题
+* List<List<Integer>> threeSum(int[] nums); LeetCode第15题，三个数的和
