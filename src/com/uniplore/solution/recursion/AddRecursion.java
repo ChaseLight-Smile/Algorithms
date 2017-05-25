@@ -8,7 +8,8 @@ public class AddRecursion {
 			return sum;
 		}
 		
-		sum = addrRecursion(nums, length-1) + nums[length-1];
+		sum = addrRecursion(nums, length-1);  //将返回的和值赋值给sum变量
+		sum += nums[length-1];
 		return sum;
 	}
 	
