@@ -11,6 +11,7 @@ package com.uniplore.solution;
  *
  */
 public class HanoiTower {
+	//A,B,C分别代表3个柱子，n代表盘子的个数，目标: 将金盘从A移动到C并保持小盘子在上大盘子在下
 	public static void Hanoi(int n ,String A, String B, String C ){
 		if(n == 1){
 			System.out.println("请移动"+A+"柱子上的一个金盘到"+C+"柱子上");
