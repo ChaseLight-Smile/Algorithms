@@ -43,11 +43,17 @@ public class InsertSort {
 					arr[j] = temp;
 				}
 			}  //j for循环结束
-		}  // i for循环结束
-		
-		
+		}  // i for循环结束  		
 	}
 	
+	//插入排序的递归版本
+	public static int[] insertSortRecurtion(int[] arr,int length){
+		if(length == 1){
+			return arr;
+		}
+		arr = insertSortRecurtion(arr, length-1);
+		return arr;
+	}
 	public static void main(String[] args) {
 		//int[] arr = {5,4,3,2,1};  //测试组1
 		//int[] arr = {5,2,4,6,1,3};   //测试组2
@@ -58,6 +64,14 @@ public class InsertSort {
 		//遍历输出排序后的结果
 		for (int i : arr) {
 			System.out.print(i + " ");   //输出排序后的结果
+		}
+		
+		System.out.println();
+		System.out.println("调用递归算法");
+		int length = arr.length;
+		int[] insertSortRecurtion = insertSortRecurtion(arr, length);
+		for (int i : insertSortRecurtion) {
+			System.out.print(i + " ");
 		}
 	}
 }
