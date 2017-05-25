@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class Add3Numbers {
 	
-	//算法的时间复杂度为O(n^2)
+	//时间复杂度不好，有待提高，代码只能得出争取的答案
     public static  List<List<Integer>> threeSum(int[] nums) {
         int length = nums.length;
         List<List<Integer>> result = new ArrayList<List<Integer>>();
