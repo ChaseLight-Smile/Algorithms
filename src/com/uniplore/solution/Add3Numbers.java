@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class Add3Numbers {
 	
-	//时间复杂度不好，有待提高，代码只能得出争取的答案
+	//时间复杂度不好，有待提高，代码只能得出正确的答案
     public static  List<List<Integer>> threeSum(int[] nums) {
         int length = nums.length;
         List<List<Integer>> result = new ArrayList<List<Integer>>();
