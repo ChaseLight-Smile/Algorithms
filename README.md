@@ -22,3 +22,4 @@
 * int reverse(int x);  反转整数，LeetCode第七题
 * ListNode mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题
 * List<List<Integer>> threeSum(int[] nums); LeetCode第15题，三个数的和
+* int addrRecursion(int[] nums, int length); 求任意多个数字和的递归算法
