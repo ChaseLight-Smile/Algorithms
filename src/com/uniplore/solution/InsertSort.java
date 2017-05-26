@@ -10,7 +10,7 @@ public class InsertSort {
 
 	public static void insertSort(int[] arr) {
 		int length = arr.length;
-		/*for (int i = 1;i < length ; i++) {
+		for (int i = 1;i < length ; i++) {
 			for (int j = 0 ; j < i ; j++) {  //从第二个元素开始，与之前的元素进行比较
 				if (arr[i] < arr[j]) {   //如果第i个元素比其左侧的元素小，则发生移动
 					int temp = 0;
@@ -29,12 +29,12 @@ public class InsertSort {
 					continue;
 				}
 			}   //j for循环结束
-		}    //i for循环结束 */
+		}    //i for循环结束 
 		
 		/* 在插入排序中使用冒泡排序过程，也即当前元素之前部分已经排序好，那么当前元素在其左侧部分怎么找到
 		 * 合适的位置？本段代码使用冒泡排序
 		 * */
-		for (int i = 1; i < length ; i++){
+		/*for (int i = 1; i < length ; i++){
 			for (int j = i -1 ; j >= 0 ; j--) {
 				if (arr[j+1] < arr[j]) {
 					int temp = 0;
@@ -44,7 +44,7 @@ public class InsertSort {
 				}
 			}  //j for循环结束
 		}  // i for循环结束  		
-	}
+*/	}
 	
 	//插入排序的递归版本
 	public static int[] insertSortRecurtion(int[] arr,int length){
@@ -55,11 +55,11 @@ public class InsertSort {
 		return arr;
 	}
 	public static void main(String[] args) {
-		//int[] arr = {5,4,3,2,1};  //测试组1
+		int[] arr = {5,4,3,2,1};  //测试组1
 		//int[] arr = {5,2,4,6,1,3};   //测试组2
 		//int[] arr = {-1,2,100,-100,30,-23,90};
 		//int[] arr = {31,41,59,26,41,58};
-		int[] arr ={1};
+		//int[] arr ={1};
 		insertSort(arr);
 		
 		//遍历输出排序后的结果
