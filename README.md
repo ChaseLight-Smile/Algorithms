@@ -20,7 +20,7 @@
 * addTwoNumbers(ListNode l1, ListNode l2);  LeetCode第二题，加两个数
 * merge(int[] num1,int[] num2); 合并两个已经排序好的数组
 * findMedianSortedArrays(int[] nums1, int[] nums2);  LeetCode第四题，寻找两个已经排序好的数组的中位数
-* mergeSort(int[] arr , int start ,int end);  完成归并排序
+* mergeSort(int[] arr , int start ,int end);  完成归并排序，在归并排序中使用了插入排序，利用了当数据规模很小时，插入排序优于归并排序，如何选择插入排序的最优元素个数是关键
 * twoSum(int[] nums, int target); LeetCode第一题
 * reverse(int x);  反转整数，LeetCode第七题
 * mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题
