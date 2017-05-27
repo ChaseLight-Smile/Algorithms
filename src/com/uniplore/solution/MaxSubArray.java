@@ -73,7 +73,18 @@ public class MaxSubArray {
 		}
 	}
 	
-	
+	public static int trivialFindMaximumSubarray(int[] arr){
+		int length = arr.length;
+		int maxSum = -1000000000;
+		for(int i = 0 ; i < length ; i++){
+			for(int j = i+1 ; j < length ; j++){
+				if((arr[j] - arr[i]) > maxSum ){
+					maxSum = arr[j] - arr[i];
+				}
+			}
+		}
+		return maxSum;
+	}
 	
 	@Test
 	public void testFindMaxCrossingSubarray() throws Exception {
@@ -87,12 +98,14 @@ public class MaxSubArray {
 	}
 	
 	public static void main(String[] args) {
-		//int[] arr = {13,-2,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};  //测试组1
+		int[] arr = {13,-2,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};  //测试组1
 		//int[] arr = {1,-4,3,-4};   //测试组2
 		//int[] arr = {1,2,3,4};  //测试组3
-		int[] arr = {-1,-2,-3,-4};  //测试组4
+		//int[] arr = {-1,-2,-3,-4};  //测试组4
 		int length = arr.length;
 		int[] findMaximumSubarray = findMaximumSubarray(arr, 0, length-1);
-		System.out.println(findMaximumSubarray[2]);
+		System.out.println("平凡方法得到的最大值为:" + trivialFindMaximumSubarray(arr));
+		
+		System.out.println("非平凡方法得到的最大值为:" + findMaximumSubarray[2]);
 	}
 }
