@@ -88,7 +88,9 @@ public class MaxSubArray {
 	
 	public static void main(String[] args) {
 		//int[] arr = {13,-2,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};  //测试组1
-		int[] arr = {1,-4,3,-4};
+		//int[] arr = {1,-4,3,-4};   //测试组2
+		//int[] arr = {1,2,3,4};  //测试组3
+		int[] arr = {-1,-2,-3,-4};  //测试组4
 		int length = arr.length;
 		int[] findMaximumSubarray = findMaximumSubarray(arr, 0, length-1);
 		System.out.println(findMaximumSubarray[2]);
