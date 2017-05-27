@@ -27,6 +27,7 @@
 * threeSum(int[] nums); LeetCode第15题，三个数的和
 * addrRecursion(int[] nums, int length); 求任意多个数字和的递归算法
 * hanoi(int n ,String A, String B, String C ); 汉诺塔问题的递归解法，只能使用递归解法
+* trivialFindMaximumSubarray(int[] arr);   平凡的方法实现最大子数组问题，其时间复杂度为O(n^2)
 * findMaximumSubarray(int[] arr,int start, int end);  寻找最大子数组问题，采用递归解法，时间复杂度为O(nlogn)，比平凡方法的时间复杂度低
 
 #### **说明**
