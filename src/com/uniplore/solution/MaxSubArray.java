@@ -80,11 +80,12 @@ public class MaxSubArray {
 		int[] max = new int[length];
 		for(int i = 0 ; i < length; i++){
 			maxSum = arr[i];
+			int sum = 0 ;
 			for(int j = i+1 ; j < length ; j++){
-				int sum = 0 ;
-				for(int k = i ; k <= j ; k++){
+				/*for(int k = i ; k <= j ; k++){
 					sum += arr[k];
-				}
+				}*/
+				sum += arr[j];
 				if (sum > maxSum) {
 					maxSum = sum;
 			    }else{
