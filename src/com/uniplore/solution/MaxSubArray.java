@@ -41,7 +41,7 @@ public class MaxSubArray {
 	}
 	
 	
-	//递归的解寻找最大子数组问题，只要给定一个出口即可
+	//递归的解寻找最大子数组问题，只要给定一个出口即可，时间复杂度为O(nlogn)
 	public static int[] findMaximumSubarray(int[] arr,int start, int end) {
 		int[] result = {};  //初始化
  		if(start == end) {   //base case ，此时只有一个元素，对于一个元素一定是最大的，这是一个平凡的结果
@@ -73,7 +73,7 @@ public class MaxSubArray {
 		}
 	}
 	
-	//平凡方法寻找最大子数组
+	//平凡方法寻找最大子数组，时间复杂度为O(n^2)
 	public static int trivialFindMaximumSubarray(int[] arr){
 		int length = arr.length;
 		int maxSum = -1000000000;
@@ -84,8 +84,8 @@ public class MaxSubArray {
 			for(int j = i+1 ; j < length ; j++){
 				/*for(int k = i ; k <= j ; k++){
 					sum += arr[k];
-				}*/
-				sum += arr[j];
+				}*/   //如果采用这个代码，时间复杂度为O(n^3)
+				sum += arr[j];  //采用该句代码替换上面注释的部分
 				if (sum > maxSum) {
 					maxSum = sum;
 			    }else{
@@ -118,8 +118,7 @@ public class MaxSubArray {
 		//int[] arr = {13,-3,-25,20};   //测试组5
 		int length = arr.length;
 		int[] findMaximumSubarray = findMaximumSubarray(arr, 0, length-1);
-		System.out.println("平凡方法得到的最大值为:" + trivialFindMaximumSubarray(arr));
-		
+		System.out.println("平凡方法得到的最大值为:" + trivialFindMaximumSubarray(arr));		
 		System.out.println("非平凡方法得到的最大值为:" + findMaximumSubarray[2]);
 	}
 }
