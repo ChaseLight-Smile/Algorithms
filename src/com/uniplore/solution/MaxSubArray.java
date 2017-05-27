@@ -73,13 +73,18 @@ public class MaxSubArray {
 		}
 	}
 	
+	//平凡方法寻找最大子数组
 	public static int trivialFindMaximumSubarray(int[] arr){
 		int length = arr.length;
 		int maxSum = -1000000000;
-		for(int i = 0 ; i < length ; i++){
+		for(int i = 0 ; i < length-1; i++){
 			for(int j = i+1 ; j < length ; j++){
-				if((arr[j] - arr[i]) > maxSum ){
-					maxSum = arr[j] - arr[i];
+				int sum = 0 ;
+				for(int k = i ; k <= j ; k++){
+					sum += arr[k];
+					if (sum > maxSum) {
+						maxSum = sum;
+					}
 				}
 			}
 		}
