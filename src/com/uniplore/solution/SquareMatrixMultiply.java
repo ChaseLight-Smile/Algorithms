@@ -1,6 +1,4 @@
 package com.uniplore.solution;
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
@@ -48,7 +46,7 @@ public class SquareMatrixMultiply {
 		if(nums1RowStart == nums1RowEnd && nums1ColumnStart == nums1ColumnEnd && nums2RowStart == nums2RowEnd && nums2ColumnStart == nums2ColumnEnd){
 			//满足该条件，说明此时矩阵只包含一个元素
 			result = new int[1][1];
-			result[0][0] = nums1[nums1RowStart][nums1ColumnStart] * nums2[nums2RowStart][nums2ColumnEnd];
+			result[0][0] = nums1[nums1RowEnd][nums1ColumnEnd] * nums2[nums2RowEnd][nums2ColumnEnd];
 			return result;
 		}else {
 			int nums1RowMid = (nums1RowStart + nums1RowEnd) / 2;   //标记nums1数组的行中点位置
@@ -150,17 +148,27 @@ public class SquareMatrixMultiply {
 	//从测试我们知道，函数trivialSquareMatrixMultiplyRecursion在每次分块之后，只适拆分之后左右矩阵的维度是相同的，即分块后得到4个2×2矩阵
 	@Test
 	public void testTrivialSquareMatrixMultiplyRecursion() throws Exception {
-		//int[][] nums1 = {{1,2,3,4,5,6,7,8},{3,4,7,6,5,6,7,8},{6,7,8,9,5,6,7,7},{1,1,1,1,5,6,7,7},{1,2,1,1,1,6,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7}};
-		//int[][] nums2 = {{1,2,3,4,5,6,7,8},{3,4,7,6,5,6,7,8},{6,7,8,9,5,6,7,7},{1,1,1,1,5,6,7,7},{1,2,1,1,1,6,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7}};
+		//int[][] nums1 = {{1,2,3,4,5,6,7,8},{3,4,7,6,5,6,7,8},{6,7,8,9,5,6,7,7},{1,1,1,1,5,6,7,7},{1,2,1,1,1,6,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7}};  //结果正确
+		//int[][] nums2 = {{1,2,3,4,5,6,7,8},{3,4,7,6,5,6,7,8},{6,7,8,9,5,6,7,7},{1,1,1,1,5,6,7,7},{1,2,1,1,1,6,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7},{1,1,1,1,1,1,7,7}};  //结果正确
 		
-		//int[][] nums1 = {{1}};
-		//int[][] nums2 = {{2}};
+		//int[][] nums1 = {{1}};  //结果正确
+		//int[][] nums2 = {{2}};  //结果正确
 	
-		int[][] nums1 = {{1,2,3,4},{3,4,5,6},{6,7,8,9},{1,1,1,1}};
-		int[][] nums2 = {{1,2,3,4},{3,4,5,6},{6,7,8,9},{1,1,1,1}};
-		int rowLength = nums1.length;
-		int columnLength = nums1[0].length;
-		int[][] trivialSquareMatrixMultiplyRecursion = trivialSquareMatrixMultiplyRecursion(nums1, nums2, 0, rowLength-1, 0, columnLength-1, 0, rowLength-1, 0, columnLength-1);
+		int[][] nums1 = {{1,2,3,4},{3,4,5,6},{6,7,8,9},{1,1,1,1}};   //结果正确
+		int[][] nums2 = {{1,2,3,4},{3,4,5,6},{6,7,8,9},{1,1,1,1}};   //结果正确
+		
+		//int[][] nums1 = {{1,2,3},{3,4,5},{6,7,8}};   //结果不正确
+		//int[][] nums2 = {{1,2,3},{3,4,5},{6,7,8}};   //结果不正确
+		
+		//int[][] nums1 = {{3},{5}};    //结果不正确
+		//int[][] nums2 = {{6,7}};      //结果不正确
+		int nums1RowLength = nums1.length;
+		int nums1ColumnLength = nums1[0].length;
+		
+		int nums2RowLength = nums2.length;
+		int nums2ColumnLength = nums2[0].length;
+		
+		int[][] trivialSquareMatrixMultiplyRecursion = trivialSquareMatrixMultiplyRecursion(nums1, nums2, 0, nums1RowLength-1, 0, nums1ColumnLength-1, 0, nums2RowLength-1, 0, nums2ColumnLength-1);
 	    for (int[] is : trivialSquareMatrixMultiplyRecursion) {
 			for (int i : is) {
 				System.out.print(i + " ");
