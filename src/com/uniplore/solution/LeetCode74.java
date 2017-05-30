@@ -1,7 +1,7 @@
 package com.uniplore.solution;
 
 public class LeetCode74 {
-	public boolean searchMatrix(int[][] matrix, int target) {
+	public boolean searchMatrix1(int[][] matrix, int target) {
         int rowLength = matrix.length ;  //计算矩阵的行
         int columnLength = 0;  
         if(rowLength == 0) {
@@ -57,6 +57,30 @@ public class LeetCode74 {
         return false;
     }
     
+	public boolean searchMatrix2(int[][] matrix, int target) {
+        int rowLength = matrix.length ;  //计算矩阵的行
+        int columnLength = 0;  
+        if(rowLength == 0) {
+            return false;
+        }else{
+            columnLength = matrix[0].length; //计算矩阵的列
+        }
+        
+        if(rowLength == 1 && columnLength == 0){
+            return false;
+        }
+        
+        //直接进行二分检索
+        for(int i = 0 ; i < rowLength ; i++){
+            boolean result = binarySearch(matrix[i],0, columnLength-1,target);
+            if(result == true){
+                return true;
+            }else{
+                continue;
+            }
+        }
+        return false;
+    }
     public  boolean binarySearch(int[] arr,int start,int end , int target){
         boolean result = false;
 		if (start >= end && target != arr[start]) {
