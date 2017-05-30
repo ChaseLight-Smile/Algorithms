@@ -59,7 +59,7 @@ public class LeetCode74 {
     
     public  boolean binarySearch(int[] arr,int start,int end , int target){
         boolean result = false;
-		if (start == end && target != arr[start]) {
+		if (start >= end && target != arr[start]) {
 		    result = false;
 			return result;
 		}
@@ -70,7 +70,7 @@ public class LeetCode74 {
 		}else if(target > arr[mid]) {
 			result = binarySearch(arr, mid+1, end, target);
 		}else if(target < arr[mid]){
-			result = binarySearch(arr, 0, mid-1, target);
+			result = binarySearch(arr, start, mid-1, target);
 		}
 		return result;
 	}
