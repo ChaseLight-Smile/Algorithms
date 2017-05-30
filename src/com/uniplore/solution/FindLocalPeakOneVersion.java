@@ -1,5 +1,8 @@
 package com.uniplore.solution;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 功能: 寻找一个数组中一个局部最大值，请注意，该数组中不一定只有一个局部最大值，但是我只需要寻找一个局部最大值即可
  * 局部最大值的定义：a[i]是局部最大值 if, and if  a[i] >= a[i-1] and a[i] > a[i+1]; 
@@ -9,6 +12,7 @@ package com.uniplore.solution;
  */
 public class FindLocalPeakOneVersion {
   
+	//该算法存在问题
 	public static int findLocalPeakOneVersion(int[] arr,int start , int end){  
 		
 		//获取到数组的长度
@@ -33,6 +37,48 @@ public class FindLocalPeakOneVersion {
 			return findLocalPeakOneVersion(arr, mid+1, length-1);
 		}
 	}
+	
+	//非递归版本寻找局部最小值点算法
+	public int findPeakElement(int[] nums) {
+        int length = nums.length;
+        int result = -1;
+        
+        //当只有一个元素时，该值就是局部最大值
+        if(length == 1){
+            result = 0;
+            return result;
+        }
+        
+        
+        if(nums[0] > nums[1]){
+            result = 0;
+            return result;   //说明0位置是局部最大值点
+        }
+        
+        if(nums[length-1] > nums[length-2]){
+            result = length - 1 ;
+            return result;  //说明最后一个位置为最大值点
+        }
+        
+        //将所有元素放到map中，下标为key，值为value
+        Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+        
+        for(int i = 0 ; i < length; i++) {
+            map.put(i,nums[i]);
+        }
+        
+        for(int i  = 1 ; i < length-1 ; i++){
+            int value1 = map.get(i-1);
+            int value2 = map.get(i+1);
+            if(nums[i] > value1 && nums[i] > value2){
+                result = i ;
+                return result;
+            }else{
+                continue;
+            }
+        }
+        return result;
+    }
 	
 	public static void main(String[] args) {
 		//int[] arr = {1,2,5,4,3};   //测试组1
