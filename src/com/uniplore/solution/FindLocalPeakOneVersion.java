@@ -3,6 +3,8 @@ package com.uniplore.solution;
 import java.util.HashMap;
 import java.util.Map;
 
+import sun.security.util.Length;
+
 /**
  * 功能: 寻找一个数组中一个局部最大值，请注意，该数组中不一定只有一个局部最大值，但是我只需要寻找一个局部最大值即可
  * 局部最大值的定义：a[i]是局部最大值 if, and if  a[i] >= a[i-1] and a[i] > a[i+1]; 
@@ -12,34 +14,44 @@ import java.util.Map;
  */
 public class FindLocalPeakOneVersion {
   
-	//递归算法存在问题
+	//递归算法实现寻找局部最大值点问题，这个问题其实很不适合写递归算法，下面的非递归算法效果极佳，这样写递归算法很复杂，边界处理和测试都难
+	//但是时间复杂度为O(logn)，非递归算法的时间复杂度为O(n)，递归算法明显时间复杂度更低
 	public static int findLocalPeakOneVersion(int[] arr,int start , int end){  
-		
-		//获取到数组的长度
+		//采用二分法的思想
 		int length = arr.length;
+		int mid = (start+end)/2;
+		int result = -1;
 		
-		//找到数组中中间位置的值
-		int mid = (start + end) / 2;
-		
-		//递归结束的条件
-		if (mid != length-1 && arr[mid] > arr[mid-1] && arr[mid] > arr[mid+1]) {
-			return arr[mid];
+		if(mid == 0 && length == 1){
+			result = 0;
+			return result;
+		}else if(mid == 0 && length > 1 ){
+			if(arr[mid] > arr[mid+1]){
+				result = mid;
+				return mid;
+			}
 		}
 		
-		//递归结束的条件
-		if (mid == length-1 && arr[mid] > arr[mid-1]) {
-			return arr[mid];
-		}
+		if(mid == length -1 && arr[mid] > arr[mid-1]){
+			result = mid;
+			return result;
+	    }
 		
-		if(arr[mid] < arr[mid-1]) {
-			return findLocalPeakOneVersion(arr,0,mid-2);
-		} else {
-			return findLocalPeakOneVersion(arr, mid+1, length-1);
+		if(mid != 0 && arr[mid] > arr[mid+1] && arr[mid] > arr[mid-1]){
+			result = mid;
+			return result;
+		}else if(mid != 0 && arr[mid] < arr[mid-1]){
+			result =  findLocalPeakOneVersion(arr, start, mid-1);
+			return result;
+		}else if(arr[mid] < arr[mid+1]){
+			result = findLocalPeakOneVersion(arr, mid+1, end);
+			return result;
 		}
+		return result;
 	}
 	
 	//非递归版本寻找局部最小值点算法
-	public int findPeakElement(int[] nums) {
+	public static int findPeakElement(int[] nums) {
         int length = nums.length;
         int result = -1;
         
@@ -81,10 +93,16 @@ public class FindLocalPeakOneVersion {
     }
 	
 	public static void main(String[] args) {
-		//int[] arr = {1,2,5,4,3};   //测试组1
+		int[] arr = {1,2,5,4,3};   //测试组1
 		//int[] arr = {1,2,3,4,5};   //测试组2
-		int[] arr = {-1,2,3,10,100,6,4,3,2,1000};  //测试组3
+		//int[] arr = {-1,2,3,10,100,6,4,3,2,1000};  //测试组3
+		//int[] arr = {1,2,3,1};
+		//int[] arr = {1};
+		//int[] arr = {1,2};
+		//int[] arr = {2,1};
+		//int[] arr = {3,2,1};
 		int length = arr.length;
+		System.out.println(findPeakElement(arr));
 		System.out.println(findLocalPeakOneVersion(arr,0,length-1));
 	}
 }
