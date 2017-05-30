@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class FindLocalPeakOneVersion {
   
-	//该算法存在问题
+	//递归算法存在问题
 	public static int findLocalPeakOneVersion(int[] arr,int start , int end){  
 		
 		//获取到数组的长度
