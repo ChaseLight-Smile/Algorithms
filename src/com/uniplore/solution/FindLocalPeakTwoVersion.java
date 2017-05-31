@@ -11,15 +11,27 @@ package com.uniplore.solution;
  */
 public class FindLocalPeakTwoVersion {
   
+	//二维版本的寻找局部最大值代码也存在明显的错误，需要改正
 	public static int findLocalPeakTwoVersion(int[][]arr ,int start,int end) { //这里的start指示的是列的起始位置和终止位置
 		//算出数组的行长度和列长度
 		int rowLength = arr.length;   //算出总共有多少行
-		int columnLength = arr[0].length;   //算出列总共有多少个元素
+		int columnLength = Integer.MIN_VALUE;
+		if(rowLength == 0) {
+			return Integer.MIN_VALUE;   //返回最小值，即根本不存在这样的点
+		}else{
+			columnLength = arr[0].length;   //算出列总共有多少个元素
+			if (columnLength == 1) {
+				return arr[0][0];
+			}
+		}
 		
+		//如果不满足上面的基本情况，则开始采用二分查询查找算法
 		int mid = (start + end) /2 ;  //算出整个二维数组的中间列
 		
-		int max = arr[0][mid] ;  //假设max中间列的局部最大值
+		int max = arr[0][mid] ;  //假设max列列的局部最大值
 		int iMax = 0;
+		
+		//在mid列找寻那一行会存在全局最大值，对于m×n矩阵，时间复杂度为O(m)
 		for (int i = 0; i < rowLength ; i++) {
 			if( max < arr[i][mid]){
 				max = arr[i][mid];
@@ -30,23 +42,31 @@ public class FindLocalPeakTwoVersion {
 		}// for循环结束
 		
 		//递归结束条件
-		if (mid != rowLength-1 &&  arr[iMax][mid] > arr[iMax][mid-1] && arr[iMax][mid] > arr[iMax][mid+1] ) {
-			return max;
+		if (iMax == 0 && mid == 0 && arr[iMax][mid] > arr[iMax][mid+1] ) {
+			return max;   //返回最大值
 		}
-		//递归结束条件
-		if (mid == rowLength-1 &&  arr[iMax][mid] > arr[iMax][mid-1]) {
+		
+		//取到除第一列和最后一列的其它列
+		if (iMax == 0 && mid != 0 && arr[iMax][mid] > arr[iMax][mid-1] &&  arr[iMax][mid] > arr[iMax][mid+1] ) {
+			return max;   //返回最大值
+		}
+		
+		//取到最后一列
+		if (mid == columnLength-1  &&  arr[iMax][mid] > arr[iMax][mid-1]) {
 			return max;
 		}
 		
-		if (arr[iMax][mid] < arr[iMax][mid-1]) {
-			return findLocalPeakTwoVersion(arr, 0, mid-2);
+		if (mid != 0 && arr[iMax][mid] < arr[iMax][mid-1]) {
+			return findLocalPeakTwoVersion(arr, start, mid-1);
 		}else {
-			return findLocalPeakTwoVersion(arr, mid+1, columnLength-1);
+			return findLocalPeakTwoVersion(arr, mid+1, end);
 		}
 	}
 	public static void main(String[] args) {
 		//int[][] arr = {{10,8,10,10},{14,13,12,11},{15,9,11,21},{16,17,19,20}};   //测试组1 
-		int[][] arr = {{10,8,10,10},{14,13,12,11},{15,9,11,10},{16,17,19,20}};  //测试组2
+		//int[][] arr = {{10,8,10,10},{14,13,12,11},{15,9,11,10},{16,17,19,20}};  //测试组2
+		int[][] arr = {{1}};
+		//int[][] arr = {{1,2},{2,3}};
 		int columnLength = arr[0].length;   //算出列总共有多少个元素
 		System.out.println(findLocalPeakTwoVersion(arr, 0, columnLength-1));
 	}
