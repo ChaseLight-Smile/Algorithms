@@ -65,9 +65,20 @@ public class FindLocalPeakTwoVersion {
 	public static void main(String[] args) {
 		//int[][] arr = {{10,8,10,10},{14,13,12,11},{15,9,11,21},{16,17,19,20}};   //测试组1 
 		//int[][] arr = {{10,8,10,10},{14,13,12,11},{15,9,11,10},{16,17,19,20}};  //测试组2
-		int[][] arr = {{1}};
+		//int[][] arr = {{1}};
+		//int[][] arr = {};
+		int[][] arr = {{}};
 		//int[][] arr = {{1,2},{2,3}};
-		int columnLength = arr[0].length;   //算出列总共有多少个元素
-		System.out.println(findLocalPeakTwoVersion(arr, 0, columnLength-1));
+		if (arr.length != 0) {
+			int columnLength = arr[0].length;   //算出列总共有多少个元素
+			if (columnLength == 0) {
+				System.out.println(findLocalPeakTwoVersion(arr, 0, 0));
+			}
+			System.out.println(findLocalPeakTwoVersion(arr, 0, columnLength-1));
+		}else {
+			System.out.println(findLocalPeakTwoVersion(arr, 0, 0));
+		}
+		
+		
 	}
 }
