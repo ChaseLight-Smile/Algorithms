@@ -9,7 +9,7 @@ package com.uniplore.solution;
  */
 public class LeetCode204 {
 
-	//方法一： 该方法没有通过LeetCode测试，20个测试，最后的两个超时没有通过
+	//该方法没有通过LeetCode测试，20个测试，最后的两个超时没有通过
 	public int countPrimes(int n) {
         int sqrtNum = 0;
         int count = 0 ;
