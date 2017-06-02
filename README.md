@@ -39,6 +39,7 @@
 * searchMatrix(int[][] matrix, int target);  检索矩阵，时间复杂度为O(nlogn)，LeetCode第74题，平凡方法为O(n^2)
 * removeElement(int[] nums, int val);  LeetCode第27题，该算法的时间复杂度为O(n)
 * sortList(ListNode head);  对链表使用归并排序，时间复杂度为O(nlogn)
+* countPrimes(int n);  统计小于指定数n的所有素数的个数
 #### **说明**
 ***
 
