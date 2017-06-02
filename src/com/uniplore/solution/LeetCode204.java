@@ -11,26 +11,36 @@ public class LeetCode204 {
 
 	//该方法没有通过LeetCode测试，20个测试，最后的两个超时没有通过
 	public int countPrimes(int n) {
-        int sqrtNum = 0;
-        int count = 0 ;
-        //判断一个数是否是素数，只需要判断2-sqrt(n)之间的数即可
-        for(int i = 2 ; i < n ; i++ ){
-            sqrtNum = (int)Math.sqrt(i);
-            int j = 2 ;
-            for(; j <= sqrtNum ; j++) {
-                if(i % j == 0) {   //说明当前i不是素数
-                    break;
-                }else{
-                    continue;
-                }
-            }
-            if(j == sqrtNum + 1) {
-                //说明第二次循环没有找到适当的除尽的数字
-                count++;
-            }else{
-                continue;
-            }
-        }
-        return count;
-    }
+		int count = 0 ;
+		if(isPrime(n)){
+			count++;
+		}
+		return count;
+	}
+	
+	public boolean isPrime(int n){
+		 if (n <= 1) return false;
+		   for (int i = 2; i * i <= n; i++) {
+		      if (n % i == 0) return false;
+		   }
+		   return true;
+	}
+	
+	public int countPrimes1(int n) {
+		int count = 0 ;
+		for(int i = 2; i < n; i++){
+		    if(isPrime1(i)){
+			    count++;
+		    }
+		}
+		
+		return count;
+	}
+	
+	public boolean isPrime1(int n){
+	   for (int j = 2; j * j <= n; j++) {
+	      if (n % j == 0) return false;
+	   }
+	   return true;
+	}
 }
