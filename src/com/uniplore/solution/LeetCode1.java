@@ -1,5 +1,8 @@
 package com.uniplore.solution;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 功能: Given an array of integers, return indices of the two numbers such that they add up to a specific target.
  * You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -11,7 +14,7 @@ public class LeetCode1 {
 	
 	public static int[] twoSum(int[] nums, int target) {
 		int length = nums.length;
-		//申请一个二维数组，二维数组的维度大小已经确定
+		//申请一个二维数组，二维数组的维度大小已经确定，平凡方法，性能差，需要O(n^2)
 		int[][] arr = new int[length][length];
 		int[] result = new int[2];
 		int i = 0;  
@@ -35,6 +38,32 @@ public class LeetCode1 {
 		}
 		return result;
 	}
+	
+	//线性时间复杂度O(n)
+	public int[] twoSum1(int[] nums, int target) {
+        int[] result = new int[2];
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		int length = nums.length;
+		for (int i = 0 ; i < length ; i++){
+			map.put(nums[i], i);   //存放值与位置的对应
+		}
+		
+		for(int j = 0 ; j < length ; j++) {
+			int key = target - nums[j];
+			if (map.containsKey(key)) {
+				int value = map.get(key);
+				if(value != j){
+				    result[0] = j;
+				    result[1] = value;
+				    return result;
+				}else {
+				    continue;
+				}
+				
+			}
+		}
+		return result;   //否则说明不存在
+    }
 	
 	public static void main(String[] args) {
 		int[] arr = {2,7,11,15,21,46,43,1};
