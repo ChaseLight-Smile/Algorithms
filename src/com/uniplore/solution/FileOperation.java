@@ -1,10 +1,12 @@
 package com.uniplore.solution;
 import java.io.*;
+import java.util.Date;
+
 import org.junit.Test;
 
 /**
  * 功能: 递归遍历整个计算机，将其中的文件输出，如果是文件夹，递归的遍历其中的内容，当然可以用程序删除所有的内容，在这里我没有尝试，如果你喜欢
- * 你可以做
+ * 你可以做，可以基于此技术设计一个系统检索软件，像Everything那样，但是还要有正则查询功能
  */
 
 public class FileOperation {
