@@ -1,6 +1,5 @@
 package com.uniplore.solution;
 import java.io.*;
-import java.util.Date;
 
 import org.junit.Test;
 
