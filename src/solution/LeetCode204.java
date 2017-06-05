@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 /**
  * 功能: LeetCode第204题目，寻找素数(质数)，从素数的定义中我们知道，首先1既不是质数也不是合数，所以我们的测试应该从2开始，对于任何一个数n

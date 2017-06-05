@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 /**
  * 功能: 实现冒泡排序

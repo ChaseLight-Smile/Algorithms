@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 /**
  * 问题描述: 传说婆罗门庙里有一个塔台，台上有3个标号为A,B,C的用钻石做成的柱子，在A柱子上放着64个金盘，每一个都比下面的略小一点

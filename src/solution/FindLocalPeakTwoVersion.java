@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 /**
  * 功能: 寻找二维数组中的局部最大值点，最简单的方法是扫描整个二维数组并比较其周边的元素，这种算法的时间复杂度是O(n^2)

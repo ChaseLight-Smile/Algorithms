@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 public class LeetCode2 {
 	

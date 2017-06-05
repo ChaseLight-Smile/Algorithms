@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 /**
  * 功能: 实现选择排序，首先假设第一个元素的最小的，然后分别和后面的元素比较，如果选出后续最小的元素和arr[0]交换，

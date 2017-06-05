@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 /**
  * 功能: 将任意32位的整型数反转，如果溢出，则返回0，LeetCode第七题，该算法时间复杂度为O(n)

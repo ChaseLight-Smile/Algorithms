@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 public class AddRecursion {
 	public static int addRecursion(int[] nums, int length){

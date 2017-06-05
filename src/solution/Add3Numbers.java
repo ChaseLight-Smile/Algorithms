@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,7 +31,7 @@ public class Add3Numbers {
                     list.add(nums[j]);
                     list.add(nums[k]);
                     list.add(key);
-                    HashSet s1 = new HashSet(list);  //将list转换成HashSet，因为set本身是无顺序的
+                    Set s1 = new HashSet(list);  //将list转换成HashSet，因为set本身是无顺序的
                     if(hashMap.containsKey(s1)) {
                         continue;
                     }else{

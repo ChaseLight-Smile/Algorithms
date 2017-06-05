@@ -1,4 +1,4 @@
-package com.uniplore.solution;
+package solution;
 
 import java.util.HashMap;
 import java.util.Map;
