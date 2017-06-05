@@ -14,6 +14,10 @@ import java.io.InputStreamReader;
 public class ZOJ1001 {
 	
 	public static void main(String[] args) {
+		ZOJ1001Solution();
+	}
+	
+	public static void ZOJ1001Solution(){
 		//首先获取键盘的输入
 		InputStream in = System.in;
 		
