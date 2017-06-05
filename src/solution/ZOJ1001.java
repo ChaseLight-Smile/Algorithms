@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/** 题目出自ZOJ: http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=1001
+/** zoj1001 poj1000
  * input： The input will consist of a series of pairs of integers a and b,separated by a space, one pair of integers per line.
  * output: For each pair of input integers a and b you should output the sum of a and b in one line,and with one line of output for each line in input.
  * @author 朱君鹏
