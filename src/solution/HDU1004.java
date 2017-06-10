@@ -38,7 +38,7 @@ public class HDU1004 {
 					for(int i = 0 ; i < list.size(); i++){
 						System.out.println(list.get(i));
 					}
-					list = new ArrayList<String>();   //清空list
+					list.clear();   //清空list
 				}else if(testCaseCount > 0 && testCaseCount <= 1000){
 					//从输入中读取测试用例	
 					int count = 0 ;
