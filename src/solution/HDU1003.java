@@ -37,7 +37,7 @@ public class HDU1003 { //注意，在HDU中类名必须为Main，在提交时应
 					//从map中将输入取出，并将其放入到ArrayList中
 					//现在已经将所有的需要计算的数据存放在Map中，接下来需要遍历Map，并且将其中的数据取出来
 					Set<Map.Entry<Integer,String>> set = map.entrySet();
-					Iterator it = set.iterator();
+					Iterator<Map.Entry<Integer,String>> it = set.iterator();
 					while(it.hasNext()){
 						Map.Entry<Integer,String> entry = (Map.Entry<Integer, String>) it.next();
 						String output = entry.getValue(); //得到map中存放的值，这些值被存储为String类型，并且中间用空格分开
@@ -126,7 +126,7 @@ public class HDU1003 { //注意，在HDU中类名必须为Main，在提交时应
 				result = new int[3];
 				result = right;
 				return right;
-			}else{   ////如果最大子数组在穿过中点部分找到
+			}else{   //否则说明最大子数组一定在中间找到
 				result = new int[3];
 				result = crossing;
 				return result;
