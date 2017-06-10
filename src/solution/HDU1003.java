@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
 /** hdu1003
- * 功能: 最大子数组问题的应用，包含两个知识点: IO流、寻找最大子数组
+ * 功能: HDU1003题目解答
  * @author 朱君鹏
  *
  */
