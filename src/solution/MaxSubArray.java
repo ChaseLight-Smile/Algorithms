@@ -57,15 +57,15 @@ public class MaxSubArray {
 			
 			
 			//对返回的三个结果进行比较
-			if (left[2] >= right[2] && left[2] >= crossing[2]) {  //如果最大子数组在左侧部分找到
+			if (left[0] >= right[0] && left[0] >= crossing[0]) {  //如果最大子数组在左侧部分找到
 				result = new int[3];
 				result = left;
 				return result;
-			}else if(right[2] >= left[2] && right[2] >= crossing[2]){ //如果最大子数组在右侧部分找到
+			}else if(right[0] > left[0] && right[0] > crossing[0]){ //如果最大子数组在右侧部分找到
 				result = new int[3];
 				result = right;
 				return right;
-			}else{   ////如果最大子数组在穿过中点部分找到
+			}else{   ////否则说明最大子数组在中间找到
 				result = new int[3];
 				result = crossing;
 				return result;
