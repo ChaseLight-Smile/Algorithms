@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.ArrayList;
 /**
  * hdu1005
- * 
+ * 缺点： 递归算法很耗时，需要修改
  * @author 朱君鹏
  */
 public class HDU1005 {
