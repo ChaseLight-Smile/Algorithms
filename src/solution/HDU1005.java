@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.ArrayList;
 /**
  * hdu1005
- * 缺点： 递归算法很耗时，需要修改
+ * 缺点： 普通递归算法很耗内存，需要修改，将其修改为尾递归
  * @author 朱君鹏
  */
 public class HDU1005 {
@@ -44,7 +44,7 @@ public class HDU1005 {
 					int a = Integer.parseInt(ops[0]);
 					int b = Integer.parseInt(ops[1]);
 					int n = Integer.parseInt(ops[2]);
-					int result = sum(a,b,n);
+					int result = sumRecursive(a,b,n);
 					list.add(result);
 				}
 			}
@@ -53,22 +53,26 @@ public class HDU1005 {
 		}
 	}
 	
-	/**  尾递归，能够采用法则去掉递归降低内存使用
+	/**  普通递归，不是尾递归，尾递归的判断标准是: 函数运行的最后一步是否调用自身，而不是是否在函数的最后一行调用自身
 	 * 递归算法很耗费内存，耗费内存同时相当于耗费时间，这与计算机的内存分配机制有关
 	 * @param a  表达式计算时的系数a
 	 * @param b  表达式计算时的系数b
 	 * @param n  表达式计算第n项的结果
 	 * @return   返回最后的计算结果
 	 */
-	public static int sum(int a , int b , int n){
-		int result = 0;
+	public static int sumRecursive(int a , int b , int n){
 		if(n == 1 || n == 2){
-			result = 1;
-			return result;
-		}else{
-			// (A * f(n - 1) + B * f(n - 2)) mod 7.
-			result = (a * sum(a,b,n-1) + b * sum(a,b,n-2)) % 7;
-			return result;
+			return 1;
 		}
+		// (A * f(n - 1) + B * f(n - 2)) mod 7.
+		return (a * sumRecursive(a,b,n-1) + b * sumRecursive(a,b,n-2)) % 7;  //非尾递归，该函数的最后一步是加法，不是函数自身的调用，所以不是尾递归
 	}
+	
+	/** 将上述的递归改写成尾递归，尾递归只存在一个调用记录，所以永远不会发生"栈溢出"，
+	 * @param a 固定
+	 * @param b 固定
+	 * @param n 随着规模的变化而减小
+	 */
+	/*public static int sumTailRecursive(int a , int b , int n, int result1,int result2){
+	}*/
 }
