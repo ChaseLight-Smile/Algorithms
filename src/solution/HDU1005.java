@@ -44,7 +44,8 @@ public class HDU1005 {
 					int a = Integer.parseInt(ops[0]);
 					int b = Integer.parseInt(ops[1]);
 					int n = Integer.parseInt(ops[2]);
-					int result = sumRecursive(a,b,n);
+					/*int result = sumRecursive(a,b,n);*/
+					int result = sumTailRecursive(a,b,n,1,2%7);
 					list.add(result);
 				}
 			}
@@ -68,11 +69,15 @@ public class HDU1005 {
 		return (a * sumRecursive(a,b,n-1) + b * sumRecursive(a,b,n-2)) % 7;  //非尾递归，该函数的最后一步是加法，不是函数自身的调用，所以不是尾递归
 	}
 	
-	/** 将上述的递归改写成尾递归，尾递归只存在一个调用记录，所以永远不会发生"栈溢出"，
+	/** 将上述的递归改写成尾递归，尾递归只存在一个调用记录，下面代码是正确的尾递归形式，但是空间复杂度仍然超过阈值
 	 * @param a 固定
 	 * @param b 固定
 	 * @param n 随着规模的变化而减小
 	 */
-	/*public static int sumTailRecursive(int a , int b , int n, int result1,int result2){
-	}*/
+	public static int sumTailRecursive(int a , int b , int n, int result1,int result2){
+		if(n == 1 || n == 2){
+			return result1;
+		}
+		return sumTailRecursive(a, b, n-1, result2, (a*result1+b*result2)%7);
+	}
 }
