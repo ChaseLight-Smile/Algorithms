@@ -53,6 +53,13 @@ public class HDU1005 {
 		}
 	}
 	
+	/**  尾递归，能够采用法则去掉递归降低内存使用
+	 * 递归算法很耗费内存，耗费内存同时相当于耗费时间，这与计算机的内存分配机制有关
+	 * @param a  表达式计算时的系数a
+	 * @param b  表达式计算时的系数b
+	 * @param n  表达式计算第n项的结果
+	 * @return   返回最后的计算结果
+	 */
 	public static int sum(int a , int b , int n){
 		int result = 0;
 		if(n == 1 || n == 2){
