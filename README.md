@@ -46,3 +46,4 @@
 * HDU1002Solution(); HDU1002题目解答，AC
 * HDU1003Solution(); HDU1003题目解答，AC
 * HDU1004Solution(); HDU1004题目解答，AC
+* HDU1005Solution(); HDU1005题目解答，AC
