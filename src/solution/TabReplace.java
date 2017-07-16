@@ -9,8 +9,8 @@ import java.io.OutputStreamWriter;
 public class TabReplace {
 	
 	public static void main(String[] args) throws Exception{
-		File file1 = new File("G:/test/aaa.txt");
-	    File file2 = new File("G:/test/aaa_replace.txt"); 
+		File file1 = new File("");
+	    File file2 = new File(""); 
 	    FileInputStream fileInput = new FileInputStream(file1);
 	    FileOutputStream fileOutput = new FileOutputStream(file2);
 	    
@@ -21,17 +21,21 @@ public class TabReplace {
 	    BufferedWriter writer = new BufferedWriter(out);
 	    
 	    String content = null;
-	    String new_content = null;
+	    String new_content = "";
 	    int length = 0 ;
 	    while((content = reader.readLine()) != null){
-	    	
+	    	new_content = "";
 	    	String[] str = content.split("\t");
 	    	
 	    	//将其重新组成一个新的字符串输出
-	    	//new_content = str[0] + " " + str[1] + " " + str[2] + " " + str[3];
-	    	//new_content = str[0] + " " + str[1] + " " + str[2] + " " + str[3] + " "+ str[4] + " " + str[5] + " " + str[6] + " " + str[7] + " " + str[8] + " " + str[9];
-	    	new_content = str[0] + " " + str[1] + " " + str[2] + " " + str[3] + " "+ str[4] + " " + str[5] + " " + str[6] + " " + str[7] + " " 
-	    	+ str[8] + " " + str[9] + " " + str[10] + " " +  str[11];
+	    	
+	    	for(int i = 0 ; i < str.length ; i++){
+	    		if(i == str.length - 1){
+	    			new_content = new_content + str[i];
+	    		}else{
+	    			new_content = new_content + str[i] + " ";
+	    		}
+	    	}
 	    	writer.write(new_content + "\n");
 	    
 	    }
