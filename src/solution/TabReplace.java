@@ -6,11 +6,16 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+/**
+ * 功能: 实现将文本中的分隔符改成,分割，方便将数据导入到数据库中，采用,分割，这种文件被称为csv
+ * @author 朱君鹏
+ *
+ */
 public class TabReplace {
 	
 	public static void main(String[] args) throws Exception{
-		File file1 = new File("");
-	    File file2 = new File(""); 
+		File file1 = new File("..");
+	    File file2 = new File(".."); 
 	    FileInputStream fileInput = new FileInputStream(file1);
 	    FileOutputStream fileOutput = new FileOutputStream(file2);
 	    
@@ -33,7 +38,7 @@ public class TabReplace {
 	    		if(i == str.length - 1){
 	    			new_content = new_content + str[i];
 	    		}else{
-	    			new_content = new_content + str[i] + " ";
+	    			new_content = new_content + str[i] + ",";
 	    		}
 	    	}
 	    	writer.write(new_content + "\n");
