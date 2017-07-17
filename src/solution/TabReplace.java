@@ -27,7 +27,6 @@ public class TabReplace {
 	    
 	    String content = null;
 	    String new_content = "";
-	    int length = 0 ;
 	    while((content = reader.readLine()) != null){
 	    	new_content = "";
 	    	String[] str = content.split("\t");
@@ -44,6 +43,9 @@ public class TabReplace {
 	    	writer.write(new_content + "\n");
 	    
 	    }
+	    
+	    writer.close();
+	    reader.close();
 	}
     
     
