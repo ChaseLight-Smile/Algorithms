@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 /**
- * 功能: 实现将文本中的分隔符改成,分割，方便将数据导入到数据库中，采用,分割，这种文件被称为csv
+ * 功能: 实现将文本中的分隔符改成,分割，方便将数据导入到数据库中，采用","分割，而不是采用\t分割.
  * @author 朱君鹏
  *
  */
