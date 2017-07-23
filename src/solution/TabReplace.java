@@ -14,8 +14,8 @@ import java.io.OutputStreamWriter;
 public class TabReplace {
 	
 	public static void main(String[] args) throws Exception{
-		File file1 = new File("..");
-	    File file2 = new File(".."); 
+		File file1 = new File("G:\\硕士研究生毕业设计\\TrafficManagementBurea\\plate-20170708\\plate-20170708.txt");
+	    File file2 = new File("G:\\硕士研究生毕业设计\\TrafficManagementBurea\\plate-20170708\\plate-20170708_replace.txt"); 
 	    FileInputStream fileInput = new FileInputStream(file1);
 	    FileOutputStream fileOutput = new FileOutputStream(file2);
 	    
@@ -27,8 +27,16 @@ public class TabReplace {
 	    
 	    String content = null;
 	    String new_content = "";
+	    
+	    //int length = 0 ;
 	    while((content = reader.readLine()) != null){
 	    	new_content = "";
+	    	//System.out.println(content);
+	    	//length++;
+	    	
+	    	/*if(length == 10){
+	    		break;
+	    	}*/
 	    	String[] str = content.split("\t");
 	    	
 	    	//将其重新组成一个新的字符串输出
