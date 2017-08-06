@@ -14,8 +14,8 @@ import java.io.OutputStreamWriter;
 public class TabReplace {
 	
 	public static void main(String[] args) throws Exception{
-		File file1 = new File("G:\\硕士研究生毕业设计\\TrafficManagementBurea\\plate-20170708\\plate-20170708.txt");
-	    //File file2 = new File("G:\\硕士研究生毕业设计\\TrafficManagementBurea\\plate-20170708\\plate-20170708-replace.txt"); 
+		File file1 = new File("..");
+	    //File file2 = new File(".."); 
 	    FileInputStream fileInput = new FileInputStream(file1);
 	    //FileOutputStream fileOutput = new FileOutputStream(file2);
 	    
