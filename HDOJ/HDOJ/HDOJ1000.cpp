@@ -2,7 +2,7 @@
 #include <sstream>
 #include <string>
 using namespace std;
-int main(int argv, char *argc[]){
+int main1(int argv, char *argc[]){
 	string s;
 	int a = 0;
 	while (getline(cin, s)){
