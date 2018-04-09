@@ -17,10 +17,10 @@ int partitionHoare(int arr[], int start, int end){
     while(true){
         do{   //It should be avoided to use do...while
             cursorLeft++;
-        }while(arr[cursorLeft]<=key);
+        }while(arr[cursorLeft] < key);
         do{
             cursorRight--;
-        }while(arr[cursorRight]>=key);
+        }while(arr[cursorRight] > key);
         if(cursorLeft < cursorRight){
             //swap the values
             int temp = arr[cursorLeft];
@@ -92,8 +92,9 @@ int main(int args, char* argv[])
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {2,5,2,4,1,1};   //error
-    //int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
-    int arr[] = {8,10,7,16,10,3,9,7,20,2}; //error
+    int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
+    //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //error
+    //int arr[] = {2,1,1};  //error
     quicksort(arr,0,sizeof(arr)/sizeof(arr[0])-1);
     for(int i = 0; i < sizeof(arr)/sizeof(arr[0]);i++){
         cout << arr[i] << " ";
