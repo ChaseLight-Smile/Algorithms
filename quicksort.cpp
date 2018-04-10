@@ -1,4 +1,5 @@
-nclude <iostream>
+#include <iostream>
+#include <stdio.h>
 using namespace std;
 
 /**
@@ -66,8 +67,9 @@ int partitionHoareModify(int arr[], int start, int end){
             int temp = arr[cursorLeft];
             arr[cursorLeft] = arr[cursorRight];
             arr[cursorRight] = temp;
-            cout << "swap:" << arr[cursorLeft] << " " << arr[cursorRight] << endl;
+            //cout << "swap:" << arr[cursorLeft] << " " << arr[cursorRight] << endl;
         }else{
+            printf("cursorLeft value is: %i\n",cursorRight);
             return cursorRight;
 //            return cursorLeft;
         }
@@ -97,6 +99,7 @@ int partitionLomuto(int arr[],int start, int end){
     int temp = arr[cursorLeft+1];
     arr[cursorLeft+1] = arr[end];
     arr[end] = temp;
+    printf("cursorLeft value is: %i\n",cursorLeft+1);
     return cursorLeft+1;
 }
 /**
@@ -109,12 +112,12 @@ int partitionLomuto(int arr[],int start, int end){
 void quicksort(int arr[],int start, int end){
     if(start < end){
         //int position = partitionHoare(arr,start,end);
-        int position = partitionHoareModify(arr,start,end);  //use partitionHoare is error because of do...while
-        //int position = partitionLomuto(arr,start,end);
-        //quicksort(arr,start,position-1);   //Lomuto partition
-        //quicksort(arr,position+1,end);    //Lomuto partition
-        quicksort(arr,start,position);  //Hoare partition and Hoare modify position
-        quicksort(arr,position+1,end); //Hoare partition and Hoare modify position
+        //int position = partitionHoareModify(arr,start,end);  //use partitionHoare is error because of do...while
+        int position = partitionLomuto(arr,start,end);
+        quicksort(arr,start,position-1);
+        quicksort(arr,position+1,end);
+        //quicksort(arr,start,position);  //Hoare partition and Hoare modify position
+        //quicksort(arr,position+1,end);
     }
 }
 
@@ -125,11 +128,12 @@ int main(int args, char* argv[])
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {2,5,2,4,1,1};   //success
-    int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
+    //int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
     //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
     //int arr[] = {8,10,7,16,8,3,9,7,20,2}; //success, compare to the above example {8,10,7,16,10,3,9,7,20,2}
     //cout << "arr size:" << sizeof(arr)/sizeof(arr[0]) << endl;
     //int arr[] = {1,1,3};  //success
+    int arr[] = {1,1,1,1,1,1,1};
     quicksort(arr,0,sizeof(arr)/sizeof(arr[0])-1);
     for(int i = 0; i < sizeof(arr)/sizeof(arr[0]);i++){
         cout << arr[i] << " ";
