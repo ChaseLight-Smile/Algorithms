@@ -1,4 +1,4 @@
-#include <iostream>
+nclude <iostream>
 using namespace std;
 
 /**
@@ -21,14 +21,13 @@ int partitionHoare(int arr[], int start, int end){
         do{
             cursorRight--;
         }while(arr[cursorRight] > key);
-        if(cursorLeft < cursorRight){
-            //swap the values
-            int temp = arr[cursorLeft];
-            arr[cursorLeft] = arr[cursorRight];
-            arr[cursorRight] = temp;
-        }else{
+        if(cursorLeft >= cursorRight){
             return cursorRight;
         }
+         //swap the values
+        int temp = arr[cursorLeft];
+        arr[cursorLeft] = arr[cursorRight];
+        arr[cursorRight] = temp;
     }
 }
 
@@ -43,16 +42,25 @@ int partitionHoare(int arr[], int start, int end){
   * int arr[] = {8,10,7,16,10,3,9,7,20,2}; //error
 */
 int partitionHoareModify(int arr[], int start, int end){
-    int cursorLeft = start; //set cursor for the left value
-    int cursorRight = end;   //set cursor for the right value
     int key = arr[start];   // set key value as standard
+    int cursorLeft = start-1; //set cursor for the left value
+    int cursorRight = end+1;   //set cursor for the right value
     while(true){
-        while(arr[cursorLeft] < key){
-            cursorLeft++;
+
+        while(true){
+            cursorLeft = cursorLeft+1;
+            if(arr[cursorLeft] >= key){
+                break;
+            }
+
         }
-        while(arr[cursorRight] > key){
-            cursorRight--;
+        while(true){
+            cursorRight = cursorRight-1;
+            if(arr[cursorRight]<= key){
+                break;
+            }
         }
+
         if(cursorLeft < cursorRight){
             //swap the values
             int temp = arr[cursorLeft];
@@ -66,9 +74,30 @@ int partitionHoareModify(int arr[], int start, int end){
     }
 }
 
+/**
+  * It is introduced by Lomuto, which enhancing the Hoare partition method.
+  * The experimental results show that it is all the correct for any test example.
+  * The idea is great.
+  * @arr store the unsorted elements
+  * @start the start position
+  * @end the end position
+  * @author Junpeng Zhu
+*/
 int partitionLomuto(int arr[],int start, int end){
-
-    return 0;
+    int key = arr[end];    //set the pivot element
+    int cursorLeft = start-1;   //set left cursor
+    for (int j = start; j<= end-1;j++){
+        if(arr[j] <= key){   // The cursorLeft keep the condition: arr[cursorLeft] <= key
+            cursorLeft++;
+            int temp = arr[j];
+            arr[j] = arr[cursorLeft];
+            arr[cursorLeft]=temp;
+        }
+    }
+    int temp = arr[cursorLeft+1];
+    arr[cursorLeft+1] = arr[end];
+    arr[end] = temp;
+    return cursorLeft+1;
 }
 /**
   * quicksort algorithm. It is the first introduced by Hoare.
@@ -79,9 +108,13 @@ int partitionLomuto(int arr[],int start, int end){
 */
 void quicksort(int arr[],int start, int end){
     if(start < end){
+        //int position = partitionHoare(arr,start,end);
         int position = partitionHoareModify(arr,start,end);  //use partitionHoare is error because of do...while
-        quicksort(arr,start,position-1);
-        quicksort(arr,position+1,end);
+        //int position = partitionLomuto(arr,start,end);
+        //quicksort(arr,start,position-1);   //Lomuto partition
+        //quicksort(arr,position+1,end);    //Lomuto partition
+        quicksort(arr,start,position);  //Hoare partition and Hoare modify position
+        quicksort(arr,position+1,end); //Hoare partition and Hoare modify position
     }
 }
 
@@ -91,10 +124,12 @@ int main(int args, char* argv[])
     //int arr[] = {2,8,7,1,3,5,6,4};   //success
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {3,5,4,6,2,1};  //success
-    //int arr[] = {2,5,2,4,1,1};   //error
+    //int arr[] = {2,5,2,4,1,1};   //success
     int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
-    //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //error
-    //int arr[] = {2,1,1};  //error
+    //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
+    //int arr[] = {8,10,7,16,8,3,9,7,20,2}; //success, compare to the above example {8,10,7,16,10,3,9,7,20,2}
+    //cout << "arr size:" << sizeof(arr)/sizeof(arr[0]) << endl;
+    //int arr[] = {1,1,3};  //success
     quicksort(arr,0,sizeof(arr)/sizeof(arr[0])-1);
     for(int i = 0; i < sizeof(arr)/sizeof(arr[0]);i++){
         cout << arr[i] << " ";
