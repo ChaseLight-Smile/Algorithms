@@ -1,5 +1,7 @@
 #include <iostream>
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 using namespace std;
 
 /**
@@ -104,6 +106,30 @@ int partitionLomuto(int arr[],int start, int end){
     return cursorLeft+1;
 }
 /**
+  * random partition method. We only exchange key element and a random element,which means
+  * ramdom input.
+  * @arr store the unsorted elements
+  * @start the start position
+  * @end the end position
+  * @author Junpeng Zhu
+*/
+int randomPartitionLomuto(int arr[], int start, int end){
+    srand((int)time(NULL));   //random seed
+    /**
+      * generate random number in [start,end]
+      * int temp = rand()%x means temp in [0,X)
+      * So, int temp = rand()%(Y-X+1) means temp in [0,Y-X]
+      * So, int temp = rand()%(Y-X+1)+X means temp in [X,Y]
+      * @author Junpeng Zhu
+    */
+    int randomNumber = rand()%(end-start+1)+start;
+    //exchange arr[temp] and arr[end]
+    int temp = arr[randomNumber];
+    arr[randomNumber] = arr[end];
+    arr[end] = temp;
+    return partitionLomuto(arr,start,end);
+}
+/**
   * quicksort algorithm. It is the first introduced by Hoare.
   * @arr store the unsorted elements
   * @start the start position
@@ -114,7 +140,8 @@ void quicksort(int arr[],int start, int end){
     if(start < end){
         //int position = partitionHoare(arr,start,end);
         //int position = partitionHoareModify(arr,start,end);  //use partitionHoare is error because of do...while
-        int position = partitionLomuto(arr,start,end);
+        //int position = partitionLomuto(arr,start,end);
+        int position = randomPartitionLomuto(arr,start,end);
         quicksort(arr,start,position-1);
         quicksort(arr,position+1,end);
         //quicksort(arr,start,position);  //Hoare partition and Hoare modify position
@@ -129,8 +156,8 @@ int main(int args, char* argv[])
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {2,5,2,4,1,1};   //success
-    //int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
-    int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
+    int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
+    //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
     //int arr[] = {8,10,7,16,8,3,9,7,20,2}; //success, compare to the above example {8,10,7,16,10,3,9,7,20,2}
     //cout << "arr size:" << sizeof(arr)/sizeof(arr[0]) << endl;
     //int arr[] = {1,1,3};  //success
