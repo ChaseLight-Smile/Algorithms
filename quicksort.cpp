@@ -89,7 +89,8 @@ int partitionLomuto(int arr[],int start, int end){
     int key = arr[end];    //set the pivot element
     int cursorLeft = start-1;   //set left cursor
     for (int j = start; j<= end-1;j++){
-        if(arr[j] <= key){   // The cursorLeft keep the condition: arr[cursorLeft] <= key
+        if(arr[j] <= key){   // The cursorLeft keep the condition: arr[cursorLeft] <= key,increase
+        //if(arr[j] >= key){   // The cursorLeft keep the condition: arr[cursorLeft] >= key, decrease
             cursorLeft++;
             int temp = arr[j];
             arr[j] = arr[cursorLeft];
@@ -129,11 +130,11 @@ int main(int args, char* argv[])
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {2,5,2,4,1,1};   //success
     //int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
-    //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
+    int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
     //int arr[] = {8,10,7,16,8,3,9,7,20,2}; //success, compare to the above example {8,10,7,16,10,3,9,7,20,2}
     //cout << "arr size:" << sizeof(arr)/sizeof(arr[0]) << endl;
     //int arr[] = {1,1,3};  //success
-    int arr[] = {1,1,1,1,1,1,1};
+    //int arr[] = {1,1,1,1,1,1,1};
     quicksort(arr,0,sizeof(arr)/sizeof(arr[0])-1);
     for(int i = 0; i < sizeof(arr)/sizeof(arr[0]);i++){
         cout << arr[i] << " ";
