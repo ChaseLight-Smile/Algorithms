@@ -74,7 +74,6 @@ int partitionHoareModify(int arr[], int start, int end){
         }else{
             printf("cursorLeft value is: %i\n",cursorRight);
             return cursorRight;
-//            return cursorLeft;
         }
     }
 }
