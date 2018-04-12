@@ -12,14 +12,13 @@ using namespace std;
   * @start the start position
   * @end the end position
   * @author Junpeng Zhu
-  * The implementation is error. the most results are error.
 */
 int partitionHoare(int arr[], int start, int end){
     int cursorLeft = start - 1; //set cursor for the left value
     int cursorRight = end + 1;   //set cursor for the right value
     int key = arr[start];   // set key value as standard
     while(true){
-        do{   //It should be avoided to use do...while
+        do{
             cursorLeft++;
         }while(arr[cursorLeft] < key);
         do{
@@ -42,15 +41,12 @@ int partitionHoare(int arr[], int start, int end){
   * @start the start position
   * @end the end position
   * @author Junpeng Zhu
-  * It is error when it is equal for the any two elements in the arr. for example:
-  * int arr[] = {8,10,7,16,10,3,9,7,20,2}; //error
 */
 int partitionHoareModify(int arr[], int start, int end){
     int key = arr[start];   // set key value as standard
     int cursorLeft = start-1; //set cursor for the left value
     int cursorRight = end+1;   //set cursor for the right value
     while(true){
-
         while(true){
             cursorLeft = cursorLeft+1;
             if(arr[cursorLeft] >= key){
