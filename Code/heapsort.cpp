@@ -2,7 +2,7 @@
 using namespace std;
 
 /**
-  * Keep the properties of max heap. It is most important proceduce for the heap sort.
+  * Keepng the properties of max heap. It is most important proceduce for the heap sort.
   * Note: Because the array index from 0 to length-1 in my implement, left child position is 2*i + 1
   * and right position is 2*i + 2.
   * @arr store the value of the heap
@@ -47,13 +47,25 @@ void buildMaxHeap(int arr[], int length){
 }
 
 /**
-  * Max heap sort.
+  * Max heap sort algorithm.
+  * The store strcuture is array for the heap.
   * @arr store the value of unsorted
   * @length store the array length
   * @author Junpeng Zhu
 */
 void maxHeapSort(int arr[], int length){
-
+    buildMaxHeap(arr,length);  //construct the max heap
+//    for(int i = 0 ;i < length;i++){
+//        cout << arr[i] << " ";
+//    }
+    for(int i = length-1;i>=1; i--){
+        //swap the arr[0] and arr[length-1]
+        int temp = arr[0] ;
+        arr[0] = arr[i];
+        arr[i] = temp;
+        length = length -1;    //substracting the length,because the final element has sorted by swaping.
+        maxHeapProperties(arr,0,length);
+    }
 }
 
 int main()
@@ -63,15 +75,16 @@ int main()
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {2,5,2,4,1,1};   //success
-    //int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
+    int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
     //cout << length << endl;
-    int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
+    //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
     //int arr[] = {8,10,7,16,8,3,9,7,20,2}; //success, compare to the above example {8,10,7,16,10,3,9,7,20,2}
     //cout << "arr size:" << sizeof(arr)/sizeof(arr[0]) << endl;
     //int arr[] = {1,1,3};  //success
     //int arr[] = {1,1,1,1,1,1,1};
     int length = sizeof(arr)/sizeof(arr[0]);
     buildMaxHeap(arr,length);
+    maxHeapSort(arr,length);
     for(int i = 0 ;i < length;i++){
         cout << arr[i] << " ";
     }
