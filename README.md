@@ -50,4 +50,5 @@
 * HDOJ1000();
 * HDOJ1001();
 * partitionHoare(int arr[], int start, int end); It is used in the quicksort algorithm 
-* quicksort(int arr[], int start, int end); quicksort algorithm, which implements Hoare partition and Lomuto partition
+* quicksort(int arr[], int start, int end); the quicksort algorithm, which implements Hoare partition and Lomuto partition
+* heapsort(int arr[], int length); the heapsort algorithm
