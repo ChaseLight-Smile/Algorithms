@@ -52,3 +52,4 @@
 * partitionHoare(int arr[], int start, int end); It is used in the quicksort algorithm 
 * quicksort(int arr[], int start, int end); the quicksort algorithm, which implements Hoare partition and Lomuto partition
 * heapsort(int arr[], int length); the heapsort algorithm
+* priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap
