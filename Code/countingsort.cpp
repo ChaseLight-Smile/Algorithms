@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 /**
@@ -32,9 +33,10 @@ int* countingsort(int arr[], const int length){
     int countingLength = max+1;
     int* sortedArray = new int[length]; //store the sorted array. Because the length is variable, sortedArray should be allcated in heap area.
     int countingArray[countingLength];  //Initial the counting array and the value of elements is 0;
-    for (int i = 0 ; i < countingLength; i++){
-        countingArray[i] = 0;
-    }
+//    for (int i = 0 ; i < countingLength; i++){
+//        countingArray[i] = 0;
+//    }
+    memset(countingArray,0,countingLength*sizeof(countingArray[0]));  //set 0 in every unit for the countingArray
 
     for (int i = 0 ; i < length; i++){
         countingArray[arr[i]] += 1;
@@ -61,9 +63,9 @@ int main()
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {3,5,4,6,2,1};  //success
     //int arr[] = {2,5,2,4,1,1};   //success
-    //int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
+    int arr[] = {13,19,9,5,12,8,7,4,11,2,6,21};   //success
     //cout << length << endl;
-    int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
+    //int arr[] = {8,10,7,16,10,3,9,7,20,2}; //success
     //int arr[] = {8,10,7,16,8,3,9,7,20,2}; //success, compare to the above example {8,10,7,16,10,3,9,7,20,2}
     //cout << "arr size:" << sizeof(arr)/sizeof(arr[0]) << endl;
     //int arr[] = {1,1,3};  //success
