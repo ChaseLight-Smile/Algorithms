@@ -54,4 +54,4 @@
 * heapsort(int arr[], int length); the heapsort algorithm
 * priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap'
 * countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
-
+* enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing metho.The number of comparision decreases.
