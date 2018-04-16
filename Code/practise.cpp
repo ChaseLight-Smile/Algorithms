@@ -6,6 +6,7 @@ using namespace std;
 
 /**
   * Reversing the int type number.
+  * It is complex, and the input parameter n is required.
   * @num the int type number
   * @n the number of bit for the number
   * @author Junpeng Zhu
@@ -32,13 +33,31 @@ void reverseInt(int num, int n){
     return;
 
 }
+
+/**
+  * It is simple.
+  * @num the int type number
+  * @author Junpeng Zhu
+*/
+int commonReverseInt(int num){
+    int remainder = 0;
+    int reverseNumber = 0;
+    while(num != 0){
+        remainder = num%10;
+        reverseNumber = reverseNumber*10 + remainder;
+        num /= 10;
+    }
+    cout << reverseNumber;
+    return reverseNumber;
+}
 int main()
 {
-    //int num = 45100;
-    //int n = 5;
-    int num = 4567;
-    int n = 4;
-    reverseInt(num,n);
+    int num = 45100;
+    int n = 5;
+//    int num = 4567;
+//    int n = 4;
+    //reverseInt(num,n);
+    commonReverseInt(num);
     return 0;
 }
 
