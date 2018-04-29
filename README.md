@@ -54,3 +54,5 @@
 * countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
 * enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing metho.The number of comparision decreases.
 * sortASCII();   sort ASCII by using insertion sort.
+* distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
+
