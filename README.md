@@ -56,3 +56,4 @@
 * sortASCII();   sort ASCII by using insertion sort.
 * distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
 * volumn();   Computing the volumn of ball
+* HDU2003(); HDU2004();     Practise the C++ language properties
