@@ -13,6 +13,5 @@ int main1(int argv, char *argc[]){
 		}
 		cout << sum << endl;
 	}
-	system("pause");
 	return 0;
 }
