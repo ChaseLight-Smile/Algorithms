@@ -57,3 +57,4 @@
 * distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
 * volumn();   Computing the volumn of ball
 * HDU2003(); HDU2004();     Practise the C++ language properties
+* split1(string s); split2(string s); split3(string s); split4(string s);    It is the metods to split a string in C++ languages. And it is hard to split in C++ comparing to the Java and Python.
