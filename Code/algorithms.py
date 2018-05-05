@@ -136,3 +136,65 @@ if __name__ == '__main__':
     }
     li = topological_sort(graph)
     print(li)
+
+
+def isDays(year,month,day):
+    months = [31,0,31,30,31,30,31,31,30,31,30,31]
+    sum = 0
+    if (year % 400 ==0) or (year % 100 !=0 and year % 4 == 0):
+        months[1] = 29
+    else:
+        months[1] = 28
+
+    for i in range(0,month-1,1):
+        sum += months[i]
+
+    sum += day
+    print("days:",sum)
+
+isDays(2018,5,5)   #125
+#isDays(2006,3,12)  #71
+
+def findMaxAndMinValue():
+    #arr = [8, 10, 7, 16, 10, 3, 9, 7, 20, 2]
+    arr = [9, 8, 7, 6, 5, 9, 3, 2, 1]
+    arrLength = len(arr)
+    if arrLength % 2 == 0:
+        if arr[0] >= arr[1]:
+            max = arr[0]
+            min = arr[1]
+        else:
+            max = arr[1]
+            min = arr[0]
+        for i in range(2,arrLength,2):
+            if arr[i] > arr[i+1]:
+                if arr[i] > max:
+                    max = arr[i]
+                if arr[i+1] < min:
+                    min = arr[i+1]
+            else:
+                if arr[i+1]>max:
+                    max = arr[i+1]
+                if arr[i] < min:
+                    min = arr[i]
+        return max,min
+    else:
+        max = arr[0]
+        min = arr[0]
+        for i in range(1,arrLength,2):
+            if arr[i] > arr[i+1]:
+                if arr[i] > max:
+                    max = arr[i]
+                if arr[i+1] < min:
+                    min = arr[i+1]
+            else:
+                if arr[i+1]>max:
+                    max = arr[i+1]
+                if arr[i] < min:
+                    min = arr[i]
+        return max,min
+
+max , min = findMaxAndMinValue()
+print ("max:",max)
+print ("min:",min)
+
