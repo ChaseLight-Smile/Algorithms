@@ -56,31 +56,30 @@ result  = binarySearch(arr,0,len(arr)-1,-100)
 print("二分查找的结果为:",result,end="\n")
 
 #<Python代码：给定一个排好序的数字序列，插入一个数字在原数列的正确位置上，并且原数列的长度加1>
-def insertElement(element):
-    arr = [1, 2, 3, 4, 5, 6, 7, 8]
-    arrLength = len(arr)
+def insertElement(arr,element,arrLength):
     #顺序查找，时间复杂度为O(n)
-    if element < arr[0]:
+    if element <= arr[0]:
         position = 0     #说明新插入的元素应该放在数组的0位置
         arr.insert(position, element)  #在0位置插入元素，使用Python中list自带的insert函数来实现
-        return arr
-    if element > arr[len(arr)-1]:
+        return arrLength+1
+    if element >= arr[len(arr)-1]:
         position = len(arr)      #将len(arr)存入R1寄存器中，说明新插入的元素应该放在数组的len(arr)位置
         arr.insert(position, element)
-        return arr
-    for i in range(0,arrLength-2):
+        return arrLength+1
+    for i in range(0,arrLength-2,1):
         if arr[i] <= element and arr[i+1] >= element:  #找到了element的位置
             position = i+1     #说明新插入的元素应该放在i+1的位置
+            print("position:",position)
             arr.insert(position, element)
-            return arr
+            return arrLength+1
         else:
             continue
-#arr = insertElement(7)
-#arr = insertElement(0)
-arr = insertElement(9)
+arr = [1, 2, 3, 4, 5, 6, 7, 8]
 arrLength = len(arr)
+arrLength = insertElement(arr,4,arrLength)
 for i in range(0, arrLength, 1):
     print(arr[i], end=" ")
+print("列表长度为:",arrLength)
 print("\n")
 
 #<Python代码：快速排序递归实现>
@@ -155,9 +154,7 @@ def isDays(year,month,day):
 isDays(2018,5,5)   #125
 #isDays(2006,3,12)  #71
 
-def findMaxAndMinValue():
-    #arr = [8, 10, 7, 16, 10, 3, 9, 7, 20, 2]
-    arr = [9, 8, 7, 6, 5, 9, 3, 2, 1]
+def findMaxAndMinValue(arr):
     arrLength = len(arr)
     if arrLength % 2 == 0:
         if arr[0] >= arr[1]:
@@ -193,8 +190,31 @@ def findMaxAndMinValue():
                 if arr[i] < min:
                     min = arr[i]
         return max,min
-
-max , min = findMaxAndMinValue()
+arr = [8, 10, 7, 16, 10, 3, 9, 7, 20, 2]
+#arr = [9, 8, 7, 6, 5, 9, 3, 2, 1]
+max , min = findMaxAndMinValue(arr)
 print ("max:",max)
 print ("min:",min)
+
+
+#<Python代码：汉诺塔递归实现>
+def hanoiTower(n, a, buffer, c):
+    if(n == 1):
+        print("结束时输出:",a,"->",c)
+        return
+    hanoiTower(n-1, a, c, buffer)
+    hanoiTower(1, a, buffer, c)
+    #print("中间输出：",a, "->", c)
+    hanoiTower(n-1, buffer, a, c)
+    return
+hanoiTower(3, 1,2,3)
+
+
+def revertInt(a):
+    while a!=0:
+        m = a%10
+        print(m)
+        a = a//10
+revertInt(12345)
+
 
