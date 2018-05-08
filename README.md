@@ -60,3 +60,4 @@
 * split1(string s); split2(string s); split3(string s); split4(string s);    It is the metods to split a string in C++ languages. And it is hard to split in C++ comparing to the Java and Python.
 * topologicalSort();   The implement of topological sort.
 * HDU1066();   Computing the factorical's last non-zero number.
+* findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
