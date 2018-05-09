@@ -11,7 +11,7 @@ def findMaxAndValueRecursive(arr,start,end):
 
     middle = (start+end)//2
     lmax, lmin = findMaxAndValueRecursive(arr,start,middle)
-    rmax, rmin = findMaxAndValueRecursive(arr,middle,end)
+    rmax, rmin = findMaxAndValueRecursive(arr,middle+1,end)
 
     # merge the results
     if lmax >= rmax:

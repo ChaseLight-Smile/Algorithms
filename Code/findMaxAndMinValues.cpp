@@ -1,7 +1,5 @@
 #include <iostream>
-
 using namespace std;
-
 
 int* findMaxAndMinValues(int arr[], int start, int end){
     int* results= new int[2];
