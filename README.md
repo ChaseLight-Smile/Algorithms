@@ -1,9 +1,7 @@
 #### **概述**
 ***
 
-　　在算法列表中出现的算法，存储数据时基本都采用了数组结构，但是需要明白的是，算法思想是一个算法的灵魂，与你采用什么样的数据结构是无关的，当然话不能
-说这么绝对，在一些情况下，确实算法依赖于一些特定的数据结构，在具体算法实现过程中，我会特别强调这一点，最简单的例子就是归并排序，在下面的算法列表中，我分别用数组和链表存储数据，但是归并排序算法的思想精髓并没有因为存储数据的数据结构发生变化而变化。**需要强调的一点是，虽然采用什么样的数据结构，算法思想不会改变，但是对于不同的数据结构，实现其算法的难度不一样，此时还是需要你进行仔细的选择**。在具体的实现中一定要区分清楚什么是算法思想以及数据怎么
-来存储。数据结构和算法是程序的根本，学习算法并且用某种语言(算法不依赖于特定的语言)实现(能不能实现看你的编程能力，与算法本身无关，尤其需要注意的是算法与你采用什么语言实现无关)。**所有算法的实现都非常注重时间复杂度的最优化，同时也关注了空间复杂度，因为浪费空间的算法，其执行时间会增大**，**因此，我们得出结论：解决问题方法的效率，跟数据的组织方式有关**。
+　　在算法列表中出现的算法，存储数据时基本都采用了数组结构，但是需要明白的是，算法思想是一个算法的灵魂，与你采用什么样的数据结构是无关的，当然话不能说这么绝对，在一些情况下，确实算法依赖于一些特定的数据结构，在具体算法实现过程中，我会特别强调这一点，最简单的例子就是归并排序，在下面的算法列表中，我分别用数组和链表存储数据，但是归并排序算法的思想精髓并没有因为存储数据的数据结构发生变化而变化。**需要强调的一点是，虽然采用什么样的数据结构，算法思想不会改变，但是对于不同的数据结构，实现其算法的难度不一样，此时还是需要你进行仔细的选择**。在具体的实现中一定要区分清楚什么是算法思想以及数据怎么来存储。数据结构和算法是程序的根本，学习算法并且用某种语言(算法不依赖于特定的语言)实现(能不能实现看你的编程能力，与算法本身无关，尤其需要注意的是算法与你采用什么语言实现无关)。**所有算法的实现都非常注重时间复杂度的最优化，同时也关注了空间复杂度，因为浪费空间的算法，其执行时间会增大**，**因此，我们得出结论：解决问题方法的效率，跟数据的组织方式有关**。
 
 #### **算法列表**
 ***
@@ -52,7 +50,7 @@
 * heapsort(int arr[], int length); the heapsort algorithm
 * priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap'
 * countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
-* enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing metho.The number of comparision decreases.
+* enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing method.The number of comparision decreases.
 * sortASCII();   sort ASCII by using insertion sort.
 * distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
 * volumn();   Computing the volumn of ball
