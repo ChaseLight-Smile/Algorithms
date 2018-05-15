@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * 功能: 寻找一个数组中的全局最大值，时间代价就是扫描一个数组的时间O(n)
+ * 功能: 寻找一个数组中的全局最大值，时间代价就是扫描一个数组的时间O(n)，findMaxAndMinValues.cpp中存在更好的方法。
  * @author 朱君鹏
  *
  */
