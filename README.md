@@ -59,3 +59,6 @@
 * topologicalSort();   The implement of topological sort.
 * HDU1066();   Computing the factorical's last non-zero number.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
+* gcd1(int numberA, int numberB); gcd2(int numberA,int numberB); gcd3(int numberA, int numberB); gcd4(int numberA, int numberB); gcd5(int numberA, int numberB);  The implements of greater common division. 
+* maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
+
