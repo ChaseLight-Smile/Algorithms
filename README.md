@@ -61,4 +61,4 @@
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
 * gcd1(int numberA, int numberB); gcd2(int numberA,int numberB); gcd3(int numberA, int numberB); gcd4(int numberA, int numberB); gcd5(int numberA, int numberB);  The implements of greater common division. 
 * maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
-
+* aAddB();   a + b which a is less than 100 and b is less than 100.
