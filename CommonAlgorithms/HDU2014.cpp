@@ -5,6 +5,7 @@ void HDU2014(){
     int n;
     while (cin >> n){
         int arr[n];
+        // int *arr = new int[n]; //correct
         int current;
         for (int i = 0 ; i < n ; i++){   //initial the score
             cin >> current;
