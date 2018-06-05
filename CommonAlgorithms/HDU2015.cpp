@@ -11,7 +11,7 @@ void HDU2015(){
         int count = 0;
         while(start <= 2*n){
             count++;
-            if (count < m && start == 2*n){
+            if (count <= m && start == 2*n){
                 sum += start;
                 cout << sum/count << endl;
                 sum = 0;
@@ -33,7 +33,6 @@ void HDU2015(){
         }
     }
 }
-
 
 int main(){
   HDU2015();
