@@ -54,7 +54,7 @@
 * sortASCII();   sort ASCII by using insertion sort.
 * distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
 * volumn();   Computing the volumn of ball
-* HDU2003(); HDU2004(); HDU2005(); HDU2006(); HDU2007(); HDU2008(); HDU2009(); HDU2010(); HDU2011(); HDU2012(); HDU2013(); HDU2014(); HDU2015(); HDU2016(); HDU2017();  Practise the C++ language properties in HDUOJ page 11.
+* HDU2001(); HDU2001();  HDU2003(); HDU2004(); HDU2005(); HDU2006(); HDU2007(); HDU2008(); HDU2009(); HDU2010(); HDU2011(); HDU2012(); HDU2013(); HDU2014(); HDU2015(); HDU2016(); HDU2017();  Practise the C++ language properties in HDUOJ page 11.
 * split1(string s); split2(string s); split3(string s); split4(string s);    It is the metods to split a string in C++ languages. And it is hard to split in C++ comparing to the Java and Python.
 * topologicalSort();   The implement of topological sort.
 * HDU1066();   Computing the factorical's last non-zero number.
