@@ -4,13 +4,12 @@
 　　在算法列表中出现的算法，存储数据时基本都采用了数组结构，但是需要明白的是，算法思想是一个算法的灵魂，与你采用什么样的数据结构是无关的，当然话不能说这么绝对，在一些情况下，确实算法依赖于一些特定的数据结构，在具体算法实现过程中，我会特别强调这一点，最简单的例子就是归并排序，在下面的算法列表中，我分别用数组和链表存储数据，但是归并排序算法的思想精髓并没有因为存储数据的数据结构发生变化而变化。**需要强调的一点是，虽然采用什么样的数据结构，算法思想不会改变，但是对于不同的数据结构，实现其算法的难度不一样，此时还是需要你进行仔细的选择**。在具体的实现中一定要区分清楚什么是算法思想以及数据怎么来存储。数据结构和算法是程序的根本，学习算法并且用某种语言(算法不依赖于特定的语言)实现(能不能实现看你的编程能力，与算法本身无关，尤其需要注意的是算法与你采用什么语言实现无关)。**所有算法的实现都非常注重时间复杂度的最优化，同时也关注了空间复杂度，因为浪费空间的算法，其执行时间会增大**，**因此，我们得出结论：解决问题方法的效率，跟数据的组织方式有关**。基本内容概括如下：
   * 基本算法，如排序算法等
   * 树
-  * 动态规划
+  * 动态规划（Dynamic Programing）
   * 递归
   * 贪心
   * 图算法
   * 数据结构
   
-
 #### **算法列表**
 ***
 
@@ -51,8 +50,8 @@
 * HDU1003Solution(); HDU1003题目解答，AC
 * HDU1004Solution(); HDU1004题目解答，AC
 * HDU1005Solution(); HDU1005题目解答，实现了普通递归算法，并将普通递归算法修改为尾递归算法，AC
-* HDOJ1000();
-* HDOJ1001();
+* HDOJ1000();  AC
+* HDOJ1001();  AC
 * partitionHoare(int arr[], int start, int end); It is used in the quicksort algorithm 
 * quicksort(int arr[], int start, int end); the quicksort algorithm, which implements Hoare partition and Lomuto partition
 * heapsort(int arr[], int length); the heapsort algorithm
@@ -62,12 +61,35 @@
 * sortASCII();   sort ASCII by using insertion sort.
 * distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
 * volumn();   Computing the volumn of ball
-* HDU2001(); HDU2002();  HDU2003(); HDU2004(); HDU2005(); HDU2006(); HDU2007(); HDU2008(); HDU2009(); HDU2010(); HDU2011(); HDU2012(); HDU2013(); HDU2014(); HDU2015(); HDU2016(); HDU2017();  Practise the C++ language properties in HDUOJ page 11.
-* split1(string s); split2(string s); split3(string s); split4(string s);    It is the metods to split a string in C++ languages. And it is hard to split in C++ comparing to the Java and Python.
+* HDU2001(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2002(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2003(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2004(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2005(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2006(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2007(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2008(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2009(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2010(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2011(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2012(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2013(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2014(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2015(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2016(); Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU2017();  Practise the C++ language properties in HDUOJ page 11.  AC
+* HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
+* HDU1066();   Computing the factorical's last non-zero number. AC
+* split1(string s); 
+* split2(string s); 
+* split3(string s); 
+* split4(string s);    It is the metods to split a string in C++ languages. And it is hard to split in C++ comparing to the Java and Python.
 * topologicalSort();   The implement of topological sort.
-* HDU1066();   Computing the factorical's last non-zero number.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
-* gcd1(int numberA, int numberB); gcd2(int numberA,int numberB); gcd3(int numberA, int numberB); gcd4(int numberA, int numberB); gcd5(int numberA, int numberB);  The implements of greater common division. 
+* gcd1(int numberA, int numberB); 
+* gcd2(int numberA,int numberB); 
+* gcd3(int numberA, int numberB); 
+* gcd4(int numberA, int numberB); 
+* gcd5(int numberA, int numberB);  The implements of greater common division. 
 * maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
 * aAddB();   a + b which a is less than 100 and b is less than 100.
-* HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
