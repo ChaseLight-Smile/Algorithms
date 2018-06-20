@@ -6,8 +6,8 @@
   * **树（Tree）**
   * **动态规划（Dynamic Programming）**
   * **递归（Recursive Programming）**
-  * **贪心（Greedy Programming）**
-  * **图算法（Graph Programming）**
+  * **贪心策略（Greedy Programming）**
+  * **图算法（Graph Algorithms）**
   * **数据结构（Data Structure）**
   
 #### **算法列表**
