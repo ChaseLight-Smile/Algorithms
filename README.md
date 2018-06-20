@@ -93,3 +93,9 @@
 * gcd5(int numberA, int numberB);  The implements of greater common division. 
 * maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
 * aAddB();   a + b which a is less than 100 and b is less than 100.
+
+#### **参考资料**
+
+1. Introduction to Algorithms 《算法导论》
+2. TAOCP 《计算机程序设计艺术》
+3. HDUOJ <a href="http://acm.hdu.edu.cn/">杭州电子科技大学OJ</a> 
