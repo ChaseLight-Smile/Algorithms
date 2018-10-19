@@ -8,6 +8,7 @@
       * **Red-black Tree**
       * **B-Tree**
       * **B<sup>+</sup>-tree**
+      * **B<sup>\*</sup>-tree**
   * **动态规划（Dynamic Programming）**
   * **线性规划（Linear Programming）**
   * **递归（Recursive Programming）**
