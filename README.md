@@ -7,7 +7,7 @@
       * **Binary Search Tree**
       * **Red-black Tree**
       * **B-Tree**
-      * **B^+-tree**
+      * **$$B^{+}$$-tree**
   * **动态规划（Dynamic Programming）**
   * **线性规划（Linear Programming）**
   * **递归（Recursive Programming）**
