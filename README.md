@@ -14,6 +14,7 @@
   * **递归（Recursive Programming）**
   * **贪心策略（Greedy Programming）**
   * **图算法（Graph Algorithms）**
+  * 其它
   
 #### **算法列表**
 ***
