@@ -49,39 +49,40 @@ class Graph:
         # 初始化到所有顶点的距离为负无穷
         # 到源点的距离为0
         dist[s] = nodes[s]
+        size = len(stack)
         # 处理拓扑序列中的点
-        while len(stack) != 0:
+        while size != 0:
             # 取出拓扑序列中的第一个点
-            u = stack[len(stack)-1]
-
-            stack.pop()
-
+            u = stack[size - 1]
+            size -= 1
             # 更新到所有邻接点的距离
             if dist[u] != -float('inf'):
                 for i in self.adj[u]:
                     if dist[i.getV()] < dist[u] + i.getWeight():
                         dist[i.getV()] = dist[u] + i.getWeight()
-        for i in range(len(visited)):
+        self.stack = stack
+        for i in range(self.V):
             if dist[i] == -float('inf'):
                 # print("INF ", end='')
                 pass
             else:
                 self.max_paths[s].append(str(i))
                 self.max_value[s].append(dist[i])
-                # print(self.max_paths[s], self.max_value[s])
+                # print(str(s),":",self.max_paths[s], self.max_value[s])
 
 
-num_node = input("请输入所有节点个数:")
+num_node = input("请输入节点个数:")
 num_node = int(num_node)
 g = Graph(num_node)
 
+print("请输入权重，每行一个")
 nodes = []
 for i in range(num_node):
     node_wight_str = input()
     nodes.append(int(node_wight_str))      # (index, weight)
 
 
-print("请输入顶点以及权重(v1 v2),输入-1 -1结束:")
+print("请输入边(v1 v2),输入-1 -1结束:")
 
 
 max_value = 0
@@ -92,12 +93,22 @@ while True:
     if edge_str[0] == "-1" and edge_str[1] == "-1":
         for s in range(num_node):
             g.longestPath(s)
-            if max_value < g.max_value[s][-1]:
-                max_value = g.max_value[s][-1]
-                max_path = g.max_paths[0]
+            if max_value < max(g.max_value[s]):
+                max_value = max(g.max_value[s])
+                index = g.max_value[s].index(max_value)
+                max_path = g.max_paths[s][0:index+1]
+                # print("max:", max_value, max_path)
+
         break
     g.addEdge(int(edge_str[0]), int(edge_str[1]), nodes[int(edge_str[1])])
 
 
-print("路径:", "->".join(max_path))
+fixed_max_path = []
+
+for node in g.stack[::-1]:
+    if str(node) in max_path:
+        fixed_max_path.append(str(node))
+
+
+print("路径:", "->".join(fixed_max_path))
 print("最长路径权值:", max_value)
