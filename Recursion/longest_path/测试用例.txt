@@ -1,0 +1,68 @@
+测试说明：
+可以多种模式输入，一种参考：
+Input: 
+Please input the amount of nodes: 3  # 然后输入3行
+v0’s time:1
+v1’s time:2
+v3’s time:3
+input edges, ending with ‘-1 -1’:
+0 1
+0 2
+1 2
+-1 -1
+ 
+Output :
+v0 ->v1->v2
+6
+输入格式自定，但结果相同。
+在测试阶段请顺便输出所创建的字典（格式自定），比如：
+{'v1': {'pre': ['v0'], 'time': 2, 'end': ['v2']}, 'v2': {'pre': ['v0', 'v1'], 'time': 3, 'end': []}, 'v0': {'pre': [], 'time': 1, 'end': ['v1', 'v2']}}
+ 
+ 
+Study cases:
+Input:
+input the amount of nodes:8
+v0 time:1
+v1 time:2
+v2 time:4
+v3 time:5
+v4 time:2
+v5 time:7
+v6 time:2
+v7 time:4
+input edges, ending with '-1 -1':
+0 3
+0 4
+3 7
+1 4
+4 5
+4 6
+2 6
+6 7
+-1 -1
+Output 
+v1->v4->v5
+11
+ 
+Input:
+input the amount of nodes:6
+v0 time:2
+v1 time:1
+v2 time:6
+v3 time:4
+v4 time:4
+v5 time:2
+input edges, like 0 1,ending with '-1 -1':
+0 1
+0 3
+3 1
+1 2
+3 4
+2 4
+2 5
+4 5
+-1 -1
+ 
+Output 
+v0->v3->v1->v2->v4->v5
+19
