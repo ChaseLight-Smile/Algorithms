@@ -100,6 +100,7 @@
 * maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
 * aAddB();   a + b which a is less than 100 and b is less than 100.
 * isPalindrome(self, x)   Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward (Leetcode 9) AC
+* romanToInt(string s)  Leetcode 13 AC
 #### **参考资料**
 
 1. Introduction to Algorithms 《算法导论》
