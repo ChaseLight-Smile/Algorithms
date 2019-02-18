@@ -58,6 +58,8 @@ Output
 5
 -1
 */
+
+/** C++ STL实现
 #include <iostream>
 #include <stack>
 using namespace std;
@@ -94,6 +96,54 @@ int main()
         }
         else
             cout<<"-1"<<endl;
+    }
+    return 0;
+}*/
+
+//数组实现
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    int size=0;
+    int len,a,b,k;
+    cin>>len;
+    int *p=new int[len];
+    memset(p,-1,len*sizeof(p));
+    for(int i=0;i<len;i++){
+        cin>>a;
+        if(a==1){
+            cin>>b;
+            size++;
+            p[size-1]=b;
+            cout<<p[size-1]<<endl; 
+        }
+        if(a==2){
+            p[size-1]=-1;
+            size--;
+            if(size==0){
+                cout<<"-1"<<endl;
+            }
+            else{
+                cout<<p[size-1]<<endl;
+            }
+        }
+        if(a==3){
+            if(size==0){
+               cout<<"-1"<<endl;
+            }
+            else{
+                for(int i=0;i<=(size-1)/2;i++){
+                    k=p[i];
+                    p[i]=p[size-1-i];
+                    p[size-1-i]=k;
+                }
+				cout<<p[size-1]<<endl;
+            }   
+        }
+
     }
     return 0;
 }
