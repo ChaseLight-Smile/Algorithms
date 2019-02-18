@@ -1,5 +1,6 @@
 /**
   * Leetcode 13 Roman to integer solution.
+  * https://stackoverflow.com/questions/2263681/c-compile-error-iso-c-forbids-comparison-between-pointer-and-integer
 */
 #include <string>
 #include <iostream>
