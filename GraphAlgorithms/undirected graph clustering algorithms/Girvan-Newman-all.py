@@ -121,14 +121,14 @@ class GN:
         nx.write_gml(self.G_copy, 'outputofGN.gml')
         
 if __name__ == '__main__':
-    G=nx.read_gml('..\datasets\karate.gml',label='id') #Using max_Q to divide communities 
+    G=nx.read_gml('karate.gml',label='id') #Using max_Q to divide communities
     algorithm = GN(G)
     algorithm.run()
-    algorithm.draw_Q()
+    algorithm.draw_Q()   #画出Q值的曲线图
     algorithm.add_group()
     algorithm.to_gml()
 	
-    G1=nx.read_gml('..\datasets\karate.gml',label='id') #Dividing communities by the number
+    G1=nx.read_gml('karate.gml',label='id') #Dividing communities by the number
     algorithmByNum = GN(G1)
     algorithmByNum.run_n(2)
     
@@ -140,4 +140,3 @@ if __name__ == '__main__':
         print('\n划分成{0}个社区：Q值为{1}'.format(i, some[1][i-1]))
         print(some[0][i-1])
    
-    
