@@ -73,8 +73,9 @@ class CommunitySearch:
 
 if __name__ == '__main__':
     read("数据清洗4520116720190610183042流水合并.xlsx")
-    G=nx.read_gml('Project111111111111.gml',label='id')
     print("构建图完成")
+    G=nx.read_gml('Project111111111111.txt',label='id')
+    
     c = CommunitySearch(G)
     cc = c.devide_community()
     for i in range(1,len(G.nodes())+1):
