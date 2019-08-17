@@ -43,7 +43,7 @@ def get_clusters(A):
             clust_map[cn] = clust_map.get(cn, [])  + [x]
     return clust_map
 
-def draw(G, A, cluster_map):
+def draw(G, A, cluster_map):   #画出来最终的聚类结果
     import networkx as nx
     import matplotlib.pyplot as plt
 
@@ -59,9 +59,10 @@ def draw(G, A, cluster_map):
     pos = nx.spring_layout(G)
 
     from matplotlib.pylab import matshow, show, cm
-    plt.figure(2)
-    nx.draw_networkx_nodes(G, pos,node_size = 200, node_color =colors , cmap=plt.cm.Blues )
+    plt.figure(200)
+    nx.draw_networkx_nodes(G, pos,node_size = 500, node_color =colors , cmap=plt.cm.Blues )
     nx.draw_networkx_edges(G,pos, alpha=0.5)
+    nx.draw_networkx_labels(G,pos)
     matshow(A, fignum=1, cmap=cm.gray)
     plt.show()
     show()
@@ -179,3 +180,4 @@ if __name__ == '__main__':
     print(networkx_mcl(G)[0])
     print("有向图聚类后的簇数目为：", len(networkx_mcl(G)[1]))
     print("有向图聚类结果为：", networkx_mcl(G)[1])
+    draw(G,networkx_mcl(G)[0],networkx_mcl(G)[1])
