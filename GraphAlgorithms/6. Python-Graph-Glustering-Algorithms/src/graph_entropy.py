@@ -1,8 +1,8 @@
-# Author: True Price <jtprice@cs.unc.edu>
-
 import sys
 from math import log
 from collections import defaultdict
+from functools import reduce
+
 
 def graph_entropy(filename):
   data = defaultdict(set) # node id => neighboring node ids
@@ -24,7 +24,7 @@ def graph_entropy(filename):
   candidates = set(data)
   clusters = []
   while candidates:
-    print >> sys.stderr, len(candidates)
+    print(sys.stderr, len(candidates))
     v = candidates.pop() # select a random vertex
     cluster = data[v].copy() # add neighbors to cluster
     cluster.add(v)
@@ -38,7 +38,7 @@ def graph_entropy(filename):
       new_e = dict((x,entropy(new_c,x)) for x in data[n])
       # if removing the neighbor decreases new entropy (for the node and
       # all its neighbors), then do so
-      if sum(new_e.itervalues()) < sum(entropies[x] for x in data[n]):
+      if sum(new_e.values()) < sum(entropies[x] for x in data[n]):
         cluster = new_c
         entropies.update(new_e)
 
@@ -49,7 +49,7 @@ def graph_entropy(filename):
       new_c = cluster.copy()
       new_c.add(n)
       new_e = dict((x,entropy(new_c,x)) for x in data[n])
-      if sum(new_e.itervalues()) < sum(entropies[x] for x in data[n]):
+      if sum(new_e.values()) < sum(entropies[x] for x in data[n]):
         cluster = new_c
         entropies.update(new_e)
         c &= data[n] - cluster
@@ -58,8 +58,8 @@ def graph_entropy(filename):
     candidates -= cluster
     
     if len(cluster ) > 1:
-      print ' '.join(c for c in cluster)
+      print(' '.join(c for c in cluster))
 
 if __name__ == '__main__':
-  graph_entropy(sys.argv[1])
+  graph_entropy("ground_truth.txt")
 
