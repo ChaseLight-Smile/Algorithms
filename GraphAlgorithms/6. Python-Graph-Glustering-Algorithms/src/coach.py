@@ -1,11 +1,10 @@
-# Author: True Price <jtprice@cs.unc.edu>
-
 # A core-attachment based method to detect protein complexes in PPI networks
 # Wu, Li, Kwoh, Ng (2009)
 # http://www.biomedcentral.com/1471-2105/10/169
 
 from collections import defaultdict
 from itertools import combinations
+from functools import reduce
 
 DENSITY_THRESHOLD = 0.7
 AFFINITY_THRESHOLD = 0.225
@@ -13,12 +12,12 @@ CLOSENESS_THRESHOLD = 0.5
 
 # return average degree and density for a graph
 def graph_stats(graph):
-    avg_deg = sum(len(n) for n in graph.itervalues()) / float(len(graph))
+    avg_deg = sum(len(n) for n in graph.values()) / float(len(graph))
     density = avg_deg / (len(graph)-1)
     return avg_deg, density
 
 # return core nodes, given a graph and its average degree
-get_core_nodes = lambda g,avg: set(v for v,n in g.iteritems() if len(n) >= avg)
+get_core_nodes = lambda g,avg: set(v for v,n in g.items() if len(n) >= avg)
 
 # return NA score
 NA_score = lambda a,b: float(len(a & b)**2) / (len(a) * len(b))
@@ -36,7 +35,7 @@ def core_removal(graph):
         core_nodes = get_core_nodes(graph, avg_deg)
         result = []
         subgraphs = []
-        for v,n in graph.iteritems():
+        for v,n in graph.items():
             if v in core_nodes: continue
             n = n - core_nodes # note that we're reassigning n
             for s in subgraphs:
@@ -61,7 +60,7 @@ def core_removal(graph):
             tresults = core_removal(dict((v,graph[v] & s) for v in s))
             for tc in tresults:
                 nodes = set()
-                for v,n in tc.iteritems():
+                for v,n in tc.items():
                     nodes.add(v)
                     n |= graph[v] & core_nodes
                 for c in core_nodes:
@@ -81,7 +80,7 @@ def coach(filename):
     # step 1: find preliminary cores
     SC = [] # currently-detected preliminary cores
     count = 0
-    for vertex,neighbors in data.iteritems():
+    for vertex,neighbors in data.items():
         # build neighborhood graph
         vertices = set([vertex]) | neighbors
         size1_neighbors = set()
@@ -99,10 +98,10 @@ def coach(filename):
         # get core graph
         avg_deg,density = graph_stats(graph)
         core_nodes = get_core_nodes(graph, avg_deg)
-        vertices = set(graph.iterkeys())
+        vertices = set(graph.keys())
         for v in vertices - core_nodes:
             del graph[v]
-        for n in graph.itervalues():
+        for n in graph.values():
             n &= core_nodes
         if len(graph) < 2: # not enough connections in this graph
             continue
@@ -114,9 +113,9 @@ def coach(filename):
                 _,density = graph_stats(sg)
                 # if density threshold met, stop; else, remove min degree node
                 if density >= DENSITY_THRESHOLD: break
-                w = min(sg.iteritems(), key=lambda k: len(k[1]))[0]
+                w = min(sg.items(), key=lambda k: len(k[1]))[0]
                 del sg[w]
-                for n in sg.itervalues():
+                for n in sg.values():
                     n.discard(w)
 
             sg_nodes = set(sg)
@@ -124,7 +123,7 @@ def coach(filename):
                 w = max(graph_nodes - sg_nodes,
                         key=lambda v: len(graph[v] & sg_nodes))
                 new_sg = sg.copy()
-                for v,n in new_sg.iteritems():
+                for v,n in new_sg.items():
                     if w in graph[v]:
                         n.add(w)
                 new_sg[w] = graph[w] & sg_nodes
@@ -135,7 +134,7 @@ def coach(filename):
 
             # redundancy filtering
             max_sim = -1
-            for i in xrange(len(SC)):
+            for i in range(len(SC)):
                 sim = NA_score(set(SC[i]), sg_nodes)
                 if sim > max_sim:
                     max_sim = sim
@@ -160,6 +159,6 @@ def coach(filename):
 
 if __name__ == '__main__':
     import sys
-    for c in coach(sys.argv[1]):
-        print ' '.join(c)
+    for c in coach("soc-Epinions1.txt"):
+        print(' '.join(c))
 

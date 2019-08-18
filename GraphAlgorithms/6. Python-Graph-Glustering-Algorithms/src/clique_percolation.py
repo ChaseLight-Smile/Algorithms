@@ -1,5 +1,3 @@
-# Author: True Price <jtprice@cs.unc.edu>
-
 # NOTE: this script is currently hard-coded to run for k=3 (see line 88); it can
 #       be easily modified to accept a specific k (or range of k's) on the
 #       command line, though.
@@ -9,6 +7,7 @@ import sys
 from itertools import combinations
 from collections import defaultdict, deque
 from threading import Thread, Semaphore
+from functools import reduce
 
 NUM_THREADS = 2
 
@@ -33,19 +32,19 @@ def get_percolated_cliques(filename):
   for c in nx.find_cliques(G): 
     if len(c) > 2:
       clique_sizes[len(c)].append(TreeNode(frozenset(c)))
-  clique_sizes = sorted(clique_sizes.iteritems()) # [(size,cliques)...]
+  clique_sizes = sorted(clique_sizes.items()) # [(size,cliques)...]
 
   # build our binary tree
   size_roots = dict()
   for size,cliques in clique_sizes:
     cliques = deque(cliques)
     while len(cliques) > 1:
-      for _ in xrange(0, len(cliques), 2):
+      for _ in range(0, len(cliques), 2):
         a,b = cliques.popleft(), cliques.popleft()
         cliques.append(TreeNode(a.data | b.data, a, b))
     size_roots[size] = cliques.pop()
   
-  size_roots = sorted(size_roots.iteritems()) # [(size,root),...]
+  size_roots = sorted(size_roots.items()) # [(size,root),...]
 
   # k = k - 1, technically
   def percolation_thread(components, k, sem):
@@ -86,21 +85,21 @@ def get_percolated_cliques(filename):
     sem.release()
   
   # run clique percolation on multiple threads
-  krange = xrange(3, 4)#max(clique_sizes.iterkeys()) - 1)
+  krange = range(3, 4)#max(clique_sizes.iterkeys()) - 1)
   components = dict((k,set()) for k in krange) # k => components
 
   sem = Semaphore(NUM_THREADS)
   for k in krange:
     sem.acquire()
-    print >> sys.stderr, 'Running K =', k
+    print(sys.stderr, 'Running K =', k)
     Thread(target=percolation_thread, args=(components[k],k-1,sem)).start()
-  for i in xrange(NUM_THREADS):
+  for i in range(NUM_THREADS):
     sem.acquire() # wait until all threads have finished
 
   # return the components
-  return reduce(lambda x,y: x|y, components.itervalues())
+  return reduce(lambda x,y: x|y, components.values())
 
 if __name__ == '__main__':
-  for c in get_percolated_cliques(sys.argv[1]):
-    print ' '.join(str(x) for x in c)
+  for c in get_percolated_cliques("soc-Epinions1.txt"):
+    print(' '.join(str(x) for x in c))
 

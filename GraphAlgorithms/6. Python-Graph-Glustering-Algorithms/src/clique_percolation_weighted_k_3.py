@@ -73,6 +73,6 @@ def weighted_clique_percolation(filename):
   return communities
 
 if __name__ == '__main__':
-  for c in weighted_clique_percolation(sys.argv[1]):
-    print ' '.join(c)
+  for c in weighted_clique_percolation("soc-Epinions1.txt"):
+    print(' '.join(c))
 
