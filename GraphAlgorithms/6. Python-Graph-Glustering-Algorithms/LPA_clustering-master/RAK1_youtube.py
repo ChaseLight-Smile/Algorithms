@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Sep 11 21:20:56 2018
-
 @author: yubiabia
 """
 
@@ -10,7 +9,6 @@ Created on Tue Sep 11 21:20:56 2018
 # -*- coding: utf-8 -*-
 """
 Created on Tue Sep 11 17:20:07 2018
-
 @author: yubiabia
 """
 import collections,random
@@ -26,7 +24,7 @@ def communities(Label, Neighbor):
         community=[node for node in Label if Label[node]==l]
         communities.update({i:community})
     return communities
-    
+
 
 def maxVote(nLabels):
     cnt = collections.defaultdict(int)
@@ -47,7 +45,7 @@ def createEdges(NeighborID):
         for i in NeighborID[node]:
             edges.append((node,i))
     return edges
-        
+
 
 Label={}  #store nodes' labels
 Neighbor={} #store neighbors' labels
@@ -71,7 +69,7 @@ colors=['red','blue','green','cyan','pink','orange','grey','yellow','white','bla
 
 
 for n in NeighborID: #for each node
-    Lneighbor=[Label[k] for k in NeighborID[n]] #collect its neighbors labels 
+    Lneighbor=[Label[k] for k in NeighborID[n]] #collect its neighbors labels
     Neighbor.update({n:Lneighbor})# add to Neighbor dictionary
 #acquire each node's neighbors' labels
 iteration=1
@@ -84,7 +82,7 @@ while Stop(Label,Neighbor) is False:
         Label[n]=maxVote(Neighbor[n]) #update its own label
         C=communities(Label,Neighbor)
 #vote and apply max ID
-    
+
     """print(iteration)
     print(Label)"""
     iteration=iteration+1
