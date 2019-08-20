@@ -17,7 +17,9 @@
   * **线性规划（Linear Programming）**
   * **递归（Recursive Programming）**
   * **贪心策略（Greedy Programming）**
-  * **图算法（Graph Algorithms）**
+  * **图论算法（Graph Algorithms）**
+        * 图聚类算法（Graph Clustering algorithms）
+        * 最短路径算法（Shortest Path）
   * 其它
 
 ### **2. 算法列表**
