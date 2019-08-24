@@ -20,7 +20,7 @@ class CommunitySearch:
         self.G = G
         self.partition = [[n for n in G.nodes()]]
         self.all_Q = [0.0]
- 
+
     def devide_community(self):
         divide = []
         all_Q = []
@@ -42,13 +42,13 @@ class CommunitySearch:
         m = len(G.edges(None, False))
         a = []
         e = []
-    
+
         for community in partition:
             t = 0.0
             for node in community:
                 t += len([x for x in G.neighbors(node)])
             a.append(t/(2*m))
-        
+
         for community in partition:
             t = 0.0
             for i in range(len(community)):
@@ -56,27 +56,29 @@ class CommunitySearch:
                     if(G.has_edge(community[i], community[j])):
                         t += 1.0
             e.append(t/(2*m))
-        
+
         q = 0.0
         for ei,ai in zip(e,a):
-            q += (ei - ai**2) 
-        return q 
-    
+            q += (ei - ai**2)
+        return q
+
     def devide_group(self):
         num = 0
         nodegroup = {}
         for partition in self.partition:
             for node in partition:
                 nodegroup[node] = {'group':num}
-            num = num + 1  
+            num = num + 1
         nx.set_node_attributes(self.G_copy, nodegroup)
 
 if __name__ == '__main__':
     read("数据清洗4520116720190610183042流水合并.xlsx")
     print("构建图完成")
     G=nx.read_gml('Project111111111111.txt',label='id')
-    
+
     c = CommunitySearch(G)
     cc = c.devide_community()
     for i in range(1,len(G.nodes())+1):
         print(cc[0][i-1])
+
+

@@ -2,9 +2,9 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import xlrd
-import xlwt
-import os
 import sys
+import collections
+import os
 
 def read(file, sheet_index=0):
     G = nx.Graph()
@@ -124,26 +124,62 @@ class GN:
     def add_group(self):
         num = 0
         nodegroup = {}
+        #print(G.nodes())
         for partition in self.partition:
             for node in partition:
                 nodegroup[node] = {'group':num}
-            num = num + 1  
+            num = num + 1
         nx.set_node_attributes(self.G_copy, nodegroup)
+        print(self.G_copy.nodes())
         
     def to_gml(self):
         nx.write_gml(self.G_copy, 'outputofGN.gml')
         
 if __name__ == '__main__':
-    read("数据清洗4520116720190610183042流水合并.xlsx")
-    G=nx.read_gml('Project111111111111.txt',label='id')
+    path_input = input("请输入需要清洗的数据文件路径：")
+    # input_flag = os.path.exists(path_input)
+    while (True):
+        input_flag = os.path.exists(path_input)
+        if (input_flag):
+            break
+        else:
+            path_input = input("请重新输入需要清洗的数据文件路径：")
+    read(path_input)
     print("构建图完成")
+    G=nx.read_gml('Project111111111111.txt',label='id')
+
+    # 显示该图的度分布
+    degree_sequence = sorted([d for n, d in G.degree()], reverse=True)
+    print(degree_sequence)
+    degreeCount = collections.Counter(degree_sequence)
+    deg, cnt = zip(*degreeCount.items())
+
+    fig, ax = plt.subplots()
+    plt.bar(deg, cnt, width=0.80, color='b')
+
+    plt.title("Degree Histogram")
+    plt.ylabel("Count")
+    plt.xlabel("Degree")
+    ax.set_xticks([d + 0.4 for d in deg])
+    ax.set_xticklabels(deg)
+
+    # draw graph in inset
+    plt.axes([0.4, 0.4, 0.5, 0.5])
+    Gcc = sorted(nx.connected_component_subgraphs(G), key=len, reverse=True)[0]
+    pos = nx.spring_layout(G)
+    plt.axis('off')
+    nx.draw_networkx_nodes(G, pos, node_size=20)
+    nx.draw_networkx_edges(G, pos, alpha=0.4)
+    plt.show()
+
 
     algorithm = GN(G)
     algorithm.run()
     algorithm.draw_Q()   #画出Q值的曲线图
     algorithm.add_group()
     algorithm.to_gml()
-	
+
+
     G1=nx.read_gml('Project111111111111.txt',label='id') #Dividing communities by the number
     algorithmByNum = GN(G1)
     algorithmByNum.run_n(2)

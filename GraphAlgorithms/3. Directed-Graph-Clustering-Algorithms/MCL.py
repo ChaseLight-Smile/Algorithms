@@ -4,6 +4,14 @@ from optparse import OptionParser
 import logging
 import xlrd
 import sys
+import collections
+import matplotlib.pyplot as plt
+import warnings
+import matplotlib.cbook
+warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
+import os
+from networkx.algorithms.bridges import bridges
+from networkx.algorithms.isolate import isolates
 
 def read(file, sheet_index=0):
     G = nx.DiGraph()
@@ -174,10 +182,127 @@ def clusters_to_output(clusters, options):
 
 
 if __name__ == '__main__':
-    read("数据清洗4520116720190610183042流水合并.xlsx")
-    G=nx.read_gml('Project111111111111.txt',label='id')
+    path_input = input("请输入需要清洗的数据文件路径：")
+    # input_flag = os.path.exists(path_input)
+    while (True):
+        input_flag = os.path.exists(path_input)
+        if (input_flag):
+            break
+        else:
+            path_input = input("请重新输入需要清洗的数据文件路径：")
+    read(path_input)
     print("构建图完成")
-    print(networkx_mcl(G)[0])
+    G=nx.read_gml('Project111111111111.txt',label='id')
+
+    # print("--------判断任意两点的共同祖先--------")
+    # ancestors = nx.all_pairs_lowest_common_ancestor(G)
+    # print("任意两对的祖先为:", ancestors)
+    # print("--------判断任意两点的共同祖先--------")
+    # print("----------发现环-----------")
+
+    CycleGraph = nx.DiGraph()
+    cedges = list(nx.find_cycle(G, orientation='ignore'))
+    print(cedges)
+    cycleEdges = []
+    t = tuple()
+    for e in cedges:
+        print(type(e[2]))
+        if e[2] == "forward":
+            t = e[0], e[1]
+            cycleEdges.append(t)
+        else:
+            t = e[1], e[0]
+            cycleEdges.append(t)
+    CycleGraph.add_edges_from(cycleEdges)
+    nx.draw(CycleGraph, with_labels = True)
+    plt.show()
+    print("----------发现环-----------")
+    print("度为0的点为:", list(isolates(G)))
+
+    degree_sequence = sorted([d for n, d in G.degree()], reverse=True)
+    print(degree_sequence)
+    degreeCount = collections.Counter(degree_sequence)
+    deg, cnt = zip(*degreeCount.items())
+
+    fig, ax = plt.subplots()
+    plt.bar(deg, cnt, width=0.80, color='b')
+
+    plt.title("Degree Histogram")
+    plt.ylabel("Count")
+    plt.xlabel("Degree")
+    ax.set_xticks([d + 0.4 for d in deg])
+    ax.set_xticklabels(deg)
+    plt.axes([0.4, 0.4, 0.5, 0.5])
+    Gcc = sorted(nx.strongly_connected_component_subgraphs(G), key=len, reverse=True)[0]
+    pos = nx.spring_layout(G)
+    plt.axis('off')
+    nx.draw_networkx_nodes(G, pos, node_size=20)
+    nx.draw_networkx_edges(G, pos, alpha=0.4)
+    print("---", len(Gcc))
+    plt.show()
+
+    input("输入")
+    ###########################
+    in_degree_sequence = sorted([d for n, d in G.in_degree()], reverse=True)
+    print(in_degree_sequence)
+    in_degreeCount = collections.Counter(in_degree_sequence)
+    deg, cnt = zip(*in_degreeCount.items())
+
+    fig, ax = plt.subplots()
+    plt.bar(deg, cnt, width=0.80, color='b')
+
+    plt.title("in_Degree Histogram")
+    plt.ylabel("Count")
+    plt.xlabel("in_Degree")
+    ax.set_xticks([d + 0.4 for d in deg])
+    ax.set_xticklabels(deg)
+    ###########################
+    plt.axes([0.4, 0.4, 0.5, 0.5])
+    Gcc = sorted(nx.strongly_connected_component_subgraphs(G), key=len, reverse=True)[0]
+    pos = nx.spring_layout(G)
+    plt.axis('off')
+    nx.draw_networkx_nodes(G, pos, node_size=20)
+    nx.draw_networkx_edges(G, pos, alpha=0.4)
+    print("---", len(Gcc))
+    plt.show()
+    input("输入")
+
+    ###########################
+    out_degree_sequence = sorted([d for n, d in G.out_degree()], reverse=True)
+    print(out_degree_sequence)
+    out_degreeCount = collections.Counter(out_degree_sequence)
+    deg, cnt = zip(*out_degreeCount.items())
+
+    fig, ax = plt.subplots()
+    plt.bar(deg, cnt, width=0.80, color='b')
+
+    plt.title("out_Degree Histogram")
+    plt.ylabel("Count")
+    plt.xlabel("out_Degree")
+    ax.set_xticks([d + 0.4 for d in deg])
+    ax.set_xticklabels(deg)
+    ############################
+    plt.axes([0.4, 0.4, 0.5, 0.5])
+    Gcc = sorted(nx.strongly_connected_component_subgraphs(G), key=len, reverse=True)[0]
+    pos = nx.spring_layout(G)
+    plt.axis('off')
+    nx.draw_networkx_nodes(G, pos, node_size=20)
+    nx.draw_networkx_edges(G, pos, alpha=0.4)
+    print("---", len(Gcc))
+    plt.show()
+    input("输入")
+
+    # draw graph in inset
+    # plt.axes([0.4, 0.4, 0.5, 0.5])
+    # Gcc = sorted(nx.strongly_connected_component_subgraphs(G), key=len, reverse=True)[0]
+    # pos = nx.spring_layout(G)
+    # plt.axis('off')
+    # nx.draw_networkx_nodes(G, pos, node_size=20)
+    # nx.draw_networkx_edges(G, pos, alpha=0.4)
+    # print("---", len(Gcc))
+    # plt.show()
+
+    # print(networkx_mcl(G)[0])
     print("有向图聚类后的簇数目为：", len(networkx_mcl(G)[1]))
     print("有向图聚类结果为：", networkx_mcl(G)[1])
     draw(G,networkx_mcl(G)[0],networkx_mcl(G)[1])

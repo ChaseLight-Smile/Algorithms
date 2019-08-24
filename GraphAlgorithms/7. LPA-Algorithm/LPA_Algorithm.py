@@ -58,7 +58,6 @@ def lpa(graph):
             # 当节点标签与大部分邻居节点标签相同时则达到停止条件
             if graph.node[node]['label'] not in labels:
                 return False
-
         return True
 
     loop_count = 0
@@ -84,7 +83,7 @@ def lpa(graph):
             label = random.sample(labels, 1)[0][0]
             graph.node[node]['label'] = label
 
-        if estimate_stop_condition() is True or loop_count >= 100:
+        if estimate_stop_condition() is True or loop_count >= 10:
             print('complete')
             return
 
@@ -93,7 +92,6 @@ def lpa(graph):
 if __name__ == "__main__":
 
     path = "数据清洗4520116720190610183042流水合并.xlsx"
-    #path = "soc-Epinions1.txt"
     graph = read_graph_from_file(path)
     lpa(graph)
 
