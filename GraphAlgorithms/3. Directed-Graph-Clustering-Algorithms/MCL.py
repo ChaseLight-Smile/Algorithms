@@ -12,6 +12,8 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 import os
 from networkx.algorithms.bridges import bridges
 from networkx.algorithms.isolate import isolates
+import operator
+import collections
 
 def read(file, sheet_index=0):
     G = nx.DiGraph()
@@ -194,11 +196,29 @@ if __name__ == '__main__':
     print("构建图完成")
     G=nx.read_gml('Project111111111111.txt',label='id')
 
+    print("---------------------接近中心性---------------------")
+    cc = nx.closeness_centrality(G)
+    sorted_cc = sorted(cc.items(), key=lambda kv: kv[1], reverse=True)
+    print(sorted_cc)
+    sorted_dict = collections.OrderedDict(sorted_cc)
+    plt.bar(sorted_dict.keys(), sorted_dict.values(),  width=1, color='g')
+    plt.show()
+    print("---------------------接近中心性---------------------")
     # print("--------判断任意两点的共同祖先--------")
     # ancestors = nx.all_pairs_lowest_common_ancestor(G)
     # print("任意两对的祖先为:", ancestors)
     # print("--------判断任意两点的共同祖先--------")
-    # print("----------发现环-----------")
+
+    print("-------------------------------pagerank中心性------------------------------")
+    pr = nx.pagerank(G, alpha=0.9)
+    sorted_pr = sorted(pr.items(), key=lambda kv: kv[1], reverse=True)
+    print(sorted_pr)
+    sorted_dict_pr = collections.OrderedDict(sorted_pr)
+    plt.bar(sorted_dict_pr.keys(), sorted_dict_pr.values(),  width=1, color='g')
+    plt.show()
+    print("-------------------------------pagerank------------------------------")
+
+    print("----------发现环-----------")
 
     CycleGraph = nx.DiGraph()
     cedges = list(nx.find_cycle(G, orientation='ignore'))
@@ -206,7 +226,7 @@ if __name__ == '__main__':
     cycleEdges = []
     t = tuple()
     for e in cedges:
-        print(type(e[2]))
+        # print(type(e[2]))
         if e[2] == "forward":
             t = e[0], e[1]
             cycleEdges.append(t)
@@ -217,6 +237,8 @@ if __name__ == '__main__':
     nx.draw(CycleGraph, with_labels = True)
     plt.show()
     print("----------发现环-----------")
+
+
     print("度为0的点为:", list(isolates(G)))
 
     degree_sequence = sorted([d for n, d in G.degree()], reverse=True)
@@ -233,6 +255,8 @@ if __name__ == '__main__':
     ax.set_xticks([d + 0.4 for d in deg])
     ax.set_xticklabels(deg)
     plt.axes([0.4, 0.4, 0.5, 0.5])
+
+    print("---------------------------强连通组件---------------------------")
     Gcc = sorted(nx.strongly_connected_component_subgraphs(G), key=len, reverse=True)[0]
     pos = nx.spring_layout(G)
     plt.axis('off')
@@ -240,6 +264,7 @@ if __name__ == '__main__':
     nx.draw_networkx_edges(G, pos, alpha=0.4)
     print("---", len(Gcc))
     plt.show()
+    print("---------------------------强连通组件---------------------------")
 
     input("输入")
     ###########################
