@@ -15,6 +15,17 @@ from networkx.algorithms.isolate import isolates
 import operator
 import collections
 
+def read_txt_to_directed_graph(filename):
+    file = open(filename, 'r')
+    G = nx.DiGraph()
+    for line in file.readlines():
+        node = line.split()
+        G.add_edge(node[0],node[1])
+    tmp = filename.split('.')
+    output_file = tmp[0] + "undiredted." + tmp[1]
+    nx.write_gml(G, output_file)
+    return G
+
 def read(file, sheet_index=0):
     G = nx.DiGraph()
     workbook1 = xlrd.open_workbook(file)
