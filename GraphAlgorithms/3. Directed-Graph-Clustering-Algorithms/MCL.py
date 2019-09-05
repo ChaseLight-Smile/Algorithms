@@ -260,7 +260,7 @@ if __name__ == '__main__':
     Gcc = sorted(nx.strongly_connected_component_subgraphs(G), key=len, reverse=True)[0]
     pos = nx.spring_layout(G)
     plt.axis('off')
-    nx.draw_networkx_nodes(G, pos, node_size=20)
+    nx.draw_networkx_nodes(G, pos, node_size=10)
     nx.draw_networkx_edges(G, pos, alpha=0.4)
     print("---", len(Gcc))
     plt.show()
