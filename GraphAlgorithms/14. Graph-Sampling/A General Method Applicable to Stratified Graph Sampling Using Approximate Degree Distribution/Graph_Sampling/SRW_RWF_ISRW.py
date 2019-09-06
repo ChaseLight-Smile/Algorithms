@@ -1,3 +1,4 @@
+# 实现了无向图，没有实现有向图
 import random
 import time
 import datetime
@@ -7,6 +8,18 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 from itertools import groupby
+
+def read_txt_to_undirected_graph(filename):
+    file = open(filename, 'r')
+    G = nx.Graph()
+    for line in file.readlines():
+        node = line.split()
+        G.add_edge(int(node[0]),int(node[1]))
+    # tmp = filename.split('.')
+    # output_file = tmp[0] + "undiredted." + tmp[1]
+    # nx.write_gml(G, output_file)
+    return G
+
 
 class SRW_RWF_ISRW:
 
@@ -115,3 +128,28 @@ class SRW_RWF_ISRW:
         sampled_graph = complete_graph.subgraph(Sampled_nodes)
 
         return sampled_graph
+
+
+if __name__ == "__main__":
+    file = input("please input file path and name:")
+    g = read_txt_to_undirected_graph(file)
+    # make an object and call function SRW
+    object1=SRW_RWF_ISRW()
+    sample1 = object1.random_walk_sampling_simple(g,100) # graph, number of nodes to sample
+    print("Simple Random Walk Sampling:")
+    print("Number of nodes sampled=",len(sample1.nodes()))
+    print("Number of edges sampled=",len(sample1.edges()))
+
+    # make an object and call function RWF
+    object2=SRW_RWF_ISRW()
+    sample2= object2.random_walk_sampling_with_fly_back(g,110,0.2)  # graph, number of nodes to sample, fly-back probability
+    print("Random Walk Sampling with flyback:")
+    print("Number of nodes sampled=",len(sample2.nodes()))
+    print("Number of edges sampled=",len(sample2.edges()))
+
+    # make an object and call function ISRW
+    object3=SRW_RWF_ISRW()
+    sample3= object3.random_walk_induced_graph_sampling(g,120)  # graph, number of nodes to sample
+    print("Induced Subgraph Random Walk Sampling:")
+    print ("Number of nodes sampled=",len(sample3.nodes()))
+    print ("Number of edges sampled=",len(sample3.edges()))
