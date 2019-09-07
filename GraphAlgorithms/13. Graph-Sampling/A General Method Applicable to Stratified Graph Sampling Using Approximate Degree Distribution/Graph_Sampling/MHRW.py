@@ -27,7 +27,7 @@ class MHRW():
         related_list = list(G.neighbors(parent_node))
         node_list.update(related_list)
 
-        while(len(self.G1.nodes()) < size):
+        while(len(self.G1.nodes()) <= size):
             if(len(node_list) > 0):
                 child_node = node_list.pop()
                 p =  round(random.uniform(0,1),4)
