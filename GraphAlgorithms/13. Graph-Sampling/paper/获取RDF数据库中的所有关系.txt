@@ -1,0 +1,6 @@
+SELECT ?domain ?property ?range
+WHERE{  
+       ?property rdf:type owl:ObjectProperty .
+       ?property rdfs:range ?range .
+       ?property rdfs:domain ?domain
+     }
