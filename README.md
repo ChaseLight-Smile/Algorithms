@@ -1,6 +1,5 @@
 ## **数据结构与算法**
 
-[TOC]
 
 ### **1. 概述**
 
@@ -18,8 +17,6 @@
   * **递归（Recursive Programming）**
   * **贪心策略（Greedy Programming）**
   * **图论算法（Graph Algorithms）**
-        * 图聚类算法（Graph Clustering algorithms）
-        * 最短路径算法（Shortest Path）
   * 其它
 
 ### **2. 算法列表**
