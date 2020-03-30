@@ -105,8 +105,8 @@
 * aAddB();   a + b which a is less than 100 and b is less than 100.
 * isPalindrome(self, x)   Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward (Leetcode 9) AC
 * romanToInt(string s)  Leetcode 13 AC
-
-
+* Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"
+* leetcode209.cpp  Minimum Size Subarray Sum "slide window search"
 
 ### **3. 时空复杂度分析**
 
