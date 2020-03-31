@@ -108,7 +108,7 @@
 * Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"
 * leetcode209.cpp  Minimum Size Subarray Sum "slide window search"
 * LeetCode23.cpp Merge k Sorted Lists O(nlogk)
-
+* LeetCode76.cpp Minimum Window Substring 时间复杂度为O(256n)
 
 ### **3. 时空复杂度分析**
 
