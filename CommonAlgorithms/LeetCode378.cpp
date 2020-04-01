@@ -21,3 +21,23 @@ public:
         return ans;
     }
 };
+
+//解法三： 全局数据排序，排序的平均时间复杂度理论上较高，但是在实际测试时发现解法三优于解法一。
+class Solution {
+public:
+    int kthSmallest(vector<vector<int>>& matrix, int k) {
+        int x_size = matrix.size();
+        int y_size = matrix[0].size();
+        vector<int> ans;
+        int i= 0, j = 0;
+       
+        for(i = 0 ; i < x_size; i++){
+            for(j =  0; j < y_size; j++){
+                ans.push_back(matrix[i][j]);
+            }
+        }
+        
+        sort(ans.begin(),ans.end());
+        return ans[k-1];
+    }
+};
