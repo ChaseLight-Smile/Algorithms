@@ -113,7 +113,7 @@
 * LeetCode215.cpp Kth Largest Element in an Array O(n+k*logn)
 * LeetCode414.cpp Third Maximum Number unordered_map + priority_queue  O(n)
 * LeetCode378.cpp Kth Smallest Element in a Sorted Matrix 
-
+* LeetCode128.cpp Longest Consecutive Sequence
 
 ### **3. 时空复杂度分析**
 
