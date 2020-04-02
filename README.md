@@ -115,8 +115,8 @@
 * LeetCode378.cpp Kth Smallest Element in a Sorted Matrix 
 * LeetCode128.cpp Longest Consecutive Sequence
 * LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)
-
-
+* LeetCode349.cpp  Intersection of Two Arrays O(n)
+ 
 ### **3. 时空复杂度分析**
 
 
