@@ -90,6 +90,7 @@
 * HDU2017();  Practise the C++ language properties in HDUOJ page 11.  AC
 * HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
 * HDU1066();   Computing the factorical's last non-zero number. AC
+LeetCode66.cpp  Plus One
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
