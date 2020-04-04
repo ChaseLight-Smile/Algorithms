@@ -122,6 +122,9 @@
 * LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
 * LeetCode349.cpp  Intersection of Two Arrays O(n)  AC
 * LeetCode692.cpp  Top K Frequent Words  AC
+* LeetCode347.cpp  Top K Frequent Elements AC
+
+
 ### **3. 时空复杂度分析**
 
 
