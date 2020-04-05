@@ -124,6 +124,8 @@
 * LeetCode692.cpp  Top K Frequent Words  AC
 * LeetCode347.cpp  Top K Frequent Elements AC
 * LeetCode451.cpp Sort Characters By Frequency AC
+* LeetCode387.cpp First Unique Character in a String AC
+
 
 ### **3. 时空复杂度分析**
 
