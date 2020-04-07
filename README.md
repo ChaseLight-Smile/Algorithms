@@ -96,6 +96,7 @@
 * LeetCode92.cpp Reverse Linked List II AC
 * LeetCode445.cpp Add Two Numbers II AC
 * LeetCode143.cpp Reorder List AC
+* LeetCode35.cpp Search Insert Position AC
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
