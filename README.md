@@ -105,6 +105,7 @@
 * LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
 * LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC
 * LeetCode136.cpp Single Number AC hash table
+* LeetCode260.cpp Single Number III AC
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
