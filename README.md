@@ -104,6 +104,7 @@
 * LeetCode81.cpp Search in Rotated Sorted Array II 代码和LeetCode704.cpp只差一个排序过程
 * LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
 * LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC
+* LeetCode136.cpp Single Number AC hash table
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
@@ -140,6 +141,8 @@
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 * LeetCode658.cpp Find K Closest Elements AC
 * LeetCode287.cpp Find the Duplicate Number AC
+
+
 
 ### **3. 时空复杂度分析**
 
