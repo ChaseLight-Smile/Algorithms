@@ -102,6 +102,8 @@
 * LeetCode1046.cpp Last Stone Weight AC
 * LeetCode704.cpp Binary Search AC
 * LeetCode81.cpp Search in Rotated Sorted Array II 代码和LeetCode704.cpp只差一个排序过程
+* LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
+* LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
