@@ -143,7 +143,8 @@
 * LeetCode658.cpp Find K Closest Elements AC
 * LeetCode287.cpp Find the Duplicate Number AC
 * LeetCode144.cpp Binary Tree Preorder Traversal AC
-
+* LeetCode145.cpp Binary Tree Postorder Traversal AC
+* LeetCode94.cpp Binary Tree Inorder Traversal AC
 
 ### **3. 时空复杂度分析**
 
