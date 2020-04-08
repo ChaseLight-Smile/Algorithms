@@ -97,6 +97,8 @@
 * LeetCode445.cpp Add Two Numbers II AC
 * LeetCode143.cpp Reorder List AC
 * LeetCode35.cpp Search Insert Position AC
+* LeetCode75.cpp Sort Colors AC
+* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
@@ -128,7 +130,7 @@
 * LeetCode451.cpp Sort Characters By Frequency AC
 * LeetCode387.cpp First Unique Character in a String AC
 * LeetCode147.cpp  Insertion Sort List AC
-* LeetCode75.cpp Sort Colors AC
+
 
 ### **3. 时空复杂度分析**
 
