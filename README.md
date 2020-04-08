@@ -99,6 +99,7 @@
 * LeetCode35.cpp Search Insert Position AC
 * LeetCode75.cpp Sort Colors AC
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
+* LeetCode1046.cpp Last Stone Weight AC
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
