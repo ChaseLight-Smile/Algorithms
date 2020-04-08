@@ -100,6 +100,7 @@
 * LeetCode75.cpp Sort Colors AC
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * LeetCode1046.cpp Last Stone Weight AC
+* LeetCode704.cpp Binary Search AC
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
