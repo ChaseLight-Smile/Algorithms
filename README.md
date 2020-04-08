@@ -137,7 +137,7 @@
 * LeetCode147.cpp  Insertion Sort List AC
 * LeetCode703.cpp Kth Largest Element in a Stream
 * LeetCode973.cpp K Closest Points to Origin AC
-* LeetCode786.cpp 
+* LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 * LeetCode658.cpp Find K Closest Elements AC
 ### **3. 时空复杂度分析**
 
