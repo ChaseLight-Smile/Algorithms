@@ -45,3 +45,40 @@ public:
  * KthLargest* obj = new KthLargest(k, nums);
  * int param_1 = obj->add(val);
  */
+ 
+//解法二 time limited
+ class KthLargest {
+    vector<int> ans;
+    int count = 0;
+    int k_largest;
+public:
+    KthLargest(int k, vector<int>& nums) {
+        int len = nums.size();
+        count = k;
+        sort(nums.begin(), nums.end());
+        if(len < k){
+            k_largest = INT_MIN;
+        }else
+            k_largest = nums[len-k];
+        ans = nums;
+    }
+    
+    int add(int val) {
+        if(val <= k_largest){
+            ans.push_back(val);
+            sort(ans.begin(), ans.end());
+            return k_largest;
+        }else{
+            ans.push_back(val);
+            sort(ans.begin(), ans.end());
+            k_largest = ans[ans.size()-count];
+            return k_largest;
+        }
+    }  
+};
+
+/**
+ * Your KthLargest object will be instantiated and called as such:
+ * KthLargest* obj = new KthLargest(k, nums);
+ * int param_1 = obj->add(val);
+ */
