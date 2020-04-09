@@ -10,6 +10,7 @@
       * **Union Find**
       * **Stack**
       * **Binary Search**
+      * **Trie**
   * **树（Trees）**
       * **Binary Search Trees**
       * **Red-black Trees**
