@@ -5,7 +5,11 @@
 
 在算法列表中出现的算法，存储数据时基本都采用了数组结构，但是需要明白的是，算法思想是一个算法的灵魂，在一些情况下，确实算法依赖于一些特定的数据结构，在具体算法实现过程中，我会特别强调这一点。最简单的例子就是归并排序，在下面的算法列表中，我分别用数组和链表存储数据，但是归并排序算法的思想精髓并没有因为存储数据的数据结构发生变化而变化。**数据结构描述一组数据的组织方式，算法是操作一组数据的具体方法**。在具体的实现中一定要区分清楚什么是算法思想以及数据怎么来存储。数据结构和算法是程序的根本，学习算法并且用某种语言(算法不依赖于特定的语言)实现(能不能实现看你的编程能力，与算法本身无关，尤其需要注意的是算法与你采用什么语言实现无关)。**所有算法的实现都非常注重时间复杂度的最优化，同时也关注了空间复杂度，因为浪费空间的算法，其执行时间会增大**，**因此，我们得出结论：解决问题方法的效率，跟数据的组织方式有关**。基本内容概括如下：
 
-  * **基本算法，如排序算法等（Basic Algorithms）**
+  * **基本算法**
+      * **min-Heap/max-Heap**
+      * **Union Find**
+      * **Stack**
+      * **Binary Search**
   * **树（Trees）**
       * **Binary Search Trees**
       * **Red-black Trees**
@@ -62,6 +66,8 @@
 * HDU1005Solution(); HDU1005题目解答，实现了普通递归算法，并将普通递归算法修改为尾递归算法，AC
 * HDOJ1000();  AC
 * HDOJ1001();  AC
+* HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
+* HDU1066();   Computing the factorical's last non-zero number. AC
 * partitionHoare(int arr[], int start, int end); It is used in the quicksort algorithm 
 * quicksort(int arr[], int start, int end); the quicksort algorithm, which implements Hoare partition and Lomuto partition
 * heapsort(int arr[], int length); the heapsort algorithm
@@ -71,25 +77,7 @@
 * sortASCII();   sort ASCII by using insertion sort.
 * distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
 * volumn();   Computing the volumn of ball
-* HDU2001(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2002(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2003(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2004(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2005(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2006(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2007(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2008(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2009(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2010(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2011(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2012(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2013(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2014(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2015(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2016(); Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU2017();  Practise the C++ language properties in HDUOJ page 11.  AC
-* HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
-* HDU1066();   Computing the factorical's last non-zero number. AC
+* HDU2001()-HDU2017(); Practise the C++ language properties in HDUOJ page 11.  AC
 * LeetCode66.cpp  Plus One AC
 * LeetCode148.cpp sort list AC
 * LeetCode206.cpp Reverse Linked List AC
@@ -108,10 +96,7 @@
 * LeetCode260.cpp Single Number III AC
 * LeetCode590.cpp N-ary Tree Postorder Traversal AC
 * LeetCode589.cpp N-ary Tree Preorder Traversal AC
-* split1(string s); 
-* split2(string s); 
-* split3(string s); 
-* split4(string s);    It is the metods to split a string in C++ languages. And it is hard to split in C++ comparing to the Java and Python.
+* split1(string s)-split4(string s);
 * topologicalSort();   The implement of topological sort.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
 * gcd1(int numberA, int numberB); 
@@ -124,7 +109,7 @@
 * isPalindrome(self, x)   Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward (Leetcode 9) AC
 * romanToInt(string s)  Leetcode 13 AC
 * Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
-* leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
+* Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
 * LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
 * LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
