@@ -11,12 +11,12 @@
       * **Stack**
       * **Binary Search**
       * **Trie**
-  * **树（Trees）**
-      * **Binary Search Trees**
-      * **Red-black Trees**
-      * **B-Trees**
-      * **B<sup>+</sup>-trees**
-      * **B<sup>\*</sup>-trees**
+      * **树（Trees）**
+          * **Binary Search Trees**
+          * **Red-black Trees**
+          * **B-Trees**
+          * **B<sup>+</sup>-trees**
+          * **B<sup>\*</sup>-trees**
   * **动态规划（Dynamic Programming）**
   * **线性规划（Linear Programming）**
   * **递归（Recursive Programming）**
