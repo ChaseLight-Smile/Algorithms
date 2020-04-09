@@ -97,6 +97,7 @@
 * LeetCode260.cpp Single Number III AC
 * LeetCode590.cpp N-ary Tree Postorder Traversal AC
 * LeetCode589.cpp N-ary Tree Preorder Traversal AC
+* LeetCode700.cpp Search in a Binary Search Tree AC
 * split1(string s)-split4(string s);
 * topologicalSort();   The implement of topological sort.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
