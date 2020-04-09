@@ -107,6 +107,7 @@
 * LeetCode136.cpp Single Number AC hash table
 * LeetCode260.cpp Single Number III AC
 * LeetCode590.cpp N-ary Tree Postorder Traversal AC
+* LeetCode589.cpp N-ary Tree Preorder Traversal AC
 * split1(string s); 
 * split2(string s); 
 * split3(string s); 
