@@ -73,3 +73,35 @@ public:
         
     }
 };
+
+//解法三：hash+map
+class Solution {
+public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        unordered_map<int, int> m;
+        int len = nums.size();
+        for(int i = 0 ; i < len; i++){
+            if(m.find(nums[i]) != m.end()){
+                m[nums[i]] = m[nums[i]]+1;
+            }else{
+                m[nums[i]] = 1;
+            }
+        }
+        
+        multimap<int, int> ans;
+        map<int, int>::reverse_iterator mm_it;
+        for(auto & m_it: m){
+            ans.insert(pair<int, int>(m_it.second, m_it.first));
+        }
+        
+        
+        vector<int> result;
+        for(mm_it = ans.rbegin(); mm_it!= ans.rend(), k>0; mm_it++){
+            result.push_back(mm_it->second);
+            k--;
+        }
+        
+        return result;
+        
+    }
+};
