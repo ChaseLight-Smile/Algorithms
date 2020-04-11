@@ -98,6 +98,8 @@
 * LeetCode590.cpp N-ary Tree Postorder Traversal AC
 * LeetCode589.cpp N-ary Tree Preorder Traversal AC
 * LeetCode700.cpp Search in a Binary Search Tree AC
+* LeetCode162.cpp Find Peak Element AC
+* LeetCode852.cpp Peak Index in a Mountain Array AC
 * split1(string s)-split4(string s);
 * topologicalSort();   The implement of topological sort.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
@@ -137,6 +139,8 @@
 * LeetCode173.cpp Binary Search Tree Iterator AC
 * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
 * LeetCode211.cpp Add and Search Word - Data structure design AC
+
+
 ### **3. 时空复杂度分析**
 
 
