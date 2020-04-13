@@ -132,7 +132,7 @@
 * LeetCode451.cpp Sort Characters By Frequency AC
 * LeetCode387.cpp First Unique Character in a String AC
 * LeetCode147.cpp  Insertion Sort List AC
-* LeetCode703.cpp Kth Largest Element in a Stream
+* LeetCode703.cpp Kth Largest Element in a Stream AC
 * LeetCode973.cpp K Closest Points to Origin AC
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 * LeetCode658.cpp Find K Closest Elements AC

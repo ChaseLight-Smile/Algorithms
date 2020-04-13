@@ -1,80 +1,47 @@
-//解法一： Time limited
+/* 采用小顶堆，那么堆顶恰好是第K大元素。如何理解？目前是求第K大元素，那么
+ * 我们首先应该建立一个大小为K的最小堆，我们知道，堆顶元素一定比其他K-1个元素
+ * 小，当我们继续扫描nums，然后只需要比堆顶大的时候再将数据插入到堆中，这样堆顶
+ * 就会一直保存第K大元素了
+*/
 class KthLargest {
-    priority_queue<int, vector<int>, less<int>> q;
-    int count = 0;
-    int k_largest;
 public:
+    priority_queue<int, vector<int>, greater<int>> q;
+    int K = 0;
+public:
+    
     KthLargest(int k, vector<int>& nums) {
         int len = nums.size();
-        for(int i = 0 ; i< len; i++){
-            q.push(nums[i]);
-        }
-        count = k;
-        sort(nums.begin(), nums.end());
-        if(len < k){
-            k_largest = INT_MIN;
-        }else
-            k_largest = nums[len-k];
-        
-    }
-    
-    int add(int val) {
-        if (val <= k_largest){
-            q.push(val);
-            return k_largest;
-        }
-        q.push(val);
-        vector<int> ans;
-        while(count>0){
-            k_largest = q.top();
-            ans.push_back(k_largest);
-            q.pop();
-            count--;
-        }
-        int ans_len = ans.size();
-        for(int i = 0; i < ans_len; i++){
-            q.push(ans[i]);
-            count++;
-        }
-        return k_largest;
-    }  
-};
-
-/**
- * Your KthLargest object will be instantiated and called as such:
- * KthLargest* obj = new KthLargest(k, nums);
- * int param_1 = obj->add(val);
- */
- 
-//解法二 time limited
- class KthLargest {
-    vector<int> ans;
-    int count = 0;
-    int k_largest;
-public:
-    KthLargest(int k, vector<int>& nums) {
-        int len = nums.size();
-        count = k;
-        sort(nums.begin(), nums.end());
-        if(len < k){
-            k_largest = INT_MIN;
-        }else
-            k_largest = nums[len-k];
-        ans = nums;
-    }
-    
-    int add(int val) {
-        if(val <= k_largest){
-            ans.push_back(val);
-            sort(ans.begin(), ans.end());
-            return k_largest;
+        if(k >= len){
+            for( int  i = 0; i < len; i++){
+                q.push(nums[i]);
+            }
         }else{
-            ans.push_back(val);
-            sort(ans.begin(), ans.end());
-            k_largest = ans[ans.size()-count];
-            return k_largest;
+            for(int i = 0 ; i < len; i++){
+                if(i < k){
+                    q.push(nums[i]);
+                }else{
+                    if(nums[i] > q.top()){
+                        q.pop();
+                        q.push(nums[i]);
+                    }
+                }
+            }
         }
-    }  
+        
+        K  = k;
+    }
+    
+    int add(int val) {
+        if(q.size() < K){
+            q.push(val);
+        }else{
+            if(val > q.top()){
+                q.pop();
+                q.push(val);
+            }
+        }
+        return q.top();
+    }
 };
 
 /**
