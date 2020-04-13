@@ -152,7 +152,7 @@
 * LeetCode18.cpp 4Sum two pointer AC
 * LeetCode278.cpp First Bad Version AC
 * LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
-* BFS and DFS
+* BFS and DFS of Tree
     * LeetCode102.cpp Binary Tree Level Order Traversal
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
     * LeetCode637.cpp Average of Levels in Binary Tree AC
