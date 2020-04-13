@@ -147,7 +147,7 @@
 * LeetCode1.cpp 1. Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode18.cpp 4Sum two pointer AC
-
+* LeetCode230.cpp Kth Smallest Element in a BST AC
 ### **3. 时空复杂度分析**
 
 
