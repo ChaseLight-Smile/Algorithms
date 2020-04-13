@@ -151,6 +151,7 @@
 * LeetCode18.cpp 4Sum two pointer AC
 * LeetCode230.cpp Kth Smallest Element in a BST AC
 * LeetCode278.cpp First Bad Version AC
+* LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 
 ### **3. 时空复杂度分析**
 
