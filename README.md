@@ -150,7 +150,6 @@
 * LeetCode1.cpp 1. Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode18.cpp 4Sum two pointer AC
-* LeetCode230.cpp Kth Smallest Element in a BST AC
 * LeetCode278.cpp First Bad Version AC
 * LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 * BFS and DFS
@@ -160,6 +159,7 @@
     * LeetCode429.cpp N-ary Tree Level Order Traversal AC
     * LeetCode1305.cpp All Elements in Two Binary Search Trees AC
     * LeetCode1302.cpp Deepest Leaves Sum AC
+	* LeetCode230.cpp Kth Smallest Element in a BST AC
 
 
 ### **3. 时空复杂度分析**
