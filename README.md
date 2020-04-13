@@ -105,6 +105,7 @@
 * LeetCode203.cpp Remove Linked List Elements AC
 * ListCode204.cpp Count Primes AC
 * LeetCode1089.cpp Duplicate Zeros AC
+* LeetCode69.cpp Sqrt(x) AC
 * split1(string s)-split4(string s);
 * topologicalSort();   The implement of topological sort.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
@@ -149,6 +150,8 @@
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode18.cpp 4Sum two pointer AC
 * LeetCode230.cpp Kth Smallest Element in a BST AC
+
+
 ### **3. 时空复杂度分析**
 
 
