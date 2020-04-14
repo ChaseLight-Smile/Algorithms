@@ -170,8 +170,6 @@
 	* LeetCode965.cpp Univalued Binary Tree AC
 	* LeetCode124.cpp Binary Tree Maximum Path Sum
 	* LeetCode129.cpp Sum Root to Leaf Numbers
-	* LeetCode437.cpp Path Sum III
-	* LeetCode113.cpp Path Sum II
 	* LeetCode988.cpp Smallest String Starting From Leaf
 	* LeetCode1376.cpp Time Needed to Inform All Employees
 	* LeetCode662.cpp Maximum Width of Binary Tree
