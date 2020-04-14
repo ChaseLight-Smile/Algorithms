@@ -129,12 +129,12 @@
 * LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC
 * LeetCode128.cpp Longest Consecutive Sequence  AC
 * LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
-* LeetCode349.cpp  Intersection of Two Arrays O(n)  AC
-* LeetCode692.cpp  Top K Frequent Words  AC
-* LeetCode347.cpp  Top K Frequent Elements AC
+* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
+* LeetCode692.cpp Top K Frequent Words  AC
+* LeetCode347.cpp Top K Frequent Elements AC
 * LeetCode451.cpp Sort Characters By Frequency AC
 * LeetCode387.cpp First Unique Character in a String AC
-* LeetCode147.cpp  Insertion Sort List AC
+* LeetCode147.cpp Insertion Sort List AC
 * LeetCode703.cpp Kth Largest Element in a Stream AC
 * LeetCode973.cpp K Closest Points to Origin AC
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
@@ -149,6 +149,7 @@
 * LeetCode142.cpp Linked List Cycle II AC
 * LeetCode1.cpp 1. Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
+* LeetCode16.cpp 3Sum Closest AC
 * LeetCode18.cpp 4Sum two pointer AC
 * LeetCode278.cpp First Bad Version AC
 * LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
