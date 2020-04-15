@@ -1,4 +1,4 @@
-//解法一： unordered_multimap
+//解法一： unordered_multimap 44 / 45 test cases passed.
 struct ValueNode{
     string value;
     int timestamp;
