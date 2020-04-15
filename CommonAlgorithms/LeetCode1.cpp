@@ -42,3 +42,23 @@ public:
         return ans;
     }
 };
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int len = nums.size();
+        for(int i = 0; i<len-1;i++){
+            int left = i+1;
+            while(left < len){
+                if(nums[i] + nums[left] == target){
+                    return {i,left};
+                }else if(nums[i] + nums[left] < target){
+                    left++;
+                    continue;
+                }
+                left++;
+            }
+        }
+        return {-1,-1};
+    }
+};
