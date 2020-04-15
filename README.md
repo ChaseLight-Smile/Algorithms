@@ -156,6 +156,7 @@
 * LeetCode278.cpp First Bad Version AC
 * LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 * LeetCode8.cpp String to Integer (atoi) AC
+* LeetCode981.cpp Time Based Key-Value Store  TLE 
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-rry Tree
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
@@ -180,9 +181,10 @@
 	* LeetCode1008.cpp Construct Binary Search Tree from Preorder Traversal AC
 	* leetCode103.cpp Binary Tree Zigzag Level Order Traversal AC
 	* LeetCode938.cpp Range Sum of BST AC
+	* LeetCode127.cpp Word Ladder 双向BFS
 	* LeetCode988.cpp Smallest String Starting From Leaf
 	* LeetCode1376.cpp Time Needed to Inform All Employees
-	* LeetCode124. Binary Tree Maximum Path Sum   LevelOrder + 最大连续子数据和  Hard
+	* LeetCode124. Binary Tree Maximum Path Sum   LevelOrder + 最大连续子数组和  Hard
 
 ### **3. 时空复杂度分析**
 
