@@ -50,6 +50,23 @@ public:
         return right;
     }
 };
+//跟解法三一样的意思，只不过此时排除的是右边一侧
+class Solution {
+public:
+    int findPeakElement(vector<int>& nums) {
+        int len = nums.size();
+        int left = 0 ;
+        int right = len-1;
+        int mid;
+        while(left < right){
+            mid = left + (right - left + 1)/2;
+            if(nums[mid] < nums[mid-1]) right = mid-1;
+            else left = mid;
+        }
+        return left;
+    }
+};
+
 
 //二分查找
 class Solution {
