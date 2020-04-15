@@ -107,6 +107,7 @@
 * LeetCode1089.cpp Duplicate Zeros AC
 * LeetCode69.cpp Sqrt(x) AC
 * LeetCode744.cpp Find Smallest Letter Greater Than Target AC
+* LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
 * split1(string s)-split4(string s);
 * topologicalSort();   The implement of topological sort.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
