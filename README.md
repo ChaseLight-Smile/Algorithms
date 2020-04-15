@@ -89,7 +89,7 @@
 * LeetCode75.cpp Sort Colors AC
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * LeetCode1046.cpp Last Stone Weight AC
-* LeetCode704.cpp Binary Search AC
+* LeetCode704.cpp Binary Search AC https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/
 * LeetCode81.cpp Search in Rotated Sorted Array II 代码和LeetCode704.cpp只差一个排序过程
 * LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
 * LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC
