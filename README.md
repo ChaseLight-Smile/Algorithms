@@ -156,7 +156,7 @@
 * LeetCode278.cpp First Bad Version AC
 * LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 * LeetCode8.cpp String to Integer (atoi) AC
-* LeetCode981.cpp Time Based Key-Value Store  TLE 
+* LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-rry Tree
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
