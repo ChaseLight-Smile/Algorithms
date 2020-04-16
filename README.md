@@ -93,6 +93,7 @@
     * LeetCode704.cpp Binary Search AC
     * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
 	* LeetCode33.cpp Search in Rotated Sorted Array AC(map)
+	* LeetCode69.cpp Sqrt(x) AC
 * LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
 * LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC
 * LeetCode136.cpp Single Number AC hash table
@@ -107,7 +108,6 @@
 * LeetCode203.cpp Remove Linked List Elements AC
 * ListCode204.cpp Count Primes AC
 * LeetCode1089.cpp Duplicate Zeros AC
-* LeetCode69.cpp Sqrt(x) AC
 * LeetCode744.cpp Find Smallest Letter Greater Than Target AC
 * LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
 * LeetCode374.cpp Guess Number Higher or Lower AC
