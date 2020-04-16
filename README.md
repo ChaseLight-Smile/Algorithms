@@ -26,8 +26,6 @@
 
 ### **2. 算法列表**
 
-***
-
 * linearSearchRecursion(int[] arr,int search,int target); 线性查找的递归算法
 * linearSearch(int[] arr,int target); 线性查找的非递归算法
 * findMaxValue(int[] arr); 寻找一个数组中的全局最大值
@@ -54,7 +52,6 @@
 * searchMatrix(int[][] matrix, int target);  检索矩阵，时间复杂度为O(nlogn)，LeetCode第74题，平凡方法为O(n^2)，AC
 * removeElement(int[] nums, int val);  LeetCode第27题，该算法的时间复杂度为O(n)，AC
 * sortList(ListNode head);  对链表使用归并排序，时间复杂度为O(nlogn)
-
 * listFileRecursive(File[] files,int start , int end); 采用分治递归策略，遍历整个计算机中所有的盘符，并输出其文件名，当然还可以做更复杂的操作
 * ZOJ1001Solution(); OJ1000题目解答，AC
 * HDU1002Solution(); HDU1002题目解答，AC
