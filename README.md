@@ -156,8 +156,10 @@
 	* LeetCode374.cpp Guess Number Higher or Lower AC
 	* LeetCode162.cpp Find Peak Element AC
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
-	* LeetCode287.cpp Find the Duplicate Number Binary Search AC
+	* LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem
+	* LeetCode315.cpp Count of Smaller Numbers After Self
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
+    * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
     * LeetCode637.cpp Average of Levels in Binary Tree AC
