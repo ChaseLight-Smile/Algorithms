@@ -85,18 +85,9 @@
 * LeetCode92.cpp Reverse Linked List II AC
 * LeetCode445.cpp Add Two Numbers II AC
 * LeetCode143.cpp Reorder List AC
-* LeetCode35.cpp Search Insert Position AC
 * LeetCode75.cpp Sort Colors AC
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * LeetCode1046.cpp Last Stone Weight AC
-* Binary Search
-    * LeetCode704.cpp Binary Search AC
-    * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
-	* LeetCode33.cpp Search in Rotated Sorted Array AC(map)
-	* LeetCode69.cpp Sqrt(x) AC
-	* LeetCode367.cpp Valid Perfect Square  AC
-* LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
-* LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC
 * LeetCode136.cpp Single Number AC hash table
 * LeetCode260.cpp Single Number III AC
 * LeetCode590.cpp N-ary Tree Postorder Traversal AC
@@ -160,6 +151,15 @@
 * LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 * LeetCode8.cpp String to Integer (atoi) AC
 * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
+* Binary Search
+    * LeetCode704.cpp Binary Search AC
+    * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
+	* LeetCode33.cpp Search in Rotated Sorted Array AC(map)
+	* LeetCode35.cpp Search Insert Position AC
+	* LeetCode69.cpp Sqrt(x) AC
+	* LeetCode367.cpp Valid Perfect Square  AC
+	* LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
+	* LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC  priority_queue
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-rry Tree
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
