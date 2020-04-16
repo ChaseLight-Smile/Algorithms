@@ -84,21 +84,12 @@
 * LeetCode75.cpp Sort Colors AC
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * LeetCode1046.cpp Last Stone Weight AC
-* LeetCode136.cpp Single Number AC hash table
-* LeetCode260.cpp Single Number III AC
-* LeetCode590.cpp N-ary Tree Postorder Traversal AC
-* LeetCode589.cpp N-ary Tree Preorder Traversal AC
-* LeetCode700.cpp Search in a Binary Search Tree AC
-* LeetCode162.cpp Find Peak Element AC
-* LeetCode852.cpp Peak Index in a Mountain Array AC
 * LeetCode141.cpp Linked List Cycle AC
 * LeetCode876.cpp Middle of the Linked List AC
 * LeetCode203.cpp Remove Linked List Elements AC
 * ListCode204.cpp Count Primes AC
-* LeetCode1089.cpp Duplicate Zeros AC
 * LeetCode744.cpp Find Smallest Letter Greater Than Target AC
 * LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
-* LeetCode374.cpp Guess Number Higher or Lower AC
 * split1(string s)-split4(string s);
 * topologicalSort();   The implement of topological sort.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
@@ -116,32 +107,40 @@
 * LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
 * LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
-* LeetCode215.cpp Kth Largest Element in an Array O(n+k*logn)   AC
-* LeetCode414.cpp Third Maximum Number unordered_map + priority_queue  O(n)  AC
-* LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC
+
 * LeetCode128.cpp Longest Consecutive Sequence  AC
 * LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
 * LeetCode349.cpp Intersection of Two Arrays O(n)  AC
-* LeetCode692.cpp Top K Frequent Words  AC
-* LeetCode347.cpp Top K Frequent Elements AC
-* LeetCode451.cpp Sort Characters By Frequency AC
 * LeetCode387.cpp First Unique Character in a String AC
 * LeetCode147.cpp Insertion Sort List AC
-* LeetCode703.cpp Kth Largest Element in a Stream AC
-* LeetCode973.cpp K Closest Points to Origin AC
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
-* LeetCode658.cpp Find K Closest Elements AC
-* LeetCode287.cpp Find the Duplicate Number AC
-* LeetCode208.cpp  Implement Trie (Prefix Tree) AC
-* LeetCode211.cpp Add and Search Word - Data structure design AC
 * LeetCode142.cpp Linked List Cycle II AC
 * LeetCode1.cpp 1. Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode16.cpp 3Sum Closest AC
 * LeetCode18.cpp 4Sum two pointer AC
-* LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 * LeetCode8.cpp String to Integer (atoi) AC
-* LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
+* Data Structure
+    * map
+        * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
+		* LeetCode287.cpp Find the Duplicate Number AC
+		* LeetCode414.cpp Third Maximum Number unordered_map + priority_queue  O(n)  AC
+		* LeetCode1089.cpp Duplicate Zeros AC
+	* Trie
+	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
+        * LeetCode211.cpp Add and Search Word - Data structure design AC
+	* priority_queue
+	    * LeetCode658.cpp Find K Closest Elements AC
+		* LeetCode703.cpp Kth Largest Element in a Stream AC
+        * LeetCode973.cpp K Closest Points to Origin AC
+		* LeetCode692.cpp Top K Frequent Words  AC
+		* LeetCode347.cpp Top K Frequent Elements AC
+		* LeetCode451.cpp Sort Characters By Frequency AC
+		* LeetCode215.cpp Kth Largest Element in an Array O(n+k*logn)   AC
+		* LeetCode414.cpp Third Maximum Number unordered_map + priority_queue  O(n)  AC
+		* LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC
+		* LeetCode136.cpp Single Number AC hash table
+		* LeetCode260.cpp Single Number III AC
 * Binary Search
     * LeetCode704.cpp Binary Search AC
     * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
@@ -153,6 +152,10 @@
 	* LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC  priority_queue
 	* LeetCode278.cpp First Bad Version AC
 	* LeetCode719.cpp Find K-th Smallest Pair Distance   TLE
+	* LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
+	* LeetCode374.cpp Guess Number Higher or Lower AC
+	* LeetCode162.cpp Find Peak Element AC
+	* LeetCode852.cpp Peak Index in a Mountain Array AC
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-rry Tree
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
@@ -181,6 +184,9 @@
 	* LeetCode145.cpp Binary Tree Postorder Traversal AC
 	* LeetCode94.cpp Binary Tree Inorder Traversal AC
 	* LeetCode173.cpp Binary Search Tree Iterator AC
+	* LeetCode590.cpp N-ary Tree Postorder Traversal AC
+	* LeetCode589.cpp N-ary Tree Preorder Traversal AC
+	* LeetCode700.cpp Search in a Binary Search Tree AC
 	* LeetCode127.cpp Word Ladder 双向BFS
 	* LeetCode988.cpp Smallest String Starting From Leaf
 	* LeetCode1376.cpp Time Needed to Inform All Employees
