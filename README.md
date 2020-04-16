@@ -136,10 +136,6 @@
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 * LeetCode658.cpp Find K Closest Elements AC
 * LeetCode287.cpp Find the Duplicate Number AC
-* LeetCode144.cpp Binary Tree Preorder Traversal AC
-* LeetCode145.cpp Binary Tree Postorder Traversal AC
-* LeetCode94.cpp Binary Tree Inorder Traversal AC
-* LeetCode173.cpp Binary Search Tree Iterator AC
 * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
 * LeetCode211.cpp Add and Search Word - Data structure design AC
 * LeetCode142.cpp Linked List Cycle II AC
@@ -184,6 +180,10 @@
 	* LeetCode1008.cpp Construct Binary Search Tree from Preorder Traversal AC
 	* leetCode103.cpp Binary Tree Zigzag Level Order Traversal AC
 	* LeetCode938.cpp Range Sum of BST AC
+	* LeetCode144.cpp Binary Tree Preorder Traversal AC
+	* LeetCode145.cpp Binary Tree Postorder Traversal AC
+	* LeetCode94.cpp Binary Tree Inorder Traversal AC
+	* LeetCode173.cpp Binary Search Tree Iterator AC
 	* LeetCode127.cpp Word Ladder 双向BFS
 	* LeetCode988.cpp Smallest String Starting From Leaf
 	* LeetCode1376.cpp Time Needed to Inform All Employees
