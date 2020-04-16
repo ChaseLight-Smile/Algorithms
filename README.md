@@ -156,7 +156,7 @@
 	* LeetCode374.cpp Guess Number Higher or Lower AC
 	* LeetCode162.cpp Find Peak Element AC
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
-* BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-rry Tree
+* BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
     * LeetCode637.cpp Average of Levels in Binary Tree AC
