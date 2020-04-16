@@ -94,6 +94,7 @@
     * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
 	* LeetCode33.cpp Search in Rotated Sorted Array AC(map)
 	* LeetCode69.cpp Sqrt(x) AC
+	* LeetCode367.cpp Valid Perfect Square  AC
 * LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
 * LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC
 * LeetCode136.cpp Single Number AC hash table
