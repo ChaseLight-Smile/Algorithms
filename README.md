@@ -142,7 +142,6 @@
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode16.cpp 3Sum Closest AC
 * LeetCode18.cpp 4Sum two pointer AC
-* LeetCode278.cpp First Bad Version AC
 * LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 * LeetCode8.cpp String to Integer (atoi) AC
 * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
@@ -155,6 +154,7 @@
 	* LeetCode367.cpp Valid Perfect Square  AC
 	* LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
 	* LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC  priority_queue
+	* LeetCode278.cpp First Bad Version AC
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-rry Tree
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
