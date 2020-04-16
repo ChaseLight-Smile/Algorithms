@@ -99,7 +99,7 @@
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
 * LeetCode128.cpp Longest Consecutive Sequence  AC
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
-* LeetCode1.cpp 1. Two Sum AC
+* LeetCode1.cpp Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode16.cpp 3Sum Closest AC
 * LeetCode18.cpp 4Sum two pointer AC
@@ -160,7 +160,7 @@
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
     * LeetCode637.cpp Average of Levels in Binary Tree AC
-    * LeetCode429.cpp N-ary Tree Level Order Traversal AC
+    * LeetCode429.cpp N-array Tree Level Order Traversal AC
     * LeetCode1305.cpp All Elements in Two Binary Search Trees AC
     * LeetCode1302.cpp Deepest Leaves Sum AC
 	* LeetCode230.cpp Kth Smallest Element in a BST AC
@@ -184,8 +184,8 @@
 	* LeetCode145.cpp Binary Tree Postorder Traversal AC
 	* LeetCode94.cpp Binary Tree Inorder Traversal AC
 	* LeetCode173.cpp Binary Search Tree Iterator AC
-	* LeetCode590.cpp N-ary Tree Postorder Traversal AC
-	* LeetCode589.cpp N-ary Tree Preorder Traversal AC
+	* LeetCode590.cpp N-array Tree Postorder Traversal AC
+	* LeetCode589.cpp N-array Tree Preorder Traversal AC
 	* LeetCode700.cpp Search in a Binary Search Tree AC
 	* LeetCode127.cpp Word Ladder 双向BFS
 	* LeetCode988.cpp Smallest String Starting From Leaf
