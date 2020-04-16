@@ -75,21 +75,6 @@
 * twoSum(int[] nums, int target);   LeetCode第一题，寻找一个数组中是否有两个数的和与指定的target数相同，AC
 * addTwoNumbers(ListNode l1, ListNode l2);  LeetCode第二题，加两个数，AC
 * countPrimes(int n);  统计小于指定数n的所有素数的个数，LeetCode第204题，AC
-* LeetCode66.cpp  Plus One AC
-* LeetCode148.cpp sort list AC
-* LeetCode206.cpp Reverse Linked List AC
-* LeetCode92.cpp Reverse Linked List II AC
-* LeetCode445.cpp Add Two Numbers II AC
-* LeetCode143.cpp Reorder List AC
-* LeetCode75.cpp Sort Colors AC
-* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
-* LeetCode1046.cpp Last Stone Weight AC
-* LeetCode141.cpp Linked List Cycle AC
-* LeetCode876.cpp Middle of the Linked List AC
-* LeetCode203.cpp Remove Linked List Elements AC
-* ListCode204.cpp Count Primes AC
-* LeetCode744.cpp Find Smallest Letter Greater Than Target AC
-* LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
 * split1(string s)-split4(string s);
 * topologicalSort();   The implement of topological sort.
 * findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
@@ -102,18 +87,21 @@
 * aAddB();   a + b which a is less than 100 and b is less than 100.
 * isPalindrome(self, x)   Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward (Leetcode 9) AC
 * romanToInt(string s)  Leetcode 13 AC
+* LeetCode445.cpp Add Two Numbers II AC
+* LeetCode75.cpp Sort Colors AC
+* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
+* LeetCode1046.cpp Last Stone Weight AC
+* ListCode204.cpp Count Primes AC
+* LeetCode744.cpp Find Smallest Letter Greater Than Target AC
+* LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
 * Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
 * Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
-* LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
-* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 * LeetCode128.cpp Longest Consecutive Sequence  AC
 * LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
 * LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 * LeetCode387.cpp First Unique Character in a String AC
-* LeetCode147.cpp Insertion Sort List AC
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
-* LeetCode142.cpp Linked List Cycle II AC
 * LeetCode1.cpp 1. Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode16.cpp 3Sum Closest AC
@@ -140,6 +128,19 @@
 		* LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC
 		* LeetCode136.cpp Single Number AC hash table
 		* LeetCode260.cpp Single Number III AC
+	* linked list
+	    * LeetCode66.cpp  Plus One AC
+		* LeetCode148.cpp sort list AC
+		* LeetCode206.cpp Reverse Linked List AC
+		* LeetCode92.cpp Reverse Linked List II AC
+		* LeetCode143.cpp Reorder List AC
+		* LeetCode141.cpp Linked List Cycle AC
+		* LeetCode142.cpp Linked List Cycle II AC
+		* LeetCode876.cpp Middle of the Linked List AC
+		* LeetCode203.cpp Remove Linked List Elements AC
+		* LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
+		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
+		* LeetCode147.cpp Insertion Sort List AC
 * Binary Search
     * LeetCode704.cpp Binary Search AC
     * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
