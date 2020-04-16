@@ -98,9 +98,6 @@
 * Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
 * LeetCode128.cpp Longest Consecutive Sequence  AC
-* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
-* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
-* LeetCode387.cpp First Unique Character in a String AC
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 * LeetCode1.cpp 1. Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
@@ -128,6 +125,9 @@
 		* LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC
 		* LeetCode136.cpp Single Number AC hash table
 		* LeetCode260.cpp Single Number III AC
+		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
+		* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
+		* LeetCode387.cpp First Unique Character in a String AC
 	* linked list
 	    * LeetCode66.cpp  Plus One AC
 		* LeetCode148.cpp sort list AC
