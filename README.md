@@ -100,7 +100,6 @@
 * Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
 * Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
-* LeetCode128.cpp Longest Consecutive Sequence  AC
 * LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 * LeetCode1.cpp Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
@@ -149,6 +148,16 @@
 		* LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
 		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 		* LeetCode147.cpp Insertion Sort List AC
+	* deque
+	* monotonous stack
+	* queue
+		* LeetCode102.cpp Binary Tree Level Order Traversal  AC
+		* LeetCode107.cpp Binary Tree Level Order Traversal II AC
+		* LeetCode637.cpp Average of Levels in Binary Tree AC
+		* LeetCode429.cpp N-array Tree Level Order Traversal AC
+		* all solutions **tree + queue** 
+	* union find
+		* LeetCode128.cpp Longest Consecutive Sequence  AC
 * Binary Search
     * LeetCode704.cpp Binary Search AC
     * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
