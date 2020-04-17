@@ -114,6 +114,7 @@
 		* LeetCode1089.cpp Duplicate Zeros AC
 		* LeetCode239.cpp Sliding Window Maximum  AC  multiset
 		* LeetCode480.cpp Sliding Window Median  AC multiset
+		* **priority_queue and map/set can exchange at the solving min/max problem.**
 	* Trie
 	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
         * LeetCode211.cpp Add and Search Word - Data structure design AC
