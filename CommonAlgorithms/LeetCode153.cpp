@@ -16,7 +16,7 @@ public:
     }
 };
 
-
+//推荐这个理解思路
 class Solution {
 public:
     int findMin(vector<int>& nums) {
