@@ -14,8 +14,8 @@
   * **map/set**
   * **树（Trees）**
 	  * **Binary Search Trees**
-  * **Binary Trees**
-  * **N-rray Trees**
+      * **Binary Trees**
+      * **N-rray Trees**
 	  * **Red-black Trees**
 	  * **B-Trees**
 	  * **B<sup>+</sup>-trees**
