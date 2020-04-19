@@ -159,21 +159,21 @@
 	* union find
 		* LeetCode128.cpp Longest Consecutive Sequence  AC
 * Binary Search
-    * LeetCode704.cpp Binary Search AC
-    * LeetCode81.cpp Search in Rotated Sorted Array II AC(sort+binary search)
-	* LeetCode33.cpp Search in Rotated Sorted Array AC(map)
+    * **LeetCode704.cpp Binary Search AC **(第一类最基本的二分检索题目)
+	* **LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)**
+	* **LeetCode81.cpp Search in Rotated Sorted Array II AC(binary search)**
+	* **LeetCode153.cpp Find Minimum in Rotated Sorted Array AC (binary search)**
+	* **LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC(binary search)** (33 81 153 154解法完全一样，这是binary search的第二大类题型)
 	* LeetCode35.cpp Search Insert Position AC
 	* LeetCode69.cpp Sqrt(x) AC
 	* LeetCode367.cpp Valid Perfect Square  AC
-	* LeetCode153.cpp Find Minimum in Rotated Sorted Array AC
-	* LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC  priority_queue
 	* LeetCode278.cpp First Bad Version AC
 	* LeetCode719.cpp Find K-th Smallest Pair Distance   TLE
 	* LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 	* LeetCode374.cpp Guess Number Higher or Lower AC
-	* LeetCode162.cpp Find Peak Element AC
+	* **LeetCode162.cpp Find Peak Element AC**  (第三类二分检索题目)
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
-	* LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem
+	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem** (第四类二分检索题目)
 	* LeetCode315.cpp Count of Smaller Numbers After Self
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
