@@ -95,7 +95,6 @@
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * LeetCode1046.cpp Last Stone Weight AC
 * ListCode204.cpp Count Primes AC
-* LeetCode744.cpp Find Smallest Letter Greater Than Target AC
 * LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
 * Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
 * Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
@@ -175,6 +174,7 @@
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
 	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem** (第四类二分检索题目)
 	* LeetCode315.cpp Count of Smaller Numbers After Self
+	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
