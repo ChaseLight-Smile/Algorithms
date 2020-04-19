@@ -174,7 +174,7 @@
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
 	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem** (第四类二分检索题目)
 	* LeetCode315.cpp Count of Smaller Numbers After Self
-	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC
+	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)
 	* acwing63.cpp 数字在排序数组中出现的次数 AC
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
