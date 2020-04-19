@@ -159,7 +159,7 @@
 	* union find
 		* LeetCode128.cpp Longest Consecutive Sequence  AC
 * Binary Search
-    * **LeetCode704.cpp Binary Search AC **(第一类最基本的二分检索题目)
+    * **LeetCode704.cpp Binary Search AC** (第一类最基本的二分检索题目)
 	* **LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)**
 	* **LeetCode81.cpp Search in Rotated Sorted Array II AC(binary search)**
 	* **LeetCode153.cpp Find Minimum in Rotated Sorted Array AC (binary search)**
