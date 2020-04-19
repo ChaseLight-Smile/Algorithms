@@ -16,7 +16,7 @@ public:
     }
 };
 
-//推荐这个理解思路
+//时间复杂度O(logn)，思路非常好
 class Solution {
 public:
     int findMin(vector<int>& nums) {
@@ -30,14 +30,20 @@ public:
         while(left < right){
             int mid = left + (right-left)/2;
             if(nums[mid] < nums[right]){
-                //假如pivot在[mid+1,right]，假设mid+1就是pivot元素，那么一定存在nums[mid] > nums[pivot] > nums[right]，得到矛盾
                 right = mid;
-            }else{
+            }else if(nums[mid] > nums[right]){
                 left = mid+1;
+            }else if(nums[mid] == nums[right]){
+                if(nums[right] == nums[right-1]){
+                    right--;
+                }else{
+                    left++;
+                }
             }
         }
         return left;
     }
 };
+
 
 
