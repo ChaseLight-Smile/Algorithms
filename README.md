@@ -135,6 +135,7 @@
 		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
 		* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 		* LeetCode387.cpp First Unique Character in a String AC
+		* LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
 	* linked list
 	    * LeetCode66.cpp  Plus One AC
 		* LeetCode148.cpp sort list AC
@@ -145,7 +146,6 @@
 		* LeetCode142.cpp Linked List Cycle II AC
 		* LeetCode876.cpp Middle of the Linked List AC
 		* LeetCode203.cpp Remove Linked List Elements AC
-		* LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
 		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 		* LeetCode147.cpp Insertion Sort List AC
 	* deque
