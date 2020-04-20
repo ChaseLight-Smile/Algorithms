@@ -175,7 +175,6 @@
 	* **LeetCode162.cpp Find Peak Element AC**  (第三类二分检索题目)
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
 	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem** (第四类二分检索题目)
-	* LeetCode315.cpp Count of Smaller Numbers After Self
 	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)
 	* acwing63.cpp 数字在排序数组中出现的次数 AC
 	* **LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间
