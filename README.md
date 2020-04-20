@@ -88,6 +88,7 @@
 * LeetCode8.cpp String to Integer (atoi) AC
 * LeetCode509.cpp Fibonacci Number AC  
 * LeetCode628.cpp Maximum Product of Three Numbers AC
+* LeetCode26.cpp Remove Duplicates from Sorted Array AC
 * sort
     * LeetCode912.cpp 912. Sort an Array AC (quicksort & heapsort)
 * Data Structure
