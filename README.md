@@ -30,11 +30,6 @@
 
 ### **2. 算法列表**
 
-* linearSearchRecursion(int[] arr,int search,int target); 线性查找的递归算法
-* linearSearch(int[] arr,int target); 线性查找的非递归算法
-* findMaxValue(int[] arr); 寻找一个数组中的全局最大值
-* findLocalPeakOneVersion(int[] arr, int start, int end);  寻找数组中的局部最大值点，适合于一维数组
-* findLocalPeakTwoVersion(int[] arr, int start, int end);  寻找数组中的局部最大值点，适合于二维数组
 * insertSort(int[] arr);  完成插入排序过程
 * insertSortRecurtion(int[] arr,int length); 插入排序递归算法
 * sumBinarySystemNumber(int[] addNumber1,int[] addNumber2);   实现两个n位二进制数加法操作
@@ -56,7 +51,6 @@
 * searchMatrix(int[][] matrix, int target);  检索矩阵，时间复杂度为O(nlogn)，LeetCode第74题，平凡方法为O(n^2)，AC
 * removeElement(int[] nums, int val);  LeetCode第27题，该算法的时间复杂度为O(n)，AC
 * sortList(ListNode head);  对链表使用归并排序，时间复杂度为O(nlogn)
-* listFileRecursive(File[] files,int start , int end); 采用分治递归策略，遍历整个计算机中所有的盘符，并输出其文件名，当然还可以做更复杂的操作
 * ZOJ1001Solution(); OJ1000题目解答，AC
 * HDU1002Solution(); HDU1002题目解答，AC
 * HDU1003Solution(); HDU1003题目解答，AC
@@ -66,10 +60,7 @@
 * HDOJ1001();  AC
 * HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
 * HDU1066();   Computing the factorical's last non-zero number. AC
-* partitionHoare(int arr[], int start, int end); It is used in the quicksort algorithm 
-* quicksort(int arr[], int start, int end); the quicksort algorithm, which implements Hoare partition and Lomuto partition
-* heapsort(int arr[], int length); the heapsort algorithm
-* priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap'
+* priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap
 * countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
 * enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing method.The number of comparision decreases.
 * sortASCII();   sort ASCII by using insertion sort.
@@ -78,17 +69,7 @@
 * HDU2001()-HDU2017(); Practise the C++ language properties in HDUOJ page 11.  AC
 * twoSum(int[] nums, int target);   LeetCode第一题，寻找一个数组中是否有两个数的和与指定的target数相同，AC
 * addTwoNumbers(ListNode l1, ListNode l2);  LeetCode第二题，加两个数，AC
-* countPrimes(int n);  统计小于指定数n的所有素数的个数，LeetCode第204题，AC
-* split1(string s)-split4(string s);
-* topologicalSort();   The implement of topological sort.
-* findMaxAndMinValuesRecursive(arr,start,end);  The recursive implements for the find Max and Min values
-* gcd1(int numberA, int numberB); 
-* gcd2(int numberA,int numberB); 
-* gcd3(int numberA, int numberB); 
-* gcd4(int numberA, int numberB); 
-* gcd5(int numberA, int numberB);  The implements of greater common division. 
 * maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
-* aAddB();   a + b which a is less than 100 and b is less than 100.
 * isPalindrome(self, x)   Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward (Leetcode 9) AC
 * romanToInt(string s)  Leetcode 13 AC
 * LeetCode445.cpp Add Two Numbers II AC
