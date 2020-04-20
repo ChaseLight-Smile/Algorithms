@@ -48,20 +48,21 @@ public:
         int left = 0 ;
         int right = len-1;
         swap(nums[left + (right-left)/2], nums[left]);
-        int mid  = find(nums,left,right);
+        int mid  = partition(nums,left,right);
         while(true){
             if(mid == len-k){
                 break;
             }else if(mid > len-k){
-                mid = find(nums, left, mid-1);
+                mid = partition(nums, left, mid-1);
             }else{
-                mid = find(nums, mid+1, right);
+                mid = partition(nums, mid+1, right);
             }
         }
         return nums[mid];
         
     }
-    int find(vector<int>& nums,int start, int end){
+	//https://blog.csdn.net/MoreWindows/article/details/6684558
+    int partition(vector<int>& nums,int start, int end){
         int key = nums[start];
         int left = start;
         int right = end;
