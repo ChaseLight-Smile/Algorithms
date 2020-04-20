@@ -91,6 +91,7 @@
 * LeetCode26.cpp Remove Duplicates from Sorted Array AC
     * LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
 	* LeetCode83.cpp Remove Duplicates from Sorted List AC 
+	* LeetCode82.cpp Remove Duplicates from Sorted List II AC
 * sort
     * LeetCode912.cpp 912. Sort an Array AC (quicksort & heapsort)
 * Data Structure
@@ -136,6 +137,7 @@
 		* LeetCode147.cpp Insertion Sort List AC
 		* LeetCode445.cpp Add Two Numbers II AC
 		* LeetCode83.cpp Remove Duplicates from Sorted List AC 
+		    * LeetCode82.cpp Remove Duplicates from Sorted List II AC
 	* deque
 	* monotonous stack
 	* queue
@@ -167,7 +169,7 @@
 	* acwing63.cpp 数字在排序数组中出现的次数 AC
 	* **LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间
 	* LeetCode167.cpp Two Sum II - Input array is sorted binary search
-	* LeetCode540.cpp Single Element in a Sorted Array
+	* LeetCode540.cpp Single Element in a Sorted Array  AC
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
