@@ -72,7 +72,6 @@
 * maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
 * isPalindrome(self, x)   Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward (Leetcode 9) AC
 * romanToInt(string s)  Leetcode 13 AC
-* LeetCode445.cpp Add Two Numbers II AC
 * LeetCode75.cpp Sort Colors AC
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * LeetCode1046.cpp Last Stone Weight AC
@@ -131,6 +130,7 @@
 		* LeetCode203.cpp Remove Linked List Elements AC
 		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 		* LeetCode147.cpp Insertion Sort List AC
+		* LeetCode445.cpp Add Two Numbers II AC
 	* deque
 	* monotonous stack
 	* queue
