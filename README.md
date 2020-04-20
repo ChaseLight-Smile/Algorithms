@@ -101,6 +101,7 @@
 		* LeetCode1089.cpp Duplicate Zeros AC
 		* LeetCode239.cpp Sliding Window Maximum  AC  multiset
 		* LeetCode480.cpp Sliding Window Median  AC multiset
+		* LeetCode540.cpp Single Element in a Sorted Array
 		* **priority_queue and map/set can exchange at the solving min/max problem.**
 	* Trie
 	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
@@ -166,6 +167,7 @@
 	* acwing63.cpp 数字在排序数组中出现的次数 AC
 	* **LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间
 	* LeetCode167.cpp Two Sum II - Input array is sorted binary search
+	* LeetCode540.cpp Single Element in a Sorted Array
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
