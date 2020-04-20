@@ -158,6 +158,7 @@
 		* all solutions **tree + queue** 
 	* union find
 		* LeetCode128.cpp Longest Consecutive Sequence  AC
+		* LeetCodeUnionFind.cpp  LeetCode并查集模板，带路径压缩
 * Binary Search
     * **LeetCode704.cpp Binary Search AC** (第一类最基本的二分检索题目)
 	* **LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)**
