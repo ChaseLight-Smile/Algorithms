@@ -90,6 +90,7 @@
 * LeetCode628.cpp Maximum Product of Three Numbers AC
 * LeetCode26.cpp Remove Duplicates from Sorted Array AC
     * LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
+	* LeetCode83.cpp Remove Duplicates from Sorted List AC 
 * sort
     * LeetCode912.cpp 912. Sort an Array AC (quicksort & heapsort)
 * Data Structure
@@ -133,6 +134,7 @@
 		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 		* LeetCode147.cpp Insertion Sort List AC
 		* LeetCode445.cpp Add Two Numbers II AC
+		* LeetCode83.cpp Remove Duplicates from Sorted List AC 
 	* deque
 	* monotonous stack
 	* queue
