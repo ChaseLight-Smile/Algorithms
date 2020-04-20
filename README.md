@@ -9,6 +9,7 @@
   * **min-Heap/max-Heap**
   * **Union Find**
   * **Stack**
+  * **queue**
   * **Binary Search**
   * **Trie**
   * **map/set**
