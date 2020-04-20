@@ -178,7 +178,7 @@
     * LeetCode429.cpp N-array Tree Level Order Traversal AC
     * LeetCode1305.cpp All Elements in Two Binary Search Trees AC
     * LeetCode1302.cpp Deepest Leaves Sum AC
-	* LeetCode100.cpp Same Tree
+	* LeetCode100.cpp Same Tree AC
 	* LeetCode230.cpp Kth Smallest Element in a BST AC
 	* LeetCode222.cpp Count Complete Tree Nodes AC
 	* LeetCode104.cpp Maximum Depth of Binary Tree AC
