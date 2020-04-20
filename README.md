@@ -21,6 +21,10 @@
 	  * **B-Trees**
 	  * **B<sup>+</sup>-trees**
 	  * **B<sup>\*</sup>-trees**
+  * sort
+      * implementation quick sort
+	  * implementation merge sort
+	  * implementation heap sort
 * **动态规划（Dynamic Programming）**
 * **线性规划（Linear Programming）**
 * **递归（Recursive Programming）**
