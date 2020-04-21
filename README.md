@@ -177,6 +177,10 @@
 	* LeetCode167.cpp Two Sum II - Input array is sorted binary search
 	* LeetCode540.cpp Single Element in a Sorted Array  AC
 	* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
+	* LeetCode658.cpp Find K Closest Elements AC
+	* LeetCode230.cpp Kth Smallest Element in a BST AC
+	* LeetCode74.cpp Search a 2D Matrix
+	* LeetCode240.cpp Search a 2D Matrix II
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
