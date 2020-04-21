@@ -5,32 +5,35 @@
 
 包括但不限于以下内容：
 
-* **基本数据结构与算法**
-  * **min-Heap/max-Heap**
-  * **Union Find**
-  * **Stack**
-  * **queue**
-  * **Binary Search**
-  * **Trie**
-  * **map/set**
-  * **树（Trees）**
-	  * **Binary Search Trees**
-      * **Binary Trees**
-      * **N-rray Trees**
-	  * **Red-black Trees**
-	  * **B-Trees**
-	  * **B<sup>+</sup>-trees**
-	  * **B<sup>\*</sup>-trees**
-  * sort
-      * implementation quick sort
-	  * implementation merge sort
-	  * implementation heap sort
-* **动态规划（Dynamic Programming）**
-* **线性规划（Linear Programming）**
-* **递归（Recursive Programming）**
-* **贪心策略（Greedy Programming）**
-* **图论算法（Graph Algorithms）**
-* Machine Learning for Database Management System
+* **数据结构和算法**
+	* **基本数据结构与算法**
+	  * **min-Heap/max-Heap**
+	  * **Union Find**
+	  * **Stack**
+	  * **queue**
+	  * **Binary Search**
+	  * **Trie**
+	  * **map/set**
+	  * **树（Trees）**
+		  * **Binary Search Trees**
+		  * **Binary Trees**
+		  * **N-rray Trees**
+		  * **Red-black Trees**
+		  * **B-Trees**
+		  * **B<sup>+</sup>-trees**
+		  * **B<sup>\*</sup>-trees**
+	  * sort
+		  * implementation quick sort
+		  * implementation merge sort
+		  * implementation heap sort
+	  * **Graph Algorithms）**
+* **算法设计技术**
+	* **Dynamic Programming**
+	* **Greedy methods**
+	* **Recursive**
+	* **Linear Programming**
+	    * 我主要在调度研究中采用，但是通常调度中的问题都是NP-Hard，还得设计DP算法解决
+* Machine Learning ALgorithms
 
 ### **2. 算法列表**
 
