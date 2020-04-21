@@ -111,6 +111,7 @@
 		* LeetCode480.cpp Sliding Window Median  AC multiset
 		* LeetCode540.cpp Single Element in a Sorted Array
 		* **priority_queue and map/set can exchange at the solving min/max problem.**
+		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
 	* Trie
 	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
         * LeetCode211.cpp Add and Search Word - Data structure design AC
@@ -126,8 +127,6 @@
 		* LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC
 		* LeetCode136.cpp Single Number AC hash table
 		* LeetCode260.cpp Single Number III AC
-		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
-		* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 		* LeetCode387.cpp First Unique Character in a String AC
 		* LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
 	* linked list
@@ -177,6 +176,7 @@
 	* **LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间
 	* LeetCode167.cpp Two Sum II - Input array is sorted binary search
 	* LeetCode540.cpp Single Element in a Sorted Array  AC
+	* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
