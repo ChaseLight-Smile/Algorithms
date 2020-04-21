@@ -52,7 +52,6 @@
 * trivialSquareMatrixMultiply(int[][] nums1, int[][] nums2) 平凡方法实现矩阵乘法，时间复杂度为O(n^3)
 * trivialSquareMatrixMultiplyRecursion(int[][] nums1, int[][] nums2 , int nums1RowStart, int nums1RowEnd,
 			int nums1ColumnStart , int nums1ColumnEnd , int nums2RowStart , int nums2RowEnd , int nums2ColumnStart , int nums2ColumnEnd)  矩阵分块乘法，只使用与偶数维的情况，局限性很大
-* searchMatrix(int[][] matrix, int target);  检索矩阵，时间复杂度为O(nlogn)，LeetCode第74题，平凡方法为O(n^2)，AC
 * removeElement(int[] nums, int val);  LeetCode第27题，该算法的时间复杂度为O(n)，AC
 * sortList(ListNode head);  对链表使用归并排序，时间复杂度为O(nlogn)
 * ZOJ1001Solution(); OJ1000题目解答，AC
@@ -179,7 +178,7 @@
 	* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 	* LeetCode658.cpp Find K Closest Elements AC
 	* LeetCode230.cpp Kth Smallest Element in a BST AC
-	* LeetCode74.cpp Search a 2D Matrix
+	* LeetCode74.cpp Search a 2D Matrix  AC nlogn
 	* LeetCode240.cpp Search a 2D Matrix II
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
