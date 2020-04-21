@@ -180,6 +180,7 @@
 	* LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 	* LeetCode658.cpp Find K Closest Elements AC
 	* LeetCode230.cpp Kth Smallest Element in a BST AC
+	* LeetCode671.cpp Second Minimum Node In a Binary Tre
 	* LeetCode275.cpp H-Index II
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
