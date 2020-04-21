@@ -98,9 +98,9 @@
 	* LeetCode82.cpp Remove Duplicates from Sorted List II AC
 * sort
     * LeetCode912.cpp 912. Sort an Array AC
-	    * implementation quicksort (最快，最省空间)
-		* implementtation merge sort
-		* implementation heap sort
+	    * implement quicksort (最快，最省空间)
+		* implement merge sort
+		* implement heap sort
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
