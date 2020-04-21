@@ -171,14 +171,15 @@
 	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)
 	* acwing63.cpp 数字在排序数组中出现的次数 AC  剑指offer题目
 	* **LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间
+	* **LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC binary search 思路同LeetCode215.cpp**
 	* LeetCode167.cpp Two Sum II - Input array is sorted binary search
 	* LeetCode540.cpp Single Element in a Sorted Array  AC
 	* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 	* LeetCode74.cpp Search a 2D Matrix  AC nlogn
 	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分，空间局部性最好，不存在行列无序检索的问题
 	* **LeetCode230.cpp Kth Smallest Element in a BST AC (binary search & in-order traversal)**
-	* **LeetCode719.cpp Find K-th Smallest Pair Distance   (单纯的使用binary search 或者 heap均 TLE)，其中binary search的方法和leetcode 215思路一致** 
-	* **LeetCode786.cpp K-th Smallest Prime Fraction (单纯的使用binary search 或者 heap均 TLE)**
+	* **LeetCode719.cpp Find K-th Smallest Pair Distance   (单纯的使用binary search 或者 heap均 TLE Hard)，其中binary search的方法和leetcode 215思路一致** 
+	* **LeetCode786.cpp K-th Smallest Prime Fraction (单纯的使用binary search 或者 heap均 TLE Hard) **
 	* LeetCode658.cpp Find K Closest Elements AC
 	* LeetCode275.cpp H-Index II
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
