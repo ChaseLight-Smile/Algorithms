@@ -30,7 +30,7 @@
 * **递归（Recursive Programming）**
 * **贪心策略（Greedy Programming）**
 * **图论算法（Graph Algorithms）**
-* 其它
+* Machine Learning for Database Management System
 
 ### **2. 算法列表**
 
@@ -371,3 +371,8 @@ void add(int element) {
 */
 ```
 
+### **参考文献**
+
+* http://www.cs.cmu.edu/~anupamg/advalgos15/
+* http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html
+* http://erikdemaine.org/classes/
