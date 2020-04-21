@@ -1,4 +1,3 @@
-//Binary search tree inorder sort
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -11,26 +10,29 @@
 class Solution {
 public:
     int kthSmallest(TreeNode* root, int k) {
-        vector<int> ans = BSTSort(root);
-        return ans[k-1];
+        if(root == nullptr){
+            return 0;
+        }
+        int mid = countNode(root->left);
+        if(k == mid+1){
+            return root->val;
+        }else if(k <= mid){
+            return kthSmallest(root->left, k);
+        }else{
+            return kthSmallest(root->right, k-1-mid);
+        }
     }
     
-    vector<int> BSTSort(TreeNode* root){
-        TreeNode* current = root;
-        vector<int> ans;
-        vector<int> ans_left;
-        vector<int> ans_right;
-        
-        if(current == nullptr){
-            return {};
+    int countNode(TreeNode* root){
+        if(root == nullptr){
+            return 0;
+        }
+        if(root->left == nullptr && root->right == nullptr){
+            return 1;
         }
         
-        ans_left = BSTSort(current->left);
-        ans.push_back(current->val);
-        ans_right = BSTSort(current->right);
-        
-        ans_left.insert(ans_left.end(), ans.begin(), ans.end());
-        ans_left.insert(ans_left.end(), ans_right.begin(), ans_right.end());
-        return ans_left;
+        int leftCount = countNode(root->left);
+        int rightCount = countNode(root->right);
+        return 1+leftCount+rightCount;
     }
 };
