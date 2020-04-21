@@ -5,28 +5,27 @@
 
 包括但不限于以下内容：
 
-* **数据结构和算法**
-	* **基本数据结构与算法**
-	  * **min-Heap/max-Heap**
-	  * **Union Find**
-	  * **Stack**
-	  * **queue**
-	  * **Binary Search**
-	  * **Trie**
-	  * **map/set**
-	  * **树（Trees）**
-		  * **Binary Search Trees**
-		  * **Binary Trees**
-		  * **N-rray Trees**
-		  * **Red-black Trees**
-		  * **B-Trees**
-		  * **B<sup>+</sup>-trees**
-		  * **B<sup>\*</sup>-trees**
-	  * sort
-		  * implementation quick sort
-		  * implementation merge sort
-		  * implementation heap sort
-	  * **Graph Algorithms）**
+* **基本数据结构与算法**
+  * **min-Heap/max-Heap**
+  * **Union Find**
+  * **Stack**
+  * **queue**
+  * **Binary Search**
+  * **Trie**
+  * **map/set**
+  * **树（Trees）**
+	  * **Binary Search Trees**
+	  * **Binary Trees**
+	  * **N-rray Trees**
+	  * **Red-black Trees**
+	  * **B-Trees**
+	  * **B<sup>+</sup>-trees**
+	  * **B<sup>\*</sup>-trees**
+  * sort
+	  * implementation quick sort
+	  * implementation merge sort
+	  * implementation heap sort
+  * **Graph Algorithms**
 * **算法设计技术**
 	* **Dynamic Programming**
 	* **Greedy methods**
