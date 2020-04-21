@@ -1,4 +1,4 @@
-//二分检索127 / 129 test cases passed.  TLE
+//二分检索 127 / 129 test cases passed.  TLE
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
@@ -52,6 +52,9 @@ public:
             //如果首元素已经大于target，之后就不检索了，后续全部超过target
             if (n.size() > 0 && n[0]>target){
                 return false;
+            }
+            if(n.size() > 0 && n[n.size()-1] < target){
+                continue;
             }
             ans = binarySearch(n, target);
             if(ans == true){
