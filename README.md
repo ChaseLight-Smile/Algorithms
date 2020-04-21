@@ -83,7 +83,6 @@
 * Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
 * Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
-* LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 * LeetCode1.cpp Two Sum AC
 * LeetCode15.cpp 3Sum  two pointer   AC 
 * LeetCode16.cpp 3Sum Closest AC
@@ -160,26 +159,28 @@
 	* **LeetCode81.cpp Search in Rotated Sorted Array II AC(binary search)**
 	* **LeetCode153.cpp Find Minimum in Rotated Sorted Array AC (binary search)**
 	* **LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC(binary search)** (33 81 153 154解法完全一样，这是binary search的第二大类题型)
-	* LeetCode35.cpp Search Insert Position AC
 	* LeetCode69.cpp Sqrt(x) AC
 	* LeetCode367.cpp Valid Perfect Square  AC
 	* LeetCode278.cpp First Bad Version AC
-	* LeetCode719.cpp Find K-th Smallest Pair Distance   TLE
 	* LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 	* LeetCode374.cpp Guess Number Higher or Lower AC
 	* **LeetCode162.cpp Find Peak Element AC**  (第三类二分检索题目)
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
 	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem** (第四类二分检索题目)
+	* LeetCode35.cpp Search Insert Position AC
 	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)
-	* acwing63.cpp 数字在排序数组中出现的次数 AC
+	* acwing63.cpp 数字在排序数组中出现的次数 AC  剑指offer题目
 	* **LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间
 	* LeetCode167.cpp Two Sum II - Input array is sorted binary search
 	* LeetCode540.cpp Single Element in a Sorted Array  AC
 	* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
+	* LeetCode74.cpp Search a 2D Matrix  AC nlogn
+	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分，空间局部性最好，不存在行列无须检索的问题
+	* LeetCode719.cpp Find K-th Smallest Pair Distance   TLE  
+	* LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 	* LeetCode658.cpp Find K Closest Elements AC
 	* LeetCode230.cpp Kth Smallest Element in a BST AC
-	* LeetCode74.cpp Search a 2D Matrix  AC nlogn
-	* LeetCode240.cpp Search a 2D Matrix II  采用二分检索存在TLE，但是我认为采用二分，空间局部性最好，不存在行列无须检索的问题
+	* LeetCode275.cpp H-Index II
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
