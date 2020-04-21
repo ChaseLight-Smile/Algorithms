@@ -54,7 +54,7 @@ struct cmp{
 };
 
 
-//解法二 time limited max_heap
+//解法二 time limited max_heap 53 / 62 test cases passed.
 class Solution {
 public:
     vector<int> kthSmallestPrimeFraction(vector<int>& A, int K) {
