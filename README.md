@@ -175,7 +175,7 @@
 	* LeetCode540.cpp Single Element in a Sorted Array  AC
 	* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 	* LeetCode74.cpp Search a 2D Matrix  AC nlogn
-	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分，空间局部性最好，不存在行列无须检索的问题
+	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分，空间局部性最好，不存在行列无序检索的问题
 	* LeetCode719.cpp Find K-th Smallest Pair Distance   TLE  
 	* LeetCode786.cpp LeetCode719.cpp 两个题目思路完全一致
 	* LeetCode658.cpp Find K Closest Elements AC
