@@ -181,6 +181,8 @@
 	* LeetCode349.cpp Intersection of Two Arrays O(n)  AC
 	* LeetCode74.cpp Search a 2D Matrix  AC nlogn
 	* LeetCode653.cpp Two Sum IV - Input is a BST AC  binary search
+	* LeetCode108.cpp Convert Sorted Array to Binary Search Tree  AC  树形结构二分
+		* LeetCode109.cpp Convert Sorted List to Binary Search Tree AC 
 	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分，空间局部性最好，不存在行列无序检索的问题
 	* **LeetCode230.cpp Kth Smallest Element in a BST AC (binary search & in-order traversal)**
 	* **LeetCode719.cpp Find K-th Smallest Pair Distance   (单纯的使用binary search 或者 heap均 TLE Hard)，其中binary search的方法和leetcode 215思路一致** 
@@ -210,7 +212,6 @@
 	* LeetCode513.cpp Find Bottom Left Tree Value AC
 	* LeetCode515.cpp Find Largest Value in Each Tree Row AC
 	* LeetCode129.cpp Sum Root to Leaf Numbers AC
-	* LeetCode1008.cpp Construct Binary Search Tree from Preorder Traversal AC
 	* leetCode103.cpp Binary Tree Zigzag Level Order Traversal AC
 	* LeetCode938.cpp Range Sum of BST AC
 	* LeetCode144.cpp Binary Tree Preorder Traversal AC
@@ -221,6 +222,10 @@
 	* LeetCode589.cpp N-array Tree Preorder Traversal AC
 	* LeetCode700.cpp Search in a Binary Search Tree AC
 	* LeetCode110.cpp Balanced Binary Tree  AC
+	* Construction Tree
+		* LeetCode108.cpp Convert Sorted Array to Binary Search Tree  AC
+			* LeetCode109.cpp Convert Sorted List to Binary Search Tree AC 
+		* LeetCode1008.cpp Construct Binary Search Tree from Preorder Traversal AC
 	* LeetCode1022.cpp Sum of Root To Leaf Binary Numbers
 	* LeetCode127.cpp Word Ladder 双向BFS
 	* LeetCode988.cpp Smallest String Starting From Leaf
