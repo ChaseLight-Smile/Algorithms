@@ -159,10 +159,10 @@
 		* LeetCodeUnionFind.cpp  LeetCode并查集模板，带路径压缩
 * Binary Search
     * **LeetCode704.cpp Binary Search AC** (第一类最基本的二分检索题目)
-	* **LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)**
-	* **LeetCode81.cpp Search in Rotated Sorted Array II AC(binary search)**
-	* **LeetCode153.cpp Find Minimum in Rotated Sorted Array AC (binary search)**
-	* **LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC(binary search)** (33 81 153 154解法完全一样，这是binary search的第二大类题型)
+	* **LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)** 这四道题目其实延伸出很多题目，比如如何在sorted array中找到最小元素的下标并返回？
+		* **LeetCode81.cpp Search in Rotated Sorted Array II AC(binary search)**
+		* **LeetCode153.cpp Find Minimum in Rotated Sorted Array AC (binary search)**
+		* **LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC(binary search)** (33 81 153 154解法完全一样，这是binary search的第二大类题型)
 	* LeetCode69.cpp Sqrt(x) AC
 	* LeetCode367.cpp Valid Perfect Square  AC
 	* LeetCode278.cpp First Bad Version AC
