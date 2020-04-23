@@ -130,10 +130,11 @@
 		* LeetCode148.cpp sort list AC
 		* LeetCode206.cpp Reverse Linked List AC
 		* LeetCode92.cpp Reverse Linked List II AC
-		* LeetCode143.cpp Reorder List AC
-		* LeetCode141.cpp Linked List Cycle AC
-		* LeetCode142.cpp Linked List Cycle II AC
-		* LeetCode876.cpp Middle of the Linked List AC
+		* Cycle Algorithms
+			* LeetCode141.cpp Linked List Cycle AC
+			* LeetCode142.cpp Linked List Cycle II AC
+			* LeetCode143.cpp Reorder List AC
+			* LeetCode876.cpp Middle of the Linked List AC
 		* LeetCode203.cpp Remove Linked List Elements AC
 		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 		* LeetCode147.cpp Insertion Sort List AC
