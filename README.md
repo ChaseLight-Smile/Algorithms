@@ -130,7 +130,7 @@
 		* LeetCode148.cpp sort list AC
 		* LeetCode206.cpp Reverse Linked List AC
 		* LeetCode92.cpp Reverse Linked List II AC
-		* Cycle Algorithms
+		* Floyd Cycle Detection Algorithm https://medium.com/@orionssl/%E6%8E%A2%E7%B4%A2-floyd-cycle-detection-algorithm-934cdd05beb9
 			* LeetCode141.cpp Linked List Cycle AC
 			* LeetCode142.cpp Linked List Cycle II AC
 			* LeetCode143.cpp Reorder List AC
