@@ -49,38 +49,26 @@
 * mergeSort(int[] arr , int start ,int end);  完成归并排序，在归并排序中使用了插入排序，利用了当数据规模很小时，插入排序优于归并排序，如何选择插入排序的最优元素个数是关键
 * reverse(int x);  反转整数，LeetCode第七题，AC
 * mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题，AC
-* threeSum(int[] nums); LeetCode第15题，三个数的和，AC
-* addRecursion(int[] nums, int length); 求任意多个数字和的递归算法
-* hanoi(int n ,String A, String B, String C ); 汉诺塔问题的递归解法，只能使用递归解法
-* trivialFindMaximumSubarray(int[] arr);   平凡的方法实现最大子数组问题，其时间复杂度为O(n^2)
-* findMaximumSubarray(int[] arr,int start, int end);  寻找最大子数组问题，采用递归解法，时间复杂度为O(nlogn)，比平凡方法的时间复杂度低
+* findMaximumSubarray(int[] arr,int start, int end);  寻找最大子数组问题，采用递归解法，时间复杂度为O(nlogn)
 * trivialSquareMatrixMultiply(int[][] nums1, int[][] nums2) 平凡方法实现矩阵乘法，时间复杂度为O(n^3)
 * trivialSquareMatrixMultiplyRecursion(int[][] nums1, int[][] nums2 , int nums1RowStart, int nums1RowEnd,
 			int nums1ColumnStart , int nums1ColumnEnd , int nums2RowStart , int nums2RowEnd , int nums2ColumnStart , int nums2ColumnEnd)  矩阵分块乘法，只使用与偶数维的情况，局限性很大
 * removeElement(int[] nums, int val);  LeetCode第27题，该算法的时间复杂度为O(n)，AC
 * sortList(ListNode head);  对链表使用归并排序，时间复杂度为O(nlogn)
-* ZOJ1001Solution(); OJ1000题目解答，AC
+* HDOJ1000();  AC
+* HDOJ1001();  AC
 * HDU1002Solution(); HDU1002题目解答，AC
 * HDU1003Solution(); HDU1003题目解答，AC
 * HDU1004Solution(); HDU1004题目解答，AC
 * HDU1005Solution(); HDU1005题目解答，实现了普通递归算法，并将普通递归算法修改为尾递归算法，AC
-* HDOJ1000();  AC
-* HDOJ1001();  AC
 * HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
 * HDU1066();   Computing the factorical's last non-zero number. AC
 * priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap
 * countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
 * enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing method.The number of comparision decreases.
-* sortASCII();   sort ASCII by using insertion sort.
-* distance();   Computing the distance from node a(x1,y1) to b(x2,y2).
-* volumn();   Computing the volumn of ball
 * HDU2001()-HDU2017(); Practise the C++ language properties in HDUOJ page 11.  AC
-* twoSum(int[] nums, int target);   LeetCode第一题，寻找一个数组中是否有两个数的和与指定的target数相同，AC
-* addTwoNumbers(ListNode l1, ListNode l2);  LeetCode第二题，加两个数，AC
-* maxSubSeqSum(int arr[], int length);  It is the most efficient method for the max sub sequence problem.
-* isPalindrome(self, x)   Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward (Leetcode 9) AC
+* isPalindrome(self, x)  Leetcode 9 AC
 * romanToInt(string s)  Leetcode 13 AC
-* LeetCode75.cpp Sort Colors AC
 * LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * LeetCode1046.cpp Last Stone Weight AC
 * ListCode204.cpp Count Primes AC
@@ -136,7 +124,7 @@
 		* LeetCode136.cpp Single Number AC hash table
 		* LeetCode260.cpp Single Number III AC
 		* LeetCode387.cpp First Unique Character in a String AC
-		* LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC
+		* **LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC**
 	* linked list
 	    * LeetCode66.cpp  Plus One AC
 		* LeetCode148.cpp sort list AC
