@@ -61,7 +61,6 @@ public:
         return nums[mid];
         
     }
-	//https://blog.csdn.net/MoreWindows/article/details/6684558
     int partition(vector<int>& nums,int start, int end){
         int key = nums[start];
         int left = start;
