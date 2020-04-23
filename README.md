@@ -120,7 +120,6 @@
 		* LeetCode540.cpp Single Element in a Sorted Array AC
 		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
 		* **priority_queue and map/set can exchange at the solving min/max problem.**
-		
 	* Trie
 	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
         * LeetCode211.cpp Add and Search Word - Data structure design AC
