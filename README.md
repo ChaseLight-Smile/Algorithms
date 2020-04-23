@@ -18,7 +18,7 @@
   * **树（Trees）**
 	  * **Binary Search Trees**
 	  * **Binary Trees**
-	  * **N-rray Trees**
+	  * **N-ary Trees**
 	  * **Red-black Trees**
 	  * **B-Trees**
 	  * **B<sup>+</sup>-trees**
@@ -158,7 +158,7 @@
 		* LeetCode102.cpp Binary Tree Level Order Traversal  AC
 		* LeetCode107.cpp Binary Tree Level Order Traversal II AC
 		* LeetCode637.cpp Average of Levels in Binary Tree AC
-		* LeetCode429.cpp N-array Tree Level Order Traversal AC
+		* LeetCode429.cpp N-ary Tree Level Order Traversal AC
 		* all solutions **tree + queue** 
 	* union find
 		* LeetCode128.cpp Longest Consecutive Sequence  AC
@@ -195,12 +195,12 @@
 	* **LeetCode786.cpp K-th Smallest Prime Fraction (单纯的使用binary search 或者 heap均 TLE Hard)**
 	* LeetCode658.cpp Find K Closest Elements AC
 	* LeetCode275.cpp H-Index II
-* BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-array Tree
+* BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-ary Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
     * LeetCode107.cpp Binary Tree Level Order Traversal II AC
     * LeetCode637.cpp Average of Levels in Binary Tree AC
-    * LeetCode429.cpp N-array Tree Level Order Traversal AC
+    * LeetCode429.cpp N-ary Tree Level Order Traversal AC
     * LeetCode1305.cpp All Elements in Two Binary Search Trees AC
     * LeetCode1302.cpp Deepest Leaves Sum AC
 	* LeetCode100.cpp Same Tree AC
@@ -224,8 +224,8 @@
 	* LeetCode145.cpp Binary Tree Postorder Traversal AC
 	* LeetCode94.cpp Binary Tree Inorder Traversal AC
 	* LeetCode173.cpp Binary Search Tree Iterator AC
-	* LeetCode590.cpp N-array Tree Postorder Traversal AC
-	* LeetCode589.cpp N-array Tree Preorder Traversal AC
+	* LeetCode590.cpp N-ary Tree Postorder Traversal AC
+	* LeetCode589.cpp N-ary Tree Preorder Traversal AC
 	* LeetCode700.cpp Search in a Binary Search Tree AC
 	* LeetCode110.cpp Balanced Binary Tree  AC
 	* Construction Tree
