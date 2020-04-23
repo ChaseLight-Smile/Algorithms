@@ -100,7 +100,7 @@
 	* LeetCode83.cpp Remove Duplicates from Sorted List AC 
 	* LeetCode82.cpp Remove Duplicates from Sorted List II AC
 * sort
-    * LeetCode912.cpp 912. Sort an Array AC
+    * LeetCode912.cpp Sort an Array AC
 	    * implement quicksort (最快，最省空间)
 		* implement merge sort
 		* implement heap sort
@@ -117,9 +117,10 @@
 		* LeetCode1089.cpp Duplicate Zeros AC
 		* LeetCode239.cpp Sliding Window Maximum  AC  multiset
 		* LeetCode480.cpp Sliding Window Median  AC multiset
-		* LeetCode540.cpp Single Element in a Sorted Array
-		* **priority_queue and map/set can exchange at the solving min/max problem.**
+		* LeetCode540.cpp Single Element in a Sorted Array AC
 		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
+		* **priority_queue and map/set can exchange at the solving min/max problem.**
+		
 	* Trie
 	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
         * LeetCode211.cpp Add and Search Word - Data structure design AC
