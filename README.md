@@ -103,6 +103,8 @@
 	    * implement quicksort (最快，最省空间)
 		* implement merge sort
 		* implement heap sort
+	* Cyclic Sort
+		* LeetCode268.cpp Missing Number AC
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
