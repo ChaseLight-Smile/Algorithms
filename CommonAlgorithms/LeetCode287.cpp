@@ -49,3 +49,31 @@ public:
         return left;
     }
 };
+
+//cyclic sort
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int len = nums.size();
+        int i = 0;
+        while(i < len){
+            int j = nums[i];
+            if(j < len && nums[i] != nums[j-1]){
+                swap(nums[i], nums[j-1]);
+            }else{
+                ++i;
+            }
+        }
+        for(auto & n : nums){
+            cout << n << " ";
+        }
+        int ans = -1;
+        for(int i = 0; i < len; i++){
+            if(nums[i] != i+1){
+                ans = i;
+                break;
+            }
+        }
+        return nums[ans];
+    }
+};

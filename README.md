@@ -1,4 +1,5 @@
 ## **数据结构与算法**
+## **数据结构与算法**
 
 
 ### **1. 概述**
@@ -105,6 +106,7 @@
 		* implement heap sort
 	* Cyclic Sort
 		* LeetCode268.cpp Missing Number AC
+		* LeetCode287.cpp Find the Duplicate Number AC
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
