@@ -65,3 +65,25 @@ public:
 };
 
 //解法四 一趟算法，时间复杂度为O(n) 空间复杂度为O(1)
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        if(nums.size() == 1){
+            return;
+        }
+        vector<int> countNums(nums.size()+1);
+        for(int i = 0 ; i < nums.size(); i++){
+            countNums[nums[i]] += 1;
+        }
+        nums.clear();
+        for(int i = 0; i < countNums.size(); i++){
+            if(countNums[i] > 0){
+                int count = countNums[i];
+                while(count > 0){
+                    nums.push_back(i);
+                    count--;
+                }
+            }
+        }
+    }
+};
