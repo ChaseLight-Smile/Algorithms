@@ -131,10 +131,10 @@
 		* LeetCode206.cpp Reverse Linked List AC
 		* LeetCode92.cpp Reverse Linked List II AC
 		* Floyd Cycle Detection Algorithm https://medium.com/@orionssl/%E6%8E%A2%E7%B4%A2-floyd-cycle-detection-algorithm-934cdd05beb9
-			* LeetCode141.cpp Linked List Cycle AC
-			* LeetCode142.cpp Linked List Cycle II AC
-			* LeetCode143.cpp Reorder List AC
-			* LeetCode876.cpp Middle of the Linked List AC
+			* **LeetCode141.cpp Linked List Cycle AC**
+			* **LeetCode142.cpp Linked List Cycle II AC**
+			* **LeetCode287.cpp Find the Duplicate Number AC** **数组其实也是一个链表，如果能带着这个观点，这道题目完全和142相同**
+			* **LeetCode876.cpp Middle of the Linked List AC**
 		* LeetCode203.cpp Remove Linked List Elements AC
 		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 		* LeetCode147.cpp Insertion Sort List AC

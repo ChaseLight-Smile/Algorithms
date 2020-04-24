@@ -77,3 +77,26 @@ public:
         return nums[ans];
     }
 };
+
+//快慢指针
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int len = nums.size();
+        int slow = nums[0] ;
+        int fast = nums[0];
+        while(true){
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            if(slow == fast){
+                fast = nums[0];
+                while(slow != fast){
+                    slow = nums[slow];
+                    fast = nums[fast];
+                }
+                return slow;
+            }
+        }
+        return -1;
+    }
+};
