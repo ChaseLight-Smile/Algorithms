@@ -100,3 +100,50 @@ public:
         return -1;
     }
 };
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        vector<int> ans(nums.size());
+        for(int i = 0 ; i < nums.size(); i++){
+            ans[nums[i]] += 1;
+        }
+        for(int i = 0 ; i < nums.size(); i++){
+            if(ans[i] > 1){
+                return i;
+            }
+        }
+        return -1;
+    }
+};
+
+
+//counting sort
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        vector<int> ans(nums.size());
+        for(int i = 0 ; i < nums.size(); i++){
+            ans[nums[i]] += 1;
+        }
+        vector<int>res;
+        for(int i = 0 ; i < ans.size(); i++){
+            if(ans[i] > 0){
+                int count = ans[i];
+                while(count > 0){
+                    res.push_back(i);
+                    count--;
+                }
+            }
+        }
+        for(int i = 0 ; i < res.size(); i++){
+            cout << res[i] << " ";  //count sortde 结果
+        }
+        for(int i = 0 ; i < nums.size(); i++){
+            if(ans[i] > 1){
+                return i;
+            }
+        }
+        return -1;
+    }
+};
