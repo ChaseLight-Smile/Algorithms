@@ -155,19 +155,19 @@
 		* LeetCode128.cpp Longest Consecutive Sequence  AC
 		* LeetCodeUnionFind.cpp  LeetCode并查集模板，带路径压缩
 * Binary Search
-    * **LeetCode704.cpp Binary Search AC** (第一类最基本的二分检索题目)
+    * **LeetCode704.cpp Binary Search AC** 
 	* **LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)** 这四道题目其实延伸出很多题目，比如如何在Rotated Sorted Array中找到最小元素的下标并返回？**这里我向社区贡献了一道题目，供参考https://leetcode.com/contribute/18958**
 		* **LeetCode81.cpp Search in Rotated Sorted Array II AC(binary search)**
 		* **LeetCode153.cpp Find Minimum in Rotated Sorted Array AC (binary search)**
-		* **LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC(binary search)** (33 81 153 154解法完全一样，这是binary search的第二大类题型)
+		* **LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC(binary search)** (33 81 153 154解法完全一样)
 	* LeetCode69.cpp Sqrt(x) AC
 	* LeetCode367.cpp Valid Perfect Square  AC
 	* LeetCode278.cpp First Bad Version AC
 	* LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
 	* LeetCode374.cpp Guess Number Higher or Lower AC
-	* **LeetCode162.cpp Find Peak Element AC**  (第三类二分检索题目)
+	* **LeetCode162.cpp Find Peak Element AC**
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
-	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem** (第四类二分检索题目)
+	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem**
 	* LeetCode35.cpp Search Insert Position AC
 	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)
 	* acwing63.cpp 数字在排序数组中出现的次数 AC  剑指offer题目
@@ -180,7 +180,7 @@
 	* **LeetCode653.cpp Two Sum IV - Input is a BST AC  binary search** 树形结构二分
 	* LeetCode108.cpp Convert Sorted Array to Binary Search Tree  AC  树形结构二分
 		* LeetCode109.cpp Convert Sorted List to Binary Search Tree AC 
-	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分，空间局部性最好，不存在行列无序检索的问题
+	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分的算法是缓存相关性算法，我认为更好
 	* **LeetCode230.cpp Kth Smallest Element in a BST AC (binary search & in-order traversal)**
 	* **LeetCode719.cpp Find K-th Smallest Pair Distance   (单纯的使用binary search 或者 heap均 TLE Hard)，其中binary search的方法和leetcode 215思路一致** 
 	* **LeetCode786.cpp K-th Smallest Prime Fraction (单纯的使用binary search 或者 heap均 TLE Hard)**
