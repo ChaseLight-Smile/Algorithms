@@ -99,6 +99,8 @@
 		* LeetCode287.cpp Find the Duplicate Number AC
 		* LeetCode75.cpp Sort Colors AC
 		* LeetCode49.cpp Group Anagrams AC
+	* Intervals
+		* LeetCode56.cpp Merge Intervals AC
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
