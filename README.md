@@ -102,6 +102,7 @@
 	* Intervals
 		* LeetCode56.cpp Merge Intervals AC
 		* LeetCode57.cpp Insert Interval  AC
+		* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
