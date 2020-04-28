@@ -36,45 +36,15 @@
 
 ### **2. 算法列表**
 ***
-
-* insertSort(int[] arr);  完成插入排序过程
-* insertSortRecurtion(int[] arr,int length); 插入排序递归算法
-* sumBinarySystemNumber(int[] addNumber1,int[] addNumber2);   实现两个n位二进制数加法操作
-* selectionSort(int[] arr);  完成选择排序过程
-* bubbleSort(int[] arr); 完成冒泡排序
-* findMedianSortedArrays(int[] nums1, int[] nums2);  LeetCode第四题，寻找两个已经排序好的数组的中位数，AC
-* reverse(int x);  反转整数，LeetCode第七题，AC
-* mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题，AC
-* findMaximumSubarray(int[] arr,int start, int end);  寻找最大子数组问题，采用递归解法，时间复杂度为O(nlogn)
-* trivialSquareMatrixMultiply(int[][] nums1, int[][] nums2) 平凡方法实现矩阵乘法，时间复杂度为O(n^3)
-* trivialSquareMatrixMultiplyRecursion(int[][] nums1, int[][] nums2 , int nums1RowStart, int nums1RowEnd,
-			int nums1ColumnStart , int nums1ColumnEnd , int nums2RowStart , int nums2RowEnd , int nums2ColumnStart , int nums2ColumnEnd)  矩阵分块乘法，只使用与偶数维的情况，局限性很大
-* removeElement(int[] nums, int val);  LeetCode第27题，该算法的时间复杂度为O(n)，AC
-* sortList(ListNode head);  对链表使用归并排序，时间复杂度为O(nlogn)
-* HDOJ1000();  AC
-* HDOJ1001();  AC
-* HDU1002Solution(); HDU1002题目解答，AC
-* HDU1003Solution(); HDU1003题目解答，AC
-* HDU1004Solution(); HDU1004题目解答，AC
-* HDU1005Solution(); HDU1005题目解答，实现了普通递归算法，并将普通递归算法修改为尾递归算法，AC
-* HDU1006(); tick and tick for the clock are roating every second and metting each other many times everyday.
-* HDU1066();   Computing the factorical's last non-zero number. AC
-* priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap
-* countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
-* enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing method.The number of comparision decreases.
-* HDU2001()-HDU2017(); Practise the C++ language properties in HDUOJ page 11.  AC
-* isPalindrome(self, x)  Leetcode 9 AC
-* romanToInt(string s)  Leetcode 13 AC
-* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
-* LeetCode1046.cpp Last Stone Weight AC
-* ListCode204.cpp Count Primes AC
-* LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
-* Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
-* Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
-* LeetCode76.cpp Minimum Window Substring   O(256n)  AC
-* LeetCode8.cpp String to Integer (atoi) AC
-* LeetCode509.cpp Fibonacci Number AC  
-* LeetCode628.cpp Maximum Product of Three Numbers AC
+* 细节题
+	* LeetCode27.cpp Remove Element AC
+	* LeetCode7.cpp reverse AC
+	* LeetCode9.cpp isPalindrome  AC
+	* LeetCode13.cpp romanToInt  AC
+	* ListCode204.cpp Count Primes AC
+	* LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
+	* LeetCode8.cpp String to Integer (atoi) AC
+	* LeetCode509.cpp Fibonacci Number AC  
 * LeetCode26.cpp Remove Duplicates from Sorted Array AC
     * LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
 	* LeetCode83.cpp Remove Duplicates from Sorted List AC 
@@ -88,6 +58,12 @@
 	* LeetCode16.cpp 3Sum Closest AC
 	* LeetCode18.cpp 4Sum two pointer AC
 	* LeetCode713.cpp Subarray Product Less Than K AC
+	* Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
+	* Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
+	* LeetCode76.cpp Minimum Window Substring   O(256n)  AC
+	* LeetCode628.cpp Maximum Product of Three Numbers AC
+	* LeetCode22.java merge Two Lists AC
+	* LeetCode4.cpp find Median Sorted Arrays AC
 * sort
     * LeetCode912.cpp Sort an Array AC
 	    * implement quicksort (最快，最省空间)
@@ -106,6 +82,7 @@
 		* LeetCode56.cpp Merge Intervals AC
 		* LeetCode57.cpp Insert Interval  AC
 		* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
+	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
@@ -134,6 +111,7 @@
 		* LeetCode260.cpp Single Number III AC
 		* LeetCode387.cpp First Unique Character in a String AC
 		* **LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC**
+		* LeetCode1046.cpp Last Stone Weight AC
 	* linked list
 	    * LeetCode66.cpp  Plus One AC
 		* LeetCode148.cpp sort list AC
@@ -239,7 +217,24 @@
 * BFS and DFS of Graph
     * LeetCodeGraphTraversalTemplate.cpp  图的DFS和BFS模板，保存图时采用了邻接列表的方式，不用邻接矩阵(浪费空间和时间)
 	* Topological Sort
-
+* 杂题
+	* insertSort(int[] arr);  插入排序
+	* insertSortRecurtion(int[] arr,int length); 插入排序
+	* selectionSort(int[] arr);  选择排序
+	* bubbleSort(int[] arr); 冒泡排序
+	* findMaximumSubarray(int[] arr,int start, int end);  寻找最大子数组问题，采用递归解法，时间复杂度为O(nlogn)
+	* priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap
+	* countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
+	* enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing method.The number of comparision decreases.
+	* HDOJ1000();  AC
+	* HDOJ1001();  AC
+	* HDOJ1002; AC
+	* HDOJ1003S; AC
+	* HDOJ1004; AC
+	* HDOJ1005; AC
+	* HDOJ1006(); AC
+	* HDOJ1066(); AC
+	* HDU2001()-HDU2017(); Practise the C++ language properties in HDUOJ page 11.  AC
 ### **3. 时空复杂度分析**
 ***
 
