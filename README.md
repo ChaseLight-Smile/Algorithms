@@ -79,6 +79,14 @@
     * LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
 	* LeetCode83.cpp Remove Duplicates from Sorted List AC 
 	* LeetCode82.cpp Remove Duplicates from Sorted List II AC
+* Two pointers
+    * 双指针问题包括（前向型指针(滑动窗口（将O(n^2)算法做成O(n)的算法）和快慢指针两类)、相向型指针（O(n)）、两个数组（典型题目为mergesort中的merge过程）三种大类）
+	* LeetCode167.cpp Two Sum II - Input array is sorted  相向型指针 AC
+	* LeetCode88.cpp Merge Sorted Array AC
+	* LeetCode1.cpp Two Sum AC
+	* LeetCode15.cpp 3Sum  two pointer   AC 
+	* LeetCode16.cpp 3Sum Closest AC
+	* LeetCode18.cpp 4Sum two pointer AC
 * sort
     * LeetCode912.cpp Sort an Array AC
 	    * implement quicksort (最快，最省空间)
@@ -97,13 +105,6 @@
 		* LeetCode56.cpp Merge Intervals AC
 		* LeetCode57.cpp Insert Interval  AC
 		* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
-	* Two pointers
-		* LeetCode88.cpp Merge Sorted Array AC
-		* LeetCode1.cpp Two Sum AC
-		* LeetCode15.cpp 3Sum  two pointer   AC 
-		* LeetCode16.cpp 3Sum Closest AC
-		* LeetCode18.cpp 4Sum two pointer AC
-		* LeetCode167.cpp Two Sum II - Input array is sorted  相向型指针
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
