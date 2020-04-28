@@ -103,6 +103,7 @@
 		* LeetCode15.cpp 3Sum  two pointer   AC 
 		* LeetCode16.cpp 3Sum Closest AC
 		* LeetCode18.cpp 4Sum two pointer AC
+		* LeetCode167.cpp Two Sum II - Input array is sorted  相向型指针
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
