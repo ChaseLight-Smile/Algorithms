@@ -42,9 +42,7 @@
 * sumBinarySystemNumber(int[] addNumber1,int[] addNumber2);   实现两个n位二进制数加法操作
 * selectionSort(int[] arr);  完成选择排序过程
 * bubbleSort(int[] arr); 完成冒泡排序
-* merge(int[] num1,int[] num2); 合并两个已经排序好的数组
 * findMedianSortedArrays(int[] nums1, int[] nums2);  LeetCode第四题，寻找两个已经排序好的数组的中位数，AC
-* mergeSort(int[] arr , int start ,int end);  完成归并排序，在归并排序中使用了插入排序，利用了当数据规模很小时，插入排序优于归并排序，如何选择插入排序的最优元素个数是关键
 * reverse(int x);  反转整数，LeetCode第七题，AC
 * mergeTwoLists(ListNode l1, ListNode l2); 合并两个已经排序好的List，时间复杂度O(m+n)，LeetCode第22题，AC
 * findMaximumSubarray(int[] arr,int start, int end);  寻找最大子数组问题，采用递归解法，时间复杂度为O(nlogn)
@@ -74,10 +72,6 @@
 * Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
 * Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
 * LeetCode76.cpp Minimum Window Substring   O(256n)  AC
-* LeetCode1.cpp Two Sum AC
-* LeetCode15.cpp 3Sum  two pointer   AC 
-* LeetCode16.cpp 3Sum Closest AC
-* LeetCode18.cpp 4Sum two pointer AC
 * LeetCode8.cpp String to Integer (atoi) AC
 * LeetCode509.cpp Fibonacci Number AC  
 * LeetCode628.cpp Maximum Product of Three Numbers AC
@@ -103,6 +97,12 @@
 		* LeetCode56.cpp Merge Intervals AC
 		* LeetCode57.cpp Insert Interval  AC
 		* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
+	* Two pointers
+		* LeetCode88.cpp Merge Sorted Array AC
+		* LeetCode1.cpp Two Sum AC
+		* LeetCode15.cpp 3Sum  two pointer   AC 
+		* LeetCode16.cpp 3Sum Closest AC
+		* LeetCode18.cpp 4Sum two pointer AC
 * Data Structure
     * map and set
         * LeetCode981.cpp Time Based Key-Value Store  unordered_multimap is time limited, but map is accepted
