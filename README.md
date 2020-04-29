@@ -85,7 +85,6 @@
 		* LeetCode435.cpp Non-overlapping Intervals  AC   greedy method
 		* LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC greedy求相邻区间的交集
 		* LeetCode436.cpp Find Right Interval
-		* LeetCode352.cpp Data Stream as Disjoint Intervals
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
