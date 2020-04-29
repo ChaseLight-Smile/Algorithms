@@ -82,6 +82,9 @@
 		* LeetCode56.cpp Merge Intervals AC
 		* LeetCode57.cpp Insert Interval  AC   给出了两种方法，都能AC
 		* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
+		* LeetCode435.cpp Non-overlapping Intervals  AC
+		* LeetCode436.cpp Find Right Interval
+		* LeetCode352.cpp Data Stream as Disjoint Intervals
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
