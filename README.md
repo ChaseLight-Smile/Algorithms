@@ -45,10 +45,10 @@
 	* LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
 	* LeetCode8.cpp String to Integer (atoi) AC
 	* LeetCode509.cpp Fibonacci Number AC  
-* LeetCode26.cpp Remove Duplicates from Sorted Array AC
-    * LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
-	* LeetCode83.cpp Remove Duplicates from Sorted List AC 
-	* LeetCode82.cpp Remove Duplicates from Sorted List II AC
+	* LeetCode26.cpp Remove Duplicates from Sorted Array AC
+		* LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
+		* LeetCode83.cpp Remove Duplicates from Sorted List AC 
+		* LeetCode82.cpp Remove Duplicates from Sorted List II AC
 * Two pointers
     * 双指针问题包括（前向型指针(滑动窗口（将O(n^2)算法做成O(n)的算法）和快慢指针两类)、相向型指针（O(n)）、两个数组（典型题目为mergesort中的merge过程）三种大类）
 	* LeetCode167.cpp Two Sum II - Input array is sorted  相向型指针 AC
@@ -80,7 +80,7 @@
 		* LeetCode49.cpp Group Anagrams AC
 	* Intervals
 		* LeetCode56.cpp Merge Intervals AC
-		* LeetCode57.cpp Insert Interval  AC
+		* LeetCode57.cpp Insert Interval  AC   给出了两种方法，都能AC
 		* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
@@ -217,7 +217,7 @@
 * BFS and DFS of Graph
     * LeetCodeGraphTraversalTemplate.cpp  图的DFS和BFS模板，保存图时采用了邻接列表的方式，不用邻接矩阵(浪费空间和时间)
 	* Topological Sort
-* 杂题
+* 其它
 	* insertSort(int[] arr);  插入排序
 	* insertSortRecurtion(int[] arr,int length); 插入排序
 	* selectionSort(int[] arr);  选择排序
