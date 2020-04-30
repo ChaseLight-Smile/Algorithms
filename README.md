@@ -140,7 +140,7 @@
 		* LeetCode107.cpp Binary Tree Level Order Traversal II AC
 		* LeetCode637.cpp Average of Levels in Binary Tree AC
 		* LeetCode429.cpp N-ary Tree Level Order Traversal AC
-		* all solutions **tree + queue** 
+		* all solutions **level order traversal of tree + queue** 
 	* union find
 		* LeetCode128.cpp Longest Consecutive Sequence  AC
 		* LeetCodeUnionFind.cpp  LeetCode并查集模板，带路径压缩
