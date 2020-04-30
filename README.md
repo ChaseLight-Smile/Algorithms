@@ -79,11 +79,12 @@
 		* LeetCode75.cpp Sort Colors AC
 		* LeetCode49.cpp Group Anagrams AC
 	* Intervals
-		* LeetCode56.cpp Merge Intervals AC
-		* LeetCode57.cpp Insert Interval  AC   给出了两种方法，都能AC
+		* LeetCode56.cpp Merge Intervals AC sort+greedy
+		* LeetCode57.cpp Insert Interval  AC   sort+greedy给出了两种方法，都能AC
 		* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
-		* LeetCode435.cpp Non-overlapping Intervals  AC   greedy method
-		* LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC greedy求相邻区间的交集
+		* LeetCode435.cpp Non-overlapping Intervals  AC   sort+greedy method
+		* LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集
+		* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
 		* LeetCode436.cpp Find Right Interval
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
