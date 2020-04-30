@@ -122,7 +122,7 @@
 		* LeetCode148.cpp sort list AC
 		* LeetCode206.cpp Reverse Linked List AC
 		* LeetCode92.cpp Reverse Linked List II AC
-		* Floyd Cycle Detection Algorithm https://medium.com/@orionssl/%E6%8E%A2%E7%B4%A2-floyd-cycle-detection-algorithm-934cdd05beb9
+		* Floyd Cycle Detection Algorithms
 			* **LeetCode141.cpp Linked List Cycle AC**
 			* **LeetCode142.cpp Linked List Cycle II AC**
 			* **LeetCode287.cpp Find the Duplicate Number AC** **数组其实也是一个链表，如果能带着这个观点，这道题目完全和142相同**
