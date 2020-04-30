@@ -1,4 +1,4 @@
-## **数据结构与算法**
+## **数据结构与算法 (Do algorithms for fun)**
 
 ### **1. 概述**
 ***
@@ -34,7 +34,7 @@
 	    * 我主要在调度研究中采用，但是通常调度中的问题都是NP-Hard，还得设计DP算法解决
 * Machine Learning ALgorithms
 
-### **2. 算法列表 (Do algorithms for fun)**
+### **2. 算法列表**
 ***
 * 细节题
 	* LeetCode27.cpp Remove Element AC
