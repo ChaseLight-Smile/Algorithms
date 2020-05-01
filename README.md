@@ -137,7 +137,8 @@
 	* monotonous stack
 	    * LeetCode496.cpp Next Greater Element I  AC
 		* LeetCode503.cpp Next Greater Element II  AC
-	* queue
+		* LeetCode739.cpp Daily Temperatures AC
+  	* queue
 		* LeetCode102.cpp Binary Tree Level Order Traversal  AC
 		* LeetCode107.cpp Binary Tree Level Order Traversal II AC
 		* LeetCode637.cpp Average of Levels in Binary Tree AC
