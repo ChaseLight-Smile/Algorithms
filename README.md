@@ -135,6 +135,7 @@
 		    * LeetCode82.cpp Remove Duplicates from Sorted List II AC
 	* deque
 	* monotonous stack
+	    * LeetCode496.cpp Next Greater Element I  AC
 	* queue
 		* LeetCode102.cpp Binary Tree Level Order Traversal  AC
 		* LeetCode107.cpp Binary Tree Level Order Traversal II AC
