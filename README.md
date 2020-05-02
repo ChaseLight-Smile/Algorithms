@@ -32,7 +32,7 @@
 	* **Recursive**
 	* **Linear Programming**
 	    * 我主要在调度研究中采用，但是通常调度中的问题都是NP-Hard，还得设计DP算法解决
-* Machine Learning ALgorithms
+* Machine Learning Algorithms for Databases
 
 ### **2. 算法列表**
 ***
@@ -244,7 +244,7 @@
 	* HDOJ1066(); AC
 	* HDU2001()-HDU2017(); Practise the C++ language properties in HDUOJ page 11.  AC
 
-### **3. 动态规划**
+### **3. 算法设计技术**
 ***
 
 * Dynamic Programming	
@@ -260,6 +260,16 @@
 	* 背包型
 	* 区间型
 	* 双序列型
+
+* Greedy
+	* LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解
+	* LeetCode56.cpp Merge Intervals AC sort+greedy
+	* LeetCode57.cpp Insert Interval  AC   sort+greedy给出了两种方法，都能AC
+	* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
+	* LeetCode435.cpp Non-overlapping Intervals  AC   sort+greedy method
+	* LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集
+	* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
+	
 	
 ### **4. 时空复杂度分析**
 ***
@@ -418,7 +428,7 @@ void add(int element) {
 */
 ```
 
-### **5. 参考文献**
+### **参考文献**
 ***
 
 * http://www.cs.cmu.edu/~anupamg/advalgos15/
