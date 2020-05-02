@@ -234,15 +234,15 @@
 	* priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap
 	* countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
 	* enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing method.The number of comparision decreases.
-	* HDOJ1000();  AC
-	* HDOJ1001();  AC
+	* HDOJ1000; AC
+	* HDOJ1001; AC
 	* HDOJ1002; AC
 	* HDOJ1003; AC
 	* HDOJ1004; AC
 	* HDOJ1005; AC
-	* HDOJ1006(); AC
-	* HDOJ1066(); AC
-	* HDU2001()-HDU2017(); Practise the C++ language properties in HDUOJ page 11.  AC
+	* HDOJ1006; AC
+	* HDOJ1066; AC
+	* HDU2001-HDU2017; Practise the C++ language properties in HDUOJ page 11. AC
 
 ### **3. 算法设计技术**
 ***
