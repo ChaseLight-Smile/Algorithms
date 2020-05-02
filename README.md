@@ -28,7 +28,7 @@
   * **Graph Algorithms**
 * **算法设计技术**
 	* **Dynamic Programming**
-	* **Greedy methods**
+	* **Greedy Algorithms**
 	* **Recursive**
 	* **Linear Programming**
 	    * 我主要在调度研究中采用，但是通常调度中的问题都是NP-Hard，还得设计DP算法解决
@@ -237,7 +237,7 @@
 	* HDOJ1000();  AC
 	* HDOJ1001();  AC
 	* HDOJ1002; AC
-	* HDOJ1003S; AC
+	* HDOJ1003; AC
 	* HDOJ1004; AC
 	* HDOJ1005; AC
 	* HDOJ1006(); AC
@@ -261,7 +261,7 @@
 	* 区间型
 	* 双序列型
 
-* Greedy
+* Greedy Algorithms
 	* LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解
 	* LeetCode56.cpp Merge Intervals AC sort+greedy
 	* LeetCode57.cpp Insert Interval  AC   sort+greedy给出了两种方法，都能AC
