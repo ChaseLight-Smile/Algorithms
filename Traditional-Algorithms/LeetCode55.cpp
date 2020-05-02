@@ -11,6 +11,7 @@ public:
             for(j = 0; j < i; j++){
                if(dp[j] && j+nums[j] >= i){
                    dp[i] = true;
+				   break;
                }
            }
         }
