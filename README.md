@@ -248,8 +248,10 @@
 ***
 
 * Dynamic Programming
+    * 最值型
+	    * LeetCode322.cpp Coin Change  AC
+		* LeetCode152.cpp Maximum Product Subarray AC
 	* 计数型
-		* LeetCode322.cpp Coin Change  AC
 		* LeetCode62.cpp Unique Paths AC
 	* 存在型
 		* LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解
