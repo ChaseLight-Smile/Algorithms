@@ -247,19 +247,16 @@
 ### **3. 动态规划**
 ***
 
-* Dynamic Programming
-    * 最值型
-	    * LeetCode322.cpp Coin Change  AC
-		* LeetCode152.cpp Maximum Product Subarray AC
-	* 计数型
+* Dynamic Programming	
+	* 坐标型
+		* LeetCode322.cpp Coin Change  AC
 		* LeetCode62.cpp Unique Paths AC
-	* 存在型
-		* LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解
-	* 坐标型	
 	* 位操作型
 	* 序列型
+		* LeetCode152.cpp Maximum Product Subarray AC
 	* 划分型
 	* 博弈型
+		* LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解
 	* 背包型
 	* 区间型
 	* 双序列型
