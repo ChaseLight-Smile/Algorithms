@@ -248,8 +248,19 @@
 ***
 
 * Dynamic Programming
-    * LeetCode322.cpp Coin Change  AC
-	* LeetCode62.cpp Unique Paths AC
+	* 计数型
+		* LeetCode322.cpp Coin Change  AC
+	* 存在型
+		* LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解
+	* 坐标型
+		* LeetCode62.cpp Unique Paths AC
+	* 位操作型
+	* 序列型
+	* 划分型
+	* 博弈型
+	* 背包型
+	* 区间型
+	* 双序列型
 	
 ### **4. 时空复杂度分析**
 ***
