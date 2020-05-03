@@ -262,7 +262,7 @@
 	* 双序列型
 
 * Greedy Algorithms
-	* LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解
+	* LeetCode55.cpp Jump Game 存在一个greedy的解  AC
 	* LeetCode56.cpp Merge Intervals AC sort+greedy
 	* LeetCode57.cpp Insert Interval  AC   sort+greedy给出了两种方法，都能AC
 	* LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处
