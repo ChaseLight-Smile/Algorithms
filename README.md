@@ -54,6 +54,7 @@
 		* LeetCode31.cpp Next Permutation  AC
 		* LeetCode46.cpp Permutations AC  **调用了LeetCode31.cpp的Next Permutation函数**
 		* LeetCode47.cpp Permutations II AC  **和LeetCode46.cpp代码完全一样**
+		* LeetCode60.cpp Permutation Sequence  AC
 	* Cycle Detection Algorithms **本题考查环检测算法，具体见链接 https://en.wikipedia.org/wiki/Cycle_detection**
 		* **LeetCode141.cpp Linked List Cycle AC**
 		* **LeetCode142.cpp Linked List Cycle II AC**
