@@ -85,8 +85,9 @@
 		* LeetCode435.cpp Non-overlapping Intervals  AC   sort+greedy method
 		* LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集
 		* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
-		* LeetCode436.cpp Find Right Interval  AC 解法是利用map
 		* LeetCode218.cpp The Skyline Problem
+	* Line Sweep
+		* LeetCode436.cpp Find Right Interval  AC 解法是利用map，line sweep重点是一步排序，这里使用map本身的特性代替
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
@@ -98,7 +99,6 @@
 		* LeetCode480.cpp Sliding Window Median  AC multiset
 		* LeetCode540.cpp Single Element in a Sorted Array AC
 		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
-		* LeetCode436.cpp Find Right Interval  AC 解法是利用map
 		* **priority_queue and map/set can exchange at the solving min/max problem.**
 	* Trie
 	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
