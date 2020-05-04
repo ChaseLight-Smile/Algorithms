@@ -91,6 +91,7 @@
 	* Permutation
 		* LeetCode31.cpp Next Permutation  AC
 		* LeetCode46.cpp Permutations AC  **调用了LeetCode31的Next函数**
+		* LeetCode47.cpp Permutations II AC
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
