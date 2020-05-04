@@ -88,6 +88,8 @@
 		* LeetCode218.cpp The Skyline Problem
 	* Line Sweep
 		* LeetCode436.cpp Find Right Interval  AC 解法是利用map，line sweep重点是一步排序，这里使用map本身的特性代替
+	* Permutation
+		* Leet31.cpp Next Permutation  AC
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
