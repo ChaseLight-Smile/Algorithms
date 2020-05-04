@@ -49,6 +49,16 @@
 		* LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
 		* LeetCode83.cpp Remove Duplicates from Sorted List AC 
 		* LeetCode82.cpp Remove Duplicates from Sorted List II AC
+* 基础算法题
+	* Permutation  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
+		* LeetCode31.cpp Next Permutation  AC
+		* LeetCode46.cpp Permutations AC  **调用了LeetCode31.cpp的Next Permutation函数**
+		* LeetCode47.cpp Permutations II AC  **和LeetCode46.cpp代码完全一样**
+	* Cycle Detection Algorithms **本题考查环检测算法，具体见链接 https://en.wikipedia.org/wiki/Cycle_detection**
+		* **LeetCode141.cpp Linked List Cycle AC**
+		* **LeetCode142.cpp Linked List Cycle II AC**
+		* **LeetCode287.cpp Find the Duplicate Number AC** **数组其实也是一个链表，如果能带着这个观点，这道题目完全和142相同**
+		* **LeetCode876.cpp Middle of the Linked List AC**
 * Two pointers
     * 双指针问题包括（前向型指针(滑动窗口（将O(n^2)算法做成O(n)的算法）和快慢指针两类)、相向型指针（O(n)）、两个数组（典型题目为mergesort中的merge过程）三种大类）
 	* LeetCode167.cpp Two Sum II - Input array is sorted  相向型指针 AC
@@ -88,10 +98,6 @@
 		* LeetCode218.cpp The Skyline Problem
 	* Line Sweep
 		* LeetCode436.cpp Find Right Interval  AC 解法是利用map，line sweep重点是一步排序，这里使用map本身的特性代替
-	* Permutation
-		* LeetCode31.cpp Next Permutation  AC
-		* LeetCode46.cpp Permutations AC  **调用了LeetCode31的Next函数**
-		* LeetCode47.cpp Permutations II AC
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
@@ -127,11 +133,6 @@
 		* LeetCode148.cpp sort list AC
 		* LeetCode206.cpp Reverse Linked List AC
 		* LeetCode92.cpp Reverse Linked List II AC
-		* Floyd Cycle Detection Algorithms
-			* **LeetCode141.cpp Linked List Cycle AC**
-			* **LeetCode142.cpp Linked List Cycle II AC**
-			* **LeetCode287.cpp Find the Duplicate Number AC** **数组其实也是一个链表，如果能带着这个观点，这道题目完全和142相同**
-			* **LeetCode876.cpp Middle of the Linked List AC**
 		* LeetCode203.cpp Remove Linked List Elements AC
 		* LeetCode19.cpp Remove Nth Node From End of List O(2n) two pass algorithms   AC
 		* LeetCode147.cpp Insertion Sort List AC
