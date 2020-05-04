@@ -49,7 +49,7 @@
 		* LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
 		* LeetCode83.cpp Remove Duplicates from Sorted List AC 
 		* LeetCode82.cpp Remove Duplicates from Sorted List II AC
-* 基础算法题
+* 经典算法应用
 	* Permutation  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* LeetCode31.cpp Next Permutation  AC
 		* LeetCode46.cpp Permutations AC  **调用了LeetCode31.cpp的Next Permutation函数**
