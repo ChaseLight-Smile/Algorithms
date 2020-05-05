@@ -285,6 +285,7 @@
 	* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
 	
 * DFS and Backtrack Algorithms
+	* LeetCode79.cpp Word Search AC
 
 ### **4. 时空复杂度分析**
 ***
