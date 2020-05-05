@@ -44,6 +44,7 @@
 	* ListCode204.cpp Count Primes AC
 	* LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC
 	* LeetCode8.cpp String to Integer (atoi) AC
+	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，存在一个O(r+c)的线性时间算法
 	* LeetCode509.cpp Fibonacci Number AC  
 	* LeetCode26.cpp Remove Duplicates from Sorted Array AC
 		* LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up
@@ -180,7 +181,6 @@
 	* **LeetCode653.cpp Two Sum IV - Input is a BST AC  binary search** 树形结构二分
 	* LeetCode108.cpp Convert Sorted Array to Binary Search Tree  AC  树形结构二分
 		* LeetCode109.cpp Convert Sorted List to Binary Search Tree AC 
-	* **LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，但是我认为采用二分的算法是缓存相关性算法，我认为更好
 	* **LeetCode230.cpp Kth Smallest Element in a BST AC (binary search & in-order traversal)**
 	* **LeetCode719.cpp Find K-th Smallest Pair Distance   (单纯的使用binary search 或者 heap均 TLE Hard)，其中binary search的方法和leetcode 215思路一致** 
 	* **LeetCode786.cpp K-th Smallest Prime Fraction (单纯的使用binary search 或者 heap均 TLE Hard)**

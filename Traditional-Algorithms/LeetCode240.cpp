@@ -85,3 +85,25 @@ public:
         return false;
     }
 };
+
+//O(r+c)算法，从第一行右上角开始搜索
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        if(matrix.size() == 0){
+            return false;
+        }
+        int up = 0;
+        int right = matrix[0].size()-1;
+        while(up < matrix.size() && right >= 0){
+            if(matrix[up][right] == target){
+                return true;
+            }else if(matrix[up][right] > target){
+                --right;
+            }else{
+                ++up;
+            }
+        }
+        return false;
+    }
+};
