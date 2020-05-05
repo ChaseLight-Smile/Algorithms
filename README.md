@@ -55,7 +55,7 @@
 		* LeetCode31.cpp Next Permutation  AC
 		* LeetCode46.cpp Permutations AC  **调用了LeetCode31.cpp的Next Permutation函数**
 		* LeetCode47.cpp Permutations II AC  **和LeetCode46.cpp代码完全一样**
-		* LeetCode60.cpp Permutation Sequence  AC
+		* LeetCode60.cpp Permutation Sequence  AC  **LeetCode31.cpp变形题**
 	* Cycle Detection Algorithms **本题考查环检测算法，具体见链接 https://en.wikipedia.org/wiki/Cycle_detection**
 		* **LeetCode141.cpp Linked List Cycle AC**
 		* **LeetCode142.cpp Linked List Cycle II AC**
@@ -68,7 +68,7 @@
 	* LeetCode1.cpp Two Sum AC
 	* LeetCode15.cpp 3Sum  two pointer   AC 
 	* LeetCode16.cpp 3Sum Closest AC
-	* LeetCode18.cpp 4Sum two pointer AC
+	* LeetCode18.cpp 4Sum two pointer AC  相向型指针
 	* LeetCode713.cpp Subarray Product Less Than K AC
 	* Leetcode3.cpp  Longest Substring Without Repeating Characters O(n) "slide window search"   AC
 	* Leetcode209.cpp  Minimum Size Subarray Sum "slide window search"  AC
@@ -99,7 +99,7 @@
 		* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
 		* LeetCode218.cpp The Skyline Problem
 	* Line Sweep
-		* LeetCode436.cpp Find Right Interval  AC 解法是利用map，line sweep重点是一步排序，这里使用map本身的特性代替
+		* LeetCode436.cpp Find Right Interval  AC 解法是利用map，line sweep重点步骤是按照key排序，这里使用map本身的排序特性代替
 	* LeetCode324.cpp Wiggle Sort II AC O(nlogn)
 * Data Structure
     * map and set
@@ -278,7 +278,8 @@
 	* LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集
 	* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
 	
-	
+* DFS and Backtrack Algorithms
+
 ### **4. 时空复杂度分析**
 ***
 
