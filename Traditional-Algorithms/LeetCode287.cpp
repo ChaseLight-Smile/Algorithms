@@ -22,25 +22,23 @@ public:
 };
 
 
-//二分
+//二分，抽屉原理
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
         int len = nums.size();
-        int left = 0 ;
-        int right = len-1;
+        int left = 1; 
+        int right = len-1;   
         while(left < right){
             int mid = left + (right - left)/2;
-            
             int count = 0;
-            
             for(auto & n : nums){
-                if(n <= mid){
+                if(n >= left && n <= mid){
                     count++;
                 }
             }
             
-            if(count > mid){
+            if(count > mid-left+1){
                 right = mid;
             }else{
                 left = mid+1;
