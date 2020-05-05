@@ -111,6 +111,7 @@
 		* LeetCode480.cpp Sliding Window Median  AC multiset
 		* LeetCode540.cpp Single Element in a Sorted Array AC
 		* LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC
+		* LeetCode217.cpp Contains Duplicate AC hash table 去重
 		* **priority_queue and map/set can exchange at the solving min/max problem.**
 	* Trie
 	    * LeetCode208.cpp  Implement Trie (Prefix Tree) AC
