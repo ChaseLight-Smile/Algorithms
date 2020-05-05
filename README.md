@@ -172,7 +172,7 @@
 	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem**
 	* LeetCode35.cpp Search Insert Position AC
 	* LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)
-	* acwing63.cpp 数字在排序数组中出现的次数 AC  剑指offer题目
+	* acwing63.cpp 数字在排序数组中出现的次数 AC  acwing题目
 	* **LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间
 	* **LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC binary search 思路同LeetCode215.cpp**
 	* LeetCode167.cpp Two Sum II - Input array is sorted binary search
@@ -187,7 +187,7 @@
 	* **LeetCode786.cpp K-th Smallest Prime Fraction (单纯的使用binary search 或者 heap均 TLE Hard)**
 	* LeetCode658.cpp Find K Closest Elements AC
 	* LeetCode1200.cpp Minimum Absolute Difference AC  Binary search
-	* LeetCode275.cpp H-Index II
+	* LeetCode275.cpp H-Index II AC
 * BFS and DFS of Tree，including Binary Search Tree, Binary Tree and N-ary Tree
     * LeetCode701.cpp Insert into a Binary Search Tree  AC
     * LeetCode102.cpp Binary Tree Level Order Traversal  AC
