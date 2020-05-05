@@ -30,7 +30,7 @@
 	* **Dynamic Programming**
 	* **Greedy Algorithms**
 	* **Recursive**
-	* **Backtrack**
+	* **DFS + Backtrack = 暴力搜索**
 	* **Linear Programming**
 	    * 调度研究中采用，但是通常调度中的问题都是NP-Hard，需要DP算法解决
 * Machine Learning Algorithms for Databases
@@ -284,7 +284,7 @@
 	* LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集
 	* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
 	
-* DFS and Backtrack Algorithms
+* DFS + Backtrack = 暴力搜索
 	* LeetCode79.cpp Word Search AC
 
 ### **4. 时空复杂度分析**
