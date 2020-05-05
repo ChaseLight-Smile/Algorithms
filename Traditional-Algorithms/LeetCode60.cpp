@@ -16,7 +16,7 @@ public:
                 --i;
             }
             int j = s.size()-1;
-            while(j > 0 && s[j] < s[i-1]){
+            while(j > i-1 && s[j] <= s[i-1]){
                 --j;
             }
             swap(s[i-1], s[j]);
