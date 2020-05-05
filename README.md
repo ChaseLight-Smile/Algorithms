@@ -1,4 +1,4 @@
-## **数据结构与算法 (Do algorithms for fun)**
+## **算法及其设计技术 (Do algorithms for fun)**
 
 ### **1. 概述**
 ***
@@ -10,8 +10,6 @@
   * **Union Find**
   * **Stack**
   * **queue**
-  * **Binary Search**
-  * **Trie**
   * **map/set**
   * **树（Trees）**
 	  * **Binary Search Trees**
@@ -21,10 +19,12 @@
 	  * **B-Trees**
 	  * **B<sup>+</sup>-trees**
 	  * **B<sup>\*</sup>-trees**
+	  * **Trie**
   * sort
 	  * implementation quick sort
 	  * implementation merge sort
 	  * implementation heap sort
+  * **Binary Search**
   * **Graph Algorithms**
 * **算法设计技术**
 	* **Dynamic Programming**
