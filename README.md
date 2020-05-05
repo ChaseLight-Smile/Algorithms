@@ -30,10 +30,15 @@
 	* **Dynamic Programming**
 	* **Greedy Algorithms**
 	* **Recursive**
+	* **Backtrack**
 	* **Linear Programming**
-	    * 我主要在调度研究中采用，但是通常调度中的问题都是NP-Hard，还得设计DP算法解决
+	    * 调度研究中采用，但是通常调度中的问题都是NP-Hard，需要DP算法解决
 * Machine Learning Algorithms for Databases
-
+	* Reinforce Learning for Optimization
+* CrowdSourcing
+	* Quality Control
+	* Latency Control
+	* Cost Control
 ### **2. 算法列表**
 ***
 * 细节题
