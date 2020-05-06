@@ -285,8 +285,9 @@
 	
 * Brute Force Search
 	* **DFS + Backtrack**
-		* LeetCode79.cpp Word Search AC
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
+		* LeetCode46.cpp Permutations  AC
+		* LeetCode79.cpp Word Search AC
 	* BFS + Branch-and-Bound
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
 	
