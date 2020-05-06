@@ -37,10 +37,7 @@
 	    * 调度研究中采用，但是通常调度中的问题都是NP-Hard，需要DP算法解决
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
-* CrowdSourcing
-	* Quality Control
-	* Latency Control
-	* Cost Control
+
 ### **2. 算法列表**
 ***
 * 细节题
@@ -289,6 +286,7 @@
 * Brute Force Search
 	* **DFS + Backtrack**
 		* LeetCode79.cpp Word Search AC
+		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
 	* BFS
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
 	
