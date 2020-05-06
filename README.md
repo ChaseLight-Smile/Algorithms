@@ -6,7 +6,7 @@
 包括但不限于以下内容：
 
 * **基本数据结构与算法**
-  * **min-Heap/max-Heap**
+  * **Min-heap/Max-heap**
   * **Union Find**
   * **Stack**
   * **queue**
@@ -32,7 +32,7 @@
 	* **Recursive**
 	* **Brute Force Search**
 		* **DFS + Backtrack**
-		* BFS
+		* **BFS + Branch-and-Bound**
 	* **Linear Programming**
 	    * 调度研究中采用，但是通常调度中的问题都是NP-Hard，需要DP算法解决
 * Machine Learning Algorithms for Databases
@@ -287,7 +287,7 @@
 	* **DFS + Backtrack**
 		* LeetCode79.cpp Word Search AC
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
-	* BFS
+	* BFS + Branch-and-Bound
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
 	
 
