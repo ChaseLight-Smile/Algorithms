@@ -288,6 +288,7 @@
 * Brute Force Search
 	* **DFS + Backtrack**
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
+		* LeetCode39.cpp Combination Sum AC
 		* LeetCode40. Combination Sum II AC
 		* LeetCode216. Combination Sum III AC
 		* LeetCode46.cpp Permutations  AC
