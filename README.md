@@ -288,6 +288,7 @@
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
 		* LeetCode46.cpp Permutations  AC
 		* LeetCode47.cpp Permutations II  AC 先排序去重
+		* LeetCode78.cpp Subsets AC
 		* LeetCode79.cpp Word Search AC
 	* BFS + Branch-and-Bound
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
