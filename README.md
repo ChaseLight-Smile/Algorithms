@@ -30,7 +30,7 @@
 	* **Dynamic Programming**
 	* **Greedy Algorithms**
 	* **Recursive**
-	* Brute Force Search
+	* **Brute Force Search**
 		* **DFS + Backtrack**
 		* BFS
 	* **Linear Programming**
@@ -287,10 +287,10 @@
 	* LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy
 	
 * Brute Force Search
-		* **DFS + Backtrack**
-			* LeetCode79.cpp Word Search AC
-		* BFS
-			* LeetCode17.cpp Letter Combinations of a Phone Number  AC
+	* **DFS + Backtrack**
+		* LeetCode79.cpp Word Search AC
+	* BFS
+		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
 	
 
 ### **4. 时空复杂度分析**
