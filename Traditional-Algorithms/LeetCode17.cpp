@@ -51,3 +51,36 @@ public:
         return;
     }
 };
+
+
+//DFS+backtracking
+class Solution {
+private:
+    string character[8] = {"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    stack<string>st;
+public:
+    vector<string> letterCombinations(string digits) {
+        if(digits.size() == 0){
+            return vector<string>();
+        }
+        vector<string>ans;
+        string s = "";
+        dfs(digits, ans, s, 0);
+        return ans;
+    }
+    
+    void dfs(string digits, vector<string>& ans, string& s, int start){
+        if(start == digits.size()){
+            ans.push_back(s);
+            return;
+        }
+        for(int i = 0 ; i < character[digits[start]-'2'].size(); ++i){
+            st.push(s);  //保护现场
+            s = s + character[digits[start]-'2'][i];
+            dfs(digits, ans, s, start+1);
+            s = st.top();   //恢复现场
+            st.pop();  //恢复现场
+        }
+        return;
+    }
+};
