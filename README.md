@@ -172,7 +172,7 @@
 	* LeetCode367.cpp Valid Perfect Square  AC
 	* LeetCode278.cpp First Bad Version AC
 	* LeetCode34.cpp Find First and Last Position of Element in Sorted Array AC
-	* LeetCode374.cpp Guess Number Higher or Lower AC
+	* [LeetCode374.cpp Guess Number Higher or Lower AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode374.cpp)
 	* **LeetCode162.cpp Find Peak Element AC**
 	* LeetCode852.cpp Peak Index in a Mountain Array AC
 	* **LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem**
