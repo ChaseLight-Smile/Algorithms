@@ -166,7 +166,7 @@
 	* [**LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode287.cpp)
 	* [LeetCode35.cpp Search Insert Position AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode35.cpp)
 	* [LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode744.cpp)
-	* acwing63.cpp 数字在排序数组中出现的次数 AC
+	* [acwing67.cpp 数字在排序数组中出现的次数 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/acwing67.cpp)
 	* [**LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode215.cpp)
 	* [**LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC binary search 思路同LeetCode215.cpp**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode378.cpp)
 	* [LeetCode167.cpp Two Sum II - Input array is sorted binary search](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode167.cpp)
