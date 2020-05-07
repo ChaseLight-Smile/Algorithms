@@ -5,29 +5,25 @@
 
 包括但不限于以下内容：
 
-* **基本数据结构与算法**
-  * [**Min-heap/Max-heap**](#heap)
-  * [**Union Find**](#uf)
-  * [**Stack**](#st)
-  * [**queue**](#q)
-  * [**map/set**](#ms)
-  * [**树（Trees）**](#t) 
-  * [**Trie**](#trie)
-  * [sort](#s)
-	  * implementation quick sort
-	  * implementation merge sort
-	  * implementation heap sort
-  * [**Graph Algorithms**](#ggg)
-  * [**经典算法应用**](#jingdian)
-* **算法设计技术**
-	* [**Binary Search**](#bs)
-	* [**Dynamic Programming**](#dp)
-	* [**Greedy Algorithms**](#gd)
-	* [**Brute Force Search**](#bf)
-		* [**DFS + Backtrack**](#dfs)
-		* [**BFS + Branch-and-Bound**](#bfs)
-	* **Linear Programming**
-	    * 调度研究中采用，但是通常调度中的问题都是NP-Hard，需要DP算法解决
+* [**Min-heap/Max-heap**](#heap)
+* [**Union Find**](#uf)
+* [**Stack**](#st)
+* [**queue**](#q)
+* [**map/set**](#ms)
+* [**树（Trees）**](#t) 
+* [**Trie**](#trie)
+* [sort](#s)
+  * implementation quick sort
+  * implementation merge sort
+  * implementation heap sort
+* [**Graph Algorithms**](#ggg)
+* [**经典算法应用**](#jingdian)
+* [**Binary Search**](#bs)
+* [**Dynamic Programming**](#dp)
+* [**Greedy Algorithms**](#gd)
+* [**Brute Force Search**](#bf)
+	* [**DFS + Backtrack**](#dfs)
+	* [**BFS + Branch-and-Bound**](#bfs)
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
 * [Analisys of time and space complexity](#ats)
