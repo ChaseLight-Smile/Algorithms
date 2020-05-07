@@ -20,7 +20,7 @@
 	  * **B<sup>+</sup>-trees**
 	  * **B<sup>\*</sup>-trees**
 	  * **Trie**
-  * sort
+  * [sort](#s)
 	  * implementation quick sort
 	  * implementation merge sort
 	  * implementation heap sort
@@ -82,7 +82,7 @@
 	* [LeetCode628.cpp Maximum Product of Three Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode628.cpp)
 	* [LeetCode22.java merge Two Lists AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode22.cpp)
 	* [LeetCode4.cpp find Median Sorted Arrays AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode4.cpp)
-* sort
+* <span id=s>sort</span>
     * [LeetCode912.cpp Sort an Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode912.cpp)
 	    * implement quicksort (最快，最省空间)
 		* implement merge sort
