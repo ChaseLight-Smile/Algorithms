@@ -297,6 +297,7 @@
 		* LeetCode90.cpp Subsets II AC
 		* LeetCode77. Combinations  AC
 		* LeetCode79.cpp Word Search AC
+		* LeetCode60.cpp Permutation Sequence AC
 	* BFS + Branch-and-Bound
 		* LeetCode17.cpp Letter Combinations of a Phone Number  AC
 	
