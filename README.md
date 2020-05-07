@@ -53,7 +53,7 @@
 	* [LeetCode26.cpp Remove Duplicates from Sorted Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode26.cpp)
 		* [LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode80.cpp)
 		* [LeetCode83.cpp Remove Duplicates from Sorted List AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode83.cpp)
-		* [LeetCode82.cpp Remove Duplicates from Sorted List II AC]
+		* [LeetCode82.cpp Remove Duplicates from Sorted List II AC]()
 * 经典算法应用
 	* Permutation  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
@@ -233,10 +233,10 @@
 		* [LeetCode1008.cpp Construct Binary Search Tree from Preorder Traversal AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1008.cpp)
 	* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 	* [LeetCode1022.cpp Sum of Root To Leaf Binary Numbers](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1022.cpp)
-	* [LeetCode127.cpp Word Ladder 双向BFS]
-	* [LeetCode988.cpp Smallest String Starting From Leaf
-	* [LeetCode1376.cpp Time Needed to Inform All Employees]
-	* [LeetCode124. Binary Tree Maximum Path Sum   LevelOrder + 最大连续子数组和  Hard]
+	* [LeetCode127.cpp Word Ladder 双向BFS]()
+	* [LeetCode988.cpp Smallest String Starting From Leaf]()
+	* [LeetCode1376.cpp Time Needed to Inform All Employees]()
+	* [LeetCode124. Binary Tree Maximum Path Sum   LevelOrder + 最大连续子数组和  Hard]()
 * BFS and DFS of Graph
     * LeetCodeGraphTraversalTemplate.cpp  图的DFS和BFS模板，保存图时采用了邻接列表的方式，不用邻接矩阵(浪费空间和时间)
 	* Topological Sort
