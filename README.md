@@ -13,9 +13,6 @@
 * [**树（Trees）**](#t) 
 * [**Trie**](#trie)
 * [sort](#s)
-  * implementation quick sort
-  * implementation merge sort
-  * implementation heap sort
 * [**Graph Algorithms**](#ggg)
 * [**经典算法应用**](#jingdian)
 * [**Binary Search**](#bs)
@@ -24,9 +21,9 @@
 * [**Brute Force Search**](#bf)
 	* [**DFS + Backtrack**](#dfs)
 	* [**BFS + Branch-and-Bound**](#bfs)
+* [Analisys of time and space complexity](#ats)
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
-* [Analisys of time and space complexity](#ats)
 ### **2. 算法列表**
 ***
 * 细节题
