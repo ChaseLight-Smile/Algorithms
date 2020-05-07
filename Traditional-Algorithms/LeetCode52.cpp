@@ -5,8 +5,8 @@ public:
     int totalNQueens(int _n) {
         n = _n;
         col = vector<bool>(n);
-        diag = vector<bool>(2 * n);
-        ndiag = vector<bool>(2 * n);
+        diag = vector<bool>(2 * n - 1);  //  \表示主对角线 0, 1, 2..., 2n-2
+        ndiag = vector<bool>(2 * n - 1);  // /表示副对角线 分为两个部分 （第一部分） 0, 1, 2, ..., n-1;  （第二部分）n-2, n-1, ... 0
         dfs(0);
         return ans;
     }
