@@ -18,6 +18,8 @@
 * [**Binary Search**](#bs)
 * [**Dynamic Programming**](#dp)
 * [**Greedy Algorithms**](#gd)
+* [Two pointers](#tp)
+* [Bit Manipulation](#bm)
 * [**Brute Force Search**](#bf)
 	* [**DFS + Backtrack**](#dfs)
 	* [**BFS + Branch-and-Bound**](#bfs)
@@ -51,9 +53,9 @@
 		* [**LeetCode142.cpp Linked List Cycle II AC**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode142.cpp)
 		* [**LeetCode287.cpp Find the Duplicate Number AC** **数组其实也是一个链表，如果能带着这个观点，这道题目完全和142相同**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode287.cpp)
 		* [**LeetCode876.cpp Middle of the Linked List AC**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode876.cpp)
-* Bit Manipulation
+* <span id=bm>Bit Manipulation</span>
     * [LeetCode78.cpp Subsets AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode78.cpp)
-* Two pointers
+* <span id=tp>Two pointers</span>
     * 双指针问题包括（前向型指针(滑动窗口（将O(n^2)算法做成O(n)的算法）和快慢指针两类)、相向型指针（O(n)）、两个数组（典型题目为mergesort中的merge过程）三种大类）
 	* [LeetCode167.cpp Two Sum II - Input array is sorted  相向型指针 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode167.cpp)
 	* [LeetCode88.cpp Merge Sorted Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode88.cpp)
