@@ -12,18 +12,18 @@
 * [**map/set**](#ms)
 * [**树（Trees）**](#t) 
 * [**Trie**](#trie)
-* [sort](#s)
+* [**sort**](#s)
 * [**Graph Algorithms**](#ggg)
 * [**经典算法应用**](#jingdian)
 * [**Binary Search**](#bs)
 * [**Dynamic Programming**](#dp)
 * [**Greedy Algorithms**](#gd)
-* [Two pointers](#tp)
-* [Bit Manipulation](#bm)
+* [**Two pointers**](#tp)
+* [**Bit Manipulation**](#bm)
 * [**Brute Force Search**](#bf)
 	* [**DFS + Backtrack**](#dfs)
 	* [**BFS + Branch-and-Bound**](#bfs)
-* [Analisys of time and space complexity](#ats)
+* [**Analisys of time and space complexity**](#ats)
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
 ### **2. 算法列表**
