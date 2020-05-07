@@ -24,8 +24,8 @@
 	* [**Dynamic Programming**](#dp)
 	* [**Greedy Algorithms**](#gd)
 	* [**Brute Force Search**](#bf)
-		* **DFS + Backtrack**
-		* **BFS + Branch-and-Bound**
+		* [**DFS + Backtrack**](#dfs)
+		* [**BFS + Branch-and-Bound**](#bfs)
 	* **Linear Programming**
 	    * 调度研究中采用，但是通常调度中的问题都是NP-Hard，需要DP算法解决
 * Machine Learning Algorithms for Databases
@@ -279,7 +279,7 @@
 	* [LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1288.cpp)
 	
 * <span id=bf>Brute Force Search</span>
-	* **DFS + Backtrack**
+	* <span id=dfs>**DFS + Backtrack**</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 		* [LeetCode39.cpp Combination Sum AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode39.cpp)
 		* [LeetCode40. Combination Sum II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode40.cpp)
@@ -292,7 +292,7 @@
 		* [LeetCode79.cpp Word Search AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode79.cpp)
 		* [LeetCode60.cpp Permutation Sequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode60.cpp)
 		* [LeetCode1286.cpp Iterator for Combination  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1286.cpp)
-	* BFS + Branch-and-Bound
+	* <span id=bfs>BFS + Branch-and-Bound</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 	
 
