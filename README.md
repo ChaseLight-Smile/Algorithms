@@ -123,7 +123,7 @@
 	    * [LeetCode208.cpp  Implement Trie (Prefix Tree) AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode208.cpp)
         * [LeetCode211.cpp Add and Search Word - Data structure design AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode211.cpp)
 	* priority_queue
-	    * [LeetCode658.cpp Find K Closest Elements AC]https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode658.cpp()
+	    * [LeetCode658.cpp Find K Closest Elements AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode658.cpp)
 		* [LeetCode703.cpp Kth Largest Element in a Stream AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode703.cpp)
         * [LeetCode973.cpp K Closest Points to Origin AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode973.cpp)
 		* [LeetCode692.cpp Top K Frequent Words  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode692.cpp)
