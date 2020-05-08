@@ -74,6 +74,7 @@
     * [LeetCode912.cpp Sort an Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode912.cpp)
 	    * implement quicksort (最快，最省空间)
 		* implement merge sort
+			* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
 		* implement heap sort
 	* Cyclic Sort
 		* [LeetCode268.cpp Missing Number AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode268.cpp)
