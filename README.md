@@ -10,7 +10,7 @@
 * [**Stack**](#st)
 * [**queue**](#q)
 * [**map/set**](#ms)
-* [**树（Trees）**](#t) 
+* [**Trees**](#t) 
 * [**Trie**](#trie)
 * [**sort**](#s)
 * [**Graph Algorithms**](#ggg)
