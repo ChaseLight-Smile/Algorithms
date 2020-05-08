@@ -1,4 +1,4 @@
-//快速排序
+//快速排序，该版本的代码在partition部分很清晰，能够被用在find kth element问题求解中，见LeetCode215.cpp
 class Solution {
 public:
     vector<int> sortArray(vector<int>& nums) {
@@ -25,12 +25,77 @@ public:
         nums[left] = key;
         return left;
     }
-    void quicksort(vector<int>& nums, int start, int end){
-        if(start < end){
-            int p = partition(nums, start, end);
-            quicksort(nums, start, p-1);
-            quicksort(nums, p+1, end);
+    void quicksort(vector<int>& nums, int left, int right){
+		if (left >= right) return;
+		int p = partition(nums, left, right);
+		quicksort(nums, left, p-1);
+		quicksort(nums, p+1, right);
+    }
+};
+
+//快速排序，这个算法不能将pivot放到正确的位置上，也就是left=right的位置不是pivot的位置,只能用作快排问题中，对find kth element没用
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        int len = nums.size();
+        quicksort(nums, 0 , len-1);
+        return nums;
+    }
+    void quicksort(vector<int>& nums, int left, int right){
+        if(left >= right) return;
+        int i = left-1;
+        int j = right+1;
+        int pivot = nums[left];
+        while(i < j){
+            do ++i; while(nums[i] < pivot);
+            do --j; while(nums[j] > pivot);
+            if(i < j) swap(nums[i], nums[j]);  
         }
+        quicksort(nums, left, j); //注意这里选择i还是j的问题，存在边界问题
+        quicksort(nums, j+1, right);
+    }
+};
+
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        int len = nums.size();
+        quicksort(nums, 0 , len-1);
+        return nums;
+    }
+    void quicksort(vector<int>& nums, int left, int right){
+        if(left >= right) return;
+        int i = left-1;
+        int j = right+1;
+        int pivot = nums[left + (right-left)/2];
+        while(i < j){
+            do ++i; while(nums[i] < pivot);
+            do --j; while(nums[j] > pivot);
+            if(i < j) swap(nums[i], nums[j]);  
+        }
+        quicksort(nums, left, j);  //注意这里选择i还是j的问题，存在边界问题
+        quicksort(nums, j+1, right);
+    }
+};
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        int len = nums.size();
+        quicksort(nums, 0 , len-1);
+        return nums;
+    }
+    void quicksort(vector<int>& nums, int left, int right){
+        if(left >= right) return;
+        int i = left-1;
+        int j = right+1;
+        int pivot = nums[left + (right-left+1)/2]; 
+        while(i < j){
+            do ++i; while(nums[i] < pivot);
+            do --j; while(nums[j] > pivot);
+            if(i < j) swap(nums[i], nums[j]);  
+        }
+        quicksort(nums, left, i-1);  //注意这里选择i还是j的问题，存在边界问题
+        quicksort(nums, i, right);
     }
 };
 
