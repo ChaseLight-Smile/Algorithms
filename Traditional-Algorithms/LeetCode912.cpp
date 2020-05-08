@@ -33,7 +33,7 @@ public:
     }
 };
 
-//一个次好的快排模板
+//很简练的快排模板
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -85,60 +85,34 @@ public:
     }
 };
 
-
-//归并排序
+//merge sort  AC 速度不如快排，快排内存排序之王。
 class Solution {
 public:
     vector<int> sortArray(vector<int>& nums) {
-        if(nums.size() == 0){
-            return {};
-        }
-        vector<int> ans = mergeSort(nums, 0, nums.size()-1);
-        return ans;
+        mergesort(nums, 0 , nums.size()-1);
+        return nums;
     }
-    vector<int> mergeSort(vector<int>& nums, int left, int right){
-        if(left == right){
-            return {nums[left]};
-        }else if(left+1 == right){
-            if(nums[left] >= nums[right]){
-                return {nums[right], nums[left]};
+    
+    void mergesort(vector<int>& nums, int l, int r){
+        if(l >= r) return;
+        int mid = l + r >> 1;
+        mergesort(nums, l, mid), mergesort(nums, mid+1, r);
+        int i = l, j = mid+1, k = 0;
+        vector<int>ans(r-l+1);   //这里如果ans(nums.size()) 代码通不过，特别注意
+        while(i <= mid && j <= r){
+            if(nums[i] <= nums[j]){
+                ans[k++] = nums[i++];
             }else
-                return {nums[left], nums[right]};
-        }else if(left < right){
-            int mid = left + (right-left)/2;
-            vector<int> leftNums = mergeSort(nums, left, mid);
-            vector<int> rightNums = mergeSort(nums, mid+1, right);
-            vector<int> ans = merge(leftNums, rightNums);
-            return ans;
+                ans[k++] = nums[j++];
         }
-        return {};
+        while(i <= mid){
+            ans[k++] = nums[i++];
+        }
+        while(j <= r){
+            ans[k++] = nums[j++];
+        }
+        for(int i = l, j = 0; i <= r; i++, j++){
+            nums[i] = ans[j];
+        }    
     }
-    
-    vector<int> merge(vector<int> nums1, vector<int> nums2){
-        int len_nums1 = nums1.size();
-        int len_nums2 = nums2.size();
-        int i = 0;
-        int j = 0;
-        vector<int> ans;
-        while(i < len_nums1 && j < len_nums2){
-            if(nums1[i] <= nums2[j]){
-                ans.push_back(nums1[i]);
-                i++;
-            }else{
-                ans.push_back(nums2[j]);
-                j++;
-            }
-        }
-        
-        while(i < len_nums1){
-            ans.push_back(nums1[i]);
-            i++;
-        }
-        while(j < len_nums2){
-            ans.push_back(nums2[j]);
-            j++;
-        }
-        return ans;
-    }
-    
 };
