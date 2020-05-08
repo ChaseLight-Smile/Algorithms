@@ -33,71 +33,38 @@ public:
     }
 };
 
-//快速排序，这个算法不能将pivot放到正确的位置上，也就是left=right的位置不是pivot的位置,只能用作快排问题中，对find kth element没用
-class Solution {
-public:
-    vector<int> sortArray(vector<int>& nums) {
-        int len = nums.size();
-        quicksort(nums, 0 , len-1);
-        return nums;
-    }
-    void quicksort(vector<int>& nums, int left, int right){
-        if(left >= right) return;
-        int i = left-1;
-        int j = right+1;
-        int pivot = nums[left];
-        while(i < j){
-            do ++i; while(nums[i] < pivot);
-            do --j; while(nums[j] > pivot);
-            if(i < j) swap(nums[i], nums[j]);  
-        }
-        quicksort(nums, left, j); //注意这里选择i还是j的问题，存在边界问题
-        quicksort(nums, j+1, right);
-    }
-};
+//一个次好的快排模板
+#include <bits/stdc++.h>
+using namespace std;
 
-class Solution {
-public:
-    vector<int> sortArray(vector<int>& nums) {
-        int len = nums.size();
-        quicksort(nums, 0 , len-1);
-        return nums;
+void quicksort(vector<int>& nums, int left, int right){
+    if(left >= right) return;
+    int i = left - 1;
+    int j = right + 1;
+    int pivot = nums[left + right + 1 >> 1];
+    while(i < j){
+        do ++i; while(nums[i] < pivot);
+        do --j; while(nums[j] > pivot);
+        if(i < j) swap(nums[i], nums[j]);
     }
-    void quicksort(vector<int>& nums, int left, int right){
-        if(left >= right) return;
-        int i = left-1;
-        int j = right+1;
-        int pivot = nums[left + (right-left)/2];
-        while(i < j){
-            do ++i; while(nums[i] < pivot);
-            do --j; while(nums[j] > pivot);
-            if(i < j) swap(nums[i], nums[j]);  
-        }
-        quicksort(nums, left, j);  //注意这里选择i还是j的问题，存在边界问题
-        quicksort(nums, j+1, right);
+    quicksort(nums, left, i-1);
+    quicksort(nums, i, right);
+}
+
+int main(){
+    int n;
+    scanf("%d", &n);
+    vector<int>nums(n);
+    int tmp;
+    for(int i = 0; i < n; i++){
+        scanf("%d", &nums[i]);
     }
-};
-class Solution {
-public:
-    vector<int> sortArray(vector<int>& nums) {
-        int len = nums.size();
-        quicksort(nums, 0 , len-1);
-        return nums;
+    quicksort(nums, 0 , n-1);
+    for(int i = 0; i< n; i++){
+        printf("%d ", nums[i]);
     }
-    void quicksort(vector<int>& nums, int left, int right){
-        if(left >= right) return;
-        int i = left-1;
-        int j = right+1;
-        int pivot = nums[left + (right-left+1)/2]; 
-        while(i < j){
-            do ++i; while(nums[i] < pivot);
-            do --j; while(nums[j] > pivot);
-            if(i < j) swap(nums[i], nums[j]);  
-        }
-        quicksort(nums, left, i-1);  //注意这里选择i还是j的问题，存在边界问题
-        quicksort(nums, i, right);
-    }
-};
+    return 0;
+}
 
 //堆排序
 class Solution {
