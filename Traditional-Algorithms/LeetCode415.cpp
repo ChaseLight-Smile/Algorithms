@@ -1,15 +1,19 @@
 class Solution {
 public:
-    vector<int> addToArrayForm(vector<int>& A, int K) {
-        reverse(A.begin(), A.end());
-        vector<int>B;
-        while(K > 0){
-            B.push_back(K%10);
-            K /= 10;
+    string addStrings(string num1, string num2) {
+        vector<int>A, B;
+        for(int i = num1.size()-1; i >= 0 ; i--){
+            A.push_back(num1[i] - '0');
+        }
+        for(int i = num2.size()-1; i >= 0; i--){
+            B.push_back(num2[i] - '0');
         }
         auto C = add(A, B);
-        reverse(C.begin(), C.end());
-        return C;
+        string ans;
+        for(int i = C.size()-1; i>= 0; i--){
+            ans += to_string(C[i]);
+        }
+        return ans;
     }
     
     vector<int> add(vector<int>& A, vector<int>& B){
@@ -24,5 +28,4 @@ public:
         if(t) C.push_back(1);
         return C;
     }
-
 };
