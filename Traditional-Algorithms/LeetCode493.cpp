@@ -26,7 +26,8 @@ public:
     }
 };
 
-//变形题
+/**变形题
 Given an array nums, we call (i, j) an important reverse pair if i < j and nums[i] > k*nums[j] (a<=k<=b)
 You need to return the number of important reverse pairs in the given array.
 此时只需要将上题中的2换掉，并且数字范围可能会提升到long long
+*/
