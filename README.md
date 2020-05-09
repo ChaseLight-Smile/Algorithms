@@ -13,13 +13,14 @@
 * [**Trees**](#t) 
 * [**Trie**](#trie)
 * [**sort**](#s)
+* [**Two pointers**](#tp)
+* [**Bit Manipulation**](#bm)
+* [**Big Integer**](#bi)
 * [**Graph Algorithms**](#ggg)
 * [**经典算法应用**](#jingdian)
 * [**Binary Search**](#bs)
 * [**Dynamic Programming**](#dp)
 * [**Greedy Algorithms**](#gd)
-* [**Two pointers**](#tp)
-* [**Bit Manipulation**](#bm)
 * [**Recursive**](#rec)
 * [**Brute Force Search**](#bf)
 	* [**DFS + Backtrack**](#dfs)
@@ -43,6 +44,8 @@
 		* [LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode80.cpp)
 		* [LeetCode83.cpp Remove Duplicates from Sorted List AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode83.cpp)
 		* [LeetCode82.cpp Remove Duplicates from Sorted List II AC]()
+	* <span id=bi>Big Integer</span>
+	    * [LeetCode989.cpp Add to Array-Form of Integer](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode989.cpp)
 * <span id=jingdian>经典算法应用</span>
 	* Permutation  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
