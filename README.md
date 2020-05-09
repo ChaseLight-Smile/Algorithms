@@ -45,8 +45,9 @@
 		* [LeetCode83.cpp Remove Duplicates from Sorted List AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode83.cpp)
 		* [LeetCode82.cpp Remove Duplicates from Sorted List II AC]()
 	* <span id=bi>Big Integer</span>
-	    * [LeetCode415.cpp Add to Array-Form of Integer](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode415.cpp)
-		* [LeetCode989.cpp Add to Array-Form of Integer](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode989.cpp)
+	    * [LeetCode415.cpp Add to Array-Form of Integer AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode415.cpp)
+		* [LeetCode989.cpp Add to Array-Form of Integer AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode989.cpp)
+		* [LeetCode67.cpp Add Binary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode67.cpp)
 * <span id=jingdian>经典算法应用</span>
 	* Permutation  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
