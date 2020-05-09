@@ -20,6 +20,7 @@
 * [**Greedy Algorithms**](#gd)
 * [**Two pointers**](#tp)
 * [**Bit Manipulation**](#bm)
+* [**Recursive**](#rec)
 * [**Brute Force Search**](#bf)
 	* [**DFS + Backtrack**](#dfs)
 	* [**BFS + Branch-and-Bound**](#bfs)
@@ -292,6 +293,8 @@
 	* <span id=bfs>BFS + Branch-and-Bound</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 	
+* <span id=rec>Recursive</span>
+	* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
 
 ### <span id=ats>**4. 时空复杂度分析**</span>
 ***
