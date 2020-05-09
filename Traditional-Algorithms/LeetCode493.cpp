@@ -13,7 +13,7 @@ public:
         int i = l, j = mid+1, k = 0, p = mid+1;
         vector<int> ans(r-l+1);
         while(i <= mid){
-            while(p <= r && nums[i] > (long)2 * nums[p]){  //2L是将int类型的2提升为Long类型，要不会大于32位int类型的数字会出错
+            while(p <= r && nums[i] > (long)2 * nums[p]){  //类型需要提升到long，因为nums[p]可能为2^32-1，左移一位会超出范围
                 ++p;
             }
             res += p-(mid+1);
