@@ -106,3 +106,69 @@ int main(){
     }
     return 0;
 }
+
+/**
+高精度除法变形，题目来自POJ
+给定两个非负整数A，B，请你计算 A / B的商和余数。
+
+输入格式
+共两行，第一行包含整数A，第二行包含整数B。
+
+输出格式
+共两行，第一行输出所求的商，第二行输出所求余数。
+
+数据范围
+1≤A的长度≤100000,
+1≤B≤10000
+B 一定不为0
+
+输入样例：
+7
+9
+输出样例：
+0
+7
+*/
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<int> div(vector<int>& A, int b){
+    vector<int> C;
+    int t = 0;
+    for(int i = 0; i < A.size(); i++){
+        C.push_back((t * 10 + A[i])/b);
+        t = (t * 10 + A[i])%b;
+    }
+     //去掉前导0
+    reverse(C.begin(), C.end());
+    while(C.size() > 1 && C.back() == 0){
+        C.pop_back();
+    }
+    reverse(C.begin(), C.end());
+    
+    //保存余数
+    C.push_back(t);
+   
+    
+    return C;
+}
+
+int main(){
+    string a;
+    int b;
+    vector<int> A;
+    cin >> a >> b;
+    for(int i = 0 ; i < a.size(); i++){
+        A.push_back(a[i] - '0');
+    }
+    auto C = div(A, b);
+    
+    for(int i = 0; i < C.size()-1; i++){
+        printf("%d", C[i]);
+    }
+    printf("\n");
+    printf("%d", C[C.size()-1]);
+}
