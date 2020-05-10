@@ -15,7 +15,8 @@
 * [**sort**](#s)
 * [**Two pointers**](#tp)
 * [**Bit Manipulation**](#bm)
-* [**Big Integer**](#bi)
+* [**细节题**](#xijie)
+	* [**Big Integer**](#bi)
 * [**Graph Algorithms**](#ggg)
 * [**经典算法应用**](#jingdian)
 * [**Binary Search**](#bs)
@@ -30,7 +31,7 @@
 	* Reinforce Learning for Optimization
 ### **2. 算法列表**
 ***
-* 细节题
+* <span id=xijie>细节题</span>
 	* [LeetCode27.java Remove Element AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode27.java)
 	* [LeetCode7.java reverse AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode7.java)
 	* [LeetCode9.cpp isPalindrome  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode9.cpp)
@@ -48,6 +49,7 @@
 	    * [LeetCode415.cpp Add to Array-Form of Integer AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode415.cpp)
 		* [LeetCode989.cpp Add to Array-Form of Integer AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode989.cpp)
 		* [LeetCode67.cpp Add Binary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode67.cpp)
+		* [LeetCode43.cpp Multiply Strings AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode43.cpp)
 * <span id=jingdian>经典算法应用</span>
 	* Permutation  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
