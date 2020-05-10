@@ -81,6 +81,8 @@
 	* [LeetCode22.java merge Two Lists AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode22.cpp)
 	* [LeetCode4.cpp find Median Sorted Arrays AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode4.cpp)
 	* [LeetCode493.cpp Reverse Pairs  AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp)
+	* **prefix sum**
+		* [LeetCode560.cpp Subarray Sum Equals K](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode560.cpp)
 * <span id=s>sort</span>
     * [LeetCode912.cpp Sort an Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode912.cpp)
 	    * implement quicksort (最快，最省空间)
