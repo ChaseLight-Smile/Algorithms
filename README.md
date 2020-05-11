@@ -88,7 +88,7 @@
 			* [LeetCode523.cpp Continuous Subarray Sum AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode523.cpp)
 			* [LeetCode974.cpp Subarray Sums Divisible by K TLE](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode974.cpp)
 		* **two dimension prefix sum**
-			* [LeetCode304.cpp Range Sum Query 2D - Immutable TLE](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode304.cpp)
+			* [LeetCode304.cpp Range Sum Query 2D - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode304.cpp)
 * <span id=s>sort</span>
     * [LeetCode912.cpp Sort an Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode912.cpp)
 	    * implement quicksort (最快，最省空间)
