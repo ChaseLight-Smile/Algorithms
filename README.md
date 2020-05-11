@@ -87,6 +87,7 @@
 			* [LeetCode560.cpp Subarray Sum Equals K AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode560.cpp)
 			* [LeetCode523.cpp Continuous Subarray Sum AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode523.cpp)
 			* [LeetCode974.cpp Subarray Sums Divisible by K TLE](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode974.cpp)
+			* [Leet303.cpp Range Sum Query - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode303.cpp)
 		* **two dimension prefix sum**
 			* [LeetCode304.cpp Range Sum Query 2D - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode304.cpp)
 * <span id=s>sort</span>
