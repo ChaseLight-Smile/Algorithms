@@ -83,7 +83,7 @@
 	* [LeetCode4.cpp find Median Sorted Arrays AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode4.cpp)
 	* [LeetCode493.cpp Reverse Pairs  AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp)
 	* **prefix sum**
-		* **one dimemsion**
+		* **one dimemsion prefix sum**
 			* [LeetCode560.cpp Subarray Sum Equals K AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode560.cpp)
 			* [LeetCode523.cpp Continuous Subarray Sum AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode523.cpp)
 			* [LeetCode974.cpp Subarray Sums Divisible by K TLE](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode974.cpp)
