@@ -32,6 +32,8 @@
 * [**Analisys of time and space complexity**](#ats)
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
+
+**算法题目来源： [LeetCode](www.leetcode.com) and [POJ](http://poj.org/problemlist)**
 ### **2. 算法列表**
 ***
 * <span id=xijie>细节题</span>
