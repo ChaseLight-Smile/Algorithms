@@ -33,7 +33,7 @@
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
 
-**算法题目来源： [LeetCode](https://leetcode.com/) and [POJ](http://poj.org/problemlist)**
+**算法题目来源： [LeetCode](https://leetcode.com/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1)**
 ### **2. 算法列表**
 ***
 * <span id=xijie>细节题</span>

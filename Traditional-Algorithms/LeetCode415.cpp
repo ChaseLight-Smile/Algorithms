@@ -1,4 +1,4 @@
-//poj 1503是一个大整数加法的变形题，在C++中不支持大整数，java和python都支持
+//poj 1503是一个大整数加法的变形题，在C++中不支持大整数，java和python都支持  HDUOJ1002大整数加法
 class Solution {
 public:
     string addStrings(string num1, string num2) {
