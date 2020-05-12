@@ -9,12 +9,13 @@
 * [**Min-heap/Max-heap**](#heap)
 * [**Union Find**](#uf)
 * [**Stack**](#st)
-* [**queue**](#q)
-* [**map/set**](#ms)
+* [**Queue**](#q)
+* [**Map/Set**](#ms)
 * [**Trees**](#t) 
 * [**Trie**](#trie)
 * [**sort**](#s)
-* [**Two pointers**](#tp)
+* [**Two Pointers**](#tp)
+* [**Prefix Sum**](#psum)
 * [**Bit Manipulation**](#bm)
 * [**细节题**](#xijie)
 	* [**Big Integer**](#bi)
@@ -85,16 +86,16 @@
 	* [LeetCode22.java merge Two Lists AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode22.cpp)
 	* [LeetCode4.cpp find Median Sorted Arrays AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode4.cpp)
 	* [LeetCode493.cpp Reverse Pairs  AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp)
-	* **prefix sum**
-		* **one dimemsion prefix sum**
-			* [LeetCode560.cpp Subarray Sum Equals K AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode560.cpp)
-			* [LeetCode523.cpp Continuous Subarray Sum AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode523.cpp)
-			* [LeetCode974.cpp Subarray Sums Divisible by K TLE](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode974.cpp)
-			* [Leet303.cpp Range Sum Query - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode303.cpp)
-			* [LeetCode307.cpp Range Sum Query - Mutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode307.cpp)
-			* [POJ3468.cpp Range Sum](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3468.cpp)
-		* **two dimension prefix sum**
-			* [LeetCode304.cpp Range Sum Query 2D - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode304.cpp)
+* <span id=psum>**prefix sum**</span>
+	* **one dimemsion prefix sum**
+		* [LeetCode560.cpp Subarray Sum Equals K AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode560.cpp)
+		* [LeetCode523.cpp Continuous Subarray Sum AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode523.cpp)
+		* [LeetCode974.cpp Subarray Sums Divisible by K TLE](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode974.cpp)
+		* [Leet303.cpp Range Sum Query - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode303.cpp)
+		* [LeetCode307.cpp Range Sum Query - Mutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode307.cpp)
+		* [POJ3468.cpp Range Sum](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3468.cpp)
+	* **two dimension prefix sum**
+		* [LeetCode304.cpp Range Sum Query 2D - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode304.cpp)
 * <span id=s>sort</span>
     * [LeetCode912.cpp Sort an Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode912.cpp)
 	    * implement quicksort (最快，最省空间)
