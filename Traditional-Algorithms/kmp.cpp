@@ -1,16 +1,32 @@
 //暴力匹配两个字符串，时间复杂度为两个字符串长度的积，多项式时间
-
+/**
+输入样例：
+    a c f g h j y r e w x 
+	f g h
+输出：
+    2
+*/
 #include <iostream>
 #include <cstdio>
 using namespace std;
 
+const int N = 1e6+10;
+int s[N], t[N];
+
 int main(){
-	string s, t;
-	cin >> s >> t;
+	int n, m;
+	scanf("%d%d", &n, &m);
+	for(int i = 1; i <= n; i++){
+		scanf(" %c", &s[i]);
+	}
+	
+	for(int i = 1; i <= m; i++){
+		scanf(" %c", &t[i]);
+	}
 	int i = 1, j = 1;
-	for(; i <= s.size(); i++){
+	for(; i <= n; i++){
 		bool flag = true;
-		for(; j <= t.size(); j++){
+		for(; j <= m; j++){
 			if(s[i+j-1] != t[j]){
 				flag = false;
 				break;
