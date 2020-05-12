@@ -48,7 +48,7 @@ stack<int> s;
 
 int main(){
     int n;
-    cin >> n;
+    scanf("%d", &n);
     for(int i = 0 ; i < n; i++){
         scanf("%d", &a[i]);
     }
@@ -56,7 +56,7 @@ int main(){
         b[i] = -1;
     }
     if(n == 0){
-        cout << "-1" << endl;
+        printf("-1 ");
     }
     s.push(a[0]);
 
