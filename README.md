@@ -19,6 +19,7 @@
 * [**Bit Manipulation**](#bm)
 * [**细节题**](#xijie)
 	* [**Big Integer**](#bi)
+	* [KMP](#kmp)
 * [**Graph Algorithms**](#ggg)
 * [**经典算法应用**](#jingdian)
     * [Permutation](#jingdianp)
@@ -57,6 +58,8 @@
 		* [LeetCode989.cpp Add to Array-Form of Integer AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode989.cpp)
 		* [LeetCode67.cpp Add Binary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode67.cpp)
 		* [LeetCode43.cpp Multiply Strings AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode43.cpp)
+	* <span id=kmp>KMP</span>
+	    * [kmp.cpp brute search](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kmp.cpp)
 * <span id=jingdian>经典算法应用</span>
 	* <span id=jingdianp>Permutation</span>  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
