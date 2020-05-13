@@ -64,6 +64,7 @@
 		* [LeetCode459.cpp Repeated Substring Pattern AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode459.cpp)
 		* [LeetCode214.cpp Shortest Palindrome AC KMP](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode214.cpp)
 		* [POJ3461.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3461.cpp)
+		* [POJ2406.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2406.cpp)
 * <span id=jingdian>经典算法应用</span>
 	* <span id=jingdianp>Permutation</span>  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
