@@ -21,32 +21,15 @@ ababa
 0 2
 */
 
-//方法一： 暴力匹配 超时
+//方法一： 暴力匹配 超时  方法一优于方法二
 #include <iostream>
 using namespace std;
-
 const int N = 1e5+10;
 const int M = 1e6+10;
-
-int s[N], t[N];
-
+char s[N], t[N];
 int main(){
-    int n;
-    scanf("%d", &n);
-    
-    string P;
-    cin >> P;
-    for(int i = 1;i <= n; i++){
-        t[i] = P[i-1];
-    }
-    
-    int m;
-    scanf("%d", &m);
-    string S;
-    cin >> S;
-    for(int i = 1; i <= m; i++){
-        s[i] = S[i-1];
-    }
+    int n, m;
+	cin >> n >> t+1 >> m >> s+1;
     
     for(int i = 1; i <= m; i++){  //数组下标从1开始
         bool flag = true;
@@ -67,14 +50,11 @@ int main(){
 //方法二：暴力匹配 超时
 #include <iostream>
 using namespace std;
-
 int main(){
     int n;
     scanf("%d", &n);
-    
     string P;
     cin >> P;
-    
     int m;
     scanf("%d", &m);
     string S;
