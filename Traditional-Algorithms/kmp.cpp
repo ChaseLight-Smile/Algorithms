@@ -74,3 +74,35 @@ int main(){
     }
     return 0;
 }
+
+//方法三： kmp算法
+#include <iostream>
+using namespace std;
+const int N = 1e5+10;
+const int M = 1e6+10;
+char s[M], p[N];
+int ne[N];
+int main(){
+    int n, m;
+	cin >> n >> p+1 >> m >> s+1;
+	
+	//ne数组计算方法
+	for(int i = 2, j = 0; i <= n; i++){   //p串从2开始，因为0和1的前缀和后缀是相等的，都是0，没有计算的意义
+	    while(j && p[i] != p[j+1]) j = ne[j];    //一直没有匹配成功，那么搜索最长后缀串
+	    if(p[i] == p[j+1]) j++;  //成功匹配
+	    ne[i] = j;
+	}
+	
+	for(int i = 1, j = 0 ; i <= m; i++){
+	    while(j && s[i] != p[j+1]) j = ne[j];
+	    if(s[i] == p[j+1]) j++;
+	    if(j == n){
+	        //成功匹配
+	        printf("%d ", i - n);
+	        j = ne[j];  //继续搜索其它的匹配位置
+	    }
+	}
+	
+	
+    return 0;
+}
