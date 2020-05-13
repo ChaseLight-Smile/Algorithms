@@ -61,6 +61,7 @@
 	* <span id=kmp>KMP</span>
 	    * [kmp.cpp brute search](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kmp.cpp)
 		* [LeetCode28.cpp Implement strStr() AC KMP](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode28.cpp)
+		* [LeetCode459.cpp Repeated Substring Pattern AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode459.cpp)
 * <span id=jingdian>经典算法应用</span>
 	* <span id=jingdianp>Permutation</span>  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
