@@ -35,7 +35,7 @@
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
 
-**算法题目来源： [LeetCode](https://leetcode.com/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1)  LeetCode数据比较弱，OJ的数据相对强一些，[UVa](https://onlinejudge.org/)数据很强。一般算法竞赛数组大小数量级在1e6，这对于Java的同学不是很友好，所以LeetCode一维情况下数据长度在1e5数量级级别，二维情况下，一般在1e3，因为两维超过1e6级别。如果要预先开一个数组，按照前面的数量级设置就能通过所有test case。**
+**算法题目来源： [LeetCode](https://leetcode.com/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1)  LeetCode数据比较弱，OJ的数据相对强一些，[UVa](https://onlinejudge.org/)数据很强。一般算法竞赛数组大小数量级在1e6，这对于Java的同学不是很友好，所以LeetCode一维情况下数据长度在1e5数量级级别，二维情况下，一般在1e3，因为两维超过1e6级别。如果要预先开一个数组，按照前面的数量级设置就能通过所有test case。尽量少使用STL，我感觉STL相对数组而言要慢一些**
 
 ### **2. 算法列表**
 
