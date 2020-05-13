@@ -20,6 +20,8 @@ ababa
 输出样例：
 0 2
 */
+
+//方法一： 暴力匹配 超时
 #include <iostream>
 using namespace std;
 
@@ -46,7 +48,7 @@ int main(){
         s[i] = S[i-1];
     }
     
-    for(int i = 1; i <= m; i++){
+    for(int i = 1; i <= m; i++){  //数组下标从1开始
         bool flag = true;
         for(int j = 1; j <= n; j++){
             if(s[i+j-1] != t[j]){
@@ -56,6 +58,38 @@ int main(){
         }
         if(flag){
             printf("%d ", i-1);
+        }
+    }
+    return 0;
+}
+
+
+//方法二：暴力匹配 超时
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    scanf("%d", &n);
+    
+    string P;
+    cin >> P;
+    
+    int m;
+    scanf("%d", &m);
+    string S;
+    cin >> S;
+    
+    for(int i = 0; i < m; i++){   //数组下标从0开始
+        bool flag = true;
+        for(int j = 0; j < n; j++){
+            if(S[i+j] != P[j]){
+                flag = false;
+                break;
+            }
+        }
+        if(flag){
+            printf("%d ", i);
         }
     }
     return 0;
