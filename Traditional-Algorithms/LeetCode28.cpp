@@ -1,6 +1,6 @@
 class Solution {
 private:
-    static const int N = 1e6+10;
+    static const int N = 1e5+10;   //本题的数据范围优化到了1e5，不是1e6，1e6对于Java的同学会比较难AC
     char s[N], p[N];
     int ne[N];
 public:
