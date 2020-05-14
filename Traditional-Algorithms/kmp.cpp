@@ -75,7 +75,7 @@ int main(){
     return 0;
 }
 
-//方法三： kmp算法
+//方法三： 下标从1开始的kmp算法算法
 #include <iostream>
 using namespace std;
 const int N = 1e5+10;
@@ -99,6 +99,44 @@ int main(){
 	    if(j == n){
 	        //成功匹配
 	        printf("%d ", i - n);
+	        j = ne[j];  //继续搜索其它的匹配位置
+	    }
+	}
+	
+	
+    return 0;
+}
+
+
+//下标从0开始的KMP
+#include <iostream>
+using namespace std;
+
+const int N = 1e5+10;
+const int M = 1e6+10;
+
+char s[M], p[N];
+int ne[N];
+
+int main(){
+    int n, m;
+	cin >> n >> p >> m >> s;
+	
+	//ne数组计算方法
+	ne[0] = -1;
+	for(int i = 1, j = -1; i < n; i++){
+	    while(j != -1 && p[i] != p[j+1]) j = ne[j];
+	    if(p[i] == p[j+1]) j++;
+	    ne[i] = j;
+	}
+	
+	
+	for(int i = 0, j = -1 ; i < m; i++){
+	    while(j != -1 && s[i] != p[j+1]) j = ne[j];
+	    if(s[i] == p[j+1]) j++;
+	    if(j == n-1){
+	        //成功匹配
+	        printf("%d ", i - n+1);
 	        j = ne[j];  //继续搜索其它的匹配位置
 	    }
 	}

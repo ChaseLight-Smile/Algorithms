@@ -10,7 +10,7 @@ int main(){
     int count;
     scanf("%d", &count);
     while(count--){
-        cin >> p+1;
+        scanf("%s", p+1);
         int n = strlen(p+1);
         for(int i = 2, j = 0; i <= n; i++){
             while(j && p[i] != p[j+1]) j = ne[j];
