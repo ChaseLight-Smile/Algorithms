@@ -17,13 +17,11 @@ int main(){
         }
         int t = ne[n];
         int cnt = 0;
-		while (t != 0)
-		{
+		while (t != 0){
 			ans[cnt++] = t;
 			t = ne[t];
 		}
-		for (int i = cnt - 1; i >= 0; --i)
-		{
+		for (int i = cnt - 1; i >= 0; --i){
 			printf("%d ", ans[i]);
 		}
 		printf("%d\n", n);
