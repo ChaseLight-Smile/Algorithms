@@ -19,11 +19,11 @@
 * [**Bit Manipulation**](#bm)
 * [**细节题**](#xijie)
 	* [**Big Integer**](#bi)
-	* [KMP](#kmp)
 * [**Graph Algorithms**](#ggg)
 * [**经典算法应用**](#jingdian)
     * [Permutation](#jingdianp)
 	* [Cycle Detection](#jingdianCD)
+	* [KMP](#kmp)
 * [**Binary Search**](#bs)
 * [**Dynamic Programming**](#dp)
 * [**Greedy Algorithms**](#gd)
@@ -58,14 +58,6 @@
 		* [LeetCode989.cpp Add to Array-Form of Integer AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode989.cpp)
 		* [LeetCode67.cpp Add Binary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode67.cpp)
 		* [LeetCode43.cpp Multiply Strings AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode43.cpp)
-	* <span id=kmp>KMP</span>
-	    * [kmp.cpp brute search](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kmp.cpp)
-		* [LeetCode28.cpp Implement strStr() AC KMP](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode28.cpp)
-		* [LeetCode459.cpp Repeated Substring Pattern AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode459.cpp)
-		* [LeetCode214.cpp Shortest Palindrome AC KMP](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode214.cpp)
-		* [POJ3461.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3461.cpp)
-		* [POJ2406.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2406.cpp)
-		* [HDUOJ2087.cpp AC 无重叠子串](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2087.cpp)
 * <span id=jingdian>经典算法应用</span>
 	* <span id=jingdianp>Permutation</span>  **本题是一个Generation in lexicographic order，具体见链接 https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order**
 		* [LeetCode31.cpp Next Permutation  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode31.cpp)
@@ -77,6 +69,15 @@
 		* [**LeetCode142.cpp Linked List Cycle II AC**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode142.cpp)
 		* [**LeetCode287.cpp Find the Duplicate Number AC** **数组其实也是一个链表，如果能带着这个观点，这道题目完全和142相同**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode287.cpp)
 		* [**LeetCode876.cpp Middle of the Linked List AC**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode876.cpp)
+	* <span id=kmp>KMP</span>
+	    * [kmp.cpp brute search](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kmp.cpp)
+		* [LeetCode28.cpp Implement strStr() AC KMP](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode28.cpp)
+		* [LeetCode459.cpp Repeated Substring Pattern AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode459.cpp)
+		* [LeetCode214.cpp Shortest Palindrome AC KMP](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode214.cpp)
+		* [POJ3461.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3461.cpp)
+		* [POJ2406.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2406.cpp)
+		* [HDUOJ2087.cpp AC 无重叠子串](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2087.cpp)
+		* [HDUOJ1711.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1711.cpp)
 * <span id=bm>Bit Manipulation</span>
     * [LeetCode78.cpp Subsets AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode78.cpp)
 	* [LeetCod191.cpp Number of 1 Bits AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode191.cpp)
