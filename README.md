@@ -79,6 +79,7 @@
 		* [HDUOJ2087.cpp AC 无重叠子串](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2087.cpp)
 		* [HDUOJ1711.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1711.cpp)
 		* [HDUOJ3746.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ3746.cpp)
+		* [HUSTOJ1010.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HUSTOJ1010.cpp)
 * <span id=bm>Bit Manipulation</span>
     * [LeetCode78.cpp Subsets AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode78.cpp)
 	* [LeetCod191.cpp Number of 1 Bits AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode191.cpp)
