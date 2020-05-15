@@ -87,7 +87,7 @@
 		* [POJ3974.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3974.cpp)
 		* [HDUOJ3068.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ3068.cpp)
 		* [HDUOJ4513.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ4513.cpp)
-<span id=bm>Bit Manipulation</span>
+* <span id=bm>Bit Manipulation</span>
     * [LeetCode78.cpp Subsets AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode78.cpp)
 	* [LeetCod191.cpp Number of 1 Bits AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode191.cpp)
 * <span id=tp>Two pointers</span>
