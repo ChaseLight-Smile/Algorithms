@@ -3,45 +3,46 @@
 #include <sstream>
 using namespace std;
 
-const int maxn = 1e4 + 5;
-int tree[maxn][30];
-bool vis[maxn];
-int cnt;
+const int N = 1e6+10;
+int son[N][26], cnt[N], idx;
 
-inline void insert(char s[]){
-    int u = 0;
-    for (int i = 0;s[i];++i){
-        int id = s[i] - 'a';
-        if (!tree[u][id]){
-            tree[u][id] = ++cnt;
-        }
-        u = tree[u][id];
+void insert(char str[]){
+    int p = 0;
+    for(int i = 0 ; str[i]; i++){
+        int u = str[i] - 'a';
+        if(!son[p][u]) son[p][u] = ++idx;
+        p = son[p][u];
     }
-    vis[u] = 1;
+    if(cnt[p] == 0)
+        cnt[p]++;
 }
 
-inline void search(){
-    int ans = 0;
-    for (int i = 0;i <= cnt;++i){
-        if (vis[i]){
-            ++ans;
-        }
+int query(char str[]){
+    int p = 0;
+    for(int i = 0; str[i]; i++){
+        int u = str[i] - 'a';
+        if(!son[p][u]) break;
+        p = son[p][u];
     }
-    printf("%d\n",ans);
+    return cnt[p];
 }
 
 int main(){
     string tmp;
-    while (getline(cin,tmp) && tmp != "#"){
+    while(getline(cin,tmp) && tmp != "#"){
+        int count = 0;
         stringstream ss(tmp);
         char s[50];
         while (ss >> s){
             insert(s);
         }
-        search();
-        cnt = 0;
-        memset(tree,0,sizeof(tree));
-        memset(vis,0,sizeof(vis));
+        for(int i = 0 ; i <= idx; i++){
+            count += cnt[i];
+        }
+        memset(cnt,0,sizeof(cnt));
+        idx = 0;
+        printf("%d\n", count);
     }
+    
     return 0;
 }
