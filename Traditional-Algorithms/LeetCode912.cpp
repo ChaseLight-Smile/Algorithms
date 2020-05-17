@@ -116,3 +116,76 @@ public:
         }    
     }
 };
+
+//堆排序
+class Solution {
+private:
+    vector<int>nums;
+    int n;
+public:
+    vector<int> sortArray(vector<int>& _nums) {
+        nums = _nums;
+        n = nums.size();
+        for(int i = n/2-1; i >= 0; i--){
+            down(i);
+        }
+        int len = n;
+        vector<int>ans;
+        while(n--){
+            ans.push_back(nums[0]);
+            nums[0] = nums[len-1];
+            len--;
+            down(0);
+        }
+        return ans;
+    }
+    void down(int u){
+        int min = u;
+        if(u * 2+1 < n && nums[u * 2+1] < nums[min]) min = u * 2+1;
+        if(u * 2 + 2 < n && nums[u * 2+2] < nums[min]) min = u * 2 +2;
+        if(u != min){
+            swap(nums[u], nums[min]);
+            down(min);
+        }
+    }
+};
+
+//堆排序
+class Solution {
+private:
+    static const int N = 1e5+10;
+    int h[N], len;  //全局变量
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        for(int i = 1; i <= nums.size(); i++){
+            h[i] = nums[i-1];
+        }
+        len = nums.size();
+        
+        //调整h数组，使之成为一个heap
+        for(int i = nums.size()/2; i >=1; i--){
+            down(i);
+        }
+        
+        vector<int>ans;
+        int n  = len;
+        while(n--){
+            ans.push_back(h[1]);
+            h[1] = h[len];
+            len--;
+            down(1);
+        }
+        
+        return ans;
+        
+    }
+    void down(int u){
+        int min = u;  //min看成是最小位置的坐标
+        if(u * 2 <= len && h[u * 2] < h[min]) min = u * 2;
+        if(u * 2 + 1 <= len && h[u * 2 + 1] < h[min]) min = u * 2 + 1;
+        if(u != min){
+            swap(h[u], h[min]);
+            down(min);
+        }
+    }
+};
