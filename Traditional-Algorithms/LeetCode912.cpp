@@ -148,6 +148,22 @@ public:
             down(min);
         }
     }
+	
+	void up(int u){  //循环的方法写
+		while(u / 2 >= 1 && h[u/2] > h[u]]){
+			swap(h[u/2], h[u]);
+			u /= 2;
+		}
+	}
+	void up(int u){  //递归方法写
+		if(u / 2 >= 1 && h[u/2] > h[u]]){
+			swap(h[u/2], h[u]);
+			u /= 2;
+			up(u);
+		}
+	}
+	
+	
 };
 
 //堆排序
