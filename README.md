@@ -208,7 +208,7 @@
 		* [LeetCodeUnionFind.cpp  LeetCode并查集模板，带路径压缩](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCodeUnionFind.cpp)
 * <span id=bs>Binary Search</span>
     * [**LeetCode704.cpp Binary Search AC** ](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode704.cpp)
-	* [**LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)** 这四道题目其实延伸出很多题目，比如如何在Rotated Sorted Array中找到最小元素的下标并返回？**这里我向社区贡献了一道题目，供参考https://leetcode.com/contribute/18958**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode33.cpp)
+	* [**LeetCode33.cpp Search in Rotated Sorted Array AC(binary search)** 这四道题目其实延伸出很多题目，比如如何在Rotated Sorted Array中找到最小元素的下标并返回？
 		* [**LeetCode81.cpp Search in Rotated Sorted Array II AC(binary search)**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode81.cpp)
 		* [**LeetCode153.cpp Find Minimum in Rotated Sorted Array AC (binary search)**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode153.cpp)
 		* [**LeetCode154.cpp Find Minimum in Rotated Sorted Array II AC(binary search)** (33 81 153 154解法完全一样)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode154.cpp)
