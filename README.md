@@ -6,10 +6,10 @@
 
 包括但不限于以下内容：
 
-* [**Min-heap/Max-heap**](#heap)
-* [**Union Find**](#uf)
+* [**heap**](#heap)
 * [**Stack**](#st)
 * [**Queue**](#q)
+* [**Union Find**](#uf)
 * [**Map/Set**](#ms)
 * [**Trees**](#t) 
 * [**Trie**](#trie)
