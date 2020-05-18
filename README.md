@@ -161,6 +161,7 @@
         * [LeetCode211.cpp Add and Search Word - Data structure design AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode211.cpp)
 		* [HDUOJ1251.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1251.cpp)
 		* [HDUOJ2072.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2072.cpp)
+		* [LeetCode421.cpp AC Trie非常好的题目，如何将整数存储在trie中](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode421.cpp)
 	* <span id=heap>priority_queue</span>
 	    * [LeetCode658.cpp Find K Closest Elements AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode658.cpp)
 		* [LeetCode703.cpp Kth Largest Element in a Stream AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode703.cpp)
