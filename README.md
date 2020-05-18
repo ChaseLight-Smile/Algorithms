@@ -174,7 +174,7 @@
 		* [LeetCode387.cpp First Unique Character in a String AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode387.cpp)
 		* [**LeetCode23.cpp Merge k Sorted Lists O(nlogk)   AC**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode23.cpp)
 		* [LeetCode1046.cpp Last Stone Weight AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1046.cpp)
-	·	* [dijkstra_heap.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/dijkstra_heap.cpp)
+		* [dijkstra_heap.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/dijkstra_heap.cpp)
 	* <span id=q>queue</span>
 		* [SimulateQueue.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/SimulateQueue.cpp)
 		* [LeetCode102.cpp Binary Tree Level Order Traversal  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode102.cpp)
