@@ -83,3 +83,34 @@ int main(){
     }
     return 0;
 }
+
+//字符串hash判断两个子串是否相等
+#include <iostream>
+using namespace std;
+
+const int N = 1e5+10, P = 131;
+int h[N], p[N];  //p[i]表示i次方的值
+char str[N];  //字符串
+int get(int l, int r){
+    return h[r] - h[l-1]*p[r-l+1];
+}
+
+int main(){
+    int n; int m;
+    scanf("%d%d%s", &n, &m, str+1);
+    p[0] = 1;   //这里必须要给出初始化值
+    for(int i = 1; i <= n; i++){
+        p[i] = p[i-1]*P;
+        h[i] = h[i-1]*P + str[i];
+    }
+    while(m--){
+        int l1, r1, l2, r2;
+        scanf("%d%d%d%d", &l1, &r1, &l2, &r2);
+        if(get(l1, r1) == get(l2, r2)){
+            printf("Yes\n");
+        }else{
+            printf("No\n");
+        }
+    }
+    return 0;
+}
