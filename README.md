@@ -153,7 +153,8 @@
 		* [LeetCode540.cpp Single Element in a Sorted Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode540.cpp)
 		* [LeetCode350.cpp Intersection of Two Arrays II  Hashtable  O(n)  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode350.cpp)
 		* [LeetCode217.cpp Contains Duplicate AC hash table 去重](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode217.cpp)
-		* **priority_queue and map/set can exchange at the solving min/max problem.**
+		* [SimulateHashTable.cpp 拉链法解决冲突](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/SimulateHashTable.cpp)
+		**priority_queue and map/set can exchange at the solving min/max problem.**
 	* <span  id=trie>Trie</span>
 	    * [LeetCode208.cpp  Implement Trie (Prefix Tree) AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode208.cpp)
         * [LeetCode211.cpp Add and Search Word - Data structure design AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode211.cpp)
