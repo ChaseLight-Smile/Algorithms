@@ -290,6 +290,13 @@
 * <span id=ggg>Graph Algorithms</span>
     * [LeetCodeGraphTraversalTemplate.cpp  图的DFS和BFS模板，保存图时采用了邻接列表的方式，不用邻接矩阵(浪费空间和时间)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCodeGraphTraversalTemplate.cpp)
 	* Topological Sort
+	* Dijkstra
+	* bellman-ford
+	* spfa
+	* floyd
+	* prim
+	* kruskal
+	* 匈牙利算法
 * 其它
 	* insertSort(int[] arr);  插入排序
 	* insertSortRecurtion(int[] arr,int length); 插入排序
