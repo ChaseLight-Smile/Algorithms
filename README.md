@@ -362,10 +362,10 @@
 	* <span id=bfs>BFS + Branch-and-Bound</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 
-|method      | extra space     | priorities     |Data Structure|
-| ---------- | :-----------:  | :-----------: ||
+|method   | extra space | priorities     |Data Structure|
+| :----------: | :-----------:  | :-----------: |:-----------:|
 | DFS     | O(h)     | topology sort     |stack|
-| BFS     | O(2^h)     | 最短路径特性     |stack|
+| BFS     | O(2^h)   | 最短路径特性     |stack|
 
 * <span id=rec>Recursive</span>
 	* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
