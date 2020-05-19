@@ -366,7 +366,7 @@
 |method   | extra space | priorities     |Data Structure|
 | :----------: | :-----------:  | :-----------: |:-----------:|
 | DFS     | `O(h)`   | topology sort     |stack|
-| BFS     | `O(2^h)`   | shortest path     |queue|
+| BFS     | `O(2^h)`   | shortest path(权重必须为1，否则不能找到最短路径)     |queue|
 
 * <span id=rec>Recursive</span>
 	* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
