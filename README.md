@@ -351,6 +351,7 @@
 		* [LeetCode216. Combination Sum III AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode216.cpp)
 		* [LeetCode46.cpp Permutations  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode46.cpp)
 		* [LeetCode47.cpp Permutations II  AC 先排序去重](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode47.cpp)
+		* [POJ1256.cpp AC 先排序去重](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1256.cpp)
 		* [LeetCode78.cpp Subsets AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode78.cpp)
 		* [LeetCode90.cpp Subsets II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode90.cpp)
 		* [LeetCode77. Combinations  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode77.cpp)
