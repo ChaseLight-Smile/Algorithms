@@ -36,9 +36,7 @@
 * Machine Learning Algorithms for Databases
 	* Reinforce Learning for Optimization
 
-**算法题目来源： [LeetCode](https://leetcode.com/) [Vjudge](https://vjudge.net/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) [UVa](https://onlinejudge.org/)数据很强。**  
-**LeetCode数据比较弱。一般算法竞赛数组大小数量级一般在1e6，这对于Java的同学不是很友好，所以LeetCode一维情况下数据长度在1e5数量级级别，二维情况下，一般在1e3，因为两维超过1e6级别。如果要预先开一个数组，**  
-**按照前面的数量级设置就能通过所有test case。尽量少使用STL，我感觉STL相对数组而言要慢一些，并且数组支持任意位置访问，这个特性很好。****
+**算法题目来源： [LeetCode](https://leetcode.com/) [Vjudge](https://vjudge.net/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) [UVa](https://onlinejudge.org/)数据很强。LeetCode数据比较弱。一般算法竞赛数组大小数量级一般在1e6，这对于Java的同学不是很友好，所以LeetCode一维情况下数据长度在1e5数量级级别，二维情况下，一般在1e3，因为两维超过1e6级别。如果要预先开一个数组，按照前面的数量级设置就能通过所有test case。尽量少使用STL，我感觉STL相对数组而言要慢一些，并且数组支持任意位置访问，这个特性很好。**
 
 ### **2. 算法列表**
 
@@ -363,7 +361,12 @@
 	    * [LeetCode52.cpp N-Queens II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode52.cpp)
 	* <span id=bfs>BFS + Branch-and-Bound</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
-	
+
+|method      | extra space     | priorities     |Data Structure|
+| ---------- | :-----------:  | :-----------: ||
+| DFS     | O(h)     | topology sort     |stack|
+| BFS     | O(2^h)     | 最短路径特性     |stack|
+
 * <span id=rec>Recursive</span>
 	* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
 
