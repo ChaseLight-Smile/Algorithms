@@ -364,8 +364,8 @@
 
 |method   | extra space | priorities     |Data Structure|
 | :----------: | :-----------:  | :-----------: |:-----------:|
-| DFS     | O(h)     | topology sort     |stack|
-| BFS     | O(2^h)   | 最短路径特性     |stack|
+| DFS     | `O(h)`   | topology sort     |stack|
+| BFS     | `O(2^h)`   | shortest path     |queue|
 
 * <span id=rec>Recursive</span>
 	* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
