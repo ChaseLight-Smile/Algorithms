@@ -358,7 +358,8 @@
 		* [LeetCode79.cpp Word Search AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode79.cpp)
 		* [LeetCode60.cpp Permutation Sequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode60.cpp)
 		* [LeetCode1286.cpp Iterator for Combination  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1286.cpp)
-	    * [LeetCode52.cpp N-Queens II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode52.cpp)
+	    * [LeetCode51.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode51.cpp)
+		* [LeetCode52.cpp N-Queens II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode52.cpp)
 	* <span id=bfs>BFS + Branch-and-Bound</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 
