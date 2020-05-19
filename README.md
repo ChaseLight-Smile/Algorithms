@@ -49,6 +49,7 @@
 	* [LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1351.cpp)
 	* [LeetCode8.cpp String to Integer (atoi) AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode8.cpp)
 	* [**LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，存在一个O(r+c)的线性时间算法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode240.cpp)
+	* [LeetCode54.cpp AC 矩阵搜索，n皇后问题也用到了类似的技巧](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode54.cpp)
 	* [LeetCode509.cpp Fibonacci Number AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode509.cpp)
 	* [LeetCode26.cpp Remove Duplicates from Sorted Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode26.cpp)
 		* [LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode80.cpp)
@@ -89,7 +90,7 @@
 		* [HDUOJ4513.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ4513.cpp)
 * <span id=bm>Bit Manipulation</span>
     * [LeetCode78.cpp Subsets AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode78.cpp)
-	* [LeetCod191.cpp Number of 1 Bits AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode191.cpp)
+	* [LeetCode191.cpp Number of 1 Bits AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode191.cpp)
 * <span id=tp>Two pointers</span>
     * 双指针问题包括（前向型指针(滑动窗口（将O(n^2)算法做成O(n)的算法）和快慢指针两类)、相向型指针（O(n)）、两个数组（典型题目为mergesort中的merge过程）三种大类）
 	* [LeetCode167.cpp Two Sum II - Input array is sorted  相向型指针 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode167.cpp)
@@ -111,7 +112,7 @@
 		* [LeetCode560.cpp Subarray Sum Equals K AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode560.cpp)
 		* [LeetCode523.cpp Continuous Subarray Sum AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode523.cpp)
 		* [LeetCode974.cpp Subarray Sums Divisible by K TLE](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode974.cpp)
-		* [Leet303.cpp Range Sum Query - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode303.cpp)
+		* [LeetCode303.cpp Range Sum Query - Immutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode303.cpp)
 		* [LeetCode307.cpp Range Sum Query - Mutable AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode307.cpp)
 		* [POJ3468.cpp Range Sum](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3468.cpp)
 	* **two dimension prefix sum**
