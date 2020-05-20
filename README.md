@@ -365,7 +365,7 @@
 		* [LeetCode52.cpp N-Queens II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode52.cpp)
 	* <span id=bfs>BFS + Branch-and-Bound</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
-
+		* [POJ3984.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3984.cpp)
 |method   | extra space | priorities     |Data Structure|
 | :----------: | :-----------:  | :-----------: |:-----------:|
 | DFS     | `O(h)`   | topology sort     |stack|
