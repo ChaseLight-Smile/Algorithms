@@ -291,6 +291,8 @@
 	* [LeetCode124. Binary Tree Maximum Path Sum   LevelOrder + 最大连续子数组和  Hard]()
 * <span id=ggg>Graph Algorithms</span>
     * [LeetCodeGraphTraversalTemplate.cpp  图的DFS和BFS模板，保存图时采用了邻接列表的方式，不用邻接矩阵(浪费空间和时间)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCodeGraphTraversalTemplate.cpp)
+	* DFS
+		* [POJ1655.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1655.cpp)
 	* Topological Sort
 	* Dijkstra
 	* bellman-ford
@@ -367,7 +369,6 @@
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 		* [POJ3984.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3984.cpp)
 		* [LeetCode1091.cpp AC Shortest Path in Binary Matrix](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1091.cpp)
-		
 		
 
 |method   | extra space | priorities     |Data Structure|
