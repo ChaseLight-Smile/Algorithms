@@ -322,6 +322,7 @@
 
 
 * <span id=dp>Dynamic Programming</span>
+    * 动态规划实质上是最短路径问题的一个子集
 	* 坐标型
 		* [LeetCode322.cpp Coin Change  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode322.cpp)
 		* [LeetCode62.cpp Unique Paths AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode62.cpp)
@@ -334,6 +335,7 @@
 	* 背包型
 	* 区间型
 	* 双序列型
+	* 记忆化搜索（实质上是DFS）
 
 * <span id=gd>Greedy Algorithms</span>
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
