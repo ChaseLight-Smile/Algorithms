@@ -373,8 +373,8 @@
 
 |method   | extra space | priorities     |Data Structure|
 | :----------: | :-----------:  | :-----------: |:-----------:|
-| DFS     | O(h)   | topology sort     |stack|
-| BFS     | O(2^h)   | shortest path(权重必须为1，否则不能找到最短路径)     |queue|
+| DFS     | O(h)   |   无   |stack|
+| BFS     | O(2^h)   | shortest path(权重必须为1，否则不能找到最短路径)、topology sort  |queue|
 
 
 * <span id=rec>Recursive</span>
