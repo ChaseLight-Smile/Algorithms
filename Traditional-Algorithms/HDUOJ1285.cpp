@@ -4,7 +4,7 @@
 #include<functional>
 using namespace std;
 
-const int N = 1e3+10;
+const int N = 1e5+10;
 int h[N], e[N], ne[N], idx;
 priority_queue<int, vector<int>, greater<int>>q;
 int d[N];
