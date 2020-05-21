@@ -1,7 +1,7 @@
 
-## **算法及其设计技术 (Do algorithms for fun)**
+# **算法及其设计技术 (Do algorithms for fun)**
 
-### **1. 概述**
+## **1. 概述**
 
 
 包括但不限于以下内容：
@@ -38,7 +38,21 @@
 
 **算法题目来源： [LeetCode](https://leetcode.com/) [Vjudge](https://vjudge.net/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) [UVa](https://onlinejudge.org/)数据很强， [USACO](https://train.usaco.org/)难度大，数据强。LeetCode数据比较弱。一般算法竞赛数组大小数量级一般在1e6，这对于Java的同学不是很友好，所以LeetCode一维情况下数据长度在1e5数量级级别，二维情况下，一般在1e3，因为两维超过1e6级别。如果要预先开一个数组，按照前面的数量级设置就能通过所有test case。尽量少使用STL，我感觉STL相对数组而言要慢一些，并且数组支持任意位置访问，这个特性很好。**
 
-### **2. 算法列表**
+## 作者
+
+Junpeng Zhu, jpzhu.gm@gmail.com
+
+## 协议
+
+<img src='https://www.gnu.org/graphics/gplv3-127x51.png' width='127' height='51'/>
+
+更多信息参见[协议文件](/LICENSE)。
+
+<img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
+
+[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+
+## **2. 算法列表**
 
 * <span id=xijie>细节题</span>
 	* [LeetCode27.java Remove Element AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode27.java)
@@ -322,7 +336,7 @@
 	* HDOJ1066; AC
 	* HDU2001-HDU2017; Practise the C++ language properties in HDUOJ page 11. AC
 
-### **3. 算法设计技术**
+## **3. 算法设计技术**
 
 
 * <span id=dp>Dynamic Programming</span>
@@ -382,13 +396,11 @@
 * <span id=rec>Recursive</span>
 	* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
 
-### <span id=ats>**4. 时空复杂度分析**</span>
+## <span id=ats>**4. 时空复杂度分析**</span>
 
 
-#### **4.1 理论**
+### **4.1 理论**
 
-
-写完算法后，通常情况下，我们需要对算法进行时空复杂度分析对比性能。有一种对比方法是将对比的算法放在同一台机器上运行统计时间，我们把这种方法称为“事后统计法“。但是这种方法存在明显的缺陷，当数据规模发生变化，或者运行在不同的处理器上时，算法的性能可能会存在较大的差异。因此，对于不同的算法，合理地给出算法运行的上下界很有必要。**在一个算法种，通常可以只分析算法种的循环、递归等部分。**空间复杂度分析相对于时间复杂度分析就要简单的多，只需要关注代码中最浪费存储的部分就可以了。
 
 ```C
  int cal(int n) {
@@ -411,7 +423,7 @@ $O(1) < O(lgn) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(n!)$ 其中，$O(2^n) < O
 * 加法法则：总复杂度等于量级最大的那段代码的复杂度，该法则适用于多段平行代码段，总的时间复杂度为最大
 * 乘法法则：嵌套代码的复杂度等于嵌套内外代码复杂度的乘积
 
-#### 4.2 最好，最坏、平均、时间复杂度分析
+### 4.2 最好，最坏、平均、时间复杂度分析
 
 
 3.1节讲了基本的时间复杂度表示方法，本节将重点讲述最好、最坏、平均、均摊时间复杂度分析，这样便有了完整的时间复杂度分析方法。
@@ -455,7 +467,7 @@ $(1+2+...+n+n)/(n+1) = n(n+3)/(2(n+1))$
 
 这种分析方法没有考虑每种情况出现的概率，不可取。
 
-#### **4.3 均摊时间复杂度分析**
+### **4.3 均摊时间复杂度分析**
 
 
 上述两节之后我们已经初步掌握了时间复杂度的分析方法，本节介绍均摊时间复杂度，均摊时间复杂度对应于算法中的摊还分析(或者叫平摊分析)。相比最好、最差、平均时间复杂度，均摊时间复杂度的使用场景更加特殊、更加有限。
@@ -501,7 +513,7 @@ $1 * 1/(n+1) + 1 * 1/(n+1)  ... + n * 1/(n+1)  = O(1)$
 
 
 
-#### **4.4 总结**
+### **4.4 总结**
 
 之所以引入最好时间复杂度、最坏时间复杂度、平均时间复杂度、均摊时间复杂度这些概念，是因为很多算法，在不同的输入情况下，算法的时间复杂度不一样。在引入这些概念以后，我们能够更加全面的表示算法的时间复杂度。
 
@@ -538,23 +550,9 @@ void add(int element) {
 */
 ```
 
-### **参考文献**
+## **参考文献**
 
 
 * http://www.cs.cmu.edu/~anupamg/advalgos15/
 * http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html
 * http://erikdemaine.org/classes/
-
-## 作者
-
-Junpeng Zhu, jpzhu.gm@gmail.com
-
-## 协议
-
-<img src='https://www.gnu.org/graphics/gplv3-127x51.png' width='127' height='51'/>
-
-更多信息参见[协议文件](/LICENSE)。
-
-<img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
-
-[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
