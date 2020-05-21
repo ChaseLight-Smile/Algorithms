@@ -311,6 +311,7 @@ Junpeng Zhu, jpzhu.gm@gmail.com
 		* [LeetCode207.cpp Course Schedule AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode207.cpp)
 		* [LeetCode210.cpp Course Schedule II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode210.cpp)
 		* [HDUOJ1285.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1285.cpp)
+		* [HDUOJ3342.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ3342.cpp)
 	* Dijkstra
 	* bellman-ford
 	* spfa

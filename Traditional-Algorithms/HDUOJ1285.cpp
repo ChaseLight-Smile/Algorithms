@@ -4,12 +4,11 @@
 #include<functional>
 using namespace std;
 
-const int N = 1e5+10;
+const int N = 1e3+10;
 int h[N], e[N], ne[N], idx;
-priority_queue<int, vector<int>, greater<int>>q;  //小顶堆
-int d[N];  //入度集合
+priority_queue<int, vector<int>, greater<int>>q;
+int d[N];
 int n, m;
-vector<int> ans;
 
 void add(int a, int b){
     e[idx] = b;
@@ -23,6 +22,7 @@ void topsort(){
             q.push(i);
         }
     }
+    vector<int> ans;
     while(!q.empty()){
         int u = q.top();
         ans.push_back(u);
@@ -36,24 +36,24 @@ void topsort(){
         }
     }
     for(int i = 0 ; i < ans.size()-1; i++){
-        cout << ans[i] << " ";
+        printf("%d ",ans[i]);
     }
-    cout << ans[ans.size()-1];
+    printf("%d\n",ans[ans.size()-1]);
 
     return;
 }
 
 int main(){
-    cin.tie(0);
-    ios::sync_with_stdio(false);
-    cin >> n >> m;
-    memset(h, -1, sizeof h);
-    while(m--){
-        int a, b;
-        cin >> a >> b;
-        add(a, b);
-        d[b]++;
+    while(scanf("%d%d",&n,&m)!=EOF){  //输入若干组数据
+        memset(h, -1, sizeof h);
+        memset(d, 0, sizeof d);
+        for(int i = 0 ; i < m; i++){
+            int a, b;
+            scanf("%d%d",&a,&b);
+            add(a,b);
+            d[b]++;
+        }
+        topsort();
     }
-    topsort();
     return 0;
 }
