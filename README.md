@@ -327,7 +327,9 @@ Junpeng Zhu, jpzhu.gm@gmail.com
 |边权均为正，单源最短路径，稀疏图|heap+dijkstra|O(mlogn)|
 | 边权存在负值，单源最短路径，限制最短路径<=k     | bellman-ford   | O(nm)  |
 |边权存在负值，单源最短路径, 不限制 |SPFA|平均情况下为O(m)，最坏O(nm)|
-|多源最短路径|floyd|O(n^3)|
+|多源(起点)汇(重点)最短路径|floyd|O(n^3)|
+
+**所谓稀疏图、稠密图是指：如果点数n和边数m在同一个数量级为稀疏图，如果他们相差较大的数量级则为稠密图**
 
 * 其它
 	* insertSort(int[] arr);  插入排序
