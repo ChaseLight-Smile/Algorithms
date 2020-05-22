@@ -34,6 +34,11 @@ Junpeng Zhu, jpzhu.gm@gmail.com
 * [**细节题**](#xijie)
 	* [**Big Integer**](#bi)
 * [**Graph Algorithms**](#ggg)
+	* **DFS**
+	* **BFS**
+	* **topology sort**
+	* **shorest path**
+	* **minimum spanning tree**
 * [**经典算法应用**](#jingdian)
     * [Permutation](#jingdianp)
 	* [Cycle Detection](#jingdianCD)
