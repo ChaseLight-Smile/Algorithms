@@ -4,7 +4,7 @@
 ## 作者
 
 Junpeng Zhu, jpzhu.gm@gmail.com
-
+![Github stars](https://img.shields.io/github/stars/JunpengCode/Algorithms.svg)
 ## 协议
 
 <img src='https://www.gnu.org/graphics/gplv3-127x51.png' width='127' height='51'/>
