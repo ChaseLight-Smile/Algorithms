@@ -318,6 +318,7 @@ Junpeng Zhu, jpzhu.gm@gmail.com
 		* [HDUOJ1285.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1285.cpp)
 		* [HDUOJ3342.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ3342.cpp)
 	* Dijkstra
+		* [Dijkstra.cpp Dijkstra稠密图最短路径模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Dijkstra.cpp)
 	* bellman-ford
 	* spfa
 	* floyd
