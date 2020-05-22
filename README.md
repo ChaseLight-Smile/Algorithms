@@ -319,6 +319,16 @@ Junpeng Zhu, jpzhu.gm@gmail.com
 	* prim
 	* kruskal
 	* 匈牙利算法
+
+
+|最短路径类型   | 算法 | 时间复杂度     |
+| :----------: | :-----------:  | :-----------: |
+| 边权均为正，单源最短路径，稠密图     | dijkstra   | O(n^2)  |
+|边权均为正，单源最短路径，稀疏图|heap+dijkstra|O(mlogn)|
+| 边权存在负值，单源最短路径，限制最短路径<=k     | bellman-ford   | O(nm)  |
+|边权存在负值，单源最短路径, 不限制 |SPFA|平均情况下为O(m)，最坏O(nm)|
+|多源最短路径|floyd|O(n^3)|
+
 * 其它
 	* insertSort(int[] arr);  插入排序
 	* insertSortRecurtion(int[] arr,int length); 插入排序
