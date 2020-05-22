@@ -4,8 +4,8 @@
 ## 作者
 
 Junpeng Zhu, jpzhu.gm@gmail.com
-![Github stars](https://img.shields.io/github/stars/JunpengCode/Algorithms.svg) ![github language](https://img.shields.io/badge/language-C++-green.svg) ![](https://img.shields.io/github/license/JunpengCode/Algorithms.svg)![Github stars](https://img.shields.io/github/forks/JunpengCode/Algorithms.svg)
-
+![Github stars](https://img.shields.io/github/stars/JunpengCode/Algorithms.svg) ![github language](https://img.shields.io/badge/language-C++-green.svg) ![](https://img.shields.io/github/license/JunpengCode/Algorithms.svg)![Github stars](https://img.shields.io/github/forks/JunpengCode/Algorithms.svg) ![Github Release](https://img.shields.io/github/release/JunpengCode/Algorithms.svg)
+ 
 ## 协议
 
 <img src='https://www.gnu.org/graphics/gplv3-127x51.png' width='127' height='51'/>
