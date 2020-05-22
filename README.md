@@ -1,20 +1,7 @@
 
 # **算法及其设计技术 (Do algorithms for fun)**
 
-## 作者
-
-Junpeng Zhu, jpzhu.gm@gmail.com
 ![Github stars](https://img.shields.io/github/stars/JunpengCode/Algorithms.svg) ![github language](https://img.shields.io/badge/language-C++-green.svg) ![](https://img.shields.io/github/license/JunpengCode/Algorithms.svg)![Github stars](https://img.shields.io/github/forks/JunpengCode/Algorithms.svg) ![Github Release](https://img.shields.io/github/release/JunpengCode/Algorithms.svg) ![](https://img.shields.io/github/commits/JunpengCode/Algorithms.svg)
-
-## 协议
-
-<img src='https://www.gnu.org/graphics/gplv3-127x51.png' width='127' height='51'/>
-
-更多信息参见[协议文件](/LICENSE)。
-
-<img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
-
-[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
 
 ## **1. 概述**
 
@@ -576,3 +563,19 @@ void add(int element) {
 * http://www.cs.cmu.edu/~anupamg/advalgos15/
 * http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html
 * http://erikdemaine.org/classes/
+
+
+## 作者
+
+Junpeng Zhu, jpzhu.gm@gmail.com
+
+## 协议
+
+<img src='https://www.gnu.org/graphics/gplv3-127x51.png' width='127' height='51'/>
+
+更多信息参见[协议文件](/LICENSE)。
+
+<img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
+
+[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+
