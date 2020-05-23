@@ -1,5 +1,5 @@
-//bellman-ford算法求单源最短路径
 class Solution {
+private:
     static const int N = 110, M = 1e4+10; //从这里看出，这个图是一个稠密图，应该用矩阵存储比较好
     struct{
         int a, b, w;  
@@ -28,7 +28,7 @@ public:
             memcpy(backup, dist, sizeof dist);
             for(int j = 0; j < m; j++){
                 int a = edge[j].a, b = edge[j].b, w = edge[j].w;
-                dist[b] = min(dist[b], dist[a] + w);
+                dist[b] = min(dist[b], dist[a] + w);    //无记忆松弛
             }
         }
     }
