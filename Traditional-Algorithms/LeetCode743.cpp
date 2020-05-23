@@ -33,3 +33,51 @@ public:
         }
     }
 };
+
+//朴素dijkstra算法
+class Solution {
+private:
+    static const int N = 110, M = 1e5+10;
+    int g[N][N];
+    int dist[N];
+    int n, k;
+    bool visited[N];
+public:
+    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
+        memset(g, 0x3f, sizeof(g));  //记住这里一定要对二维矩阵初始化，否则所有的矩阵两点间距离都为0
+        for(int i = 0; i < times.size(); i++){
+            g[times[i][0]][times[i][1]] = times[i][2];
+        }
+        n = N, k = K;
+        dijkstra();
+        int maximum = INT_MIN;
+        for(int i = 1; i <= n; i++){
+            if(dist[i] == 0x3f3f3f3f) return -1;
+            maximum = max(maximum, dist[i]);
+        }
+        return maximum;
+        
+    }
+    void dijkstra(){
+        memset(dist, 0x3f, sizeof dist);
+        dist[k] = 0;
+        
+        for(int i = 0 ; i < n; i++){
+            int t = -1;
+            for(int j = 1; j <= n; j++){
+                if(!visited[j] && (t == -1 || dist[t] > dist[j])){
+                    t = j;
+                }
+            }
+            cout << t << " ";
+            visited[t] = true;
+            
+            for(int j = 1; j <= n; j++){
+                dist[j] = min(dist[j], dist[t]+g[t][j]);
+            }
+        }
+        
+    }
+};
+
+
