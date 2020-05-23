@@ -1,41 +1,3 @@
-class Solution {
-private:
-    static const int N = 110, M = 1e4+10; //从这里看出，这个图是一个稠密图，应该用矩阵存储比较好
-    struct{
-        int a, b, w;  
-    }edge[M];
-    int dist[N], backup[N];
-    int n, m, k;
-public:
-    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
-        for(int i = 0 ; i < times.size(); i++){
-            edge[i] = {times[i][0], times[i][1], times[i][2]};
-        }
-        n = N, m = times.size(), k = K;
-        bellman_ford();
-        int maximum = 0;
-        for(int i = 1 ; i <= n; i++){
-            if(dist[i] >= 0x3f3f3f3f / 2) return -1;
-            maximum = max(maximum, dist[i]);
-        }
-        return maximum;
-    }
-    void bellman_ford(){
-        memset(dist, 0x3f, sizeof dist);
-        dist[k] = 0;
-        
-        // for(int i = 0; i < n; i++){   //迭代点的个数次，表示最短路径中最多经过n条边，实际上到n-1即可，该条件从题目中抽象出来，是bellman-ford算法比较难的部分
-        for(int i = 0; i < n-1; i++){   //迭代点的个数次，表示最短路径中最多经过n条边，实际上到n-1即可
-            memcpy(backup, dist, sizeof dist);   //无记忆化操作
-            for(int j = 0; j < m; j++){
-                int a = edge[j].a, b = edge[j].b, w = edge[j].w;
-                dist[b] = min(dist[b], backup[a] + w);    //无记忆松弛
-            }
-        }
-    }
-};
-
-
 //朴素dijkstra算法
 class Solution {
 private:
@@ -127,6 +89,99 @@ public:
                 if(dist[j] > distance + w[i]){
                     dist[j] = distance + w[i];
                     q.push({dist[j], j});
+                }
+            }
+        }
+    }
+};
+
+class Solution {
+private:
+    static const int N = 110, M = 1e4+10; //从这里看出，这个图是一个稠密图，应该用矩阵存储比较好
+    struct{
+        int a, b, w;  
+    }edge[M];
+    int dist[N], backup[N];
+    int n, m, k;
+public:
+    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
+        for(int i = 0 ; i < times.size(); i++){
+            edge[i] = {times[i][0], times[i][1], times[i][2]};
+        }
+        n = N, m = times.size(), k = K;
+        bellman_ford();
+        int maximum = 0;
+        for(int i = 1 ; i <= n; i++){
+            if(dist[i] >= 0x3f3f3f3f / 2) return -1;
+            maximum = max(maximum, dist[i]);
+        }
+        return maximum;
+    }
+    void bellman_ford(){
+        memset(dist, 0x3f, sizeof dist);
+        dist[k] = 0;
+        
+        // for(int i = 0; i < n; i++){   //迭代点的个数次，表示最短路径中最多经过n条边，实际上到n-1即可，该条件从题目中抽象出来，是bellman-ford算法比较难的部分
+        for(int i = 0; i < n-1; i++){   //迭代点的个数次，表示最短路径中最多经过n条边，实际上到n-1即可
+            memcpy(backup, dist, sizeof dist);   //无记忆化操作
+            for(int j = 0; j < m; j++){
+                int a = edge[j].a, b = edge[j].b, w = edge[j].w;
+                dist[b] = min(dist[b], backup[a] + w);    //无记忆松弛
+            }
+        }
+    }
+};
+
+
+//spfa是对bellman-ford算法的优化
+class Solution {
+private:
+    static const int N = 110, M = 1e5+10;
+    int h[N], e[M], w[M], ne[M], idx;
+    int dist[N];
+    bool visited[N];
+    int n, m, k;
+public:
+    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
+        memset(h, -1, sizeof h);
+        for(int i = 0; i < times.size(); i++){
+            add(times[i][0], times[i][1], times[i][2]);
+        }
+        n = N, m = times.size(), k = K;
+        spfa();
+        int maximum = INT_MIN;
+        for(int i = 1; i <= n; i++){
+            if(dist[i] == 0x3f3f3f3f) return -1;
+            maximum = max(maximum, dist[i]);
+        }
+        return maximum;
+    }
+    
+    void add(int a, int b, int c){
+        e[idx] = b;
+        w[idx] = c;
+        ne[idx] = h[a];
+        h[a] = idx++;
+    }
+    void spfa(){
+        memset(dist, 0x3f, sizeof dist);
+        dist[k] = 0;
+        
+        queue<int>q;
+        q.push(k);
+        visited[k] = true;
+        while(!q.empty()){
+            int t = q.front();
+            q.pop();
+            visited[t] = false;
+            for(int i = h[t]; i != -1; i = ne[i]){
+                int j = e[i];
+                if(dist[j] > dist[t] + w[i]){
+                    dist[j] = dist[t] + w[i];
+                    if(!visited[j]){
+                        q.push(j);
+                        visited[j] = true;
+                    }
                 }
             }
         }
