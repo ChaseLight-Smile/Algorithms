@@ -25,10 +25,10 @@ public:
         dist[k] = 0;
         
         for(int i = 0; i < n; i++){   //迭代点的个数次
-            memcpy(backup, dist, sizeof dist);
+            memcpy(backup, dist, sizeof dist);   //无记忆化操作
             for(int j = 0; j < m; j++){
                 int a = edge[j].a, b = edge[j].b, w = edge[j].w;
-                dist[b] = min(dist[b], dist[a] + w);    //无记忆松弛
+                dist[b] = min(dist[b], backup[a] + w);    //无记忆松弛
             }
         }
     }
