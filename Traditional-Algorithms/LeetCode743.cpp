@@ -80,4 +80,55 @@ public:
     }
 };
 
+//堆优化dijkstra
+class Solution {
+private:
+    static const int N = 110, M = 1e5+10;
+    int h[N], e[M], ne[M], idx, w[M];
+    typedef pair<int, int>PII;
+    int dist[N];
+    bool visited[N];
+    int n, m, k;
+public:
+    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
+        memset(h, -1, sizeof h);
+        for(int i = 0; i < times.size(); i++){
+            add(times[i][0], times[i][1], times[i][2]);
+        }
+        n = N, m = times.size(), k = K;
+        dijkstra();
+        int maximum = INT_MIN;
+        for(int i = 1; i <= n; i++){
+            if(dist[i] == 0x3f3f3f3f) return -1;
+            maximum = max(maximum, dist[i]);
+        }
+        return maximum;
+    }
+    void add(int a, int b, int c){
+        e[idx] = b;
+        w[idx] = c;
+        ne[idx] = h[a];
+        h[a] = idx++;
+    }
+    void dijkstra(){
+        memset(dist, 0x3f, sizeof dist);
+        dist[k] = 0;
+        priority_queue<PII, vector<PII>, greater<PII>>q;
+        q.push({0, k});
+        while(!q.empty()){
+            auto t = q.top();
+            q.pop();
+            int distance = t.first, point = t.second;
+            if(visited[point]) continue;
+            for(int i = h[point]; i != -1; i = ne[i]){
+                int j = e[i];
+                if(dist[j] > distance + w[i]){
+                    dist[j] = distance + w[i];
+                    q.push({dist[j], j});
+                }
+            }
+        }
+    }
+};
+
 
