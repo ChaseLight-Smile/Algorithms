@@ -15,7 +15,7 @@ struct Edge{
 int bellman_ford(){
     memset(dist, 0x3f, sizeof dist);
     dist[1] = 0;
-    for(int i = 0; i < k; i++){
+    for(int i = 0; i < k; i++){   //表示任何路径最多不超过k条边（包含k条边）
         memcpy(backup, dist, sizeof dist);
         for(int j = 0; j < m; j++){
             int a = edge[j].a, b = edge[j].b, w = edge[j].w; 

@@ -24,7 +24,8 @@ public:
         memset(dist, 0x3f, sizeof dist);
         dist[k] = 0;
         
-        for(int i = 0; i < n; i++){   //迭代点的个数次
+        // for(int i = 0; i < n; i++){   //迭代点的个数次，表示最短路径中最多经过n条边，实际上到n-1即可，该条件从题目中抽象出来，是bellman-ford算法比较难的部分
+        for(int i = 0; i < n-1; i++){   //迭代点的个数次，表示最短路径中最多经过n条边，实际上到n-1即可
             memcpy(backup, dist, sizeof dist);   //无记忆化操作
             for(int j = 0; j < m; j++){
                 int a = edge[j].a, b = edge[j].b, w = edge[j].w;
@@ -33,6 +34,7 @@ public:
         }
     }
 };
+
 
 //朴素dijkstra算法
 class Solution {
