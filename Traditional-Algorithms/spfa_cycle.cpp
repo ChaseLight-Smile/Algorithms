@@ -6,7 +6,7 @@ using namespace std;
 
 const int N = 1e5+10;
 int h[N], e[N], w[N], ne[N], idx;
-int dist[N];
+int dist[N], cnt[N];
 bool visited[N];
 int n, m;
 
@@ -17,12 +17,13 @@ void add(int a, int b, int c){
     h[a] = idx++;
 }
 
-int spfa(){
-    memset(dist, 0x3f, sizeof dist);
-    dist[1] = 0;
+bool spfa(){
     queue<int>q;
-    q.push(1);
-    visited[1] = true;
+    for(int i = 1; i <=n; i++){
+        visited[i] = true;
+        q.push(i);
+    }
+
     while(!q.empty()){
         int t = q.front();
         q.pop();
@@ -31,13 +32,14 @@ int spfa(){
             int j = e[i];
             if(dist[j] > dist[t] + w[i]){
                 dist[j] = dist[t] + w[i];
+                cnt[j] = cnt[n]+ 1;
+                if(cnt[j] > n) return true;
                 if(!visited[j])
                     q.push(j);
             }
         }
     }
-    if(dist[n] == 0x3f3f3f3f) return -1;
-    return dist[n];
+    return false;
 }
 
 
@@ -49,9 +51,7 @@ int main(){
         scanf("%d%d%d", &a, &b, &c);
         add(a, b, c);
     }
-    int v = spfa();
-    if(v == -1){
-        printf("impossible\n");
-    }else printf("%d\n", v);
+    if(spfa()) printf("Yes\n");
+    else printf("No\n");
     return 0;
 }
