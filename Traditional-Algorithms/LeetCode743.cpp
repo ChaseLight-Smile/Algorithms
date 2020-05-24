@@ -95,6 +95,8 @@ public:
     }
 };
 
+
+//bellman-ford
 class Solution {
 private:
     static const int N = 110, M = 1e4+10; //从这里看出，这个图是一个稠密图，应该用矩阵存储比较好
@@ -186,6 +188,42 @@ public:
             }
         }
     }
+};
+
+//floyd
+class Solution {
+private:
+    static const int N = 110;
+    int d[N][N];
+    int n;
+public:
+    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
+        n = N;
+        for(int i = 0;i <= n; i++){
+            for(int j = 0; j <= n; j++){
+                if(i == j) d[i][j] = 0;
+                else d[i][j] = 0x3f3f3f3f;
+            }
+        }
+        for(int i = 0 ; i < times.size(); i++){
+            d[times[i][0]][times[i][1]] = min(d[times[i][0]][times[i][1]], times[i][2]);
+        }
+        
+        floyd();
+        int maximum = INT_MIN;
+        for(int i = 1; i <= n; i++){
+            if(d[K][i] > 0x3f3f3f3f/2) return -1;
+            maximum = max(maximum, d[K][i]);
+        }
+        return maximum;
+    }
+    void floyd(){
+        for(int k = 1; k <= n; k++)
+            for(int i = 1; i <= n; i++)
+                for(int j = 1; j <= n; j++)
+                    d[i][j] = min(d[i][j], d[i][k] + d[k][j]);
+    }
+    
 };
 
 
