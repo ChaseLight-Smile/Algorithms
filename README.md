@@ -320,7 +320,7 @@
 		* [spfa_cycle.cpp  spfa判断负环模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa_cycle.cpp)
 	* [floyd](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/floyd.cpp)
 		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
-	* prim
+	* [prim prim算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/prim.cpp)
 	* kruskal
 	* bipartite graph
 		* 二分图判别（染色法 本质是DFS 时间复杂度为O(m+n)）
