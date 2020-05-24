@@ -43,6 +43,8 @@
 	* Reinforce Learning for Optimization
 
 **算法题目来源： [LeetCode](https://leetcode.com/) [Vjudge](https://vjudge.net/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) [UVa](https://onlinejudge.org/)数据很强， [USACO](https://train.usaco.org/)难度大，数据强。LeetCode数据比较弱。一般算法竞赛数组大小数量级一般在1e6，这对于Java的同学不是很友好，所以LeetCode一维情况下数据长度在1e5数量级级别，二维情况下，一般在1e3，因为两维超过1e6级别。如果要预先开一个数组，按照前面的数量级设置就能通过所有test case。尽量少使用STL，我感觉STL相对数组而言要慢一些，并且数组支持任意位置访问，这个特性很好。**
+**在刷题出错时，如何定位错误？两个方法：printf（wrong answer）和删代码（Runtime Error和Segment Fault），如果删掉代码后，不报错RE或者SF，说明删掉的这段代码有问题，重点在删掉的这段代码中排查数组越界、没有读入正确的操作数等错误。**
+
 
 ## **2. 算法列表**
 
@@ -320,6 +322,9 @@
 	* prim
 	* kruskal
 	* bipartite graph
+		* 二分图判别（染色法 本质是DFS 时间复杂度为O(m+n)）
+		* 最大二分匹配（匈牙利算法 最坏情况下时间复杂度为O(mn)，但是一般情况下远好于O(mn) 理论时间复杂度）
+	
 	
 |最短路径类型   | 算法 | 时间复杂度     |算法类型|
 | :----------: | :-----------:  | :-----------: |:-----------:|
@@ -329,7 +334,15 @@
 |边权存在负值，单源最短路径, 不限制 |SPFA|平均情况下为O(m)，最坏O(nm)|BFS优化bellman-ford|
 |多源(起点)汇(终点)最短路径|floyd|O(n^3)|动态规划|
 
-**所谓稀疏图、稠密图是指：如果点数n和边数m在同一个数量级为稀疏图，如果他们相差较大的数量级则为稠密图**
+
+|最小生成树类型   | 算法 | 时间复杂度     |
+| :----------: | :-----------:  | :-----------: |
+| 稠密图     | prim   | O(n^2)  |
+| 稀疏图     |heap+prim|O(mlogn)|
+| 稀疏图     | kruskal  | O(mlogm)  |
+
+
+**注意：如果点数n和边数m在同一个数量级为稀疏图，如果m和n^2在一个数量级，则该图为稠密图。**
 
 * 其它
 	* insertSort(int[] arr);  插入排序
