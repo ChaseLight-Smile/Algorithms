@@ -321,7 +321,7 @@
 	* [floyd](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/floyd.cpp)
 		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
 	* [prim prim算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/prim.cpp)
-	* kruskal
+	* [kruskal kruskal算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kruskal.cpp)
 	* bipartite graph
 		* 二分图判别（染色法 本质是DFS 时间复杂度为O(m+n)）
 		* 最大二分匹配（匈牙利算法 最坏情况下时间复杂度为O(mn)，但是一般情况下远好于O(mn) 理论时间复杂度）
