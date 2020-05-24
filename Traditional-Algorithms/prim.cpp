@@ -20,7 +20,7 @@ int prim(){
             }
         }
         if(i && dist[t] == INF) return INF;
-        if(i) res += dist[t];   //应该先将距离家到最小生成树中，然后才能用该点去更新其它点的距离
+        if(i) res += dist[t];   //应该先将距离加到最小生成树中，然后才能用该点去更新到其它点的距离
         for(int j = 1; j <= n; j++){
             dist[j] = min(dist[j], g[t][j]);
         }
