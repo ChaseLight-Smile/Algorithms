@@ -6,7 +6,7 @@ using namespace std;
 
 const int N = 1e5+10;
 int h[N], e[N], w[N], ne[N], idx;
-int dist[N], cnt[N];
+int dist[N], cnt[N];  //cnt表示从1到N存在的边的个数
 bool visited[N];
 int n, m;
 
@@ -33,7 +33,7 @@ bool spfa(){
             if(dist[j] > dist[t] + w[i]){
                 dist[j] = dist[t] + w[i];
                 cnt[j] = cnt[n]+ 1;
-                if(cnt[j] > n) return true;
+                if(cnt[j] >= n) return true;  //如果从1到j的边数大于等于n，那么说明在1到j上一定存在n+1个点，但是题目只有n个点，由抽屉原理可知两个点重复，并且这两个点之间的路径在减小，因为我们求的就是最短路径
                 if(!visited[j])
                     q.push(j);
             }
