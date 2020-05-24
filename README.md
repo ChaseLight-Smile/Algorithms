@@ -314,17 +314,17 @@
 	* [spfa spfa模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa.cpp)
 		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
 		* [spfa_cycle.cpp  spfa判断负环模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa_cycle.cpp)
-	* floyd
+	* [floyd](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/floyd.cpp)
 	* prim
 	* kruskal
-	* 匈牙利算法
+	* bipartite graph
 	
 |最短路径类型   | 算法 | 时间复杂度     |算法类型|
 | :----------: | :-----------:  | :-----------: |:-----------:|
 | 边权均为正，单源最短路径，稠密图     | dijkstra   | O(n^2)  |贪心|
 |边权均为正，单源最短路径，稀疏图|heap+dijkstra|O(mlogn)|贪心|
 | 边权存在负值，单源最短路径，限制最短路径<=k     | bellman-ford   | O(nm)  |离散数学、动态规划|
-|边权存在负值，单源最短路径, 不限制 |SPFA|平均情况下为O(m)，最坏O(nm)||
+|边权存在负值，单源最短路径, 不限制 |SPFA|平均情况下为O(m)，最坏O(nm)|BFS优化bellman-ford|
 |多源(起点)汇(终点)最短路径|floyd|O(n^3)|动态规划|
 
 **所谓稀疏图、稠密图是指：如果点数n和边数m在同一个数量级为稀疏图，如果他们相差较大的数量级则为稠密图**
