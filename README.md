@@ -311,7 +311,7 @@
 		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
 	* [bellman-ford bellman-ford模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/bellman_ford.cpp)
 		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
-	* spfa
+	* [spfa spfa模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa.cpp)
 		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
 	* floyd
 	* prim
