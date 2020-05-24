@@ -12,7 +12,7 @@ int n, m;
 int dijkstra(){
     memset(dist, 0x3f, sizeof(dist));
     dist[1] = 0;
-    for(int i = 0 ; i < n ; i++){
+    for(int i = 0 ; i < n-1 ; i++){  //循环n-1次即可
         int t = -1;
         for(int j = 1; j <= n; j++){
             if(!visited[j] && (t == -1 || dist[t] > dist[j])){

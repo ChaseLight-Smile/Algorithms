@@ -307,7 +307,7 @@
 		* [LeetCode210.cpp Course Schedule II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode210.cpp)
 		* [HDUOJ1285.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1285.cpp)
 		* [HDUOJ3342.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ3342.cpp)
-	* Dijkstra
+	* [Dijkstra](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Dijkstra.cpp)
 		* [Dijkstra.cpp Dijkstra稠密图最短路径模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Dijkstra.cpp)
 		* [POJ2387.cpp 稀疏图无向图单源最短路径](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2387.cpp)
 		* [POJ1724.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1724.cpp)
