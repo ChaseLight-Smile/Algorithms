@@ -21,11 +21,11 @@
 * [**细节题**](#xijie)
 	* [**Big Integer**](#bi)
 * [**Graph Algorithms**](#ggg)
-	* **DFS**
-	* **BFS**
-	* **topology sort**
-	* **shorest path**
-	* **minimum spanning tree**
+	* [**DFS & BFS**](#gadfs)
+	* [**topology sort**](#gats)
+	* [**shorest path**](#gasp)
+	* [**minimum spanning tree**](#gamst)
+	* [**bipartite graph**](#gabig)
 * [**经典算法应用**](#jingdian)
     * [Permutation](#jingdianp)
 	* [Cycle Detection](#jingdianCD)
@@ -300,29 +300,32 @@
 	* [LeetCode124. Binary Tree Maximum Path Sum   LevelOrder + 最大连续子数组和  Hard]()
 * <span id=ggg>Graph Algorithms</span>
     * [LeetCodeGraphTraversalTemplate.cpp  图的DFS和BFS模板，保存图时采用了邻接列表的方式，不用邻接矩阵(浪费空间和时间)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCodeGraphTraversalTemplate.cpp)
-	* DFS
+	* <span id=gadfs>DFS</span>
 		* [POJ1655.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1655.cpp)
-	* [Topological Sort 拓扑排序模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/topsort.cpp)
+	* <span id=gats>Topology Sort</span>
+		* [Topological Sort 拓扑排序模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/topsort.cpp)
 		* [LeetCode207.cpp Course Schedule AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode207.cpp)
 		* [LeetCode210.cpp Course Schedule II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode210.cpp)
 		* [HDUOJ1285.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1285.cpp)
 		* [HDUOJ3342.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ3342.cpp)
-	* [Dijkstra](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Dijkstra.cpp)
-		* [Dijkstra.cpp Dijkstra稠密图最短路径模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Dijkstra.cpp)
-		* [POJ2387.cpp 稀疏图无向图单源最短路径](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2387.cpp)
-		* [POJ1724.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1724.cpp)
-		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
-	* [bellman-ford bellman-ford模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/bellman_ford.cpp)
-		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
-		* [LeetCode787.cpp Cheapest Flights Within K Stops AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode787.cpp)
-	* [spfa spfa模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa.cpp)
-		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
-		* [spfa_cycle.cpp  spfa判断负环模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa_cycle.cpp)
-	* [floyd](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/floyd.cpp)
-		* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
-	* [prim prim算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/prim.cpp)
-	* [kruskal kruskal算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kruskal.cpp)
-	* bipartite graph
+	* <span id=gasp>Shortest Path</span>	
+		* [Dijkstra](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Dijkstra.cpp)
+			* [Dijkstra.cpp Dijkstra稠密图最短路径模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Dijkstra.cpp)
+			* [POJ2387.cpp 稀疏图无向图单源最短路径](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2387.cpp)
+			* [POJ1724.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1724.cpp)
+			* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
+		* [bellman-ford bellman-ford模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/bellman_ford.cpp)
+			* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
+			* [LeetCode787.cpp Cheapest Flights Within K Stops AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode787.cpp)
+		* [spfa spfa模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa.cpp)
+			* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
+			* [spfa_cycle.cpp  spfa判断负环模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa_cycle.cpp)
+		* [floyd](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/floyd.cpp)
+			* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
+	* <span id=gamst>MST</span>
+		* [prim prim算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/prim.cpp)
+		* [kruskal kruskal算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kruskal.cpp)
+	* <span id=gabig>bipartite graph<span>
 		* 二分图判别（染色法 本质是DFS 时间复杂度为O(m+n)）
 		* 最大二分匹配（匈牙利算法 最坏情况下时间复杂度为O(mn)，但是一般情况下远好于O(mn) 理论时间复杂度）
 	
