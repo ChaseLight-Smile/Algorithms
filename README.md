@@ -327,6 +327,7 @@
 	* <span id=gamst>MST</span>
 		* [prim prim算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/prim.cpp)
 		* [kruskal kruskal算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kruskal.cpp)
+			* [LeetCode684.cpp Redundant Connection]()
 	* <span id=gabig>bipartite graph<span>
 		* 二分图判别（染色法 本质是DFS 时间复杂度为O(m+n)）
 		* 最大二分匹配（匈牙利算法 最坏情况下时间复杂度为O(mn)，但是一般情况下远好于O(mn) 理论时间复杂度）
@@ -334,18 +335,18 @@
 	
 |最短路径类型   | 算法 | 时间复杂度     |算法类型|
 | :----------: | :-----------:  | :-----------: |:-----------:|
-| 边权均为正，单源最短路径，稠密图     | dijkstra   | O(n^2)  |贪心|
+| 边权均为正，单源最短路径，稠密图     | 朴素dijkstra   | O(n^2)  |贪心|
 |边权均为正，单源最短路径，稀疏图|heap+dijkstra|O(mlogn)|贪心|
 | 边权存在负值，单源最短路径，限制最短路径<=k     | bellman-ford   | O(nm)  |离散数学、动态规划|
 |边权存在负值，单源最短路径, 不限制 |SPFA|平均情况下为O(m)，最坏O(nm)|BFS优化bellman-ford|
 |多源(起点)汇(终点)最短路径|floyd|O(n^3)|动态规划|
 
 
-|最小生成树类型   | 算法 | 时间复杂度     |
-| :----------: | :-----------:  | :-----------: |
-| 稠密图     | prim   | O(n^2)  |
-| 稀疏图     |heap+prim|O(mlogn)|
-| 稀疏图     | kruskal  | O(mlogm)  |
+|最小生成树类型   | 算法 | 时间复杂度     |算法类型|
+| :----------: | :-----------:  | :-----------: |:-----------:|
+| 稠密图     | 朴素prim   | O(n^2)  |贪心|
+| 稀疏图     |heap+prim|O(mlogn)||
+| 稀疏图     | kruskal  | O(mlogm)|贪心|
 
 
 **注意：如果点数n和边数m在同一个数量级为稀疏图，如果m和n^2在一个数量级，则该图为稠密图。**
