@@ -329,7 +329,7 @@
 		* [kruskal kruskal算法模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/kruskal.cpp)
 			* [LeetCode684.cpp Redundant Connection]()
 	* <span id=gabig>bipartite graph<span>
-		* {二分图判别（染色法 本质是DFS 时间复杂度为O(m+n)）](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/bicolor.cpp)
+		* [二分图判别（染色法,采用DFS实现，时间复杂度与DFS相同O(m+n)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/bicolor.cpp)
 		* 最大二分匹配（匈牙利算法 最坏情况下时间复杂度为O(mn)，但是一般情况下远好于O(mn) 理论时间复杂度）
 	
 	
