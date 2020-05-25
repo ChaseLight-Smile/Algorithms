@@ -320,6 +320,8 @@
 		* [spfa spfa模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa.cpp)
 			* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
 			* [spfa_cycle.cpp  spfa判断负环模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/spfa_cycle.cpp)
+			* [POJ1860.cpp]()
+			* [POJ3259.cpp]()
 		* [floyd](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/floyd.cpp)
 			* [LeetCode743.cpp Network Delay Time AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode743.cpp)
 	* <span id=gamst>MST</span>
