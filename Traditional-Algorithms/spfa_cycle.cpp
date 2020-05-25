@@ -36,6 +36,7 @@ bool spfa(){
                 if(cnt[j] >= n) return true;  //如果从1到j的边数大于等于n，那么说明在1到j上一定存在n+1个点，但是题目只有n个点，由抽屉原理可知两个点重复，并且这两个点之间的路径在减小，因为我们求的就是最短路径
                 if(!visited[j])
                     q.push(j);
+					visited[j] = true;
             }
         }
     }

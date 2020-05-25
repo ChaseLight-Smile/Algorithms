@@ -33,6 +33,7 @@ int spfa(){
                 dist[j] = dist[t] + w[i];
                 if(!visited[j])
                     q.push(j);
+					visited[j] = true;
             }
         }
     }
