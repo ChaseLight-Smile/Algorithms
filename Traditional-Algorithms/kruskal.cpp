@@ -41,3 +41,60 @@ int main(){
     else printf("%d\n", res);
     return 0;
 }
+
+
+//代码中提供了两种实现operator<运算符重载的方式
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+const int M = 2e5+10;
+int n, m;
+int p[M];
+int cnt;
+struct Edge{
+    int a, b, w;
+    // bool operator< (const Edge &W)const{
+    //     return w < W.w;
+    // }
+}edge[M];
+
+struct cmp{
+     bool operator() (const Edge &W1, const Edge &W2)const{
+        return W1.w < W2.w;
+    }
+};
+
+int find(int x){
+    if(p[x] != x) return p[x] = find(p[x]);
+}
+
+int main(){
+    scanf("%d%d", &n, &m);
+    for(int i = 0 ; i < m; i++){
+        int a, b, c;
+        scanf("%d%d%d", &a, &b, &c);
+        edge[i] = {a, b, c};
+    }
+    int res = 0;
+    //sort(edge, edge+m);   //operator< 定义在struct Edge内
+    sort(edge, edge+m, cmp());
+    for(int i = 1; i < n; i++){
+        p[i] = i; //初始化并查集
+    }
+    
+    for(int i = 0 ; i < m; i++){
+        int a = edge[i].a, b = edge[i].b, w = edge[i].w;
+        a = find(a), b = find(b);
+        if(a != b){
+            p[a] = b;
+            res += w;
+            cnt++;
+        }
+    }
+    if(cnt < n-1) printf("impossible\n");
+    else printf("%d\n", res);
+    return 0;
+    
+}
+
