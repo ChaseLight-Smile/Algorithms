@@ -1,3 +1,4 @@
+//朴素版dijkstra
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -39,6 +40,57 @@ int main(){
     
     int k = dijkstra();
     printf("%d", k);
+    return 0;
+}
+
+//朴素版dijkstra，代码中证明了图中能包含自环，但是不能包含负权边
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+
+const int N = 510, M = 1e5+10;
+int g[N][N];
+int dist[N];
+bool visited[N];
+int n, m;
+
+int dijkstra(){
+    memset(dist, 0x3f, sizeof dist);
+    dist[1] = 0;
+    for(int i = 0; i < n-1; i++){
+        int t = -1;
+        for(int j = 1; j <= n; j++){
+            if(!visited[j] && (t == -1 ||dist[t] > dist[j])){
+                t = j;
+            }
+        }
+        visited[t] = true;
+        for(int j = 1; j <= n; j++){
+            dist[j] = min(dist[j], dist[t] + g[t][j]);
+        }
+    }
+    if(dist[n] == 0x3f3f3f3f) return -1;
+    return dist[n];
+}
+
+int main(){
+    scanf("%d%d", &n, &m);
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= n; j++){
+            if(i == j) g[i][j] = 0; //自环，dijkstra中能够包含自环，但是不能有负权边
+            else g[i][j] = 0x3f3f3f3f;
+        }
+    }
+    //memset(g, 0x3f, sizeof g);
+    for(int i = 0; i < m; i++){
+        int a, b, c;
+        scanf("%d%d%d", &a, &b, &c);
+        g[a][b] = min(g[a][b], c);  //重边
+    }
+    
+    int v = dijkstra();
+    printf("%d\n", v);
     return 0;
 }
 
