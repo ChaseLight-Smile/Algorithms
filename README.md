@@ -359,8 +359,8 @@
 			* [LeetCode176.sql Second Highest Salary  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode176.sql)
 			* [LeetCode177.sql Nth Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode177.sql)
 			* [LeetCode178.sql Rank Scores  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode178.sql)
-			* [LeetCode184.sql Department Highest Salary]()
-			* [LeetCode185.sql Department Top Three Salaries]()
+			* [LeetCode184.sql Department Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode184.sql)
+			* [LeetCode185.sql Department Top Three Salaries](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode185.sql)
 		* [LeetCode180.sql Consecutive Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode180.sql)
 		
 
