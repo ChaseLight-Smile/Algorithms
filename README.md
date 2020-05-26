@@ -355,9 +355,12 @@
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
 		* [LeetCode175.sql Combine Two Tables  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode175.sql)
-		* [LeetCode176.sql Second Highest Salary  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode176.sql)
-		* [LeetCode177.sql Nth Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode177.sql)
-		* [LeetCode178.sql Rank Scores  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode178.sql)
+		* find kth elements
+			* [LeetCode176.sql Second Highest Salary  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode176.sql)
+			* [LeetCode177.sql Nth Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode177.sql)
+			* [LeetCode178.sql Rank Scores  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode178.sql)
+			* [LeetCode184.sql Department Highest Salary]()
+			* [LeetCode185.sql Department Top Three Salaries]()
 		* [LeetCode180.sql Consecutive Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode180.sql)
 		
 
