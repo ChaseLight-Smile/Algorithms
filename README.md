@@ -370,7 +370,6 @@
 	* HDOJ1006; AC
 	* HDOJ1066; AC
 	* HDU2001-HDU2017; Practise the C++ language properties in HDUOJ page 11. AC
-
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
 		* LeetCode175.sql Combine Two Tables  AC
