@@ -352,24 +352,6 @@
 
 **注意：如果点数n和边数m在同一个数量级为稀疏图，如果m和n^2在一个数量级，则该图为稠密图。**
 
-* 其它
-	* insertSort(int[] arr);  插入排序
-	* insertSortRecurtion(int[] arr,int length); 插入排序
-	* selectionSort(int[] arr);  选择排序
-	* bubbleSort(int[] arr); 冒泡排序
-	* findMaximumSubarray(int[] arr,int start, int end);  寻找最大子数组问题，采用递归解法，时间复杂度为O(nlogn)
-	* priorityqueue(int arr[],int length); priority queue is implenented by using maximum heap
-	* countingsort(int arr[], int length); counting sort. The time complexity of is linear time. It is not based on the comparsion.
-	* enhancingMethod(int arr[],int length);  find the maximum and minmum for enhancing method.The number of comparision decreases.
-	* HDOJ1000; AC
-	* HDOJ1001; AC
-	* HDOJ1002; AC
-	* HDOJ1003; AC
-	* HDOJ1004; AC
-	* HDOJ1005; AC
-	* HDOJ1006; AC
-	* HDOJ1066; AC
-	* HDU2001-HDU2017; Practise the C++ language properties in HDUOJ page 11. AC
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
 		* [LeetCode175.sql Combine Two Tables  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode175.sql)
