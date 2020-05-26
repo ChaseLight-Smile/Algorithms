@@ -372,11 +372,11 @@
 	* HDU2001-HDU2017; Practise the C++ language properties in HDUOJ page 11. AC
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
-		* LeetCode175.sql Combine Two Tables  AC
-		* LeetCode176.sql Second Highest Salary  AC
-		* LeetCode177.sql Nth Highest Salary AC
-		* LeetCode178.sql Rank Scores  AC
-		* LeetCode180.sql Consecutive Numbers AC
+		* [LeetCode175.sql Combine Two Tables  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode175.sql)
+		* [LeetCode176.sql Second Highest Salary  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode176.sql)
+		* [LeetCode177.sql Nth Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode177.sql)
+		* [LeetCode178.sql Rank Scores  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode178.sql)
+		* [LeetCode180.sql Consecutive Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode180.sql)
 		
 
 ## **3. 算法设计技术**
