@@ -366,7 +366,7 @@
 		* [LeetCode626.sql AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode626.sql)
 		* [LeetCode595.sql Big Countries AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode595.sql)
 		* [LeetCode596.sql Classes More Than 5 Students AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode596.sql)
-		
+		* [LeetCode627.sql Swap Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode627.sql)
 		
 
 ## **3. 算法设计技术**
