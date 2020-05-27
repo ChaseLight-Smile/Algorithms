@@ -1,5 +1,6 @@
 #该方法扩展性非常强，能够找到任意排名的工资，这算是SQL中的第n大问题的统一解决办法，参见LeetCode177, LeetCode178, LeetCode184
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+-- 方法一： 扩展性强，并且逻辑比较好
 BEGIN
   RETURN (
       # Write your MySQL query statement below.
@@ -16,7 +17,7 @@ BEGIN
 END
 
 
-#方法二：扩展性较差
+-- 方法二：扩展性较差
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
   SET N = N - 1;
@@ -27,5 +28,20 @@ BEGIN
       order by Salary desc
       limit 1
       offset N
+  );
+END
+
+-- 方法三：使用窗口函数，MySQL 8.0以上，PostgreSQL和Oracle均支持
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  RETURN (
+      # Write your MySQL query statement below.
+      select ifnull(E.Salary, NULL)
+      from 
+      (
+        select dense_rank() over(order by Salary desc) as rank_num, Salary from Employee
+      )as E
+      where E.rank_num = N
+      limit 1
   );
 END
