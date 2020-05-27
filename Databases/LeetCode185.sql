@@ -22,7 +22,7 @@ from
 (
     select Name, Salary, DepartmentId,
 -- 最重要的组内排序部分，@pdept存储上一个元组的DepartmentId，因此，如果DepartmentId和上一个元组不同，则从0开始重新编号；如果@pdept = DepartmentId，则如果@psal != Salary，则tmp+1；如果@pdept = DepartmentId，并且@psal = Salary， 则tmp不变
-    @tmp := case when @pdept <> DepartmentId then 0 when @pdept = DepartmentId and @psal != Salary then @tmp+1 else @tmp end as row_num,
+    @tmp := case when @pdept <> DepartmentId then 1 when @pdept = DepartmentId and @psal != Salary then @tmp+1 else @tmp end as row_num,
     @pdept := DepartmentId as pde,   -- 执行完比较操作之后，设置pdept为当前值
     @psal := Salary as sal    -- 执行完比较操作之后，设置psql为当前值
     from
@@ -31,5 +31,5 @@ from
         (select @psal := -1) d,   -- 变量psal存储上一个元组Salary
         (select Name, Salary, DepartmentId from Employee order by DepartmentId, Salary desc) t  -- @tmp在比较时，所有的元组都从该表中取出
 ) as T
-where T.row_num < 3) as R1, Department as D
+where T.row_num <= 3) as R1, Department as D
 where R1.DepartmentId = D.Id   -- 优化SQL时，应该将整个投影操作先做
