@@ -354,14 +354,19 @@
 
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
-		* [LeetCode175.sql Combine Two Tables  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode175.sql)
+		* [LeetCode175.sql Combine Two Tables  AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode175.sql)
 		* find kth elements
-			* [LeetCode176.sql Second Highest Salary  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode176.sql)
-			* [LeetCode177.sql Nth Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode177.sql)
-			* [LeetCode178.sql Rank Scores  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode178.sql)
-			* [LeetCode184.sql Department Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode184.sql)
-			* [LeetCode185.sql Department Top Three Salaries](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode185.sql)
-		* [LeetCode180.sql Consecutive Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/Databases/LeetCode180.sql)
+			* [LeetCode176.sql Second Highest Salary  AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode176.sql)
+			* [LeetCode177.sql Nth Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode177.sql)
+			* [LeetCode178.sql Rank Scores  AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode178.sql)
+			* [LeetCode184.sql Department Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode184.sql)
+			* [LeetCode185.sql Department Top Three Salaries](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode185.sql)
+		* [LeetCode180.sql Consecutive Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode180.sql)
+		* [LeetCode620.sql AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode620.sql)
+		* [LeetCode626.sql AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode626.sql)
+		* [LeetCode595.sql Big Countries AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode595.sql)
+		* [LeetCode596.sql Classes More Than 5 Students AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode596.sql)
+		
 		
 
 ## **3. 算法设计技术**
