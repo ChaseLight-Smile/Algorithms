@@ -7,42 +7,51 @@
 
 包括但不限于以下内容：
 
-* [**heap**](#heap)
-* [**Stack**](#st)
-* [**Queue**](#q)
-* [**Union Find**](#uf)
-* [**Map/Set**](#ms)
-* [**Trees**](#t) 
-* [**Trie**](#trie)
-* [**sort**](#s)
-* [**Two Pointers**](#tp)
-* [**Prefix Sum**](#psum)
-* [**Bit Manipulation**](#bm)
-* [**Binary Search**](#bs)
-* [**细节题**](#xijie)
-	* [**Big Integer**](#bi)
-* [**经典算法应用**](#jingdian)
-    * [Permutation](#jingdianp)
-	* [Cycle Detection](#jingdianCD)
-	* [KMP](#kmp)
-	* [Manacher](#manacher)
-* [**Graph Algorithms**](#ggg)
-	* [**DFS & BFS**](#gadfs)
-	* [**topology sort**](#gats)
-	* [**shorest path**](#gasp)
-	* [**minimum spanning tree**](#gamst)
-	* [**bipartite graph**](#gabig)
-* [**math**](#math)
+* Basic Data Structure and Algorithms
+	* [**heap**](#heap)
+	* [**Stack**](#st)
+	* [**Queue**](#q)
+	* [**Union Find**](#uf)
+	* [**Map/Set**](#ms)
+	* [**Trees**](#t) 
+	* [**Trie**](#trie)
+	* [**sort**](#s)
+	* [**Two Pointers**](#tp)
+	* [**Prefix Sum**](#psum)
+	* [**Bit Manipulation**](#bm)
+	* [**Binary Search**](#bs)
+	* [**细节题**](#xijie)
+		* [**Big Integer**](#bi)
+	* [**经典算法应用**](#jingdian)
+		* [Permutation](#jingdianp)
+		* [Cycle Detection](#jingdianCD)
+		* [KMP](#kmp)
+		* [Manacher](#manacher)
+	* [**Graph Algorithms**](#ggg)
+		* [**DFS & BFS**](#gadfs)
+		* [**topology sort**](#gats)
+		* [**shorest path**](#gasp)
+		* [**minimum spanning tree**](#gamst)
+		* [**bipartite graph**](#gabig)
+	* [**math**](#math)
 * [Databases](#db)
 	* [SQL Solutions](#dbsql)
 	* Reinforce Learning for Optimization On Databases
-* [**Dynamic Programming**](#dp)
-* [**Greedy Algorithms**](#gd)
-* [**Recursive**](#rec)
-* [**Brute Force Search**](#bf)
-	* [**DFS + Backtrack**](#dfs)
-	* [**BFS + Branch-and-Bound**](#bfs)
+* Design techniques of Algorithms
+	* [**Dynamic Programming**](#dp)
+	* [**Greedy Algorithms**](#gd)
+	* [**Recursive**](#rec)
+	* [**Brute Force Search**](#bf)
+		* [**DFS + Backtrack**](#dfs)
+		* [**BFS + Branch-and-Bound**](#bfs)
+	* [**Linear Programming**]
+	* [**Approximation Algorithms**]
+	* [**Random Algorithms**]
+* Multi-Threads Algorithms
+	* [**Hazard pointers**]
+	* [**CUDA**]
 * [**Analisys of time and space complexity**](#ats)
+* NP-hard
 
 **算法题目来源： [LeetCode](https://leetcode.com/) [Vjudge](https://vjudge.net/) [POJ](http://poj.org/problemlist)  [HDUOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) [UVa](https://onlinejudge.org/)数据很强， [USACO](https://train.usaco.org/)难度大，数据强。LeetCode数据比较弱。一般算法竞赛数组大小数量级一般在1e6，这对于Java的同学不是很友好，所以LeetCode一维情况下数据长度在1e5数量级级别，二维情况下，一般在1e3，因为两维超过1e6级别。如果要预先开一个数组，按照前面的数量级设置就能通过所有test case。尽量少使用STL，我感觉STL相对数组而言要慢一些，并且数组支持任意位置访问，这个特性很好。**
 
