@@ -44,12 +44,12 @@
 	* [**Brute Force Search**](#bf)
 		* [**DFS + Backtrack**](#dfs)
 		* [**BFS + Branch-and-Bound**](#bfs)
-	* [**Linear Programming**]
-	* [**Approximation Algorithms**]
-	* [**Random Algorithms**]
+	* [**Linear Programming**]()
+	* [**Approximation Algorithms**]()
+	* [**Random Algorithms**]()
 * Multi-Threads Algorithms
-	* [**Hazard pointers**]
-	* [**CUDA**]
+	* [**Hazard pointers**]()
+	* [**CUDA**]()
 * [**Analisys of time and space complexity**](#ats)
 * NP-hard
 
