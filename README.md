@@ -32,6 +32,7 @@
 	* [**shorest path**](#gasp)
 	* [**minimum spanning tree**](#gamst)
 	* [**bipartite graph**](#gabig)
+* [**math**](#math)
 * [Databases](#db)
 	* [SQL Solutions](#dbsql)
 	* Reinforce Learning for Optimization On Databases
@@ -352,6 +353,18 @@
 
 **注意：如果点数n和边数m在同一个数量级为稀疏图，如果m和n^2在一个数量级，则该图为稠密图。**
 
+* <span id=math>math</span>
+	* 质数判定
+	* 约数判定
+	* 求欧拉函数
+	* 快速幂
+	* 求逆元
+	* 欧几里得算法
+	* 剩余定理应用
+	* 高斯消元
+	* 容斥原理
+	* 博弈论
+	
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
 		* [LeetCode175.sql Combine Two Tables  AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode175.sql)
@@ -386,7 +399,14 @@
 	* 背包型
 	* 区间型
 	* 双序列型
+	* 计数型
+	* 数位统计型
+	* 状态压缩型
+	* 树型
 	* 记忆化搜索（实质上是DFS）
+	* DP优化方法
+		* 单调队列优化DP
+		* 斜率优化DP
 
 * <span id=gd>Greedy Algorithms</span>
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
