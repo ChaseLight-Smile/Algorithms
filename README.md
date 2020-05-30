@@ -381,7 +381,6 @@
 			* [LeetCode180.sql Consecutive Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode180.sql)
 			* [LeetCode184.sql Department Highest Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode184.sql)
 			* [LeetCode185.sql Department Top Three Salaries AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode185.sql)
-		* [LeetCode180.sql Consecutive Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode180.sql)
 		* [LeetCode197.sql Rising Temperature AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode197.sql)
 		* [LeetCode620.sql AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode620.sql)
 		* [LeetCode626.sql AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode626.sql)
