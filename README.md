@@ -47,9 +47,6 @@
 	* [**Linear Programming**]()
 	* [**Approximation Algorithms**]()
 	* [**Random Algorithms**]()
-* Multi-Threads Algorithms
-	* [**Hazard pointers**]()
-	* [**CUDA**]()
 * [**Analisys of time and space complexity**](#ats)
 * NP-hard
 
