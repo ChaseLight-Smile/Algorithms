@@ -45,3 +45,19 @@ from
 )as R
 where row_num = 2
 limit 1
+
+
+-- 使用变量的方式得到结果
+select ifnull(
+(select R.Salary
+from
+(
+    select Salary, @tmp := case when @preSal <> s.Salary then @tmp+1 else @tmp end as row_num,
+                   @preSal := Salary as psal
+        from
+            (select @tmp := 0) as t,
+            (select @preSal := -1) p,
+            (select Id, Salary from Employee order by Salary desc) as s
+) as R
+where R.row_num = 2
+limit 1), null) as SecondHighestSalary 
