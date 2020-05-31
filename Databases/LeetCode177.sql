@@ -45,3 +45,23 @@ BEGIN
       limit 1
   );
 END
+
+-- 采用变量sql解法
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  RETURN (
+      # Write your MySQL query statement below.
+      select ifnull(Salary, null)
+      from
+      (
+      select Salary, @tmp := case when @preSal = Salary then @tmp else @tmp+1 end as row_num,
+             @preSal := Salary
+      from
+        (select @tmp := 0) as t,
+        (select @preSal := -1)  as p,
+        (select Id, Salary from Employee order by Salary desc) as s
+      ) as R
+      where R.row_num = N
+      limit 1
+  );
+END
