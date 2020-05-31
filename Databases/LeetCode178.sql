@@ -15,3 +15,17 @@ from
     select Score, dense_rank() over(order by Score desc) as row_num
     from Scores
 )as S
+
+
+
+-- 声明变量
+select R.Score, R.row_num as 'Rank'
+from
+(
+select Score, @tmp := case when @preScore = Score then @tmp else @tmp + 1 end as row_num,
+       @preScore := Score
+from 
+    (select @tmp := 0) as t,
+    (select @preScore := -1) as p,
+    (select Id, Score from Scores order by Score desc) as s
+) as R
