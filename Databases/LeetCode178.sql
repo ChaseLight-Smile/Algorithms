@@ -19,10 +19,24 @@ from
 
 
 -- 声明变量
-select R.Score, R.row_num as 'Rank'
+select R.Score, R.row_num as 'Rank'   -- row_num的输出为varchar类型，导致这段代码不能AC
 from
 (
 select Score, @tmp := case when @preScore = Score then @tmp else @tmp + 1 end as row_num,
+       @preScore := Score
+from 
+    (select @tmp := 0) as t,
+    (select @preScore := -1) as p,
+    (select Id, Score from Scores order by Score desc) as s
+) as R
+
+
+-- 声明变量
+select R.Score, R.row_num + 0 as 'Rank'  -- 注意：该段代码和上面代码的差别是: R.row_num + 0，这里将varchar转成int类型，这是因为题目的输出结果要求为int
+from
+(
+select Score, 
+       @tmp := case when @preScore <> Score then @tmp+1 else @tmp end as row_num,
        @preScore := Score
 from 
     (select @tmp := 0) as t,
