@@ -16,7 +16,7 @@ public:
     TreeNode* buildTree(vector<int>& pre, int preLeft, int preRight, vector<int>& post, int postLeft, int postRight){
         if(preLeft > preRight || postLeft > postRight) return nullptr;
         TreeNode * root = new TreeNode(pre[preLeft]);
-        if (preLeft == preRight) return root;   //这里是一个关键的递归结束出口，这里和LeetCode105.cpp LeetCode106.cpp不同
+        if (preLeft == preRight || postLeft == postRight) return root;   //说明区间只有一个节点，这个节点就是根节点,这里是一个关键的递归出口
         auto it = find(post.begin(), post.end(), pre[preLeft+1]);
         int i = distance(begin(post), it);
         root->left = buildTree(pre, preLeft+1, preLeft - postLeft + i + 1, post, postLeft, i);
