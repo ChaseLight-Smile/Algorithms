@@ -301,7 +301,7 @@
 			* [LeetCode109.cpp Convert Sorted List to Binary Search Tree AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode109.cpp)
 		* [LeetCode1008.cpp Construct Binary Search Tree from Preorder Traversal AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1008.cpp)
 	    * [LeetCode105.cpp Construct Binary Tree from Preorder and Inorder Traversal AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode105.cpp)
-		* [LeetCode106.cpp Construct Binary Tree from Inorder and Postorder Traversal AC]()
+		* [LeetCode106.cpp Construct Binary Tree from Inorder and Postorder Traversal AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode106.cpp)
 		* [LeetCode889.cpp Construct Binary Tree from Preorder and Postorder Traversal AC]()
 	* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 	* [LeetCode1022.cpp Sum of Root To Leaf Binary Numbers](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1022.cpp)
