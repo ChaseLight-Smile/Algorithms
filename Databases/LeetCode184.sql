@@ -36,3 +36,25 @@ from
 where row_num = 1) as R1, Department as D
 where D.Id = R1.DepartmentId
 
+
+-- variable sql solution
+select D.Name as Department, E.Name as Employee, E.Salary as Salary
+from 
+(
+select R.Name, Salary, DepartmentId 
+from 
+(
+select Name, Salary, DepartmentId, 
+      @tmp := case when @preDept = DepartmentId and @preSal = Salary then @tmp when @preDept = DepartmentId and @preSal <> Salary then @tmp + 1 when @preDept <> DepartmentId then 1 end as row_num, 
+      @preDept :=  DepartmentId,
+      @preSal := Salary
+from 
+    (select @tmp := 0) t,
+    (select @preDept := -1) d,
+    (select @preSal := -1) s,
+    (select Name, Salary, DepartmentId from Employee order by DepartmentId asc, Salary desc) e
+) as R
+where R.row_num = 1
+) as E, Department as D
+where E.DepartmentId = D. Id
+
