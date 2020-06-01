@@ -62,7 +62,6 @@
 	* [LeetCode7.java reverse AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode7.java)
 	* [LeetCode9.cpp isPalindrome  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode9.cpp)
 	* [LeetCode13.cpp romanToInt  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/RomanToInteger.cpp)
-	* [LeetCode204.cpp Count Primes AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode204.cpp)
 	* [LeetCode1351.cpp Count Negative Numbers in a Sorted Matrix AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1351.cpp)
 	* [LeetCode8.cpp String to Integer (atoi) AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode8.cpp)
 	* [**LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，存在一个O(r+c)的线性时间算法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode240.cpp)
@@ -364,6 +363,7 @@
 
 * <span id=math>math</span>
 	* 质数判定
+		* [LeetCode204.cpp Count Primes AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode204.cpp)
 	* 约数判定
 	* 求欧拉函数
 	* 快速幂
