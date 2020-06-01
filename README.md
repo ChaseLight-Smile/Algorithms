@@ -7,7 +7,7 @@
 
 包括但不限于以下内容：
 
-* Basic Data Structure and Algorithms
+* [Basic Data Structure and Algorithms](#lllllaaa)
 	* [**heap**](#heap)
 	* [**Stack**](#st)
 	* [**Queue**](#q)
@@ -36,8 +36,7 @@
 	* [**math**](#math)
 * [Databases](#db)
 	* [SQL Solutions](#dbsql)
-	* Reinforce Learning for Optimization On Databases
-* Design techniques of Algorithms
+* [Design techniques of Algorithms](#dddddddaa)
 	* [**Dynamic Programming**](#dp)
 	* [**Greedy Algorithms**](#gd)
 	* [**Recursive**](#rec)
@@ -55,7 +54,7 @@
 **在刷题出错时，如何定位错误？两个方法：printf（wrong answer）和删代码（Runtime Error和Segment Fault），如果删掉代码后，不报错RE或者SF，说明删掉的这段代码有问题，重点在删掉的这段代码中排查数组越界、没有读入正确的操作数等错误。**
 
 
-## **2. 算法列表**
+## **<span id=lllllaaa>2. 算法列表</span>**
 
 * <span id=xijie>细节题</span>
 	* [LeetCode27.java Remove Element AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode27.java)
@@ -393,7 +392,7 @@
 		* [LeetCode627.sql Swap Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode627.sql)
 		
 
-## **3. 算法设计技术**
+## **<span id=dddddddaa>3. 算法设计技术</span>**
 
 
 * <span id=dp>Dynamic Programming</span>
