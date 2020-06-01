@@ -619,6 +619,7 @@ void add(int element) {
 * http://www.cs.cmu.edu/~anupamg/advalgos15/
 * http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html
 * http://erikdemaine.org/classes/
+* SQL练习  https://www.hackerrank.com/domains/sql  (随机写题)  https://sqlzoo.net/ (有针对性地练习SQL的方方面面特性)
 
 
 ## 作者
