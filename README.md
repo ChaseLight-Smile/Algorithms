@@ -362,8 +362,9 @@
 **注意：如果点数n和边数m在同一个数量级为稀疏图，如果m和n^2在一个数量级，则该图为稠密图。**
 
 * <span id=math>math</span>
-	* 质数判定
+	* [质数判定](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/prime.cpp)
 		* [LeetCode204.cpp Count Primes AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode204.cpp)
+		* [分解质因数模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/factor.cpp)
 	* 约数判定
 	* 求欧拉函数
 	* 快速幂
