@@ -61,3 +61,23 @@ public:
         return cnt;
     }
 };
+
+//线性筛法，每一个合数只用它最小的质因子筛掉 O(n)
+class Solution {
+    static const int N = 1e7+10;
+    int prime[N], cnt;
+    bool visited[N];
+public:
+    int countPrimes(int n) {
+        for(int i = 2; i < n; i++){
+            if(!visited[i]){
+                prime[cnt++] = i;
+            }
+            for(int j = 0; prime[j] <= n/i; j++){
+                visited[prime[j] * i] = true;
+                if(i % prime[j] == 0) break;
+            }
+        }
+        return cnt;
+    }
+};
