@@ -41,3 +41,23 @@ public:
         return true;
     }
 };
+
+
+//筛法求质数个数
+class Solution {
+    static const int N = 1e7+10;
+    int prime[N], cnt;
+    bool visited[N];
+public:
+    int countPrimes(int n) {
+        for(int i = 2; i < n; i++){
+            if(!visited[i]){
+                prime[cnt++] = i;
+                for(int j = i + i; j < n; j += i){
+                    visited[j] = true;
+                }
+            }
+        }
+        return cnt;
+    }
+};
