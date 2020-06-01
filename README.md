@@ -623,7 +623,7 @@ void add(int element) {
 
 ## 作者
 
-Junpeng Zhu, jpzhu.gm@gmail.com
+Junpeng Zhu
 
 ## 协议
 
