@@ -1,7 +1,7 @@
 
 # **算法及其设计技术 (:satisfied: Do algorithms for fun :grin:)**
 
-![Github stars](https://img.shields.io/github/stars/JunpengCode/Algorithms.svg) ![github language](https://img.shields.io/badge/language-C++-green.svg) ![](https://img.shields.io/github/license/JunpengCode/Algorithms.svg) ![Github stars](https://img.shields.io/github/forks/JunpengCode/Algorithms.svg) ![Github Release](https://img.shields.io/github/release/JunpengCode/Algorithms.svg)
+![Github stars](https://img.shields.io/github/stars/JunpengCode/Algorithms.svg) ![github language](https://img.shields.io/badge/language-C++-green.svg) ![](https://img.shields.io/github/license/JunpengCode/Algorithms.svg) ![Github stars](https://img.shields.io/github/forks/JunpengCode/Algorithms.svg)
 
 ## **1. 概述**
 
