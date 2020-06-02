@@ -621,7 +621,7 @@ void add(int element) {
 * http://erikdemaine.org/classes/
 * SQL练习  https://www.hackerrank.com/domains/sql  (随机写题)  https://sqlzoo.net/ (有针对性地练习SQL的方方面面特性)
 * 50道必须会的SQL题目 https://www.techbeamers.com/sql-query-questions-answers-for-practice/
-
+* https://www.techbeamers.com/top-sql-interview-questions-dba-qa/
 
 ## 作者
 
