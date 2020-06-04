@@ -459,7 +459,7 @@
 
 * <span id=rec>Recursive</span>
 	* [LeetCode493.cpp Reverse Pairs  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp) 
-
+	* [**LeetCode98.cpp Validate Binary Search Tree AC** 简单但不失优雅](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode98.cpp)
 ## <span id=ats>**4. 时空复杂度分析**</span>
 
 
