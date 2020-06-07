@@ -57,6 +57,7 @@
 ## **<span id=lllllaaa>2. 算法列表</span>**
 
 * <span id=xijie>细节题</span>
+	* [LeetCode2.cpp Add Two Numbers AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode2.cpp)
 	* [LeetCode27.java Remove Element AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode27.java)
 	* [LeetCode7.java reverse AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode7.java)
 	* [LeetCode9.cpp isPalindrome  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode9.cpp)
