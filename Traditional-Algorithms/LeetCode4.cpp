@@ -1,4 +1,4 @@
-//归并数组，O(n)时间复杂度，可以AC，但是不满足题目的时间复杂度要求
+//归并数组，O(m+n)时间复杂度，可以AC，但是不满足题目的时间复杂度要求
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
