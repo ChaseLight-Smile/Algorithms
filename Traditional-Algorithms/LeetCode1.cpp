@@ -19,16 +19,18 @@ public:
     }
 };
 
+//解法一的改进版，将插入到hash表的操作和寻找目标位置的操作合二为一
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> heap;
-        for (int i = 0; i < nums.size(); i ++ ) {
-            int r = target - nums[i];
-            if (heap.count(r)) return {heap[r], i};
-            heap[nums[i]] = i;
+        unordered_map<int,int>m;
+        for(int i = 0; i < nums.size(); i++){
+            int v = target - nums[i];
+            if(m.find(v) != m.end()){    //每一步都在检查hash表中是否存在target-当前值，如果存在输出其对应的下标即可。
+                return {m[v], i};
+            }
+            m[nums[i]] = i; 
         }
-
         return {};
     }
 };
