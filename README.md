@@ -103,6 +103,7 @@
 		* [HDUOJ1358.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ1358.cpp)
 		* [POJ2752.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2752.cpp)
 	* <span id=manacher>Manacher</span>
+		* [LeetCode5.cpp Longest Palindromic Substring AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode5.cpp)
 		* [POJ3974.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3974.cpp)
 		* [HDUOJ3068.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ3068.cpp)
 		* [HDUOJ4513.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ4513.cpp)
