@@ -14,9 +14,9 @@ public:
         }
         Ma[l] = 0;
         int mx = 0, id = 0;
-        for(int i = 1; i < l; i++){
+        for(int i = 0; i < l; i++){
             Mp[i] = mx > i? min(Mp[2*id-i],mx-i):1;
-            while(Ma[i+Mp[i]] == Ma[i-Mp[i]]) Mp[i]++;
+            while(i-Mp[i] >= 0 && i + Mp[i] < l && Ma[i+Mp[i]] == Ma[i-Mp[i]]) Mp[i]++; //数据加强，所以在这个部分要判断边界
             if(i + Mp[i] > mx){
                 mx = i + Mp[i];
                 id = i;
@@ -28,6 +28,7 @@ public:
         for(int i = 0; i < 2 *n + 2; i++){
             ans = max(ans, Mp[i] - 1);
         }
+        
         //2. 解出最长回文串
         string res;
         for(int i = 0 ; i < 2*n + 2; i++){
