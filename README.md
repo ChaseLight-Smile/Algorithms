@@ -36,7 +36,7 @@
 	* [**math**](#math)
 * [Databases](#db)
 	* [SQL Solutions](#dbsql)
-	* [Deep Learning for Databases]()
+	* [Deep Learning for Databases](#dld)
 * [Design techniques of Algorithms](#dddddddaa)
 	* [**Dynamic Programming**](#dp)
 	* [**Greedy Algorithms**](#gd)
@@ -393,8 +393,14 @@
 		* [LeetCode595.sql Big Countries AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode595.sql)
 		* [LeetCode596.sql Classes More Than 5 Students AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode596.sql)
 		* [LeetCode627.sql Swap Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode627.sql)
-		
-
+	* <span id=dld>Deep Learning for Databases</span>
+		* <span>Neural Network using Numpy</span>
+			* [NN_01](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/01_NumpyNN.py)
+			* [NN_02](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/02_NumpyTorchNN.py)
+		* <span>Neural Network using Pytorch</span>
+			* [NN_03](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/03_StandardPytorchNN.py)
+			* [NN_04](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/04_StandardNNPytorchAutoGrad.py)
+			* [NN_05](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/05_TorchNN.py)
 ## **<span id=dddddddaa>3. 算法设计技术</span>**
 
 
