@@ -1,4 +1,4 @@
-//解法一
+//解法一，i表示开始处的指针，j表示后面一个指针
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -34,5 +34,20 @@ public:
             map[s[i]] = 0;
         }
         return ans;
+    }
+};
+
+//解法三： 最为精炼，其中i表示后一个指针，j表示前一个指针
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        unordered_map<char, int>m;
+        int res = 0;
+        for(int i = 0, j = 0; i < s.size(); i++){
+            m[s[i]]++;
+            while(m[s[i]] > 1) m[s[j++]]--;
+            res = max(res, i -j + 1);
+        }
+        return res;
     }
 };
