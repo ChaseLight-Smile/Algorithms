@@ -54,6 +54,7 @@
 
 **在刷题出错时，如何定位错误？两个方法：printf（wrong answer）和删代码（Runtime Error和Segment Fault），如果删掉代码后，不报错RE或者SF，说明删掉的这段代码有问题，重点在删掉的这段代码中排查数组越界、没有读入正确的操作数等错误。**
 
+**不止步于AC代码，立足于写出最简练的代码**
 
 ## **<span id=lllllaaa>2. 算法列表</span>**
 
