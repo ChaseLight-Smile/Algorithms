@@ -37,7 +37,7 @@ public:
                        res+=Ma[j];
                    } 
                 }
-                break;
+                break;  //最长回文串可能有多个，取出其中的一个即可停止
             }
         }
         return res;
