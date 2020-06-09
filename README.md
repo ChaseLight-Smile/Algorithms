@@ -416,6 +416,7 @@
 	* 位操作型
 	* 序列型
 		* [LeetCode152.cpp Maximum Product Subarray AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode152.cpp)
+		* [LeetCode10.cpp Regular Expression Matching AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode10.cpp)
 	* 划分型
 	* 博弈型
 		* [LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
