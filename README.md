@@ -227,6 +227,7 @@
 		    * [LeetCode82.cpp Remove Duplicates from Sorted List II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode82.cpp)
 	* stack
 		* [SimulateStack.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/SimulateStack.cpp)
+		* [LeetCode20.cpp Valid Parentheses AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode20.cpp)
 		* <span id=st>monotonous stack</span>
 			* [LeetCode496.cpp Next Greater Element I  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode496.cpp)
 			* [LeetCode503.cpp Next Greater Element II  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode503.cpp)
