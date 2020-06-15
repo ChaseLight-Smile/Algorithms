@@ -236,6 +236,7 @@
 			* [LeetCode496.cpp Next Greater Element I  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode496.cpp)
 			* [LeetCode503.cpp Next Greater Element II  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode503.cpp)
 			* [LeetCode739.cpp Daily Temperatures AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode739.cpp)
+			* [LeetCode1019.cpp Next Greater Node In Linked List AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1019.cpp)
 	* <span id=uf>union find</span>
 		* [LeetCode128.cpp Longest Consecutive Sequence  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode128.cpp)
 		* [LeetCodeUnionFind.cpp  LeetCode并查集模板，带路径压缩](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCodeUnionFind.cpp)
