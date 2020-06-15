@@ -12,8 +12,6 @@ bool operator()(ListNode* a, ListNode* b) const {
     return (a->val) > (b->val);
 }
 };
-
-
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
@@ -24,8 +22,8 @@ public:
                 q.push(lists[i]);
         }
     
-        ListNode* head = new ListNode(0);
-        ListNode* current = head;
+        ListNode* dummy = new ListNode(-1);
+        ListNode* current = dummy;
         
         while(q.size()>0){
             ListNode* tmp = q.top();
@@ -35,6 +33,6 @@ public:
                 q.push(tmp->next);
             current = current->next;
         }
-        return head->next;
+        return dummy->next;
     }
 };
