@@ -217,6 +217,7 @@
 	    * [SimulateLinkedList.cpp AC  UVa Data Structure](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/SimulateLinkedList.cpp)
 			* [SimulateDoubleLinkedList.cpp AC  UVa Data Structure](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/SimulateDoubleLinkedList.cpp)
 		* [LeetCode21.cpp Merge Two Sorted Lists AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode21.cpp) 
+		* [LeetCode24.cpp Swap Nodes in Pairs AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode24.cpp)
 		* [LeetCode66.cpp  Plus One AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode66.cpp)
 		* [LeetCode148.cpp sort list AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode148.cpp)
 		* [LeetCode206.cpp Reverse Linked List AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode206.cpp)
