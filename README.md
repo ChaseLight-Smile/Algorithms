@@ -54,7 +54,7 @@
 
 **在刷题出错时，如何定位错误？两个方法：printf（wrong answer）和删代码（Runtime Error和Segment Fault），如果删掉代码后，不报错RE或者SF，说明删掉的这段代码有问题，重点在删掉的这段代码中排查数组越界、没有读入正确的操作数等错误。**
 
-**不止步于AC代码，立足于写出最简练的代码**
+**不止步于AC代码，立足于写出最简练的代码。LeetCode的题目按顺序刷，可以根据题号检索代码和一些重要的结论。**
 
 ## **<span id=lllllaaa>2. 算法列表</span>**
 
@@ -463,6 +463,7 @@
 		* [LeetCode1286.cpp Iterator for Combination  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1286.cpp)
 	    * [LeetCode51.cpp N-Queens I AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode51.cpp)
 		* [LeetCode52.cpp N-Queens II AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode52.cpp)
+		* [LeetCode22.cpp Generate Parentheses AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode22.cpp)
 	* <span id=bfs>BFS + Branch-and-Bound</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
 		* [POJ3984.cpp AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3984.cpp)
