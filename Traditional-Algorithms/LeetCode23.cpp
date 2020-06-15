@@ -18,18 +18,18 @@ public:
         priority_queue<ListNode*, vector<ListNode*>, cmp> q;
         int len = lists.size();
         for(int i = 0 ; i < len; i++){
-            if(lists[i]!=NULL)
+            if(lists[i] != nullptr)
                 q.push(lists[i]);
         }
     
         ListNode* dummy = new ListNode(-1);
         ListNode* current = dummy;
         
-        while(q.size()>0){
+        while(!q.empty()){
             ListNode* tmp = q.top();
-            current->next = tmp;
             q.pop();
-            if(tmp->next != NULL)
+            current->next = tmp;
+            if(tmp->next != nullptr)
                 q.push(tmp->next);
             current = current->next;
         }
