@@ -63,7 +63,6 @@
 	* [LeetCode6.cpp ZigZag Conversion AC 等差数列题目](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode6.cpp)
 	* [LeetCode12.cpp Integer to Roman AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode12.cpp)
 	* [LeetCode14.cpp Longest Common Prefix AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode14.cpp)
-	* [LeetCode27.java Remove Element AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode27.java)
 	* [LeetCode7.cpp reverse AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode7.cpp)
 	* [LeetCode9.cpp isPalindrome  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode9.cpp)
 	* [LeetCode13.cpp romanToInt  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode13.cpp)
@@ -72,7 +71,6 @@
 	* [**LeetCode240.cpp Search a 2D Matrix II**  采用二分检索存在TLE，存在一个O(r+c)的线性时间算法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode240.cpp)
 	* [LeetCode54.cpp AC 矩阵搜索，n皇后问题也用到了类似的技巧](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode54.cpp)
 	* [LeetCode509.cpp Fibonacci Number AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode509.cpp)
-	* [LeetCode26.cpp Remove Duplicates from Sorted Array AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode26.cpp)
 		* [LeetCode80.cpp Remove Duplicates from Sorted Array II AC LeetCode26 follow-up](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode80.cpp)
 		* [LeetCode83.cpp Remove Duplicates from Sorted List AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode83.cpp)
 		* [LeetCode82.cpp Remove Duplicates from Sorted List II AC]()
@@ -131,6 +129,8 @@
 	* [LeetCode4.cpp find Median Sorted Arrays AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode4.cpp)
 	* [LeetCode493.cpp Reverse Pairs  AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode493.cpp)
 	* [LeetCode11.cpp Container With Most Water AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode11.cpp)
+	* [LeetCode26.cpp Remove Duplicates from Sorted Array AC 前向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode26.cpp)
+	* [LeetCode27.cpp Remove Element AC 前向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode27.cpp)
 * <span id=psum>**prefix sum**</span>
 	* **one dimemsion prefix sum**
 		* [LeetCode560.cpp Subarray Sum Equals K AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode560.cpp)
