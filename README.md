@@ -378,7 +378,8 @@
 	* [质数判定](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/prime.cpp)
 		* [LeetCode204.cpp Count Primes AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode204.cpp)
 		* [分解质因数模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/factor.cpp)
-	* 约数判定
+	* [约数判定](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/get_factor.cpp)
+		* [LeetCode507.cpp Perfect Number AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode507.cpp)
 	* 求欧拉函数
 	* 快速幂
 	* 求逆元
