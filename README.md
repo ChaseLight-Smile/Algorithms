@@ -382,7 +382,7 @@
 		* [LeetCode507.cpp Perfect Number AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode507.cpp)、
 	* [约数个数和约数之和](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/factor_count.cpp)
 	* [最大公约数/欧几里得算法/辗转相除法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/gcd.cpp)
-	* 求欧拉函数
+	* [求欧拉函数的值](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/euler.cpp)
 	* 快速幂
 	* 求逆元
 	* 欧几里得算法
