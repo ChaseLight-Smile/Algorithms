@@ -383,8 +383,8 @@
 	* [约数个数和约数之和](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/factor_count.cpp)
 	* [最大公约数/欧几里得算法/辗转相除法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/gcd.cpp)
 	* [求欧拉函数的值](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/euler.cpp)
-	* 快速幂
-	* 求逆元
+	* [快速幂](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/qmi.cpp)
+		* 快速幂求逆元
 	* 欧几里得算法
 	* 剩余定理应用
 	* 高斯消元
