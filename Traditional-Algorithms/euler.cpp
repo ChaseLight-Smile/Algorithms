@@ -22,18 +22,18 @@ int main(){
     return 0;
 }
 
-// 筛法求1~N中每个数的euler函数值
+// 线性筛法求1~N中每个数的euler函数值
 #include <iostream>
 using namespace std;
 typedef long long LL; 
 const int N = 1e6+10;
 bool st[N]; //表示每个数是否被筛掉
 int prime[N], cnt;
-int e[N];   //存放1~N中每个数的euler函数
+int e[N];
 int n;
 
 void get_euler(int n){
-    e[1] = 1;
+    e[1] = 1;   //自定义即可，下面的部分都是从2开始求的
     for(int i = 2; i <= n; i++){
         if(!st[i]){
             prime[cnt++] = i;
