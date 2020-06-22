@@ -385,8 +385,8 @@
 	* [求欧拉函数的值](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/euler.cpp)
 	* [快速幂](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/qmi.cpp)
 		* [快速幂求逆元](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/qmin.cpp)
-	* 欧几里得算法
-	* 剩余定理应用
+	* [扩展欧几里得算法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/exgcd.cpp)
+	* [中国剩余定理]
 	* 高斯消元
 	* 容斥原理
 	* 博弈论
