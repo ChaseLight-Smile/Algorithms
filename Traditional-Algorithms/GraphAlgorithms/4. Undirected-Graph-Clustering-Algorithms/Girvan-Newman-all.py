@@ -6,17 +6,18 @@ import xlwt
 import os
 import sys
 
-def read(file, sheet_index=0):
+def read(file):
     G = nx.Graph()
-    workbook1 = xlrd.open_workbook(file)
-    sheet1 = workbook1.sheet_by_index(sheet_index)
+    f = open(file)
     try:
-        for i in range(1, sheet1.nrows):
-            G.add_edge(sheet1.row_values(i)[0],sheet1.row_values(i)[8])   #将每一行的第0列和第8列加入到图的边中
+        for line in f.readlines():
+            cell = line.split()
+            G.add_edge(cell[0],cell[1])
         nx.write_gml(G,'Project111111111111.txt')
     except:
-        print("Unexpected error:", sys.exc_info())# sys.exc_info()返回出错信息
-        input('press enter key to exit') #这儿放一个等待输入是为了不让程序退出
+        print("Unexpected error:", sys.exc_info())
+        input('press enter key to exit')
+    return G
 
 class GN:
     def __init__(self, G):
@@ -134,8 +135,8 @@ class GN:
         nx.write_gml(self.G_copy, 'outputofGN.gml')
         
 if __name__ == '__main__':
-    read("数据清洗4520116720190610183042流水合并.xlsx")
-    G=nx.read_gml('Project111111111111.txt',label='id')
+    G = read("output.txt")
+    # G=nx.read_gml('Project111111111111.txt',label='id')
     print("构建图完成")
 
     algorithm = GN(G)

@@ -17,20 +17,20 @@ def readUndirectedGraph(file):
     return G
 
 if __name__ == '__main__':
-    G = readUndirectedGraph("GML.txt")
-    degree_sequence = sorted([d for n, d in G.degree()], reverse=True)
-    print(degree_sequence)
-    degreeCount = collections.Counter(degree_sequence)
-    deg, cnt = zip(*degreeCount.items())
+    G = readUndirectedGraph("output.txt")
+    # degree_sequence = sorted([d for n, d in G.degree()], reverse=True)
+    # # print(degree_sequence)
+    # degreeCount = collections.Counter(degree_sequence)
+    # deg, cnt = zip(*degreeCount.items())
 
-    fig, ax = plt.subplots()
-    plt.bar(deg, cnt, width=0.80, color='b')
+    # fig, ax = plt.subplots()
+    # plt.bar(deg, cnt, width=0.80, color='b')
 
-    plt.title("Degree Histogram")
-    plt.ylabel("Count")
-    plt.xlabel("Degree")
-    ax.set_xticks([d + 0.4 for d in deg])
-    ax.set_xticklabels(deg)
+    # plt.title("Degree Histogram")
+    # plt.ylabel("Count")
+    # plt.xlabel("Degree")
+    # ax.set_xticks([d + 0.4 for d in deg])
+    # ax.set_xticklabels(deg)
 
     # draw graph in inset
     plt.axes([0.4, 0.4, 0.5, 0.5])
