@@ -417,6 +417,10 @@
 			* [NN_03](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/03_StandardPytorchNN.py)
 			* [NN_04](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/04_StandardNNPytorchAutoGrad.py)
 			* [NN_05](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/05_TorchNN.py)
+		* <span>Linear Model</span>
+			* [Linear_01](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/01_linearModel.py)
+			* [Linear_02](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/02_linearModel.py)
+			* [Linear_03](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/03_linearModel.py)
 ## **<span id=dddddddaa>3. 算法设计技术</span>**
 
 
