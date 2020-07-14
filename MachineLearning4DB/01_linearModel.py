@@ -19,11 +19,11 @@ model = LinearModel()
 
 # 3. 构建损失函数和优化器
 loss = torch.nn.MSELoss(reduction='sum')
-optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
 
 # 4. 训练结果
 if __name__ == "__main__":
-    for epoch in range(1000):
+    for epoch in range(100):
         y_pred = model(x_data)  # callable对象，model(x)调用将会传递给LinearModel的__call__()，而__call__会调用forward(self, x)函数
         lo = loss(y_pred, y_data)
         print(epoch, lo.item())
