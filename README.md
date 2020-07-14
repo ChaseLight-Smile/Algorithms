@@ -387,10 +387,10 @@
 		* [快速幂求逆元](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/qmin.cpp)
 	* [扩展欧几里得算法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/exgcd.cpp)
 		* [线性同余方程](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/ligcd.cpp)
-	* [中国剩余定理]
-	* 高斯消元
-	* 容斥原理
-	* 博弈论
+	* [高斯消元](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/gauss.cpp)
+	* [组合计数]()
+	* [容斥原理]()
+	* [博弈论]()
 	
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
