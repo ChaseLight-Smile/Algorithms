@@ -19,3 +19,33 @@
 1
 */
 
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+const int N = 2010, mod = 1e9+7;
+int n;
+int combination[N][N];
+
+//先将每个结果保存好，之后直接取值即可
+void init(){
+    for(int i = 0 ; i < N; i++){
+        for(int j = 0; j <= i; j++){
+            if(!j) combination[i][j] = 1;
+            else combination[i][j] = (combination[i-1][j] + combination[i-1][j-1]) % mod;
+        }
+    }
+}
+
+int main(){
+    init();
+    scanf("%d", &n);
+    while(n--){
+        int a, b;
+        scanf("%d%d", &a, &b);
+        printf("%d\n", combination[a][b]);
+    }
+    return 0;
+}
+
