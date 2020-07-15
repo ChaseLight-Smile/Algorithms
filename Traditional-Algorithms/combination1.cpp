@@ -19,7 +19,7 @@
 1
 */
 
-
+//时间复杂度为O(n^2)
 #include <iostream>
 #include <algorithm>
 using namespace std;

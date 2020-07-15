@@ -19,8 +19,9 @@
 1
 */
 
-//利用公式c(a,b) = a! / (b! * (a-b)!)，但是由于(a/b)%d != (a%d)/(b%d)，所以只能用逆元
+// 利用公式c(a,b) = a! / (b! * (a-b)!)，但是由于(a/b)%d != (a%d)/(b%d)，所以只能用逆元
 // (a/b)%p = (a%p * b的逆元%p)%p https://www.cnblogs.com/hopelee/p/9523910.html 费马小定理可知逆元的求法
+// 时间复杂度为O(nlogn)
 #include <iostream>
 #include <algorithm>
 using namespace std;
