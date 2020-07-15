@@ -388,7 +388,11 @@
 	* [扩展欧几里得算法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/exgcd.cpp)
 		* [线性同余方程](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/ligcd.cpp)
 	* [高斯消元](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/gauss.cpp)
-	* [组合计数]()
+	* 组合计数
+		* [求组合数方法一](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination1.cpp)
+		* [求组合数方法二](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination2.cpp)
+		* [求组合数方法三](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination3.cpp)
+		* [求组合数方法四](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination4.cpp)
 	* [容斥原理]()
 	* [博弈论]()
 	
