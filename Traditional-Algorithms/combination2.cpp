@@ -19,7 +19,8 @@
 1
 */
 
-//利用公式c(a,b) = c(a) / (c(b) * c(a-b))，但是由于(a/b)%d != (a%d)/(b%d)，所以只能用逆元
+//利用公式c(a,b) = a! / (b! * (a-b)!)，但是由于(a/b)%d != (a%d)/(b%d)，所以只能用逆元
+// (a/b)%p = (a%p * b的逆元%p)%p https://www.cnblogs.com/hopelee/p/9523910.html 费马小定理可知逆元的求法
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -44,7 +45,7 @@ int main(){
     fact[0] = infact[0] = 1;
     for(int i = 1; i < N; i++){
         fact[i] = (LL)fact[i-1]* i % mod;
-        infact[i] = (LL)infact[i-1] * qmi(i, mod -2, mod) % mod;
+        infact[i] = (LL)infact[i-1] * qmi(i, mod -2, mod) % mod;  //这里qmi表示i的逆元为i^mod-2
     }
     int n;
     scanf("%d", &n);
