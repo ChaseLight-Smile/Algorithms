@@ -93,3 +93,72 @@ int main(){
     else puts("No solution");
     return 0;
 }
+
+
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+
+const int N = 110;
+const double eps = 1e-6;
+int n;
+double a[N][N];  //系数矩阵
+
+int gauss(){
+    int c, r; // c表示当前枚举到哪一列，r表示当前枚举到哪一行
+    for(c =0, r = 0; c < n; c++){
+        int t = r;
+        for(int i = r; i < n; i++){
+            if(fabs(a[i][c]) > fabs(a[t][c])){
+                t = i;   //找出不同行中当前列上的最大值，该步骤为了保证除法计算之后的精度
+            }
+        }
+        
+        if(fabs(a[t][c]) < eps) continue;  //说明这个位置已经为0
+        
+        for(int i = c; i < n+1; i++) swap(a[t][i], a[r][i]); //交换主元行
+        for(int i = n; i >= c; i--) a[r][i] /= a[r][c];  //将主元变成1
+        for(int i = r + 1; i < n; i++){
+            if(fabs(a[i][c]) > eps){  //说明主元下方元素不为0
+                for(int j = n; j >= c; j--){
+                    a[i][j] -= a[r][j] * a[i][c];
+                }
+            }
+        }
+        r++;
+    }
+    
+    if(r < n){
+        for(int i = r; i < n; i++){
+            if(fabs(a[i][n]) > eps){
+                return 2;   //不存在解
+            }
+        }
+        return 1;  //存在无穷多组解
+    }
+    //倒着消元，每一列只存在主元
+    for(int i = n-2; i >= 0; i--){   //两种方法都行
+        for(int j = i+1; j < n; j++){
+            a[i][n] -= a[i][j] * a[j][n];
+        }
+    }
+    
+    return 0; // 说明有唯一解
+    
+}
+
+int main(){
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n+1; j++){
+            cin >> a[i][j];
+        }
+    }
+    int res = gauss();
+    if(res == 0){
+        for(int i = 0; i < n; i++) printf("%.2lf\n", a[i][n]);
+    }else if(res == 1) puts("Infinite group solutions");
+    else puts("No solution");
+    return 0;
+}
