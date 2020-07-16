@@ -35,8 +35,8 @@ int main(){
     }
     int res = 0;
     for(int i = 1; i < 1 << m; i++){
-        int t = 1, cnt = 0;
-        for(int j = 0; j < m; j++){
+        int t = 1, cnt = 0;  //t表示当前所有质数的乘积，cnt表示当前选法包含几个1
+        for(int j = 0; j < m; j++){ //判断到底当前哪个质数或者哪些质数的组合被选择了，比如测试用例中，
             if(i >> j & 1){
                 cnt++;
                 if((LL)t * prime[j] > n){
@@ -46,7 +46,7 @@ int main(){
                 t *= prime[j];
             }
         }
-        if(t != -1){
+        if(t != -1){  //这里是确定符号位
             if(cnt%2) res += n/t;
             else res -= n/t;
         }
