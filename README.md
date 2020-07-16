@@ -392,7 +392,7 @@
 		* [求组合数方法三](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination3.cpp)
 		* [求组合数方法四](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination4.cpp)
 		* [catalan number](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/catalan_num.cpp)
-	* [容斥原理]()
+	* [容斥原理](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/in_ex.cpp)
 	* [博弈论]()
 	
 * <span id=db>Databases</span>
