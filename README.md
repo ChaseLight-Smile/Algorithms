@@ -393,7 +393,7 @@
 		* [求组合数方法四](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination4.cpp)
 		* [catalan number](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/catalan_num.cpp)
 	* [容斥原理](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/in_ex.cpp)
-	* 博弈论
+	* [博弈论](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/nim_game.cpp)
 	
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
