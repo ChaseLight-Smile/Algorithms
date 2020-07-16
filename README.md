@@ -377,6 +377,7 @@
 		* [分解质因数模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/factor.cpp)
 	* [约数判定](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/get_factor.cpp)
 		* [LeetCode507.cpp Perfect Number AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode507.cpp)
+		* [LeetCode1492.cpp The kth Factor of n](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1492.cpp)
 	* [约数个数和约数之和](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/factor_count.cpp)
 	* [最大公约数/欧几里得算法/辗转相除法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/gcd.cpp)
 	* [求欧拉函数的值](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/euler.cpp)
@@ -390,6 +391,7 @@
 		* [求组合数方法二](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination2.cpp)
 		* [求组合数方法三](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination3.cpp)
 		* [求组合数方法四](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/combination4.cpp)
+		* [catalan number](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/catalan_num.cpp)
 	* [容斥原理]()
 	* [博弈论]()
 	
