@@ -394,6 +394,7 @@
 		* [catalan number](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/catalan_num.cpp)
 	* [容斥原理](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/in_ex.cpp)
 	* [博弈论](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/nim_game.cpp)
+		* [LeetCode877.cpp Stone Game](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode877.cpp)
 	
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
