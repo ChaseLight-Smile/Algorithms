@@ -395,7 +395,7 @@
 	* [容斥原理](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/in_ex.cpp)
 	* [博弈论](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/nim_game.cpp)
 		* [LeetCode877.cpp Stone Game](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode877.cpp)
-	
+		* [LeetCode292.cpp Nim Game](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode292.cpp)
 * <span id=db>Databases</span>
 	* <span id=dbsql>SQL solutions</span>
 		* [LeetCode175.sql Combine Two Tables  AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode175.sql)
