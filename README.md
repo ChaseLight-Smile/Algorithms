@@ -447,10 +447,10 @@
 	* 数位统计型
 	* 状态压缩型
 	* 树型
-	* 记忆化搜索（实质上是DFS）
 	* DP优化方法
 		* 单调队列优化DP
 		* 斜率优化DP
+	* 记忆化搜索(属于DP的一种实现方法)
 
 * <span id=gd>Greedy Algorithms</span>
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
