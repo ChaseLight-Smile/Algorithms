@@ -50,3 +50,30 @@ int main(){
     cout << f[n][m] << endl;
     return 0;
 }
+
+
+//使用滚动数组优化，从上面的代码中，直接将f[i][j]中的i维去掉
+#include <iostream>
+using namespace std;
+const int N = 1010;
+int n, m;
+int v[N], w[N], f[N];  //f只剩一维
+
+int main(){
+    cin >> n >> m;
+    for(int i = 1; i <= n; i++){
+        cin >> v[i] >> w[i];
+    }
+    
+    for(int i = 0; i <= n; i++){
+        for(int j = m; j >= v[i]; j--){  //去掉i维，只能从最大值到最小值
+            if(i == 0){
+                f[j] = 0;
+                continue;
+            }
+            f[j] = max(f[j], f[j-v[i]]+w[i]);
+        }
+    }
+    cout << f[m] << endl;
+    return 0;
+}
