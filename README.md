@@ -441,6 +441,7 @@
 	* 博弈型
 		* [LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
 	* 背包型
+	    * [0-1背包裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/knapsack.cpp)
 	* 区间型
 	* 双序列型
 	* 计数型
