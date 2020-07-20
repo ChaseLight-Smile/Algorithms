@@ -446,6 +446,7 @@
 				* [51node1085.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/51node1085.cpp)
 				* [POJ3624.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3624.cpp)
 				* [HDUOJ2602.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2602.cpp)
+				* [FZU2214 超大背包问题，只能枚举](http://acm.fzu.edu.cn/problem.php?pid=2214)
 			* 01背包计数型裸题模板
 		* 完全背包问题
 			* [完全背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/comknapsack.cpp)
