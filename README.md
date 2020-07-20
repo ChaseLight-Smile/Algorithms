@@ -446,8 +446,9 @@
 				* [51node1085.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/51node1085.cpp)
 				* [POJ3624.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3624.cpp)
 				* [HDUOJ2602.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2602.cpp)
-			* [01背包计数型裸题模板]()
+			* 01背包计数型裸题模板
 		* 完全背包问题
+			* [完全背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/comknapsack.cpp)
 		* 多重背包问题
 			* [POJ1276.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1276.cpp)
 		* 分组背包问题
