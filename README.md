@@ -441,14 +441,16 @@
 	* 博弈型
 		* [LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
 	* 背包型
-	    * [0-1背包裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/knapsack.cpp)
-			* [51node1085.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/51node1085.cpp)
-			* [POJ3624.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3624.cpp)
-			* [HDUOJ2602.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2602.cpp)
-		* [完全背包裸题模板]()
-		* [多重背包裸题模板]()
+	    * 0-1背包问题
+			* [01背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/knapsack.cpp)
+				* [51node1085.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/51node1085.cpp)
+				* [POJ3624.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3624.cpp)
+				* [HDUOJ2602.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2602.cpp)
+			* [01背包计数型裸题模板]()
+		* 完全背包问题
+		* 多重背包问题
 			* [POJ1276.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1276.cpp)
-		* [分组背包裸题模板]()
+		* 分组背包问题
 	* 区间型
 	* 双序列型
 	* 计数型
