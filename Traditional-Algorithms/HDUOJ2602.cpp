@@ -1,15 +1,18 @@
 #include <iostream>
 #include <algorithm>
+#include <cstring>
 using namespace std;
 const int N = 1010;
 int v[N], w[N];
 int f[N];
-
+int loop, n, m;
 int main(){
-    int loop;
     scanf("%d", &loop);
     while(loop--){
-        int n, m;
+        memset(v, 0, sizeof v);
+        memset(w, 0, sizeof w);
+        memset(f, 0, sizeof f);
+        
         scanf("%d%d", &n, &m);
         for(int i = 1; i <= n; i++){
             scanf("%d", &w[i]);
