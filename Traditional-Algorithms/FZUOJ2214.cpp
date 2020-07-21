@@ -49,7 +49,7 @@ int main(){
         memset(w, 0, sizeof w);
         memset(f, INF, sizeof f);
         f[0] = 0;
-        scanf("%lld%lld", &n, &m);
+        scanf("%d%d", &n, &m);
         int sum = 0;
         for(int i = 1; i <= n; i++) {
             scanf("%d%d", &w[i], &v[i]);
