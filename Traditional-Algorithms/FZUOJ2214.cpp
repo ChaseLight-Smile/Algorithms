@@ -62,7 +62,7 @@ int main(){
         }
         for(int i = sum; i >= 0; i--){
             if(f[i] <= m){   //m表示背包的最大重量，找到第一个重量小于等于最大重量的价值终止枚举过程
-                printf("%lld\n", i);
+                printf("%d\n", i);
                 break;
             }
         }
