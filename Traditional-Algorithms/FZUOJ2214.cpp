@@ -34,14 +34,13 @@ int main(){
 #include <cstring>
 using namespace std;
 
-typedef long long ll;
 const int N = 510, M = 1e4+10;
-const ll INF = 0x3f3f3f3f;
+const int INF = 0x3f3f3f3f;
 int v[N];
-ll w[N];
-ll f[M];
+int w[N];
+int f[M];   //表示价值不超过j的最小重量，从题意中知道价值的最大值为5000
+int n, m;
 
-ll n, m;
 int main(){
     int loop;
     scanf("%d", &loop);
@@ -51,18 +50,18 @@ int main(){
         memset(f, INF, sizeof f);
         f[0] = 0;
         scanf("%lld%lld", &n, &m);
-        ll sum = 0;
+        int sum = 0;
         for(int i = 1; i <= n; i++) {
-            scanf("%lld%lld", &w[i], &v[i]);
+            scanf("%d%d", &w[i], &v[i]);
             sum += v[i];
         }
         for(int i = 1; i <= n; i++){
-            for(int j = sum; j >= v[i]; j--){
+            for(int j = sum; j >= v[i]; j--){ //枚举价值
                 f[j] = min(f[j], f[j-v[i]]+w[i]);
             }
         }
-        for(ll i = sum; i >= 0; i--){
-            if(f[i] <= m){
+        for(int i = sum; i >= 0; i--){
+            if(f[i] <= m){   //m表示背包的最大重量，找到第一个重量小于等于最大重量的价值终止枚举过程
                 printf("%lld\n", i);
                 break;
             }
