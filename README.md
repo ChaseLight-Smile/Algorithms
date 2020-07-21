@@ -429,7 +429,6 @@
 
 
 * <span id=dp>Dynamic Programming</span>
-    * 动态规划实质上是最短路径问题的一个子集
 	* 坐标型
 		* [LeetCode322.cpp Coin Change  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode322.cpp)
 		* [LeetCode62.cpp Unique Paths AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode62.cpp)
@@ -451,10 +450,11 @@
 		* 完全背包问题
 			* [完全背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/comknapsack.cpp)
 		* 多重背包问题
-			* [多重背包问题裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack1.cpp)
-			* [多重背包问题优化模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack2.cpp)
+			* [多重背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack1.cpp)
+			* [多重背包作者最值型裸题优化模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack2.cpp)
 			* [POJ1276.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1276.cpp)
 		* 分组背包问题
+			* [分组背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/groupknapsack.cpp)
 	* 区间型
 	* 双序列型
 	* 计数型
