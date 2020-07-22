@@ -47,3 +47,30 @@ int main(){
     printf("%d\n", f[n][m]);
     return 0;
 }
+
+//一维
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+const int N = 110;
+int n, m;
+int v[N], w[N], s[N];
+int f[N];
+
+int main(){
+    scanf("%d%d", &n, &m);
+    for(int i =1; i <= n; i++){
+        scanf("%d%d%d", &v[i], &w[i], &s[i]);
+    }
+    
+    for(int i = 1; i <= n; i++){  //i枚举物品
+        for(int j = m; j >= v[i]; j--){  //枚举物品体积
+            for(int k =0; k * v[i] <= j && k <= s[i] ; k++){  //枚举选择几个第i个物品
+                f[j] = max(f[j], f[j-v[i]*k] + w[i] * k);
+            }
+        }
+    }
+    printf("%d\n", f[m]);
+    return 0;
+}
