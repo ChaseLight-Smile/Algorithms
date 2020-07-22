@@ -440,6 +440,7 @@
 	* 博弈型
 		* [LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
 	* 背包型
+		* **一定要注意背包问题初始化的含义，何时为0，何时为INF，何时为-INF；其次要注意f[i]到含义是<=i还是=i,这与初始化有关**
 	    * 0-1背包问题
 			* [01背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/knapsack.cpp)
 				* [51node1085.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/51node1085.cpp)
