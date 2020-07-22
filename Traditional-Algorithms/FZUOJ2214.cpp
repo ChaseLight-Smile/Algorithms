@@ -34,11 +34,11 @@ int main(){
 #include <cstring>
 using namespace std;
 
-const int N = 510, M = 1e4+10;
+const int N = 510, M = 5010;
 const int INF = 0x3f3f3f3f;
 int v[N];
 int w[N];
-int f[M];   //表示价值不超过j的最小重量，从题意中知道价值的最大值为5000
+int f[M];   //表示价值为j(这里不是<=j，所以一定要注意初始化f[0] = 0, f[i] = INF, 使用INF的原因是求的是最小值)的最小重量，从题意中知道价值的最大值为5000
 int n, m;
 
 int main(){
