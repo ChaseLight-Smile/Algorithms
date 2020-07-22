@@ -452,7 +452,7 @@
 			* [完全背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/comknapsack.cpp)
 		* 多重背包问题
 			* [多重背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack1.cpp)
-			* [多重背包作者最值型裸题优化模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack2.cpp)
+			* [多重背包最值型裸题二进制优化模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack2.cpp)
 			* [POJ1276.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1276.cpp)
 		* 分组背包问题
 			* [分组背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/groupknapsack.cpp)
