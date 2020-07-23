@@ -459,6 +459,8 @@
 			* [多重背包最值型裸题二进制优化模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack2.cpp)
 			* [多重背包最值型单调队列优化模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mulknapsack3.cpp)
 			* [POJ1276.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ1276.cpp)
+		* 混合背包问题
+			* [混合背包裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mixknap.cpp)
 		* 分组背包问题
 			* [分组背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/groupknapsack.cpp)
 	* 区间型
