@@ -209,6 +209,7 @@
 		* **monotonous queue**
 			* [LeetCode239.cpp Sliding Window Maximum  AC  monotonous stack](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode239.cpp)
 			* [JZ64.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/JZ64.cpp)
+			* [niuke1006D.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/niuke1006D.cpp)
 		* all solutions **level order traversal of tree + queue** 
 		* deque
 	* linked list
@@ -257,7 +258,7 @@
 	* [**LeetCode287.cpp Find the Duplicate Number Binary Search AC  interesting problem**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode287.cpp)
 	* [LeetCode35.cpp Search Insert Position AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode35.cpp)
 	* [LeetCode744.cpp Find Smallest Letter Greater Than Target AC(binary search)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode744.cpp)
-	* [offer32.cpp 数字在排序数组中出现的次数 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/offer32.cpp)
+	* [JZ32.cpp 数字在排序数组中出现的次数 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/JZ32.cpp)
 	* [**LeetCode215.cpp Kth Largest Element in an Array binary search** O(n)时间复杂度 O(1)空间复杂度，比heap更省空间](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode215.cpp)
 	* [**LeetCode378.cpp Kth Smallest Element in a Sorted Matrix   AC binary search 思路同LeetCode215.cpp**](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode378.cpp)
 	* [LeetCode167.cpp Two Sum II - Input array is sorted binary search](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode167.cpp)
