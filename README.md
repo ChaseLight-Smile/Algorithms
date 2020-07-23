@@ -39,6 +39,7 @@
 	* Crowdsourcing and NP-hard
 * [Design techniques of Algorithms](#dddddddaa)
 	* [**Dynamic Programming**](#dp)
+		* [Knapsack](#knapsack)
 	* [**Greedy Algorithms**](#gd)
 	* [**Recursive**](#rec)
 	* [**Brute Force Search**](#bf)
@@ -442,7 +443,7 @@
 	* 划分型
 	* 博弈型
 		* [LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
-	* 背包型
+	* <span id=knapsack>背包型</span>
 		* **一定要注意背包问题初始化的含义，何时为0，何时为INF，何时为-INF；其次要注意f[i]到含义是<=i还是=i,这与初始化有关**
 	    * 0-1背包问题
 			* [01背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/knapsack.cpp)
