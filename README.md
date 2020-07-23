@@ -209,7 +209,7 @@
 		* **monotonous queue**
 			* [LeetCode239.cpp Sliding Window Maximum  AC  monotonous stack](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode239.cpp)
 			* [JZ64.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/JZ64.cpp)
-			* [NewCode1006D.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/NewCode1006D.cpp)
+			* [NowCoder1006D.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/NowCoder1006D.cpp)
 		* all solutions **level order traversal of tree + queue** 
 		* deque
 	* linked list
