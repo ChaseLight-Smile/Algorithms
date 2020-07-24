@@ -451,7 +451,7 @@
 				* [POJ3624.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ3624.cpp)
 				* [HDUOJ2602.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/HDUOJ2602.cpp)
 				* [FZUOJ2214.cpp 超大背包问题，需要做一个等价的转换](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/FZUOJ2214.cpp)
-			* 01背包计数型裸题模板
+			* [01背包计数型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/knapsackcnt.cpp)
 		* 完全背包问题
 			* [完全背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/comknapsack.cpp)
 		* 多重背包问题
