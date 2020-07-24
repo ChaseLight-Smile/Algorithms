@@ -463,6 +463,8 @@
 			* [混合背包裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mixknap.cpp)
 		* 分组背包问题
 			* [分组背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/groupknapsack.cpp)
+		* 二维费用的背包问题
+			* [二维费用的01背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/twoknapsack.cpp)
 	* 区间型
 	* 双序列型
 	* 计数型
