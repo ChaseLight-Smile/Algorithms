@@ -49,3 +49,69 @@ int main(){
     }
     return 0;
 }
+
+//输出背包问题的方案，但是不能保证字典序，使用了g[i][j]数组表示了状态转移的过程
+#include <iostream>
+#include <algorithm>
+using namespace std;
+const int N = 1010;
+int v[N], w[N];
+int f[N][N], g[N][N];
+int n, m;
+
+int main(){
+    scanf("%d%d", &n, &m);
+    for(int i = 1; i <= n; i++) scanf("%d%d", &v[i], &w[i]);
+    for(int i = 1; i <= n; i++){
+        for(int j = m; j >= 0; j--){
+            int maxv = f[i-1][j];
+            if(j >= v[i]) maxv = max(maxv, f[i-1][j-v[i]] + w[i]);
+            if(maxv == f[i-1][j]) g[i][j] = 0;// 表示当前不选标号为i的物品
+            if(j >= v[i] && maxv == f[i-1][j-v[i]] + w[i]) g[i][j] = 1; //表示当前选择i物品
+            if(j >= v[i] && maxv == f[i-1][j] && maxv == f[i-1][j-v[i]]+w[i]) g[i][j] = 1;   //表示选择第i件物品 
+            f[i][j] = maxv;
+        }
+    }
+    cout << f[n][m] << endl;
+    int j = m;
+    for(int i = n; i >= 1; i--){
+        if(g[i][j] == 1){
+            cout << i << ' ';   //此时输出的顺序不能保证字典序
+            j -= v[i];
+        }
+    }
+    return 0;
+}
+
+//采用了g[i][j]数组，并且保证了字典序输出
+#include <iostream>
+#include <algorithm>
+using namespace std;
+const int N = 1010;
+int v[N], w[N];
+int f[N][N], g[N][N];
+int n, m;
+
+int main(){
+    scanf("%d%d", &n, &m);
+    for(int i = 1; i <= n; i++) scanf("%d%d", &v[i], &w[i]);
+    for(int i = n; i >= 1; i--){
+        for(int j = m; j >= 0; j--){
+            int maxv = f[i+1][j];
+            if(j >= v[i]) maxv = max(maxv, f[i+1][j-v[i]] + w[i]);
+            if(maxv == f[i+1][j]) g[i][j] = 0;// 表示当前不选标号为i的物品
+            if(j >= v[i] && maxv == f[i+1][j-v[i]] + w[i]) g[i][j] = 1; //表示当前选择i物品
+            if(j >= v[i] && maxv == f[i+1][j] && maxv == f[i+1][j-v[i]]+w[i]) g[i][j] = 1;   //表示选择第i件物品 
+            f[i][j] = maxv;
+        }
+    }
+    int j = m;
+    for(int i = 1; i <= n; i++){
+        if(g[i][j] == 1){
+            cout << i << ' ';   //能够保证字典序
+            j -= v[i];
+        }
+    }
+    return 0;
+}
+
