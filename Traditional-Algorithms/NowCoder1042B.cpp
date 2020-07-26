@@ -31,5 +31,5 @@ int main(){
     for(int i = 1; i <= n; i++){
         if(f[i] == n) res = (res+g[i])%mod;
     }
-    printf("%d\n", res-1);
+    printf("%d\n", res-1); 
 }

@@ -387,6 +387,7 @@
 	* [求欧拉函数的值](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/euler.cpp)
 	* [快速幂](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/qmi.cpp)
 		* [快速幂求逆元](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/qmin.cpp)
+		* [NowCoder996A.cpp](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/NowCoder996A.cpp)
 	* [扩展欧几里得算法](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/exgcd.cpp)
 		* [线性同余方程](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/ligcd.cpp)
 	* [高斯消元](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/gauss.cpp)
