@@ -86,9 +86,33 @@ int main(){
     for(int i = 1; i <= n; i++){
         scanf("%d%d", &v[i], &w[i]);
     }
-    for(int i = 1; i <=n; i++){
-        for(int j = v[i]; j <= m; j++){
+    for(int i = 1; i <=n; i++){  //先枚举物品
+        for(int j = v[i]; j <= m; j++){  //后枚举体积
             f[j] = max(f[j], f[j-v[i]]+w[i]);
+        }
+    }
+    printf("%d\n", f[m]);
+    return 0;
+}
+
+
+//也是一维写法，但是首先枚举了体积，再枚举物品，这种优化在某些情况下可能带来一个常数优化，这对于竞赛中卡常的情况下适用
+#include <iostream>
+#include <algorithm>
+using namespace std;
+const int N = 1010;
+int v[N], w[N];
+int f[N];
+int n, m;
+
+int main(){
+    scanf("%d%d", &n, &m);
+    for(int i = 1; i <= n; i++){
+        scanf("%d%d", &v[i], &w[i]);
+    }
+    for(int j = 0; j <= m; j++){   //先枚举体局
+        for(int i = 1; i <=n; i++){  //后枚举物品
+            if(j >= v[i]) f[j] = max(f[j], f[j-v[i]]+w[i]);
         }
     }
     printf("%d\n", f[m]);
