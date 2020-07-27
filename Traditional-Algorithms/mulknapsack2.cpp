@@ -26,6 +26,7 @@
 10
 */
 
+//二进制优化，将多重背包中的物品打包成01背包物品，完全背包问题也能采用这种优化
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -36,7 +37,7 @@ int n, m;
 int main(){
     cin >> n >> m;
     
-    int cnt = 0;   //打包物品
+    int cnt = 0;   //记录打包后的01背包物品的个数
     for(int i = 1; i <= n; i++){
         int a, b, s;  // a表示物品的体积，b表示物品的价值，c表示物品的数量
         cin >> a >> b >> s;
@@ -56,7 +57,7 @@ int main(){
     }
     
     n = cnt;  //打包成了新的物品，做到了logs的优化
-    //接着做一遍0-1背包问题即可
+    //接着做一遍01背包问题即可
     for(int i = 1; i <= n; i++){
         for(int j = m; j >= v[i]; j--){
             f[j] = max(f[j], f[j-v[i]]+w[i]);
