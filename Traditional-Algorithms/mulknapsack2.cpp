@@ -26,11 +26,11 @@
 10
 */
 
-//二进制优化，将多重背包中的物品打包成01背包物品，完全背包问题也能采用这种优化
+//二进制优化，将多重背包中的物品打包成01背包物品
 #include <iostream>
 #include <algorithm>
 using namespace std;
-const int N = 15000;
+const int N = 11010;  //01背包的个数为NlogS = 1000 * log2000 <= 11 * 1000 = 11000，所以最大开11010即可
 int v[N], w[N];
 int f[N]; // 表示体积小于等于j的最大价值
 int n, m;
