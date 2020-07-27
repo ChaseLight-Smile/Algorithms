@@ -116,7 +116,7 @@ int main(){
         sumV[i] = sumV[i-1] + v[i];
     }    
     for(int i = 1; i <= n; i++){
-        for(int j = m; j >=  max(m - (sumV[n] - sumV[i]), v[i]); j--){
+        for(int j = m; j >=  max(m - (sumV[n] - sumV[i]), v[i]); j--){  //sumV[n] - sumV[i]一定要用i，网上很多资料说的i+1不正确
             f[j] = max(f[j], f[j-v[i]]+w[i]);
         }
        
