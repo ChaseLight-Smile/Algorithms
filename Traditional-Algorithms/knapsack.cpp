@@ -77,3 +77,24 @@ int main(){
     cout << f[m] << endl;
     return 0;
 }
+
+//不保存v、w的方法，一边读一边处理，过程更加简洁
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+const int N = 1010;
+int f[N];
+int n, m;
+
+int main(){
+    scanf("%d%d", &n, &m);
+    for(int i = 1; i <= n; i++){
+        int v, w;
+        scanf("%d%d", &v, &w);
+        for(int j = m; j >= v; j--){
+            f[j] = max(f[j], f[j-v]+w);
+        }
+    }
+    printf("%d\n", f[m]);
+    return 0;
+}
