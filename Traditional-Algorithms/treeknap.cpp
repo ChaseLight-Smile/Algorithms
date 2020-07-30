@@ -29,55 +29,50 @@ N 个物品和一个容量是 V 的背包。
 11
 */
 
-#include <iostream>
-#include <algorithm>
+#include <cstdio>
 #include <cstring>
+#include <algorithm>
 using namespace std;
-const int N = 110;
 
-int n, m;
+const int N = 110;
 int v[N], w[N];
 int f[N][N];
 int h[N], e[N], ne[N], idx;
+int n, m;
 
 void add(int a, int b){
-    e[idx] = b, ne[idx] = h[a], h[a] = idx++;
+    e[idx] = b;
+    ne[idx] = h[a];
+    h[a] = idx ++;
 }
 
 void dfs(int u){
     for(int i = h[u]; i != -1; i = ne[i]){
         int son = e[i];
-        dfs(e[i]);
+        dfs(son);
         
-        //分组背包问题
-        for(int j = m - v[u]; j >= 0; j--){
+        for(int j = m - v[u]; j >= 0; j--){   //体积只能从大到小枚举
             for(int k = 0; k <= j; k++){
-                f[u][j] = max(f[u][j], f[u][j-k]+f[son][k]);
+                f[u][j] = max(f[u][j], f[u][j-k] + f[son][k]);
             }
         }
     }
-    
-    //把物品u加进去
-    for(int i = m; i >= v[u]; i--){
-        f[u][i] = f[u][i-v[u]]+w[u];
-    }
-    for(int i = 0; i < v[u]; i++){
-        f[u][i] = 0;
-    }
+    for(int i = m; i >= v[u]; i--) f[u][i] = f[u][i-v[u]] + w[u]; //把物品u加进去
+    for(int i = 0; i < v[u]; i++) f[u][i] = 0;  //放不进去u
 }
 
 int main(){
-    cin >> n >> m;
+    scanf("%d%d", &n, &m);
     memset(h, -1, sizeof h);
     int root;
     for(int i = 1; i <= n; i++){
         int p;
-        cin >> v[i] >> w[i] >> p;
-        if(p == -1) root = i;   //当前节点为根节点
+        scanf("%d%d%d", &v[i], &w[i], &p);
+        if(p == -1) root = i;
         else add(p, i);
     }
     
     dfs(root);
-    cout << f[root][m] << endl;
+    printf("%d\n", f[root][m]);
     return 0;
 }
