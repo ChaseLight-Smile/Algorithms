@@ -356,7 +356,9 @@
 		* bipartite graph
 			* [二分图判别（染色法,采用DFS实现，时间复杂度与DFS相同O(m+n)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/bicolor.cpp)
 			* [最大二分匹配 匈牙利算法,最坏情况下时间复杂度为O(mn)，但是一般情况下远小于于O(mn)](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/bimatch.cpp)
-	
+		* 最大可行流 (简称最大流，定义参加算法导论中流网络部分)
+			* [EK]()
+			* [Dinic/ISAP]()
 	
 |最短路径类型   | 算法 | 时间复杂度     |算法类型|
 | :----------: | :-----------:  | :-----------: |:-----------:|
@@ -433,17 +435,12 @@
 			* [Linear_03](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/03_linearModel.py)
 ## **<span id=dddddddaa>3. 算法设计技术</span>**
 
-
 * <span id=dp>Dynamic Programming</span>
 	* 坐标型
 		* [LeetCode322.cpp Coin Change  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode322.cpp)
 		* [LeetCode62.cpp Unique Paths AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode62.cpp)
-	* 位操作型
-	* 序列型
 		* [LeetCode152.cpp Maximum Product Subarray AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode152.cpp)
 		* [LeetCode10.cpp Regular Expression Matching AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode10.cpp)
-	* 划分型
-	* 博弈型
 		* [LeetCode55.cpp Jump Game DP(TLE) 存在一个greedy的解](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
 	* <span id=knapsack>背包型</span>
 		* **一定要注意背包问题初始化的含义，何时为0，何时为INF，何时为-INF；其次要注意f[i]到含义是<=i还是=i,这与初始化有关**
@@ -472,13 +469,17 @@
 		* 二维费用的背包问题
 			* [二维费用的01背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/twoknapsack.cpp)
 		* [背包问题求具体方案](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/knapsackways.cpp)
-	* 区间型
-	* 双序列型
+		* [有依赖的背包裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/treeknap.cpp)
+	* 线性DP
+		* 定义：递推关系存在一个近似的线性关系，我们就称为线性DP，区别于树形DP，不需要严格地将DP分型。
+		* [triangleDP.cpp 数字三角形](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/triangleDP.cpp)
+	* 区间DP
 	* 计数型
 	* 数位统计型
 	* 状态压缩型
-	* 树型
+	* 树形DP
 		* [有依赖的背包裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/treeknap.cpp)
+	* 状态机模型
 	* DP优化方法
 		* 单调队列优化DP
 		* 斜率优化DP
