@@ -473,6 +473,7 @@
 	* 线性DP
 		* 定义：递推关系存在一个近似的线性关系，我们就称为线性DP，区别于树形DP，不需要严格地将DP分型。
 		* [triangleDP.cpp 数字三角形](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/triangleDP.cpp)
+		* [maxOrderedSequence.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/maxOrderedSequence.cpp)
 	* 区间DP
 	* 计数型
 	* 数位统计型
