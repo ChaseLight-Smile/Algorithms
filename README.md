@@ -474,7 +474,7 @@
 	* 线性DP
 		* 定义：递推关系存在一个近似的线性关系，我们就称为线性DP，区别于树形DP，不需要严格地将DP分型。
 		* [triangleDP.cpp 数字三角形](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/triangleDP.cpp)
-		* <span id=lis>最长上升子序列 (LIS)</span>
+		* <span id=lis>最长上升子序列 (LIS)</span>  **要注意子串和子序列的区别，子串一定要连续的字符，子序列可以不连续**
 			* 求LIS的长度
 				* [POJ2533.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2533.cpp)
 				* [LeetCode300.cpp Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode300.cpp)
