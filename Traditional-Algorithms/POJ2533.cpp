@@ -17,6 +17,7 @@
 */
 // http://poj.org/problem?id=2533
 
+//时间复杂度为O(n^2)，本题的时间复杂度为1e6。C++在1s内能够计算<1e9的数据规模，所以本题能够AC
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
