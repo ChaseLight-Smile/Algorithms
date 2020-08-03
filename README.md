@@ -40,6 +40,7 @@
 * [Design techniques of Algorithms](#dddddddaa)
 	* [**Dynamic Programming**](#dp)
 		* [Knapsack](#knapsack)
+		* [Longest Increasing Sequence](#lis)
 	* [**Greedy Algorithms**](#gd)
 	* [**Recursive**](#rec)
 	* [**Brute Force Search**](#bf)
@@ -473,9 +474,15 @@
 	* 线性DP
 		* 定义：递推关系存在一个近似的线性关系，我们就称为线性DP，区别于树形DP，不需要严格地将DP分型。
 		* [triangleDP.cpp 数字三角形](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/triangleDP.cpp)
-		* 最长上升子序列
-			* [POJ2533.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2533.cpp)
-			* [LeetCode300.cpp Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode300.cpp)
+		* <span id=lis>最长上升子序列 (LIS)</span>
+			* 求LIS的长度
+				* [POJ2533.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2533.cpp)
+				* [LeetCode300.cpp Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode300.cpp)
+			* 求一个LIS的解 (同求LIS的长度，只要在其上稍加变形即可)
+				* [POJ2533.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2533.cpp)
+				* [LeetCode300.cpp Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode300.cpp)
+			* 求LIS的个数
+			* 求所有LIS的解
 	* 区间DP
 	* 计数型
 	* 数位统计型
