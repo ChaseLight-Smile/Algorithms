@@ -474,7 +474,7 @@
 	* 线性DP
 		* 定义：递推关系存在一个近似的线性关系，我们就称为线性DP，区别于树形DP，不需要严格地将DP分型。
 		* [triangleDP.cpp 数字三角形](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/triangleDP.cpp)
-		* <span id=lis>最长上升子序列 (LIS)</span>  **要注意子串和子序列的区别，子串一定要连续的字符，子序列可以不连续**
+		* <span id=lis>最长上升子序列 (LIS)</span>
 			* 求LIS的长度
 				* [POJ2533.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2533.cpp)
 				* [LeetCode300.cpp Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode300.cpp)
@@ -494,7 +494,7 @@
 		* 单调队列优化DP
 		* 斜率优化DP
 	* 记忆化搜索(属于DP的一种实现方法)
-
+	
 * <span id=gd>Greedy Algorithms</span>
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
 	* [LeetCode56.cpp Merge Intervals AC sort+greedy](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode56.cpp)
@@ -694,6 +694,12 @@ void add(int element) {
 1 * 1/(n+1) + 1 * 1/(n+1)  ... + n * 1/(n+1)  = O(1)
 */
 ```
+
+## **名字解释**
+
+* 子串(substring)：字符串的子串指的是字符串中连续几个字符组成的序列，例如：string = "12345"，那么"12", "234"和“45”都是子串。对于Java而言，String.subString()便提供了子串截取的方法。**
+* 子序列(subsequence)：字符串的子序列值的是字符串中几个顺序一致的字符组成的序列，例如：string = "12345"，那么"12", "135"和“45”都是子序列。注意到，一个字符串的子序列的集合一定涵盖了该字符串子串的集合。**
+
 
 ## **参考文献**
 
