@@ -504,6 +504,9 @@
 	* [LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode452.cpp)
 	* [LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1288.cpp)
 	* [LeetCode11.cpp Container With Most Water AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode11.cpp)
+	* 最长上升子序列
+		* 求LIS长度
+			* [maxLISLength.cpp 贪心方法求LIS的长度，适合N很大的情况](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/maxLISLength.cpp)
 * <span id=bf>Brute Force Search</span>
 	* <span id=dfs>**DFS + Backtrack**</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
