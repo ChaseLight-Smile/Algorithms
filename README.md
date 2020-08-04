@@ -491,6 +491,7 @@
 	        * 求所有LIS的解
 		* <span id=edd>Edit Distance</span>
 		* <span id=lcs>最长公共子序列 (LCS)</span>
+			* [LCS.cpp 最长公共子序列长度](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LCS.cpp)
 	* 区间DP
 	* 计数型
 	* 数位统计型
