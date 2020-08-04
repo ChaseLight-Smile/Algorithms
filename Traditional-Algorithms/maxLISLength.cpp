@@ -33,13 +33,14 @@ int main(){
     int len = 0;
     for(int i = 1; i <= n; i++){
         int l = 0, r = len;
+		//通过二分检索寻找一个位置，这个位置应该放入a[i]，并且是当前的小于a[i]的最大值之后，使得整个q数组单调递增，并且增长最慢
         while(l < r){
             int mid = l + r + 1>> 1;
             if(q[mid] < a[i]) l = mid;
             else r = mid-1;
         }
-        len = max(len, r + 1);
-        q[r + 1] = a[i];
+        len = max(len, r + 1);   //更新当前的单调递增序列的最大长度
+        q[r + 1] = a[i];  //将a[i]插入到q中
     }
     printf("%d\n", len);
     return 0;
