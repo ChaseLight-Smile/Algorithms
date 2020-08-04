@@ -479,11 +479,13 @@
 				* [POJ2533.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2533.cpp)
 				* [LeetCode300.cpp Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode300.cpp)
 				* [maxLISLength.cpp 贪心方法求LIS的长度，适合N很大的情况](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/maxLISLength.cpp)
+				* [maxLISsum.cpp 最长上升子序列和](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/maxLISsum.cpp)
 			* 求一个LIS的解 (同求LIS的长度，只要在其上稍加变形即可)
 				* [POJ2533.cpp 最长上升子序列](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/POJ2533.cpp)
 				* [LeetCode300.cpp Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode300.cpp)
-			* 求LIS的个数与所有LIS的解
+			* 求LIS的个数
 				* [LeetCode673.cpp Number of Longest Increasing Subsequence AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode673.cpp)
+	        * 求所有LIS的解
 	* 区间DP
 	* 计数型
 	* 数位统计型
