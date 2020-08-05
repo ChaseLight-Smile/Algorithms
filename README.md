@@ -494,6 +494,7 @@
 		* <span id=lcs>最长公共子序列 (LCS)</span>
 			* [LCS.cpp 最长公共子序列长度](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LCS.cpp)
 	* 区间DP
+		* [NowCoder1043A.cpp 石子合并 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/NowCoder1043A.cpp)
 	* 计数型
 	* 数位统计型
 	* 状态压缩型
@@ -503,7 +504,7 @@
 	* DP优化方法
 		* 单调队列优化DP
 		* 斜率优化DP
-	* 记忆化搜索(属于DP的一种实现方法)
+	* 记忆化搜索(DP问题递归写法的学名，属于DP的一种实现方法)
 	
 * <span id=gd>Greedy Algorithms</span>
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
