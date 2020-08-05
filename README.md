@@ -497,6 +497,7 @@
 	* 区间DP
 		* [NowCoder1043A.cpp 石子合并 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/NowCoder1043A.cpp)
 	* 计数型
+		* [intSplit.cpp 整数划分](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intSplit.cpp)
 	* 数位统计型
 	* 状态压缩型
 	* 树形DP
