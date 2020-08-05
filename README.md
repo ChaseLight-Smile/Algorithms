@@ -458,6 +458,7 @@
 			    * [NowCoder1042A.cpp 数字组合](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/NowCoder1042A.cpp)
 		* 完全背包问题
 			* [完全背包最值型裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/comknapsack.cpp)
+				* [intSplit.cpp 整数划分](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intSplit.cpp)
 			* 完全背包计数型
 				* [NowCoder1042B.cpp 自然数拆分](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/NowCoder1042B.cpp)
 		* 多重背包问题
