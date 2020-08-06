@@ -40,7 +40,7 @@
 2
 */
 
-// 贪心解
+// 贪心解，按照右端点从小到大排序
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
@@ -76,7 +76,7 @@ int main(){
     return 0;
 }
 
-//贪心解，给出两种重载运算符的方法
+//贪心解，给出两种重载运算符的方法，按照右端点从小到大排序
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
@@ -103,6 +103,44 @@ int main(){
         if(INF < range[i].l){
             res++;
             INF = range[i].r;
+        }
+    }
+    printf("%d\n", res);
+    return 0;
+}
+
+//贪心解，按照左端点从小到大排序
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+const int N = 1e5+10;
+int n;
+struct Range{
+    int l, r;
+}range[N];
+
+struct cmp{
+    bool operator()(const Range & W1, const Range & W2){
+        return W1.l < W2.l;   //按照左端点从小到大排序
+    }
+};
+
+int main(){
+    scanf("%d", &n);
+    for(int i = 0; i < n; i++){
+        int l, r;
+        scanf("%d%d", &l, &r);
+        range[i] = {l, r};
+    }
+    sort(range, range+ n, cmp());
+    int res = 0, INF = -2e9+7;  //INF表示右端点
+    for(int i = 0; i < n; i++){
+        if(range[i].l > INF){
+            res++;
+            INF = range[i].r;
+        }else{
+            INF = min(INF, range[i].r);
         }
     }
     printf("%d\n", res);
