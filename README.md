@@ -706,14 +706,7 @@ void add(int element) {
 */
 ```
 
-## **名字解释**
-
-* 子串(substring)：字符串的子串指的是字符串中连续几个字符组成的序列，例如：string = "12345"，那么"12", "234"和“45”都是子串。对于Java而言，String.subString()便提供了子串截取的方法。**
-* 子序列(subsequence)：字符串的子序列值的是字符串中几个顺序一致的字符组成的序列，例如：string = "12345"，那么"12", "135"和“45”都是子序列。注意到，一个字符串的子序列的集合一定涵盖了该字符串子串的集合。**
-
-
 ## **参考文献**
-
 
 * http://www.cs.cmu.edu/~anupamg/advalgos15/
 * http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html
