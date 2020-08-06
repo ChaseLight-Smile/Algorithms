@@ -510,6 +510,7 @@
 	* 记忆化搜索(DP问题递归写法的学名，属于DP的一种实现方法)
 	
 * <span id=gd>Greedy Algorithms</span>
+    * **贪心是算法中很难证明的问题**
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
 	* [LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode452.cpp)
 	* [LeetCode11.cpp Container With Most Water AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode11.cpp)
@@ -519,7 +520,7 @@
 		* [LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode986.cpp)
 		* [LeetCode435.cpp Non-overlapping Intervals  AC   sort+greedy method](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode435.cpp)
 		* [LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1288.cpp)
-
+		* [interval.cpp 区间选点 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/interval.cpp)
 * <span id=bf>Brute Force Search</span>
 	* <span id=dfs>**DFS + Backtrack**</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
