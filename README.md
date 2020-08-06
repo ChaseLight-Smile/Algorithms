@@ -520,6 +520,7 @@
 		* [LeetCode435.cpp Non-overlapping Intervals  AC   sort+greedy method](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode435.cpp)
 		* [LeetCode1288.cpp Remove Covered Intervals  AC sort+greedy](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode1288.cpp)
 		* [interval.cpp 区间选点 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/interval.cpp)
+		* [intervalGroup.cpp 区间分组](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intervalGroup.cpp)
 * <span id=bf>Brute Force Search</span>
 	* <span id=dfs>**DFS + Backtrack**</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
