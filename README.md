@@ -44,6 +44,7 @@
 		* [Largest Common Subsequence](#lcs)
 		* [Edit Distance](#edd)
 	* [**Greedy Algorithms**](#gd)
+		* [Intervals Problems](#interval)
 	* [**Recursive**](#rec)
 	* [**Brute Force Search**](#bf)
 		* [**DFS + Backtrack**](#dfs)
@@ -512,7 +513,7 @@
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
 	* [LeetCode452.cpp Minimum Number of Arrows to Burst Balloons  AC sort+greedy求相邻区间的交集](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode452.cpp)
 	* [LeetCode11.cpp Container With Most Water AC 相向型指针](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode11.cpp)
-	* 区间问题
+	* <span id=interval>区间问题</span>
 		* [LeetCode56.cpp Merge Intervals AC sort+greedy](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode56.cpp)
 		* [LeetCode57.cpp Insert Interval  AC   sort+greedy给出了两种方法，都能AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode57.cpp)
 		* [LeetCode986.cpp Interval List Intersections  AC  merge的部分实际上和mergesort中的merge有异曲同工之处](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode986.cpp)
