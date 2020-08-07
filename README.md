@@ -522,6 +522,8 @@
 		* [interval.cpp 区间选点 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/interval.cpp)
 		* [intervalGroup.cpp 区间分组](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intervalGroup.cpp)
 		* [intervalCover.cpp 区间覆盖](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intervalCover.cpp)
+	* huffman树
+		* [mergeApple.cpp 合并果子](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mergeApple.cpp)
 * <span id=bf>Brute Force Search</span>
 	* <span id=dfs>**DFS + Backtrack**</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
