@@ -525,6 +525,8 @@
 		* [intervalCover.cpp 区间覆盖](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intervalCover.cpp)
 	* <span id=huft>huffman tree</span>
 		* [mergeApple.cpp 合并果子](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mergeApple.cpp)
+	* 排序不等式
+		* [sortGreedy.cpp 排队打水](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/sortGreedy.cpp)
 * <span id=bf>Brute Force Search</span>
 	* <span id=dfs>**DFS + Backtrack**</span>
 		* [LeetCode17.cpp Letter Combinations of a Phone Number  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode17.cpp)
