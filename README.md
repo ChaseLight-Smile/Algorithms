@@ -45,6 +45,7 @@
 		* [Edit Distance](#edd)
 	* [**Greedy Algorithms**](#gd)
 		* [Intervals Problems](#interval)
+		* [huffman tree](#huft)
 	* [**Recursive**](#rec)
 	* [**Brute Force Search**](#bf)
 		* [**DFS + Backtrack**](#dfs)
@@ -522,7 +523,7 @@
 		* [interval.cpp 区间选点 AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/interval.cpp)
 		* [intervalGroup.cpp 区间分组](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intervalGroup.cpp)
 		* [intervalCover.cpp 区间覆盖](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intervalCover.cpp)
-	* huffman树
+	* <span id=huft>huffman tree</span>
 		* [mergeApple.cpp 合并果子](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/mergeApple.cpp)
 * <span id=bf>Brute Force Search</span>
 	* <span id=dfs>**DFS + Backtrack**</span>
