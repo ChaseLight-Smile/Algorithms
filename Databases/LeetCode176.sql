@@ -75,7 +75,18 @@ limit 1), null) as SecondHighestSalary
 
 
 
--- 将最大的从表中排除掉，就得到第二大，以此类推可以得到第三大、第四大等等
+-- 将最大的从表中排除掉，就得到第二大
 select ifnull((select max(Salary) 
 from Employee
 where Salary not in (select max(Salary) from Employee)), null) as SecondHighestSalary
+
+-- 得到第三大工资，扩展性很差
+select max(Salary) as ThirdHighestSalary
+from Employee
+where Salary <>
+(select max(Salary)  -- 200
+from Employee 
+where Salary not in (select max(Salary) from Employee)  -- 排除了第二大工资
+)
+and 
+Salary <> (select max(Salary) from Employee)  -- 同时排除了第三大工资
