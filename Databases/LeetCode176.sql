@@ -61,3 +61,15 @@ from
 ) as R
 where R.row_num = 2
 limit 1), null) as SecondHighestSalary 
+
+
+-- nullif使用方法
+select nullif(
+(select R.Salary
+from 
+(
+    select dense_rank() over(order by Salary desc) as row_num, Salary
+    from Employee
+)as R
+where row_num = 2
+limit 1), null) as SecondHighestSalary
