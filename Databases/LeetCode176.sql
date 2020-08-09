@@ -1,13 +1,12 @@
 -- 扩展性非常强的方法，能够找到任意排名的工资
-select ifnull(
-(select E.Salary
-from
-(select E1.Salary, count(E2.Salary) as 'Rank'
-from Employee as E1,
-(select distinct Salary from Employee) E2
+select nullif(
+(select e.Salary
+from 
+(select E1.Salary, count(E2.Salary) as row_num
+from Employee as E1, (select distinct Salary from Employee) as E2
 where E1.Salary <= E2. Salary
-group by E1.Id) E
-where E.Rank = 2 limit 1), NULL)  as SecondHighestSalary
+group by E1.Id) as e
+Where e.row_num = 2 limit 1), null) as SecondHighestSalary 
 
 
 -- 方法二，直接采用limit offset语句完成，扩展性不如第一种方法强
