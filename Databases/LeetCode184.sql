@@ -58,3 +58,17 @@ where R.row_num = 1
 ) as E, Department as D
 where E.DepartmentId = D. Id
 
+
+-- common table experssion CTE and windows function 
+with cteSource (eid, ename, esal, dname) as (
+    select e.Id, e.Name, e.Salary, d.Name
+    from Employee as e, Department as d
+    where e.DepartmentId = d.Id    
+)
+select dname as Department, ename as Employee, esal as Salary
+from
+(
+select *, dense_rank() over(partition by dname order by esal desc) as row_num
+from cteSource
+) as ed
+where ed.row_num = 1

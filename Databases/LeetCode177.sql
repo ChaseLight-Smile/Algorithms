@@ -1,4 +1,4 @@
-#该方法扩展性非常强，能够找到任意排名的工资，这算是SQL中的第n大问题的统一解决办法，参见LeetCode177, LeetCode178, LeetCode184
+# 该方法扩展性非常强，能够找到任意排名的工资，这算是SQL中的第n大问题的统一解决办法，参见LeetCode177, LeetCode178, LeetCode184
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 -- 方法一： 扩展性强，并且逻辑比较好
 BEGIN
