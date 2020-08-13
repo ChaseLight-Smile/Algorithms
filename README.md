@@ -725,9 +725,6 @@ void add(int element) {
 * 50道必须会的SQL题目 https://www.techbeamers.com/sql-query-questions-answers-for-practice/
 * https://www.techbeamers.com/top-sql-interview-questions-dba-qa/
 
-## 作者
-
-Junpeng Zhu
 
 ## 协议
 
