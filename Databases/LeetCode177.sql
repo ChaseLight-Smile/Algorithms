@@ -65,3 +65,24 @@ BEGIN
       limit 1
   );
 END
+
+-- 和上面一个SQL唯一不同的地方在于ifnull的使用，仔细观察可以发现上面的ifnull采用select ifnull(Salary, null) from ... 的形式，但是这里采用的是select ifnull(Salary, null)，两种都正确
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  RETURN (
+      # Write your MySQL query statement below.
+      select ifnull(
+      (select Salary
+      from
+      (
+      select Salary, @tmp := case when @preSal = Salary then @tmp else @tmp+1 end as row_num,
+             @preSal := Salary
+      from
+        (select @tmp := 0) as t,
+        (select @preSal := -1)  as p,
+        (select Id, Salary from Employee order by Salary desc) as s
+      ) as E
+      where E.row_num = N
+      limit 1), null) as getNthHighestSalary
+  );
+END
