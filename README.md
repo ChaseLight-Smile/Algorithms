@@ -427,6 +427,9 @@
 		* [LeetCode596.sql Classes More Than 5 Students AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode596.sql)
 		* [LeetCode627.sql Swap Salary AC](https://github.com/JunpengCode/Algorithms/blob/master/Databases/LeetCode627.sql)
 		* [QS.sql](https://github.com/JunpengCode/Algorithms/blob/master/Databases/QS.sql)
+		* 统计参数，其中均值，最大值，最小值，平均值，计数都有内置的聚集函数
+			* [Median.sql 中位数](https://github.com/JunpengCode/Algorithms/blob/master/Databases/Median.sql)
+			* [ModalNumber.sql 众数](https://github.com/JunpengCode/Algorithms/blob/master/Databases/ModalNumber.sql)
 	* <span id=dld>Deep Learning for Databases</span>
 		* <span>Neural Network using Numpy</span>
 			* [NN_01](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/01_NumpyNN.py)
