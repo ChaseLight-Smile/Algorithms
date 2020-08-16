@@ -43,3 +43,45 @@ from
     (select @preScore := -1) as p,
     (select Id, Score from Scores order by Score desc) as s
 ) as R
+
+
+-- MySQL中的强制类型，将varchar类型转换为一个signed（有符号整型）
+select R.Score, convert(row_num, signed) as 'Rank'
+from
+(
+select Score, @tmp := case when @preScore = Score then @tmp else @tmp + 1 end as row_num,
+       @preScore := Score
+from 
+    (select @tmp := 0) as t,
+    (select @preScore := -1) as p,
+    (select Id, Score from Scores order by Score desc) as s
+) as R
+
+-- MySQL中的强制类型，将varchar类型转换为一个signed（有符号整型）
+select R.Score,cast(row_num  as signed) as 'Rank'
+from
+(
+select Score, @tmp := case when @preScore = Score then @tmp else @tmp + 1 end as row_num,
+       @preScore := Score
+from 
+    (select @tmp := 0) as t,
+    (select @preScore := -1) as p,
+    (select Id, Score from Scores order by Score desc) as s
+) as R
+
+
+/*
+在MySQL中将一个字符串转换为整型时有三种方法
+(1) row_num + 0，即直接在需要转换的字段后面加0
+(2) cast(需要转换的字段 as 转换后的类型)
+(3)convert(需要转换的字段, 转换后的类型)
+在MySQL中可以转换为下列类型
+BINARY[(N)]  
+CHAR[(N)]  
+DATE  
+DATETIME  
+DECIMAL  
+SIGNED   [INTEGER]  
+TIME  
+UNSIGNED   [INTEGER]
+*/
