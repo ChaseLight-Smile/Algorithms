@@ -43,6 +43,7 @@
 		* [Longest Increasing Subsequence](#lis)
 		* [Largest Common Subsequence](#lcs)
 		* [Edit Distance](#edd)
+		* [Memorization](#mem)
 	* [**Greedy Algorithms**](#gd)
 		* [Intervals Problems](#interval)
 		* [huffman tree](#huft)
@@ -512,7 +513,7 @@
 	* DP优化方法
 		* 单调队列优化DP
 		* 斜率优化DP
-	* 记忆化搜索(DP问题递归写法的学名，属于DP的一种实现方法)
+	* <span id=mem>记忆化搜索(DP问题递归写法的学名，属于DP的一种实现方法)<span>
 	    * [snowing.cpp 滑雪 记忆化搜索](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/snowing.cpp)
 	
 * <span id=gd>Greedy Algorithms</span>
