@@ -513,6 +513,7 @@
 		* 单调队列优化DP
 		* 斜率优化DP
 	* 记忆化搜索(DP问题递归写法的学名，属于DP的一种实现方法)
+	    * [snowing.cpp 滑雪 记忆化搜索](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/snowing.cpp)
 	
 * <span id=gd>Greedy Algorithms</span>
 	* [LeetCode55.cpp Jump Game 存在一个greedy的解  AC](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/LeetCode55.cpp)
