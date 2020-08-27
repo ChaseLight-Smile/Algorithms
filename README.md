@@ -507,6 +507,7 @@
 		* [intSplit.cpp 整数划分](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/intSplit.cpp)
 	* 数位统计型
 	* 状态压缩型
+	    * [蒙德里安的梦想 状态压缩的经典应用]
 	* 树形DP
 		* [有依赖的背包裸题模板](https://github.com/JunpengCode/Algorithms/blob/master/Traditional-Algorithms/treeknap.cpp)
 	* 状态机模型
