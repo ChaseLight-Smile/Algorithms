@@ -37,6 +37,7 @@
 	* [SQL Solutions](#dbsql)
 	* [Deep Learning for Databases](#dld)
 	* Crowdsourcing and NP-hard
+* [Concurrency Algoritm](#cal)
 * [Design techniques of Algorithms](#dddddddaa)
 	* [**Dynamic Programming**](#dp)
 		* [Knapsack](#knapsack)
@@ -443,6 +444,11 @@
 			* [Linear_01](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/01_linearModel.py)
 			* [Linear_02](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/02_linearModel.py)
 			* [Linear_03](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/03_linearModel.py)
+
+    * <span id=cal>Concurrency Algorithms</span>
+			* [LeetCode1114.cpp](https://github.com/JunpengCode/Algorithms/blob/master/LeetCodeConcurrencySolution/LeetCode1114.cpp)
+			* [LeetCode1115.cpp](https://github.com/JunpengCode/Algorithms/blob/master/LeetCodeConcurrencySolution/LeetCode1115.cpp)
+
 ## **<span id=dddddddaa>3. 算法设计技术</span>**
 
 * <span id=dp>Dynamic Programming</span>
