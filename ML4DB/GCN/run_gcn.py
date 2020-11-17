@@ -92,7 +92,8 @@ if __name__ == '__main__':
         if epoch % args.eval_N  == (args.eval_N - 1):
             with torch.no_grad():
                 t2 = time()
-                recall, ndcg = eval_model(model.module.u_g_embeddings.detach()[:data_generator.n_users],
+                with torch.no_grad():
+                    recall, ndcg = eval_model(model.module.u_g_embeddings.detach()[:data_generator.n_users],
                                           model.module.i_g_embeddings.detach()[:data_generator.n_items],
                                           data_generator.R_train,
                                           data_generator.R_test,
