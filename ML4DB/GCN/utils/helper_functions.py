@@ -45,7 +45,7 @@ def split_matrix(X, n_splits=100):
 
 def compute_ndcg_k(pred_items, test_items, test_indices, k):
     r = (test_items * pred_items).gather(1, test_indices)
-    f = torch.from_numpy(np.log2(np.arange(2, k+2))).float().cuda()
+    f = torch.from_numpy(np.log2(np.arange(2, k+2))).float().cuda()   #如果显存爆炸，将.cuda()去掉，放在内存中计算
     dcg = (r[:, :k]/f).sum(1)
     dcg_max = (torch.sort(r, dim=1, descending=True)[0][:, :k]/f).sum(1)
     ndcg = dcg/dcg_max
@@ -64,14 +64,14 @@ def eval_model(u_emb, i_emb, Rtr, Rte, k):
     for ue_f, tr_f, te_f in zip(ue_splits, tr_splits, te_splits):
 
         scores = torch.mm(ue_f, i_emb.t())
-
-        test_items = torch.from_numpy(te_f.todense()).float().cuda()
-        non_train_items = torch.from_numpy(1-(tr_f.todense())).float().cuda()
+        # scores = scores.to('cpu')   # 将数据放在内存中计算
+        test_items = torch.from_numpy(te_f.todense()).float().cuda()  #如果显存爆炸，将.cuda()去掉，放在内存中计算
+        non_train_items = torch.from_numpy(1-(tr_f.todense())).float().cuda() #如果显存爆炸，将.cuda()去掉，放在内存中计算
         scores = scores * non_train_items
-
+        
         _, test_indices = torch.topk(scores, dim=1, k=k)
         pred_items = torch.zeros_like(scores).float()
-        pred_items.scatter_(dim=1,index=test_indices,src=torch.tensor(1.0).cuda())
+        pred_items.scatter_(dim=1,index=test_indices,src=torch.tensor(1.0).cuda()) #如果显存爆炸，将.cuda()去掉，放在内存中计算
 
         topk_preds = torch.zeros_like(scores).float()
         topk_preds.scatter_(dim=1,index=test_indices[:, :k],src=torch.tensor(1.0))
