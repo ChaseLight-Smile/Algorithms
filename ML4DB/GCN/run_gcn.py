@@ -64,8 +64,8 @@ if __name__ == '__main__':
     cur_best_metric = 0
 
     # Adam optimizer
-    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
-
+    # optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
     # Set values for early stopping
     cur_best_loss, stopping_step, should_stop = 1e3, 0, False
     today = datetime.now()
