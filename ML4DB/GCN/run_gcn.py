@@ -87,7 +87,8 @@ if __name__ == '__main__':
         training_time = time()-t1
         print("Epoch: {}, Training time: {:.2f}s, Loss: {:.4f}".
             format(epoch, training_time, loss))
-
+        fac = lambda epoch: 0.96 ** (epoch / 50)
+        scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=fac)
         # print test evaluation metrics every N epochs (provided by args.eval_N)
         if epoch % args.eval_N  == (args.eval_N - 1):
             with torch.no_grad():
