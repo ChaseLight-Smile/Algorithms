@@ -39,7 +39,7 @@ def squared_loss(y_hat, y):
 def sgd(params, lr):
   with torch.no_grad():
     for param in params:
-            param -= lr * param.grad
+            param -= lr * param.grad / batch_size   # 如果这里不除以batch_size，在计算loss的地方应该除以batch_size，否则loss过大，在更新时会出现NaN错误
             param.grad.zero_()  # 防止叠加梯度信息
 
 
@@ -49,7 +49,7 @@ net = linreg
 loss = squared_loss
 for epoch in range(num_epochs):
   for X, y in data_iter(batch_size, features, labels):
-      l = loss(net(X, w, b), y).sum()  / batch_size # loss(net(X, w, b), y) 返回一个batch_size * 1 矩阵，sum()之后求出batch_size个样本的平均loss
+      l = loss(net(X, w, b), y).sum() # loss(net(X, w, b), y) 返回一个batch_size * 1 矩阵
       l.backward()
       sgd([w, b], lr)  # 使用参数的梯度更新参数
   with torch.no_grad():  # 在整体数据集上评估当前w和b得到的loss，求出所有样本的平均值
