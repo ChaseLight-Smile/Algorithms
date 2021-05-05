@@ -41,13 +41,13 @@ def net(X):
 # 定义loss
 # y 在这里就是代表[0,1,2,3,4,5,6,7,8,9]中选出的一个一维tensor
 def cross_entropy(y_hat, y):  # h_hat (num_inputs * 10) 的tensor
-  return -torch.log(y_hat[range(len(y_hat)), y])  # 没有求和
+  return -torch.log(y_hat[range(len(y_hat)), y])    # 一维的长度为batch_size的tensor
 
 # 定义优化器
 def sgd(params, lr):
   with torch.no_grad():
     for param in params:
-            param -= lr * param.grad/batch_size
+            param -= lr * param.grad    # 这里一定要除以batch_size，如果不除以batch_size，那么loss在计算时应该取mean()
             param.grad.zero_()  # 防止叠加梯度信息
 
 lr = 0.03
@@ -56,8 +56,8 @@ num_epochs = 3
 for epoch in range(num_epochs):
   for X, y in train_iter:
     y_hat = net(X)
-    l = cross_entropy(y_hat, y) 
-    l.sum().backward()
+    l = cross_entropy(y_hat, y).mean()
+    l.backward()
     sgd([W, b], lr)
     print(W)
     print(b)
