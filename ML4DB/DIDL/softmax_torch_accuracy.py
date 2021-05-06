@@ -1,6 +1,7 @@
 import torch
 import torchvision
 from torch.utils import data
+from torchvision import transforms
 from torch import nn
 
 # 读取数据
@@ -48,6 +49,7 @@ def accuracy(y_hat, y):
 
 num_epochs = 10
 # 训练
+acc = 0
 for epoch in range(num_epochs):
   for X, y in train_iter:
     y_hat = net(X)
@@ -55,9 +57,10 @@ for epoch in range(num_epochs):
     optim.zero_grad()
     l.backward()
     optim.step()
+    acc += accuracy(y_hat, y)
     # print(W)
     # print(b)
-
+print(acc / 6000) 
 acc = 0.0
 
 for epoch in range(num_epochs):

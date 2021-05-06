@@ -1,6 +1,7 @@
 import torch
 import torchvision
 from torch.utils import data
+from torchvision import transforms
 
 # 读取数据
 def load_data_fashion_mnist(batch_size, resize=None):
