@@ -38,13 +38,11 @@ net[3].weight.data.normal_(0, 0.01)
 net[3].bias.data.fill_(0)
 
 # 定义loss
-loss = nn.CrossEntropyLoss()
+loss = nn.CrossEntropyLoss(reduction="mean")
 
 # 定义优化器
-optim = torch.optim.SGD([{"params": net[1].weight, "weight_decay": 0.01,
-                         "params": net[1].bias},
-                         {"params": net[3].weight, "weight_decay": 0.03,
-                         "params": net[3].bias}], lr = 0.1)
+optim = torch.optim.SGD([{"params": net[1].weight, "weight_decay": 0.01}, {"params": net[1].bias}, {"params": net[3].weight, "weight_decay": 0.03}, {"params": net[3].bias}], lr = 0.01)
+# optim = torch.optim.SGD(net.parameters(), lr = 0.01, weight_decay=0.01)
 
 # 定义accuracy
 def accuracy(y_hat, y):
@@ -54,9 +52,9 @@ def accuracy(y_hat, y):
     return float(cmp.type(y.dtype).sum())  # 在这里实际上需要将True和False转成对应的1和0，因此，我们执行cmp.type(y.dtype)，将True或者false转成1或者0
 
 
-num_epochs = 10
+num_epochs = 20
 # 训练
-acc = 0
+acc = 0.0
 for epoch in range(num_epochs):
   for X, y in train_iter:
     y_hat = net(X)
