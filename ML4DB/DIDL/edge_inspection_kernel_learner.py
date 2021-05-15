@@ -28,13 +28,14 @@ X = X.reshape((6, 8))
 Y = Y.reshape((6, 7))  # 6 和 7 是通过公式计算出来的
 
 def train(X):
-  for i in range(10):
+  for i in range(100):
     Y_hat = net(X)
     loss = (Y_hat - Y) ** 2
     net.zero_grad()
     loss.sum().backward()
-    net.weight.data[:] -= 3e-2 * net.weight.grad
+    net.weight.data[:] -= 0.003 * net.weight.grad
+    net.bias.data[:] -= 0.003 * net.bias.grad
     if(i + 1)% 2 == 0:
       print(f'batch {i+1}, loss {loss.sum():.3f}')
 train(X)
-print(net.weight.data)
+print(net.weight.data, net.bias.data)
