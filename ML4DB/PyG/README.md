@@ -25,6 +25,7 @@ print(torch.version.cuda)
 !pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-1.7.1+cu110.html
 !pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.1+cu110.html
 !pip install torch-geometric 
+!pip install tensorboardX
 ```
 
 或者使用下列脚本安装
@@ -70,3 +71,31 @@ print(data)
 ```shell
 Data(edge_index=[2, 4], x=[3, 1])  # edge_index中，2代表边的数目为2, 4为边数目，因为是无向图，所以边有4条（分别是0-1， 1-0， 1-2， 2-1），x中的3表示有三个点，1表示每个点的num_node_feature = 1
 ```
+
+```shell
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+import torch_geometric.nn as pyg_nn
+import torch_geometric.utils as pyg_utils
+
+import time
+from datetime import datetime
+
+import networkx as nx
+import numpy as np
+import torch
+import torch.optim as optim
+
+from torch_geometric.datasets import TUDataset
+from torch_geometric.datasets import Planetoid
+from torch_geometric.data import DataLoader
+
+import torch_geometric.transforms as T
+
+from tensorboardX import SummaryWriter
+from sklearn.manifold import TSNE
+import matplotlib.pyplot as plt
+```
+
