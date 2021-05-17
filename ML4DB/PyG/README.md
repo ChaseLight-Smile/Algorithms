@@ -10,7 +10,7 @@ print(torch.__version__)
 print(torch.version.cuda)
 !nvcc --version
 !python --version
-!pip --version  # 请注意将pip版本升级到20以上，google colab自带的版本为20以下
+!pip --version  # 请注意将pip版本升级到20以上，google colab自带的版本为20以下，20以下后续安装PyG之后，在测试阶段不能使用，这主要是因为版本不兼容
 !python -m pip install --upgrade pip   
 ```
 
