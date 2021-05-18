@@ -444,6 +444,7 @@
 			* [Linear_01](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/01_linearModel.py)
 			* [Linear_02](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/02_linearModel.py)
 			* [Linear_03](https://github.com/JunpengCode/Algorithms/blob/master/MachineLearning4DB/03_linearModel.py)
+		* <span>[Deep Learning](https://github.com/EthanDBer/Algorithms/tree/master/ML4DB)</span>
 * <span id=cal>Concurrency Algorithms</span>
 	* [LeetCode1114.cpp](https://github.com/JunpengCode/Algorithms/blob/master/LeetCodeConcurrencySolution/LeetCode1114.cpp)
 	* [LeetCode1115.cpp](https://github.com/JunpengCode/Algorithms/blob/master/LeetCodeConcurrencySolution/LeetCode1115.cpp)
