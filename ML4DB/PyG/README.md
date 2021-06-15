@@ -19,6 +19,7 @@ print(torch.version.cuda)
 ## 安装pytorch geometric
 
 ```shell
+# !pip uninstall torch torch-scatter torch-sparse torch-spline-conv torch-geometric
 !pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110  torchaudio===0.7.2 torchtext==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 !pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-1.7.1+cu110.html
 !pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.1+cu110.html
@@ -26,30 +27,10 @@ print(torch.version.cuda)
 !pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.1+cu110.html
 !pip install torch-geometric 
 !pip install tensorboardX
+!wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+!unzip ngrok-stable-linux-amd64.zip
 ```
 
-或者使用下列脚本安装
-
-```python
-import torch
-
-def format_pytorch_version(version):
-  return version.split('+')[0]
-
-TORCH_version = torch.__version__
-TORCH = format_pytorch_version(TORCH_version)
-
-def format_cuda_version(version):
-  return 'cu' + version.replace('.', '')
-
-CUDA_version = torch.version.cuda
-CUDA = format_cuda_version(CUDA_version)
-
-!pip install torch-scatter     -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
-!pip install torch-sparse      -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
-!pip install torch-cluster     -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
-!pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-{TORCH}+{CUDA}.html
-```
 
 ## 测试
 
