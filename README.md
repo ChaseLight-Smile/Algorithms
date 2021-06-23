@@ -37,7 +37,6 @@
 	* [SQL Solutions](#dbsql)
 	* [Deep Learning for Databases](#dld)
 	* Crowdsourcing and NP-hard
-* [Assembly]()
 * [Concurrency Algoritms](#cal)
 * [Design techniques of Algorithms](#dddddddaa)
 	* [**Dynamic Programming**](#dp)
